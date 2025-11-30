@@ -21,7 +21,7 @@
     }
     .dark .match-team-name { color: #f1f5f9; }
     .match-center { text-align: center; }
-    .match-vs { font-weight: bold; color: #6b7280; font-size: 1.15rem; }
+    .match-vs { font-weight: bold; color: #6b7280; font-size: 0.9rem; }
     .dark .match-vs { color: #cbd5e1; }
     .match-status {
       margin-top: 6px; font-size: 0.78rem !important; font-weight: bold;
