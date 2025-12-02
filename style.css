@@ -30,7 +30,7 @@
     }
     .match-status-countdown { background: #16a34a; color: white; }
     .match-status-live {
-      background: #dc2626; color: white; animation: pulse 2s infinite;
+      background: #d10000; color: white; animation: pulse 1.2s infinite;
       font-size: 0.76rem !important; padding: 5px 8px;
     }
     .match-status-over { background: #000000; color: #ffffff; }
