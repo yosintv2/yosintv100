@@ -6,7 +6,7 @@
   "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
   "team2": "West Indies",
   "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
-  "start": "2025-12-03T07:00:00+09:00",
+  "start": "2025-12-04T07:00:00+09:00",
   "details_url": "https://blog.cricfoot.net/?yosintv=newzealand",
   "duration": 10
 },
@@ -20,6 +20,7 @@
   "details_url": "https://blog.cricfoot.net/?yosintv=india",
   "duration": 8
 },
+    
 {
   "team1": "Australia",
   "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
@@ -30,23 +31,22 @@
   "duration": 10
 },
 
-{
-  "team1": "Dubai Capitals",
-  "team1_logo": "https://aimages.willow.tv/teamLogos/dubaicapitals.png",
-  "team2": "Desert Vipers",
-  "team2_logo": "https://aimages.willow.tv/teamLogos/desertvipers.png",
-  "start": "2025-12-02T23:30:00+09:00",
-  "details_url": "https://blog.cricfoot.net/?yosintv=ilt20",
-  "duration": 5
-},
-
     
 {
-  "team1": "Biratnagar Kings",
-  "team1_logo": "https://cdn.yosintv.link/npl/biratnagar.png",
-  "team2": "Lumbini Lions",
-  "team2_logo": "https://cdn.yosintv.link/npl/lumbini.png",
-  "start": "2025-12-03T19:15:00+09:00",
+  "team1": "Kathmandu Gorkhas",
+  "team1_logo": "https://cdn.yosintv.link/npl/kathmandu.png",
+  "team2": "Pokhara Avengers",
+  "team2_logo": "https://cdn.yosintv.link/npl/pokhara.png",
+  "start": "2025-12-04T15:00:00+09:00",
+  "details_url": "https://blog.cricfoot.net/?yosintv=npl",
+  "duration": 5
+},
+{
+  "team1": "Chitwan Rhinos",
+  "team1_logo": "https://cdn.yosintv.link/npl/chitwan.png",
+  "team2": "Sudur Paschim Royals",
+  "team2_logo": "https://cdn.yosintv.link/npl/supa.png",
+  "start": "2025-12-04T19:15:00+09:00",
   "details_url": "https://blog.cricfoot.net/?yosintv=npl",
   "duration": 5
 }
