@@ -145,12 +145,12 @@
                 if (diff < 0) {
                      countdownText = 'Starting Soon';
                 } else if (d > 0) {
-                    countdownText = `${d}D ${h}H`;
+                    countdownText = `${d}d ${h}h`;
                 } else if (h > 0) {
-                    countdownText = `${h}H ${m}M`;
+                    countdownText = `${h}h ${m}m`;
                 } else {
                     const s = Math.floor((diff % (1000 * 60)) / 1000);
-                    countdownText = `${m}M ${s}S`;
+                    countdownText = `${m}m ${s}s`;
                 }
                 
                 el.textContent = countdownText;
