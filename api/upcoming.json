@@ -15,7 +15,18 @@
       "no_result": 0,
       "points": 10,
       "nrr": 1.292,
-      "form": ["W","W","W","W","W"]
+      "form": ["W","W","W","W","W"],
+      "runs_for": 675,
+      "balls_for": 100.0,
+      "runs_against": 772,
+      "balls_against": 96.0,
+      "recent_matches": [
+        {"date":"2025-11-29","match":"18th Match","vs":"Janakpur Bolts","result":"S Paschim won by 6 wickets (with 14 balls remaining)"},
+        {"date":"2025-11-27","match":"13th Match","vs":"Lumbini Lions","result":"S Paschim won by 7 wickets (with 10 balls remaining)"},
+        {"date":"2025-11-24","match":"10th Match","vs":"Karnali Yaks","result":"S Paschim won by 45 runs"},
+        {"date":"2025-11-21","match":"6th Match","vs":"Pokhara Avengers","result":"S Paschim won by 18 runs"},
+        {"date":"2025-11-19","match":"4th Match","vs":"Kathmandu Gorkhas","result":"S Paschim won by 29 runs"}
+      ]
     },
     {
       "rank": 2,
@@ -25,10 +36,166 @@
       "played": 7,
       "won": 5,
       "lost": 2,
+      "tied": 0,
+      "no_result": 0,
       "points": 10,
       "nrr": 0.537,
-      "form": ["W","W","W","L","W"]
+      "form": ["W","W","W","L","W"],
+      "runs_for": 1002,
+      "balls_for": 136.0,
+      "runs_against": 937,
+      "balls_against": 137.1,
+      "recent_matches": [
+        {"date":"2025-12-04","match":"23rd Match","vs":"Pokhara Avengers","result":"Kathmandu won by 13 runs"},
+        {"date":"2025-11-30","match":"19th Match","vs":"Karnali Yaks","result":"Kathmandu won by 5 wickets (with 12 balls remaining)"},
+        {"date":"2025-11-28","match":"15th Match","vs":"Chitwan Rhinos","result":"Kathmandu won by 53 runs"},
+        {"date":"2025-11-25","match":"11th Match","vs":"Lumbini Lions","result":"Kathmandu won by 22 runs"},
+        {"date":"2025-11-22","match":"8th Match","vs":"Biratnagar Kings","result":"Biratnagar won by 5 wickets (with 17 balls remaining)"},
+        {"date":"2025-11-19","match":"4th Match","vs":"Sudur Paschim Royals","result":"S Paschim won by 29 runs"},
+        {"date":"2025-11-17","match":"1st Match","vs":"Janakpur Bolts","result":"Kathmandu won by 5 wickets (with 12 balls remaining)"}
+      ]
+    },
+    {
+      "rank": 3,
+      "team": "Biratnagar Kings",
+      "short_name": "BIK",
+      "logo": "https://cdn.yosintv.link/npl/biratnagar.png",
+      "played": 6,
+      "won": 4,
+      "lost": 2,
+      "points": 8,
+      "nrr": 0.189,
+      "form": ["L","W","L","W","W"],
+      "runs_for": 923,
+      "balls_for": 117.0,
+      "runs_against": 906,
+      "balls_against": 117.4,
+      "recent_matches": [
+        {"date":"2025-12-03","match":"22nd Match","vs":"Lumbini Lions","result":"Lumbini won by 5 wickets (with 14 balls remaining)"},
+        {"date":"2025-11-28","match":"16th Match","vs":"Karnali Yaks","result":"Biratnagar won by 3 wickets (with 1 ball remaining)"},
+        {"date":"2025-11-26","match":"12th Match","vs":"Chitwan Rhinos","result":"Chitwan won by 48 runs"},
+        {"date":"2025-11-24","match":"9th Match","vs":"Janakpur Bolts","result":"Biratnagar won by 9 runs"},
+        {"date":"2025-11-22","match":"8th Match","vs":"Kathmandu Gorkhas","result":"Biratnagar won by 5 wickets (with 17 balls remaining)"},
+        {"date":"2025-11-18","match":"3rd Match","vs":"Pokhara Avengers","result":"Biratnagar won by 53 runs"}
+      ]
+    },
+    {
+      "rank": 4,
+      "team": "Lumbini Lions",
+      "short_name": "LUL",
+      "logo": "https://cdn.yosintv.link/npl/lumbini.png",
+      "played": 6,
+      "won": 3,
+      "lost": 3,
+      "points": 6,
+      "nrr": -0.561,
+      "form": ["W","W","L","L","L"],
+      "runs_for": 876,
+      "balls_for": 115.5,
+      "runs_against": 899,
+      "balls_against": 110.4,
+      "recent_matches": [
+        {"date":"2025-12-03","match":"22nd Match","vs":"Biratnagar Kings","result":"Lumbini won by 5 wickets (with 14 balls remaining)"},
+        {"date":"2025-11-29","match":"17th Match","vs":"Pokhara Avengers","result":"Lumbini won by 3 wickets (with 2 balls remaining)"},
+        {"date":"2025-11-27","match":"13th Match","vs":"Sudur Paschim Royals","result":"S Paschim won by 7 wickets (with 10 balls remaining)"},
+        {"date":"2025-11-25","match":"11th Match","vs":"Kathmandu Gorkhas","result":"Kathmandu won by 22 runs"},
+        {"date":"2025-11-22","match":"7th Match","vs":"Karnali Yaks","result":"Karnali won by 9 wickets (with 46 balls remaining)"},
+        {"date":"2025-11-20","match":"5th Match","vs":"Chitwan Rhinos","result":"Lumbini won by 6 wickets (with 9 balls remaining)"}
+      ]
+    },
+    {
+      "rank": 5,
+      "team": "Pokhara Avengers",
+      "short_name": "POA",
+      "logo": "https://cdn.yosintv.link/npl/pokhara.png",
+      "played": 6,
+      "won": 2,
+      "lost": 4,
+      "points": 4,
+      "nrr": -0.240,
+      "form": ["L","W","L","W","L"],
+      "runs_for": 1000,
+      "balls_for": 120.0,
+      "runs_against": 1026,
+      "balls_against": 119.4,
+      "recent_matches": [
+        {"date":"2025-12-04","match":"23rd Match","vs":"Kathmandu Gorkhas","result":"Kathmandu won by 13 runs"},
+        {"date":"2025-12-02","match":"21st Match","vs":"Karnali Yaks","result":"Pokhara won by 34 runs"},
+        {"date":"2025-11-29","match":"17th Match","vs":"Lumbini Lions","result":"Lumbini won by 3 wickets (with 2 balls remaining)"},
+        {"date":"2025-11-27","match":"14th Match","vs":"Janakpur Bolts","result":"Pokhara won by 25 runs"},
+        {"date":"2025-11-21","match":"6th Match","vs":"Sudur Paschim Royals","result":"S Paschim won by 18 runs"},
+        {"date":"2025-11-18","match":"3rd Match","vs":"Biratnagar Kings","result":"Biratnagar won by 53 runs"}
+      ]
+    },
+    {
+      "rank": 6,
+      "team": "Chitwan Rhinos",
+      "short_name": "CHR",
+      "logo": "https://cdn.yosintv.link/npl/chitwan.png",
+      "played": 5,
+      "won": 2,
+      "lost": 3,
+      "points": 4,
+      "nrr": -0.333,
+      "form": ["L","L","W","L","W"],
+      "runs_for": 752,
+      "balls_for": 99.1,
+      "runs_against": 760,
+      "balls_against": 96.0,
+      "recent_matches": [
+        {"date":"2025-12-02","match":"20th Match","vs":"Janakpur Bolts","result":"Janakpur won by 6 wickets (with 15 balls remaining)"},
+        {"date":"2025-11-28","match":"15th Match","vs":"Kathmandu Gorkhas","result":"Kathmandu won by 53 runs"},
+        {"date":"2025-11-26","match":"12th Match","vs":"Biratnagar Kings","result":"Chitwan won by 48 runs"},
+        {"date":"2025-11-20","match":"5th Match","vs":"Lumbini Lions","result":"Lumbini won by 6 wickets (with 9 balls remaining)"},
+        {"date":"2025-11-18","match":"2nd Match","vs":"Karnali Yaks","result":"Chitwan won by 4 wickets (with 5 balls remaining)"}
+      ]
+    },
+    {
+      "rank": 7,
+      "team": "Karnali Yaks",
+      "short_name": "KAY",
+      "logo": "https://cdn.yosintv.link/npl/karnali.png",
+      "played": 6,
+      "won": 1,
+      "lost": 5,
+      "points": 2,
+      "nrr": -0.434,
+      "form": ["L","L","L","L","W"],
+      "runs_for": 897,
+      "balls_for": 112.2,
+      "runs_against": 985,
+      "balls_against": 117.0,
+      "recent_matches": [
+        {"date":"2025-12-02","match":"21st Match","vs":"Pokhara Avengers","result":"Pokhara won by 34 runs"},
+        {"date":"2025-11-30","match":"19th Match","vs":"Kathmandu Gorkhas","result":"Kathmandu won by 5 wickets (with 12 balls remaining)"},
+        {"date":"2025-11-28","match":"16th Match","vs":"Biratnagar Kings","result":"Biratnagar won by 3 wickets (with 1 ball remaining)"},
+        {"date":"2025-11-24","match":"10th Match","vs":"Sudur Paschim Royals","result":"S Paschim won by 45 runs"},
+        {"date":"2025-11-22","match":"7th Match","vs":"Lumbini Lions","result":"Karnali won by 9 wickets (with 46 balls remaining)"},
+        {"date":"2025-11-18","match":"2nd Match","vs":"Chitwan Rhinos","result":"Chitwan won by 4 wickets (with 5 balls remaining)"}
+      ]
+    },
+    {
+      "rank": 8,
+      "team": "Janakpur Bolts",
+      "short_name": "JAB",
+      "logo": "https://cdn.yosintv.link/npl/janakpur.png",
+      "played": 5,
+      "won": 1,
+      "lost": 4,
+      "points": 2,
+      "nrr": -0.495,
+      "form": ["W","L","L","L","L"],
+      "runs_for": 711,
+      "balls_for": 97.3,
+      "runs_against": 745,
+      "balls_against": 95.4,
+      "recent_matches": [
+        {"date":"2025-12-02","match":"20th Match","vs":"Chitwan Rhinos","result":"Janakpur won by 6 wickets (with 15 balls remaining)"},
+        {"date":"2025-11-29","match":"18th Match","vs":"Sudur Paschim Royals","result":"S Paschim won by 6 wickets (with 14 balls remaining)"},
+        {"date":"2025-11-27","match":"14th Match","vs":"Pokhara Avengers","result":"Pokhara won by 25 runs"},
+        {"date":"2025-11-24","match":"9th Match","vs":"Biratnagar Kings","result":"Biratnagar won by 9 runs"},
+        {"date":"2025-11-17","match":"1st Match","vs":"Kathmandu Gorkhas","result":"Kathmandu won by 5 wickets (with 12 balls remaining)"}
+      ]
     }
-    // ... all 8 teams included
   ]
 }
