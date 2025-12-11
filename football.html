@@ -362,7 +362,66 @@
     });
   </script>
 
-  <!-- BEGIN: Powered by Supercounters.com -->
+<!-- Telegram Popup - Zero conflicts with your existing CSS -->
+<div class="tgx-popup-overlay" id="tgxPopup">
+  <div class="tgx-popup-box">
+    <button class="tgx-close-btn" onclick="closeTgxPopup()">×</button>
+
+    <div class="tgx-icon">
+      <svg viewBox="0 0 240 240" width="80" height="80" fill="white">
+        <circle cx="120" cy="120" r="120"/>
+        <path d="M81.2 174.3c-5.4 0-2.7-2-7.3-6.4l-18.4-60.5 127.3-49.1c8 3.5 12.2 1.9 14-5.8l22.7-106.9c3.1-13.8-4.7-20.1-12.7-16.6L57.9 105.8 36.2 99c-9.7-3-9.9-9.7 1.2-14.6l131.2-50.7c11.2-4.6 21.2 2.8 17.1 14.6l-22.4 106.9c-1.6 7.6-6 9.4-13.8 5.8L97.6 152l-9.9 9.9c-3.3 3.3-6 6.4-6.5 8.4z" fill="#0088cc"/>
+      </svg>
+    </div>
+
+    <h2 class="tgx-title">Join YoSinTV Telegram Now!</h2>
+    <p class="tgx-text">Match updates, news & highlights </p>
+
+    <a href="https://t.me/yosintvlive" target="_blank" class="tgx-join-btn">
+      Click to Join Channel
+    </a>
+  </div>
+</div>
+
+<script>
+  const tgxPopup = document.getElementById('tgxPopup');
+  const STORAGE_KEY = 'tgxPopupLastShown';
+  const ONE_DAY_MS = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+  function shouldShowPopup() {
+    const lastShown = localStorage.getItem(STORAGE_KEY);
+    if (!lastShown) return true; // never seen
+    const timeDiff = Date.now() - parseInt(lastShown);
+    return timeDiff >= ONE_DAY_MS; // show again only after 24h
+  }
+
+  function markAsShown() {
+    localStorage.setItem(STORAGE_KEY, Date.now().toString());
+  }
+
+  function closeTgxPopup() {
+    tgxPopup.classList.remove('tgx-active');
+    markAsShown(); // user closed → don't show for 24 hours
+  }
+
+  // Auto-show logic
+  window.addEventListener('load', function () {
+    if (shouldShowPopup()) {
+      setTimeout(() => {
+        tgxPopup.classList.add('tgx-active');
+        markAsShown(); // count as "seen" even if they don't click X (optional)
+      }, 1200);
+    }
+  });
+
+  // Close when clicking outside
+  tgxPopup.addEventListener('click', function (e) {
+    if (e.target === tgxPopup) closeTgxPopup();
+  });
+</script>
+    
+    
+<!-- BEGIN: Powered by Supercounters.com -->
       <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
     <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
     <script type="text/javascript">sc_online_i(1714446,"ffffff","ffffff");</script>
