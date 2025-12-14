@@ -2,45 +2,47 @@
     "matches": [
 
         {
-            "team1": "India U19",
+            "team1": "India",
             "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "team2": "UAE U19",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/unitedarabemirates.png",
-            "start": "2025-12-12T14:00:00+09:00",
+            "team2": "South Africa",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
+            "start": "2025-12-14T22:30:00+09:00",
             "details_url": "https://blog.cricfoot.net/?yosintv=india",
-            "duration": 10
-        },
-        
-
-        {
-            "team1": "Sudurpaschim ",
-            "team1_logo": "https://cdn.yosintv.link/npl/supa.png",
-            "team2": "Lumbini Lions",
-            "team2_logo": "https://cdn.yosintv.link/npl/lumbini.png",
-            "start": "2025-12-13T18:45:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=npl",
             "duration": 5
         },
 
         {
-            "team1": "Abu Dhabi Knight Riders",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/abudhabiknightriders.png",
-            "team2": "Dubai Capitals",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/dubaicapitals.png",
-            "start": "2025-12-13T23:30:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=ilt20",
+            "team1": "Perth Scorchers",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/perthscorchers.png",
+            "team2": "Sydney Sixers",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
+            "start": "2025-12-14T17:15:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=bbl",
             "duration": 5
         },
 
         {
-            "team1": "Sri Lanka U19",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
-            "team2": "Nepal U19",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "start": "2025-12-13T14:00:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=nepal",
+            "team1": "Australia",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
+            "team2": "England",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
+            "start": "2025-12-17T09:00:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=australia",
             "duration": 5
         },
+
+        {
+            "team1": "India",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "South Africa",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
+            "start": "2025-12-17T22:30:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=india",
+            "duration": 5
+            "_memo": "//////////////////////////////////////////////////////////////////////",
+
+        },
+
 
         {
             "team1": "Bangladesh U19",
