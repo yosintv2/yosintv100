@@ -1,32 +1,22 @@
 {
     "matches": [
         {
-            "team1": "Man United",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
-            "team2": "Bournemouth",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8678.png",
-            "start": "2025-12-16T05:00:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=manunited",
+            "team1": "Cardiff City",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8344.png",
+            "team2": "Chelsea",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
+            "start": "2025-12-17T05:00:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=chelsea",
             "duration": 2
         },
 
         {
-            "team1": "Rayo Vallecano",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8370.png",
-            "team2": "Real Betis",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8603.png",
-            "start": "2025-12-16T05:00:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=realbetis",
-            "duration": 2
-        },
-
-        {
-            "team1": "Roma",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8686.png",
-            "team2": "Como",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10171.png",
-            "start": "2025-12-16T04:45:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=roma",
+            "team1": "Guadalajara",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/161782.png",
+            "team2": "Barcelona",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
+            "start": "2025-12-17T05:00:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=barcelona",
             "duration": 2
         }
     ]
