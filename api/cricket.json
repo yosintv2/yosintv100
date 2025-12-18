@@ -1,16 +1,5 @@
 {
     "matches": [
- 
-        {
-            "team1": "Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
-            "team2": "England",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "start": "2025-12-19T09:00:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=england ",
-            "duration": 10
-        },
-
         {
             "team1": "India",
             "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
@@ -24,24 +13,24 @@
 
 
         {
-            "team1": "Sydney Sixers",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
-            "team2": "Adelaide Strikers",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/adelaidestrikers.png",
-            "start": "2025-12-17T17:15:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=bbl",
+            "team1": "New Zealand",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "team2": "West Indies",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
+            "start": "2025-12-18T07:00:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=newzealand",
             "duration": 5
         },
 
         {
-            "team1": "Dubai Capitals",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/dubaicapitals.png",
-            "team2": "MI Emirates",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/miemirates.png",
-            "start": "2025-12-17T23:30:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=ilt20",
+            "team1": "Australia",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
+            "team2": "England",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
+            "start": "2025-12-18T08:30:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=england",
             "duration": 5,
-            "_memo": "/////////////// API Generated: 12/17/2025, 07:20:26 PM /////////////// "
+            "_memo": "/////////////// API Generated: 12/19/2025, 12:12:49 AM /////////////// "
         }
         
     ]
