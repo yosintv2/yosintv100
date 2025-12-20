@@ -31,6 +31,47 @@
             "details_url": "https://blog.cricfoot.net/?yosintv=england",
             "duration": 10,
             "_memo": "/////////////// API Generated: 12/19/2025, 12:12:49 AM /////////////// "
+        },
+
+
+
+
+
+
+
+
+
+        
+
+        {
+            "team1": "Sydney Thunder",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/sydneythunder.png",
+            "team2": "Sydney Sixers",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
+            "start": "2025-12-20T17:15:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=bbl",
+            "duration": 5
+        },
+
+        {
+            "team1": "Abu Dhabi Knight Riders",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/abudhabiknightriders.png",
+            "team2": "MI Emirates",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/miemirates.png",
+            "start": "2025-12-20T19:00:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=ilt20",
+            "duration": 5
+        },
+
+        {
+            "team1": "Desert Vipers",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/desertvipers.png",
+            "team2": "Sharjah Warriorz",
+            "team2_logo": "https://cdn.yosintv.link/cricket.png",
+            "start": "2025-12-20T23:30:00+09:00",
+            "details_url": "https://blog.cricfoot.net/?yosintv=ilt20",
+            "duration": 5,
+            "_memo": "/////////////// API Generated: 12/20/2025, 12:52:44 PM /////////////// "
         }
         
     ]
