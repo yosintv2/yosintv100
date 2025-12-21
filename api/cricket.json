@@ -1,78 +1,34 @@
 {
     "matches": [
         {
-            "team1": "India",
+            "team1": "India U19",
             "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "team2": "South Africa",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
-            "start": "2025-12-19T23:00:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=india",
-            "duration": 5,
-            "_memo": "/////////////// API Generated: 12/14/2025, 01:46:47 PM /////////////// "
-        },
-
-
-        {
-            "team1": "New Zealand",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "team2": "West Indies",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
-            "start": "2025-12-20T07:00:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=newzealand",
+            "team2": "Pakistan U19",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
+            "start": "2025-12-21T14:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=india",
             "duration": 10
         },
 
         {
-            "team1": "Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
-            "team2": "England",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "start": "2025-12-20T08:30:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=england",
-            "duration": 10,
-            "_memo": "/////////////// API Generated: 12/19/2025, 12:12:49 AM /////////////// "
-        },
-
-
-
-
-
-
-
-
-
-        
-
-        {
-            "team1": "Sydney Thunder",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/sydneythunder.png",
-            "team2": "Sydney Sixers",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
-            "start": "2025-12-20T17:15:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=bbl",
+            "team1": "Melbourne Renegades",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/melbournerenegades.png",
+            "team2": "Hobart Hurricanes",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/hobarthurricanes.png",
+            "start": "2025-12-21T17:15:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=ilt20",
             "duration": 5
         },
 
         {
-            "team1": "Abu Dhabi Knight Riders",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/abudhabiknightriders.png",
-            "team2": "MI Emirates",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/miemirates.png",
-            "start": "2025-12-20T19:00:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=ilt20",
-            "duration": 5
-        },
-
-        {
-            "team1": "Desert Vipers",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/desertvipers.png",
-            "team2": "Sharjah Warriorz",
-            "team2_logo": "https://cdn.yosintv.link/cricket.png",
-            "start": "2025-12-20T23:30:00+09:00",
-            "details_url": "https://blog.cricfoot.net/?yosintv=ilt20",
+            "team1": "India Women",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "Sri Lanka Women",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
+            "start": "2025-12-21T22:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=srilanka",
             "duration": 5,
-            "_memo": "/////////////// API Generated: 12/20/2025, 12:52:44 PM /////////////// "
+            "_memo": "/////////////// API Generated: 12/21/2025, 05:39:10 PM /////////////// "
         }
-        
     ]
 }
