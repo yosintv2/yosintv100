@@ -1,142 +1,52 @@
 {
     "matches": [
         {
-            "team1": "Newcastle United",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
-            "team2": "Chelsea",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
-            "start": "2025-12-20T21:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=chelsea",
+            "team1": "Girona FC",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7732.png",
+            "team2": "Atlético Madrid",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
+            "start": "2025-12-21T22:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=atletico",
             "duration": 2.2
         },
 
         {
-            "team1": "Real Oviedo",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8670.png",
-            "team2": "Celta Vigo",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9910.png",
-            "start": "2025-12-20T22:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=celtavigo ",
+            "team1": "Aston Villa",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
+            "team2": "Man United",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
+            "start": "2025-12-22T01:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=manunited",
             "duration": 2.2
         },
 
         {
-            "team1": "Wolves",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
-            "team2": "Brentford",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9937.png",
-            "start": "2025-12-21T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=wolves",
+            "team1": "Real Betis",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8603.png",
+            "team2": "Getafe",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8305.png",
+            "start": "2025-12-22T05:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=realbetis",
             "duration": 2.2
         },
 
         {
-            "team1": "Bournemouth",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8678.png",
-            "team2": "Burnley",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8191.png",
-            "start": "2025-12-21T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=bournemouth",
+            "team1": "Heidenheim",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/94937.png",
+            "team2": "Bayern München",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9823.png",
+            "start": "2025-12-22T01:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=munchen",
             "duration": 2.2
         },
 
         {
-            "team1": "Man City",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
-            "team2": "West Ham",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8654.png",
-            "start": "2025-12-21T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=mancity",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Tottenham",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
-            "team2": "Liverpool",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
-            "start": "2025-12-21T02:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=liverpool",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Everton",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8668.png",
-            "team2": "Arsenal",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
-            "start": "2025-12-21T05:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=arsenal",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Real Madrid",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
-            "team2": "Sevilla",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8302.png",
-            "start": "2025-12-21T05:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=realmadrid",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Juventus",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
-            "team2": "Roma",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8686.png",
-            "start": "2025-12-21T04:45:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=juventus",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "RB Leipzig",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/178475.png",
-            "team2": "Bayer Leverkusen",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png",
-            "start": "2025-12-21T02:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=leverkusen",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Brighton",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png",
-            "team2": "Sunderland",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png",
-            "start": "2025-12-21T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=brighton",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Leeds United",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8463.png",
-            "team2": "Crystal Palace",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png",
-            "start": "2025-12-21T05:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=leeds",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Levante",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8581.png",
-            "team2": "Real Sociedad",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png",
-            "start": "2025-12-21T00:15:00+09:00",
-            "details_url": "https://yosintv2.github.io/ads/ak.html?url=536185",
-            "duration": 2.2
-        },
-
-        {
-            "team1": "Osasuna",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8371.png",
-            "team2": "Deportivo Alavés",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9866.png",
-            "start": "2025-12-21T02:30:00+09:00",
-            "details_url": "https://yosintv2.github.io/ads/ak.html?url=372746",
+            "team1": "Elche",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10268.png",
+            "team2": "Rayo Vallecano",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8370.png",
+            "start": "2025-12-22T02:30:00+09:00",
+            "details_url": "https://yosintv2.github.io/ads/ak.html?url=_____",
             "duration": 2.2
         }
     ]
