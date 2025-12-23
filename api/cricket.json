@@ -1,44 +1,14 @@
 {
     "matches": [
         {
-            "team1": "Sydney Thunder",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/sydneythunder.png",
-            "team2": "Brisbane Heat",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/brisbaneheat.png",
-            "start": "2025-12-22T17:15:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=bbl",
-            "duration": 5
-        },
-
-        {
             "team1": "Adelaide Strikers",
             "team1_logo": "https://aimages.willow.tv/teamLogos/adelaidestrikers.png",
             "team2": "Melbourne Stars",
             "team2_logo": "https://aimages.willow.tv/teamLogos/melbournestars.png",
+            "league": "Big Bash League",
             "start": "2025-12-23T17:15:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=bbl",
+            "details_url": "https://www.cricfoot.net/match?yosintv=adelaidestrikers",
             "duration": 5
-        },
-
-        {
-            "team1": "Sydney Sixers",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
-            "team2": "Melbourne Stars",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/melbournestars.png",
-            "start": "2025-12-26T16:05:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=bbl",
-            "duration": 5
-        },
-
-        {
-            "team1": "Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
-            "team2": "England",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "start": "2025-12-26T08:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=australia",
-            "duration": 5,
-            "_memo": "/////////////// API Generated: 12/22/2025, 02:25:06 PM /////////////// "
         }
     ]
 }
