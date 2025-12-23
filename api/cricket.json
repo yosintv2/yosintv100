@@ -1,34 +1,24 @@
 {
     "matches": [
         {
-            "team1": "Pakistan",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
-            "team2": "Netherlands",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/netherlands.png",
-            "league": "ICC Men's T20 World Cup",
-            "start": "2025-12-23T14:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=pakistan",
+            "team1": "Adelaide Strikers",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/adelaidestrikers.png",
+            "team2": "Melbourne Stars",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/melbournestars.png",
+            "league": "Big Bash League",
+            "start": "2025-12-23T17:15:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=bbl",
             "duration": 5
         },
         {
-            "team1": "New Zealand",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "team2": "Afghanistan",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
-            "league": "ICC Men's T20 World Cup",
-            "start": "2025-12-23T14:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=newzealand",
-            "duration": 5
-        },
-        {
-            "team1": "England",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "team2": "Nepal",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "league": "ICC Men's T20 World Cup",
-            "start": "2025-12-23T18:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=england",
-            "duration": 5
+            "team1": "Australia",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
+            "team2": "England",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
+            "league": "The Ashes",
+            "start": "2025-12-26T08:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=australia",
+            "duration": 10
         }
     ]
 }
