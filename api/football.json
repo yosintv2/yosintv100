@@ -1,53 +1,33 @@
 {
     "matches": [
         {
-            "team1": "DR Congo",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6321.png",
-            "team2": "Benin",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5883.png",
+            "team1": "Burkina Faso",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6323.png",
+            "team2": "Equatorial Guinea",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8323.png",
             "league": "Africa Cup of Nations",
-            "start": "2025-12-23T21:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=drcongo",
+            "start": "2025-12-24T21:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=burkinafaso",
             "duration": 2.2
         },
         {
-            "team1": "Senegal",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6395.png",
-            "team2": "Botswana",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5887.png",
+            "team1": "Algeria",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6317.png",
+            "team2": "Sudan",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5805.png",
             "league": "Africa Cup of Nations",
-            "start": "2025-12-24T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=senegal",
+            "start": "2025-12-25T00:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=algeria",
             "duration": 2.2
         },
         {
-            "team1": "Nigeria",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6346.png",
-            "team2": "Tanzania",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7941.png",
+            "team1": "Cameroon",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6629.png",
+            "team2": "Gabon",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5889.png",
             "league": "Africa Cup of Nations",
-            "start": "2025-12-24T02:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=nigeria",
-            "duration": 2.2
-        },
-        {
-            "team1": "Tunisia",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6719.png",
-            "team2": "Uganda",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5890.png",
-            "league": "Africa Cup of Nations",
-            "start": "2025-12-24T05:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=tunisia",
-            "duration": 2.2
-        },
-        {
-            "team1": "Arsenal",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
-            "team2": "Crystal Palace",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png",
-            "league": "EFL Cup",
-            "start": "2025-12-24T05:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=arsenal",
+            "start": "2025-12-25T05:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=cameroon",
             "duration": 2.2
         }
     ]
