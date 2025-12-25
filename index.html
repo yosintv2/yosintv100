@@ -193,21 +193,47 @@
         opacity: 0.9;
     }
 
-    /* Media Query for Mobile adjustments (Force wrap long names) */
-    @media (max-width: 640px) {
-        .match-team-name {
-            font-size: 0.875rem; /* Smaller font for better fit */
-            white-space: normal;
-            overflow: visible;
-            text-overflow: clip;
-            line-height: 1.2;
-        }
-        .match-team img { width: 36px; height: 36px; }
-        .match-center { min-width: 80px; }
-        .match-card { padding: 10px; } /* Even tighter on mobile */
-        .match-team { gap: 6px; }
-        .match-row-teams { gap: 6px; }
+/* Media Query for Mobile adjustments (Force wrap long names) */
+@media (max-width: 640px) {
+    .match-team-name {
+        font-size: 0.875rem; /* Smaller font for better fit */
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        line-height: 1.2;
+        text-align: center;          /* ✅ CENTER TEXT */
+        width: 100%;                 /* ✅ Ensure full width */
     }
+
+    .match-team {
+        align-items: center;         /* ✅ Center items vertically */
+        text-align: center;          /* ✅ Extra safety */
+    }
+
+    .match-team img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .match-center {
+        min-width: 80px;
+    }
+
+    .match-card {
+        padding: 10px;
+    }
+
+    .match-team {
+        gap: 6px;
+    }
+
+    .match-row-teams {
+        gap: 6px;
+    }
+}
+
+
+    
     /* Header and Footer styles (Light Theme Defaults) */
     header {
       position: fixed; top: 0; width: 100%;
