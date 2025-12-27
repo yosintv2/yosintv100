@@ -1,45 +1,13 @@
 {
     "matches": [
         {
-            "team1": "Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
-            "team2": "England",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "league": "The Ashes",
-            "start": "2025-12-26T08:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=australia",
-            "repeat": "5",
-            "duration": 10
-        },
-
-        {
-            "team1": "Dhaka Capitals",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/dhakacapitals.png",
-            "team2": "Rajshahi Warriors",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/rajshahiwarriors.png",
-            "league": "Bangladesh Premier League",
-            "start": "2025-12-27T16:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=bpl",
-            "duration": 5
-        },
-        {
-            "team1": "Brisbane Heat",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/brisbaneheat.png",
-            "team2": "Adelaide Strikers",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/adelaidestrikers.png",
-            "league": "Big Bash League",
-            "start": "2025-12-27T17:15:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=bbl",
-            "duration": 5
-        },
-        {
-            "team1": "Sylhet Titans",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/sylhettitans.png",
-            "team2": "Noakhali Express",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/noakhaliexpress.png",
-            "league": "Bangladesh Premier League",
-            "start": "2025-12-27T21:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=bpl",
+            "team1": "Paarl Royals",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/paarlroyals.png",
+            "team2": "Sunrisers Eastern Cape",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/sunriserseasterncape.png",
+            "league": "SA20 League",
+            "start": "2025-12-28T00:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=sa20",
             "duration": 5
         },
         {
@@ -51,7 +19,26 @@
             "start": "2025-12-28T17:15:00+09:00",
             "details_url": "https://www.cricfoot.net/match?yosintv=bbl",
             "duration": 5
+        },
+        {
+            "team1": "Rangpur Riders",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/rangpurriders.png",
+            "team2": "Chattogram Royals",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/chattogramroyals.png",
+            "league": "Bangladesh Premier League",
+            "start": "2025-12-29T16:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=bpl",
+            "duration": 5
+        },
+        {
+            "team1": "Hobart Hurricanes",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/hobarthurricanes.png",
+            "team2": "Melbourne Renegades",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/melbournerenegades.png",
+            "league": "Big Bash League",
+            "start": "2025-12-29T17:15:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=bbl",
+            "duration": 5
         }
-        
     ]
 }
