@@ -1,133 +1,83 @@
 {
     "matches": [
         {
-            "team1": "Nottingham Forest",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10203.png",
-            "team2": "Manchester City",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
-            "league": "EPL",
-            "start": "2025-12-27T21:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=nottinghamforest",
-            "duration": 2.2
-        },
-        {
-            "team1": "Al Nassr",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
-            "team2": "Al Okhdood",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/582759.png",
-            "league": "Saudi PL",
-            "start": "2025-12-27T23:50:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=alnassr",
-            "duration": 2.2
-        },
-        {
-            "team1": "Arsenal",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
-            "team2": "Brighton",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png",
-            "league": "EPL",
-            "start": "2025-12-28T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=arsenal",
-            "duration": 2.2
-        },
-        {
-            "team1": "Brentford",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9937.png",
-            "team2": "Bournemouth",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8678.png",
-            "league": "EPL",
-            "start": "2025-12-28T00:00:00+09:00",
-            "details_url": "https://yosintv2.github.io/ads/ak.html?url=brentford",
-            "duration": 2.2
-        },
-        {
-            "team1": "Burnley",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8191.png",
-            "team2": "Everton",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8668.png",
-            "league": "EPL",
-            "start": "2025-12-28T00:00:00+09:00",
-            "details_url": "https://yosintv2.github.io/ads/ak.html?url=burnley",
-            "duration": 2.2
-        },
-        {
-            "team1": "Liverpool",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
-            "team2": "Wolverhampton",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
-            "league": "EPL",
-            "start": "2025-12-28T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=liverpool",
-            "duration": 2.2
-        },
-        {
-            "team1": "West Ham United",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8654.png",
-            "team2": "Fulham",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9879.png",
-            "league": "EPL",
-            "start": "2025-12-28T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=westham",
-            "duration": 2.2
-        },
-        {
-            "team1": "Chelsea",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
-            "team2": "Aston Villa",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
-            "league": "EPL",
-            "start": "2025-12-28T02:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=chelsea",
-            "duration": 2.2
-        },
-        {
-            "team1": "Pisa",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6479.png",
-            "team2": "Juventus",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
-            "league": "Serie A",
-            "start": "2025-12-28T04:45:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=juventus",
-            "duration": 2.2
-        },
-        {
-            "team1": "AC Milan",
+            "team1": "Milan",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
             "team2": "Hellas Verona",
             "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9876.png",
             "league": "Serie A",
             "start": "2025-12-28T20:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=acmilan",
+            "details_url": "https://www.cricfoot.net/match?yosintv=milan",
             "duration": 2.2
         },
         {
-            "team1": "Senegal",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6395.png",
-            "team2": "DR Congo",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6321.png",
+            "team1": "Gabon",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5889.png",
+            "team2": "Mozambique",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5965.png",
             "league": "Africa Cup of Nations",
-            "start": "2025-12-28T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=senegal",
+            "start": "2025-12-28T21:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=gabon",
             "duration": 2.2
         },
         {
-            "team1": "Uganda",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5890.png",
-            "team2": "Tanzania",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7941.png",
-            "league": "Africa Cup of Nations",
-            "start": "2025-12-28T02:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=uganda",
+            "team1": "Sunderland",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png",
+            "team2": "Leeds United",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8463.png",
+            "league": "EPL",
+            "start": "2025-12-28T23:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=sunderland",
             "duration": 2.2
         },
         {
-            "team1": "Nigeria",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6346.png",
-            "team2": "Tunisia",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6719.png",
+            "team1": "Cremonese",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7801.png",
+            "team2": "Napoli",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png",
+            "league": "Serie A",
+            "start": "2025-12-28T23:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=cremonese",
+            "duration": 2.2
+        },
+        {
+            "team1": "Equatorial Guinea",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8323.png",
+            "team2": "Sudan",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5805.png",
             "league": "Africa Cup of Nations",
-            "start": "2025-12-28T05:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=nigeria",
+            "start": "2025-12-29T00:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=equatorialguinea",
+            "duration": 2.2
+        },
+        {
+            "team1": "Crystal Palace",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png",
+            "team2": "Tottenham Hotspur",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
+            "league": "EPL",
+            "start": "2025-12-29T01:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=crystalpalace",
+            "duration": 2.2
+        },
+        {
+            "team1": "Algeria",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6317.png",
+            "team2": "Burkina Faso",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6323.png",
+            "league": "Africa Cup of Nations",
+            "start": "2025-12-29T02:30:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=algeria",
+            "duration": 2.2
+        },
+        {
+            "team1": "Atalanta",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8524.png",
+            "team2": "Inter",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
+            "league": "Serie A",
+            "start": "2025-12-29T04:45:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=atalanta",
             "duration": 2.2
         }
     ]
