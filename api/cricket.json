@@ -8,8 +8,9 @@
             "league": "The Ashes",
             "start": "2026-01-04T08:30:00+09:00",
             "details_url": "https://www.cricfoot.net/match?yosintv=australia",
-            "duration": 10,
-            "repeat": 5
+            "repeat": "5",
+            "duration": 10
+
         },
         {
             "team1": "Sylhet Titans",
