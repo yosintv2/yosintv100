@@ -1,133 +1,23 @@
 {
     "matches": [
         {
-            "team1": "Lazio",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8543.png",
-            "team2": "Napoli",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png",
-            "league": "Serie A",
-            "start": "2026-01-04T20:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=lazio",
+            "team1": "Egypt",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10255.png",
+            "team2": "Benin",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5883.png",
+            "league": "Africa Cup of Nations, Knockout stage",
+            "start": "2026-01-06T01:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=egypt",
             "duration": 2.2
         },
         {
-            "team1": "Leeds United",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8463.png",
-            "team2": "Manchester United",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
-            "league": "EPL",
-            "start": "2026-01-04T21:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=leedsunited",
-            "duration": 2.2
-        },
-        {
-            "team1": "Sevilla",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8302.png",
-            "team2": "Levante UD",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8581.png",
-            "league": "LaLiga",
-            "start": "2026-01-04T22:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=sevilla",
-            "duration": 2.2
-        },
-        {
-            "team1": "Fulham",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9879.png",
-            "team2": "Liverpool",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
-            "league": "EPL",
-            "start": "2026-01-05T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=fulham",
-            "duration": 2.2
-        },
-        {
-            "team1": "Newcastle United",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
-            "team2": "Crystal Palace",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png",
-            "league": "EPL",
-            "start": "2026-01-05T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=newcastleunited",
-            "duration": 2.2
-        },
-        {
-            "team1": "Everton",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8668.png",
-            "team2": "Brentford",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9937.png",
-            "league": "EPL",
-            "start": "2026-01-05T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=everton",
-            "duration": 2.2
-        },
-        {
-            "team1": "Tottenham Hotspur",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
-            "team2": "Sunderland",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png",
-            "league": "EPL",
-            "start": "2026-01-05T00:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=tottenhamhotspur",
-            "duration": 2.2
-        },
-        {
-            "team1": "Real Madrid",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
-            "team2": "Real Betis",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8603.png",
-            "league": "LaLiga",
-            "start": "2026-01-05T00:15:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=realmadrid",
-            "duration": 2.2
-        },
-        {
-            "team1": "Morocco", 
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6262.png",
-            "team2": "Tanzania",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7941.png",
-            "league": "Africa Cup of Nations",
-            "start": "2026-01-05T01:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=morocco",
-            "duration": 2.2
-        },
-        {
-            "team1": "Manchester City",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
-            "team2": "Chelsea",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
-            "league": "EPL",
-            "start": "2026-01-05T02:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=manchestercity",
-            "duration": 2.2
-        },
-        {
-            "team1": "South Africa",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6316.png",
-            "team2": "Cameroon",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6629.png",
-            "league": "Africa Cup of Nations",
-            "start": "2026-01-05T04:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=southafrica",
-            "duration": 2.2
-        },
-        {
-            "team1": "Inter",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
-            "team2": "Bologna",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9857.png",
-            "league": "Serie A",
-            "start": "2026-01-05T04:45:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=inter",
-            "duration": 2.2
-        },
-        {
-            "team1": "Real Sociedad",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png",
-            "team2": "Atlético Madrid",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
-            "league": "LaLiga",
-            "start": "2026-01-05T05:00:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=realsociedad",
+            "team1": "Nigeria",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6346.png",
+            "team2": "Mozambique",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/5965.png",
+            "league": "Africa Cup of Nations, Knockout stage",
+            "start": "2026-01-06T04:00:00+09:00",
+            "details_url": "https://www.cricfoot.net/match?yosintv=nigeria",
             "duration": 2.2
         }
     ]
