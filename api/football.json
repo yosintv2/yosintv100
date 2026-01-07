@@ -51,36 +51,6 @@
             "duration": 2.2
         },
         {
-            "team1": "Brentford",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9937.png",
-            "team2": "Sunderland",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png",
-            "league": "EPL",
-            "start": "2026-01-08T04:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=brentford",
-            "duration": 2.2
-        },
-        {
-            "team1": "Crystal Palace",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png",
-            "team2": "Aston Villa",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
-            "league": "EPL",
-            "start": "2026-01-08T04:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=crystalpalace",
-            "duration": 2.2
-        },
-        {
-            "team1": "Everton",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8668.png",
-            "team2": "Wolverhampton",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
-            "league": "EPL",
-            "start": "2026-01-08T04:30:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=everton",
-            "duration": 2.2
-        },
-        {
             "team1": "Parma",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10167.png",
             "team2": "Inter",
@@ -107,7 +77,7 @@
             "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8463.png",
             "league": "EPL",
             "start": "2026-01-08T05:15:00+09:00",
-            "details_url": "https://www.cricfoot.net/match?yosintv=newcastleunited",
+            "details_url": "https://yosintv2.github.io/ads/ak.html?url=newcastle",
             "duration": 2.2
         }
     ]
