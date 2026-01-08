@@ -1,56 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Barcelona",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
-            "team2": "Athletic Club",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8315.png",
-            "league": "Supercopa de España",
-            "start": "2026-01-08T04:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=barcelona",
-            "duration": 2.2
-        },
-        {
-            "team1": "Manchester City",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
-            "team2": "Brighton & Hove Albion",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png",
-            "league": "EPL",
-            "start": "2026-01-08T04:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=manchestercity",
-            "duration": 2.2
-        },
-        {
-            "team1": "Parma",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10167.png",
-            "team2": "Inter",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
-            "league": "Serie A",
-            "start": "2026-01-08T04:45:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=parma",
-            "duration": 2.2
-        },
-        {
-            "team1": "Burnley",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8191.png",
-            "team2": "Manchester United",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
-            "league": "EPL",
-            "start": "2026-01-08T05:15:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=burnley",
-            "duration": 2.2
-        },
-        {
-            "team1": "Newcastle United",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
-            "team2": "Leeds United",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8463.png",
-            "league": "EPL",
-            "start": "2026-01-08T05:15:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=newcastleunited",
-            "duration": 2.2
-        },
-        {
             "team1": "Al Nassr",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
             "team2": "Al Qadsiah",
@@ -58,6 +8,16 @@
             "league": "Saudi PL",
             "start": "2026-01-09T02:30:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=alnassr",
+            "duration": 2.2
+        },
+        {
+            "team1": "PSG",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9847.png",
+            "team2": "Marseille",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8592.png",
+            "league": "Trophee des Champions",
+            "start": "2026-01-09T03:00:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=parissaint",
             "duration": 2.2
         },
         {
@@ -88,26 +48,6 @@
             "league": "EPL",
             "start": "2026-01-09T05:00:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=arsenal",
-            "duration": 2.2
-        },
-        {
-            "team1": "Al Nassr",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
-            "team2": "Al Taawoun",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/205686.png",
-            "league": "Saudi PL",
-            "start": "2026-01-27T02:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=alnassr",
-            "duration": 2.2
-        },
-        {
-            "team1": "Fulham",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9879.png",
-            "team2": "Chelsea",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
-            "league": "EPL",
-            "start": "2026-01-08T04:30:00+09:00",
-            "details_url": "https://yosintv2.github.io/ads/ak.html?url=_____",
             "duration": 2.2
         }
     ]
