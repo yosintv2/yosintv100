@@ -1,53 +1,43 @@
 {
     "matches": [
         {
-            "team1": "Rajshahi Warriors",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/rajshahiwarriors.png",
-            "team2": "Chattogram Royals",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/chattogramroyals.png",
-            "league": "Bangladesh Premier League",
-            "start": "2026-01-09T17:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bpl",
-            "duration": 5
-        },
-        {
-            "team1": "Hobart Hurricanes",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/hobarthurricanes.png",
-            "team2": "Adelaide Strikers",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/adelaidestrikers.png",
+            "team1": "Melbourne Renegades",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/melbournerenegades.png",
+            "team2": "Melbourne Stars",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/melbournestars.png",
             "league": "Big Bash League",
-            "start": "2026-01-09T17:15:00+09:00",
+            "start": "2026-01-10T17:15:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=bbl",
             "duration": 5
         },
         {
-            "team1": "Noakhali Express",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/noakhaliexpress.png",
-            "team2": "Rangpur Riders",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/rangpurriders.png",
-            "league": "Bangladesh Premier League",
-            "start": "2026-01-09T22:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bpl",
-            "duration": 5
-        },
-        {
-            "team1": "Sri Lanka",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
-            "team2": "Pakistan",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
-            "league": "Pakistan in Sri Lanka, 3 T20I Series",
-            "start": "2026-01-09T22:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=srilanka",
-            "duration": 5
-        },
-        {
-            "team1": "Durban Super Giants",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/durbanssupergiants.png",
-            "team2": "Sunrisers Eastern Cape",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/sunriserseasterncape.png",
+            "team1": "Paarl Royals",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/paarlroyals.png",
+            "team2": "Pretoria Capitals",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/pretoriacapitals.png",
             "league": "SA20 League",
-            "start": "2026-01-10T00:30:00+09:00",
+            "start": "2026-01-10T20:00:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=sat20",
+            "duration": 5
+        },
+        {
+            "team1": "Joburg Super Kings",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/joburgsuperkings.png",
+            "team2": "MI Cape Town",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/micapecown.png",
+            "league": "SA20 League",
+            "start": "2026-01-11T00:30:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=sat20",
+            "duration": 5
+        },
+        {
+            "team1": "India",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "New Zealand",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "league": "New Zealand in India, 3 ODI Series",
+            "start": "2026-01-11T17:00:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=india",
             "duration": 5
         }
     ]
