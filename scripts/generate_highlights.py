@@ -75,10 +75,10 @@ async def main():
         try:
             with open(FILE_PATH, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
+                if not isinstance(existing_data, list): existing_data = []
         except: existing_data = []
 
     async with AsyncSession() as session:
-        # Check Today and Yesterday
         now = datetime.now()
         dates = [(now - timedelta(days=1)).strftime('%Y-%m-%d'), now.strftime('%Y-%m-%d')]
         
@@ -96,22 +96,28 @@ async def main():
             new_highlights.extend([r for r in batch_res if r])
             await asyncio.sleep(1)
 
-        # 3. MERGE & DEDUPLICATE (Keep newest and unique by link)
+        # 3. MERGE & DEDUPLICATE
         combined = new_highlights + existing_data
         unique_list = []
         seen_links = set()
         
         for item in combined:
-            if item['link'] not in seen_links:
+            if item.get('link') and item['link'] not in seen_links:
                 unique_list.append(item)
                 seen_links.add(item['link'])
 
-        # 4. SORT (Priority First, then Date)
-        unique_list.sort(key=lambda x: (x['isPriority'], x['date']), reverse=True)
+        # 4. SAFETY SORT (Fixes the KeyError)
+        # We use .get() to provide defaults for old entries missing these keys
+        unique_list.sort(
+            key=lambda x: (
+                x.get('isPriority', False), 
+                x.get('date', '1970-01-01')
+            ), 
+            reverse=True
+        )
 
-        # Optional: Limit to last 200 items to keep file size small
+        # 5. LIMIT & SAVE
         final_list = unique_list[:200]
-
         os.makedirs('api', exist_ok=True)
         with open(FILE_PATH, 'w', encoding='utf-8') as f:
             json.dump(final_list, f, indent=2, ensure_ascii=False)
