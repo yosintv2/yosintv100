@@ -1,10 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-/**
- * Note: Since GitHub Actions runs in a Node environment, 
- * we use 'node-fetch' for API requests.
- */
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 // --- CONFIGURATION ---
@@ -18,60 +14,76 @@ const featuredTeamsList = [
 const API_BASE = "https://www.sofascore.com/api/v1";
 const API_HIGHLIGHTS = "https://api.sofascore.com/api/v1";
 
-// --- UTILITIES ---
+// We use a real-looking browser header to avoid being blocked
+const headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+};
+
 function generateCustomID() {
-    const letters = "abcdefghijklmnopqrstuvwxyz";
-    const numbers = "0123456789";
-    let res = "";
-    for (let i = 0; i < 4; i++) res += letters.charAt(Math.floor(Math.random() * letters.length));
-    for (let i = 0; i < 6; i++) res += numbers.charAt(Math.floor(Math.random() * numbers.length));
-    return res;
+    return Math.random().toString(36).substring(2, 6) + Math.floor(100000 + Math.random() * 900000);
 }
 
 function cleanTeamName(name) {
     return name.replace(/-/g, ' ').replace(/\bFC\b/gi, '').trim();
 }
 
-// --- MAIN ENGINE ---
+async function getMatchesForDate(dateStr) {
+    console.log(`🔍 Fetching matches for: ${dateStr}`);
+    try {
+        const response = await fetch(`${API_BASE}/sport/football/scheduled-events/${dateStr}`, { headers });
+        const data = await response.json();
+        return data.events || [];
+    } catch (err) {
+        console.error(`Error fetching date ${dateStr}:`, err.message);
+        return [];
+    }
+}
+
 async function startExtraction() {
-    const today = new Date().toISOString().split('T')[0];
-    console.log(`🚀 Starting Extraction for: ${today}`);
+    // Get dates for Yesterday and Today to ensure no match is missed
+    const today = new Date();
+    const yesterday = new Date();
+    yesterday.setDate(today.getDate() - 1);
+
+    const dateToday = today.toISOString().split('T')[0];
+    const dateYesterday = yesterday.toISOString().split('T')[0];
 
     try {
-        // 1. Fetch all football events for today
-        const response = await fetch(`${API_BASE}/sport/football/scheduled-events/${today}`);
-        const data = await response.json();
+        const eventsYesterday = await getMatchesForDate(dateYesterday);
+        const eventsToday = await getMatchesForDate(dateToday);
         
-        if (!data.events) {
-            console.log("No events found for today.");
+        const allEvents = [...eventsYesterday, ...eventsToday];
+
+        if (allEvents.length === 0) {
+            console.log("❌ No events found in the API response.");
             return;
         }
 
-        // 2. Filter for finished/ended matches
-        const finishedMatches = data.events.filter(m => {
+        // Filter for finished/ended matches
+        const finishedMatches = allEvents.filter(m => {
             const status = m.status.type.toLowerCase();
             return status === 'finished' || status === 'ended';
         });
 
-        console.log(`✅ Found ${finishedMatches.length} finished matches.`);
+        console.log(`✅ Total finished matches found: ${finishedMatches.length}`);
 
         let priorityQueue = [];
         let standardQueue = [];
+        let seenIds = new Set(); // Prevent duplicates between yesterday and today
 
-        // 3. Process matches and check for highlights
         for (const match of finishedMatches) {
+            if (seenIds.has(match.id)) continue;
+            seenIds.add(match.id);
+
             const hName = match.homeTeam.name.toLowerCase();
             const aName = match.awayTeam.name.toLowerCase();
-            
-            // Check if it's a Top Team
             const isTopTeam = featuredTeamsList.some(team => hName.includes(team) || aName.includes(team));
 
             try {
-                const hRes = await fetch(`${API_HIGHLIGHTS}/event/${match.id}/highlights`);
+                const hRes = await fetch(`${API_HIGHLIGHTS}/event/${match.id}/highlights`, { headers });
                 const hData = await hRes.json();
 
                 if (hData.highlights && hData.highlights.length > 0) {
-                    // Extract the best YouTube link
                     let ytLink = null;
                     for (const h of hData.highlights) {
                         const subtitle = (h.subtitle || "").toLowerCase();
@@ -91,31 +103,25 @@ async function startExtraction() {
                             team1: cleanTeamName(match.homeTeam.name),
                             team2: cleanTeamName(match.awayTeam.name),
                             category: match.tournament.name,
-                            date: today,
+                            date: new Date(match.startTimestamp * 1000).toISOString().split('T')[0],
                             link: ytLink,
                             isPriority: isTopTeam
                         };
 
-                        if (isTopTeam) {
-                            priorityQueue.push(highlightObj);
-                        } else {
-                            standardQueue.push(highlightObj);
-                        }
+                        if (isTopTeam) priorityQueue.push(highlightObj);
+                        else standardQueue.push(highlightObj);
                     }
                 }
             } catch (err) {
-                console.error(`Error fetching highlights for ID ${match.id}:`, err.message);
+                // Silent error for individual highlights
             }
         }
 
-        // 4. Merge: Priority Teams first, then the rest
+        // Merge Priority First
         const finalHighlights = [...priorityQueue, ...standardQueue];
 
-        // 5. Ensure directory exists and save
         const apiDir = path.join(__dirname, '../api');
-        if (!fs.existsSync(apiDir)) {
-            fs.mkdirSync(apiDir, { recursive: true });
-        }
+        if (!fs.existsSync(apiDir)) fs.mkdirSync(apiDir, { recursive: true });
 
         fs.writeFileSync(
             path.join(apiDir, 'highlights.json'),
@@ -123,7 +129,7 @@ async function startExtraction() {
         );
 
         console.log(`🏁 Success! Generated highlights.json with ${finalHighlights.length} items.`);
-        console.log(`🔥 Top Team Matches included: ${priorityQueue.length}`);
+        console.log(`🔥 Top Team Matches: ${priorityQueue.length}`);
 
     } catch (globalError) {
         console.error("Fatal Script Error:", globalError);
