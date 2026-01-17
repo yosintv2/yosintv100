@@ -2,7 +2,7 @@ name: Update Highlights API
 
 on:
   schedule:
-    - cron: '0 */1 * * *' # Runs every 3 hours (adjust as needed)
+    - cron: '*/30 * * * *'
   workflow_dispatch:      # Allows you to click "Run workflow" manually
 
 # --- CRITICAL: FIXES THE 403 PERMISSION ERROR ---
