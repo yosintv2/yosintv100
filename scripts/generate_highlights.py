@@ -43,7 +43,7 @@ async def process_match(session, match):
     home_name = match.get('homeTeam', {}).get('name', '').lower()
     away_name = match.get('awayTeam', {}).get('name', '').lower()
     
-    # Check priority for new matches
+    # Check priority
     is_priority = any(team in home_name or team in away_name for team in FEATURED_TEAMS)
     
     highlights = await get_highlight_data(session, match_id)
@@ -59,41 +59,38 @@ async def process_match(session, match):
                 break
     
     if yt_link:
-        return {
+        data = {
             "id": generate_custom_id(),
             "team1": clean_team_name(match['homeTeam']['name']),
             "team2": clean_team_name(match['awayTeam']['name']),
             "category": match.get('tournament', {}).get('name', 'Football'),
             "date": datetime.fromtimestamp(match['startTimestamp']).strftime('%Y-%m-%d'),
-            "link": yt_link,
-            "isPriority": is_priority
+            "link": yt_link
         }
+        # ONLY add isPriority if it is True
+        if is_priority:
+            data["isPriority"] = True
+        return data
     return None
 
 async def main():
-    # 1. LOAD EXISTING DATA (2025 + 2026)
     existing_data = []
     if os.path.exists(FILE_PATH):
         try:
             with open(FILE_PATH, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
                 if not isinstance(existing_data, list): existing_data = []
-        except: 
-            print("⚠️ Could not read existing file, starting fresh.")
-            existing_data = []
+        except: existing_data = []
 
     async with AsyncSession() as session:
-        # Check Today and Yesterday
         now = datetime.now()
         dates = [(now - timedelta(days=1)).strftime('%Y-%m-%d'), now.strftime('%Y-%m-%d')]
         
         all_events = []
-        for d in dates: 
-            all_events.extend(await get_matches(session, d))
+        for d in dates: all_events.extend(await get_matches(session, d))
 
         finished = [e for e in all_events if e.get('status', {}).get('type') in ['finished', 'ended']]
         
-        # 2. FETCH NEW HIGHLIGHTS
         new_highlights = []
         batch_size = 10
         for i in range(0, len(finished), batch_size):
@@ -102,7 +99,7 @@ async def main():
             new_highlights.extend([r for r in batch_res if r])
             await asyncio.sleep(1)
 
-        # 3. MERGE & DEDUPLICATE (Keep ALL data)
+        # MERGE & DEDUPLICATE
         combined = new_highlights + existing_data
         unique_list = []
         seen_links = set()
@@ -110,15 +107,20 @@ async def main():
         for item in combined:
             link = item.get('link')
             if link and link not in seen_links:
-                # Update priority for old entries if missing
+                # Cleanup: Remove isPriority if it's False in old data
+                if item.get('isPriority') is False:
+                    del item['isPriority']
+                
+                # Recalculate priority for old entries if missing
                 if 'isPriority' not in item:
                     t1, t2 = item.get('team1', '').lower(), item.get('team2', '').lower()
-                    item['isPriority'] = any(t in t1 or t in t2 for t in FEATURED_TEAMS)
+                    if any(t in t1 or t in t2 for t in FEATURED_TEAMS):
+                        item['isPriority'] = True
                 
                 unique_list.append(item)
                 seen_links.add(link)
 
-        # 4. SORT (Priority First, then Date)
+        # SORTING Logic (Still works even if key is missing)
         unique_list.sort(
             key=lambda x: (
                 x.get('isPriority', False), 
@@ -127,14 +129,14 @@ async def main():
             reverse=True
         )
 
-        # 5. SAVE EVERYTHING (No limit or very high limit like 5000)
+        # SAVE (Keeping a very high limit to protect 2025 matches)
         final_list = unique_list[:5000] 
 
         os.makedirs('api', exist_ok=True)
         with open(FILE_PATH, 'w', encoding='utf-8') as f:
             json.dump(final_list, f, indent=2, ensure_ascii=False)
 
-        print(f"🏁 Success! API now has {len(final_list)} items total.")
+        print(f"🏁 Success! API updated. Total items: {len(final_list)}")
 
 if __name__ == "__main__":
     asyncio.run(main())
