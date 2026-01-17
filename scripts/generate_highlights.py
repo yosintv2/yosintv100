@@ -7,51 +7,46 @@ from datetime import datetime, timedelta
 from curl_cffi.requests import AsyncSession
 
 # --- CONFIGURATION ---
+FEATURED_TEAMS = [
+    "al-nassr", "inter miami cf", "fc-bayern-munchen", "dortmund", "leverkusen", 
+    "paris-saint-germain", "juventus", "atletico-madrid", "barcelona", "real madrid", 
+    "arsenal", "chelsea", "manchester city", "manchester united", "liverpool",
+    "portugal", "argentina", "brazil", "spain", "england", "france", "inter", "milan", "roma"
+]
+
 API_BASE = "https://api.sofascore.com/api/v1"
 FILE_PATH = 'api/highlights.json'
 
 def generate_custom_id():
-    """Generates a unique ID for the match entry."""
     return ''.join(random.choices(string.ascii_lowercase, k=4)) + ''.join(random.choices(string.digits, k=6))
 
 def clean_team_name(name):
-    """Cleans SofaScore team names for a better display."""
     return name.replace('-', ' ').replace('FC', '').replace('fc', '').strip()
 
 async def get_matches(session, date_str):
-    """Fetches the list of matches for a specific date."""
     url = f"{API_BASE}/sport/football/scheduled-events/{date_str}"
     try:
         res = await session.get(url, impersonate="chrome120", timeout=15)
-        if res.status_code == 200: 
-            return res.json().get('events', [])
-    except: 
-        pass
+        if res.status_code == 200: return res.json().get('events', [])
+    except: pass
     return []
 
 async def get_highlight_data(session, event_id):
-    """Fetches highlight media for a specific event ID."""
     url = f"{API_BASE}/event/{event_id}/highlights"
     try:
         res = await session.get(url, impersonate="chrome120", timeout=10)
-        if res.status_code == 200: 
-            return res.json().get('highlights', [])
-    except: 
-        pass
+        if res.status_code == 200: return res.json().get('highlights', [])
+    except: pass
     return []
 
 async def process_match(session, match):
-    """Extracts YouTube highlights for a single match."""
     match_id = match.get('id')
-    
     highlights = await get_highlight_data(session, match_id)
-    if not highlights: 
-        return None
+    if not highlights: return None
 
     yt_link = None
     for h in highlights:
         subtitle = h.get('subtitle', '').lower()
-        # Look for official highlights or extended versions
         if "highlights" in subtitle or "extended" in subtitle:
             url = h.get('url', '') or h.get('sourceUrl', '')
             if 'youtube.com' in url or 'youtu.be' in url:
@@ -70,19 +65,16 @@ async def process_match(session, match):
     return None
 
 async def main():
-    # 1. LOAD EXISTING DATA (To prevent deleting 2025 data)
+    # 1. Load Existing Data (Prevents deletion of 2025 data)
     existing_data = []
     if os.path.exists(FILE_PATH):
         try:
             with open(FILE_PATH, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
-                if not isinstance(existing_data, list): 
-                    existing_data = []
-        except: 
-            existing_data = []
+                if not isinstance(existing_data, list): existing_data = []
+        except: existing_data = []
 
     async with AsyncSession() as session:
-        # Check Yesterday and Today
         now = datetime.now()
         dates = [(now - timedelta(days=1)).strftime('%Y-%m-%d'), now.strftime('%Y-%m-%d')]
         
@@ -92,7 +84,7 @@ async def main():
 
         finished = [e for e in all_events if e.get('status', {}).get('type') in ['finished', 'ended']]
         
-        # 2. FETCH NEW HIGHLIGHTS
+        # 2. Fetch New Highlights
         new_highlights = []
         batch_size = 10
         for i in range(0, len(finished), batch_size):
@@ -101,7 +93,7 @@ async def main():
             new_highlights.extend([r for r in batch_res if r])
             await asyncio.sleep(1)
 
-        # 3. MERGE & DEDUPLICATE & CLEANUP
+        # 3. Merge and Deduplicate by Link
         combined = new_highlights + existing_data
         unique_list = []
         seen_links = set()
@@ -109,24 +101,37 @@ async def main():
         for item in combined:
             link = item.get('link')
             if link and link not in seen_links:
-                # REMOVE isPriority if it exists in old data
+                # Remove any existing isPriority keys from old data if they exist
                 if 'isPriority' in item:
                     del item['isPriority']
-                
                 unique_list.append(item)
                 seen_links.add(link)
 
-        # 4. SORT BY DATE (Newest first)
-        unique_list.sort(key=lambda x: x.get('date', '1970-01-01'), reverse=True)
+        # 4. SORTING LOGIC (Internal only)
+        # We define a helper to check priority without saving the key to the JSON
+        def sort_key(x):
+            t1 = x.get('team1', '').lower()
+            t2 = x.get('team2', '').lower()
+            # Check if match involves featured teams
+            is_featured = any(team in t1 or team in t2 for team in FEATURED_TEAMS)
+            # Sort by Priority (True/False) then by Date (Newest)
+            return (is_featured, x.get('date', '1970-01-01'))
 
-        # 5. SAVE (High limit to protect history)
-        final_list = unique_list[:5000] 
+        unique_list.sort(key=sort_key, reverse=True)
 
+        # 5. Final Clean and Save (No isPriority in output)
         os.makedirs('api', exist_ok=True)
         with open(FILE_PATH, 'w', encoding='utf-8') as f:
-            json.dump(final_list, f, indent=2, ensure_ascii=False)
+            # Final verification that no isPriority field exists
+            clean_output = []
+            for item in unique_list:
+                if 'isPriority' in item: del item['isPriority']
+                clean_output.append(item)
+            
+            json.dump(clean_output, f, indent=2, ensure_ascii=False)
 
-        print(f"🏁 Success! Clean API updated. Total items: {len(final_list)}")
+        print(f"🏁 Success! Clean API generated with {len(clean_output)} items.")
+        print(f"✅ Priority teams pushed to top but 'isPriority' key was not generated.")
 
 if __name__ == "__main__":
     asyncio.run(main())
