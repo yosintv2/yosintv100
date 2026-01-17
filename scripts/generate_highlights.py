@@ -9,7 +9,7 @@ from curl_cffi.requests import AsyncSession
 
 # --- CONFIGURATION ---
 FEATURED_TEAMS = [
-    "al-nassr", "inter miami cf", "fc-bayern-munchen", "dortmund", "leverkusen", 
+    "Al Nassr", "inter miami cf", "Bayern München", "dortmund", "leverkusen", 
     "paris-saint-germain", "juventus", "atletico-madrid", "barcelona", "real madrid", 
     "arsenal", "chelsea", "manchester city", "manchester united", "liverpool",
     "portugal", "argentina", "brazil", "spain", "england", "france", "inter", "milan", "roma"
@@ -18,7 +18,7 @@ FEATURED_TEAMS = [
 # Keywords that demote a match from the top (checked against Team names AND Category)
 EXCLUSION_KEYWORDS = [
     "next gen", " u20", "castilla", " b ", " c ", " u21", " u23", " u19", " u18", 
-    " youth", " women", "(w)", "femminile", "liga f", "moeve", "academy", "under-", "primera f"
+    " youth", " women", "(w)", "gaúcho", "serie c", "femminile", "liga f", "moeve", "academy", "under-", "primera f"
 ]
 
 API_BASE = "https://api.sofascore.com/api/v1"
