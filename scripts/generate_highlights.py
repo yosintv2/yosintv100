@@ -13,58 +13,43 @@ FEATURED_TEAMS = [
     "arsenal", "chelsea", "manchester city", "manchester united", "liverpool",
     "portugal", "argentina", "brazil", "spain", "england", "france", "inter", "milan", "roma"
 ]
-
 API_BASE = "https://api.sofascore.com/api/v1"
+FILE_PATH = 'api/highlights.json'
 
 def generate_custom_id():
-    letters = ''.join(random.choices(string.ascii_lowercase, k=4))
-    numbers = ''.join(random.choices(string.digits, k=6))
-    return f"{letters}{numbers}"
+    return ''.join(random.choices(string.ascii_lowercase, k=4)) + ''.join(random.choices(string.digits, k=6))
 
 def clean_team_name(name):
     return name.replace('-', ' ').replace('FC', '').replace('fc', '').strip()
 
 async def get_matches(session, date_str):
-    """Fetches matches for a specific date using browser impersonation."""
     url = f"{API_BASE}/sport/football/scheduled-events/{date_str}"
-    print(f"🔍 Fetching matches for: {date_str}")
     try:
         res = await session.get(url, impersonate="chrome120", timeout=15)
-        if res.status_code == 200:
-            return res.json().get('events', [])
-        print(f"⚠️ API Error {res.status_code} for date {date_str}")
-    except Exception as e:
-        print(f"❌ Error fetching {date_str}: {e}")
+        if res.status_code == 200: return res.json().get('events', [])
+    except: pass
     return []
 
 async def get_highlight_data(session, event_id):
-    """Fetches highlight links for a specific match ID."""
     url = f"{API_BASE}/event/{event_id}/highlights"
     try:
         res = await session.get(url, impersonate="chrome120", timeout=10)
-        if res.status_code == 200:
-            return res.json().get('highlights', [])
-    except:
-        pass
+        if res.status_code == 200: return res.json().get('highlights', [])
+    except: pass
     return []
 
-async def process_match(session, match, today_str):
-    """Processes a single match to find YouTube highlights."""
+async def process_match(session, match):
     match_id = match.get('id')
     home_name = match.get('homeTeam', {}).get('name', '').lower()
     away_name = match.get('awayTeam', {}).get('name', '').lower()
-    
-    # Check if match involves a Priority Team
     is_priority = any(team in home_name or team in away_name for team in FEATURED_TEAMS)
     
     highlights = await get_highlight_data(session, match_id)
-    if not highlights:
-        return None
+    if not highlights: return None
 
     yt_link = None
     for h in highlights:
         subtitle = h.get('subtitle', '').lower()
-        # Filter for quality highlights
         if "highlights" in subtitle or "extended" in subtitle:
             url = h.get('url', '') or h.get('sourceUrl', '')
             if 'youtube.com' in url or 'youtu.be' in url:
@@ -84,47 +69,54 @@ async def process_match(session, match, today_str):
     return None
 
 async def main():
+    # 1. Load Existing Data
+    existing_data = []
+    if os.path.exists(FILE_PATH):
+        try:
+            with open(FILE_PATH, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+        except: existing_data = []
+
     async with AsyncSession() as session:
-        # Check Yesterday and Today to catch late-night games
+        # Check Today and Yesterday
         now = datetime.now()
-        dates_to_check = [
-            (now - timedelta(days=1)).strftime('%Y-%m-%d'),
-            now.strftime('%Y-%m-%d')
-        ]
-
+        dates = [(now - timedelta(days=1)).strftime('%Y-%m-%d'), now.strftime('%Y-%m-%d')]
+        
         all_events = []
-        for date_str in dates_to_check:
-            events = await get_matches(session, date_str)
-            all_events.extend(events)
+        for d in dates: all_events.extend(await get_matches(session, d))
 
-        # Filter for Finished matches
-        finished_matches = [e for e in all_events if e.get('status', {}).get('type') in ['finished', 'ended']]
-        print(f"✅ Found {len(finished_matches)} finished matches to check.")
-
-        # Process highlights in batches to be respectful
-        results = []
+        finished = [e for e in all_events if e.get('status', {}).get('type') in ['finished', 'ended']]
+        
+        # 2. Fetch New Highlights
+        new_highlights = []
         batch_size = 10
-        for i in range(0, len(finished_matches), batch_size):
-            batch = finished_matches[i:i+batch_size]
-            tasks = [process_match(session, m, dates_to_check[1]) for m in batch]
-            batch_results = await asyncio.gather(*tasks)
-            results.extend([r for r in batch_results if r])
-            await asyncio.sleep(1) # Small delay to avoid rate limiting
+        for i in range(0, len(finished), batch_size):
+            tasks = [process_match(session, m) for m in finished[i:i+batch_size]]
+            batch_res = await asyncio.gather(*tasks)
+            new_highlights.extend([r for r in batch_res if r])
+            await asyncio.sleep(1)
 
-        if not results:
-            print("📭 No highlights found today.")
-            return
+        # 3. MERGE & DEDUPLICATE (Keep newest and unique by link)
+        combined = new_highlights + existing_data
+        unique_list = []
+        seen_links = set()
+        
+        for item in combined:
+            if item['link'] not in seen_links:
+                unique_list.append(item)
+                seen_links.add(item['link'])
 
-        # --- SORTING LOGIC: Priority Teams first, then Newest Date ---
-        results.sort(key=lambda x: (x['isPriority'], x['date']), reverse=True)
+        # 4. SORT (Priority First, then Date)
+        unique_list.sort(key=lambda x: (x['isPriority'], x['date']), reverse=True)
 
-        # Save to api/highlights.json
+        # Optional: Limit to last 200 items to keep file size small
+        final_list = unique_list[:200]
+
         os.makedirs('api', exist_ok=True)
-        with open('api/highlights.json', 'w', encoding='utf-8') as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
+        with open(FILE_PATH, 'w', encoding='utf-8') as f:
+            json.dump(final_list, f, indent=2, ensure_ascii=False)
 
-        print(f"🏁 Success! Created api/highlights.json with {len(results)} items.")
-        print(f"🔥 Priority matches at top: {sum(1 for x in results if x['isPriority'])}")
+        print(f"🏁 Success! API now has {len(final_list)} items.")
 
 if __name__ == "__main__":
     asyncio.run(main())
