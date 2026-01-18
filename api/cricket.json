@@ -1,73 +1,53 @@
 {
     "matches": [
         {
-            "team1": "Japan Under-19",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/japan.png",
-            "team2": "Sri Lanka Under-19",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
-            "league": "ICC U19 Cricket World Cup, Group A",
-            "start": "2026-01-17T16:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=u19",
+            "team1": "Nepal Women",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
+            "team2": "Thailand Women",
+            "team2_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Cricket_Association_of_Thailand_logo.png/250px-Cricket_Association_of_Thailand_logo.png",
+            "league": "ICC Women's T20 WC Global Qualifier",
+            "start": "2026-01-18T12:15:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=nepalwomen",
+            "duration": 5
+        },
+        {
+            "team1": "India",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "New Zealand",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "league": "New Zealand in India, 3 ODI Series",
+            "start": "2026-01-18T17:00:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=india",
             "duration": 5
         },
         {
             "team1": "Rangpur Riders",
             "team1_logo": "https://aimages.willow.tv/teamLogos/rangpurriders.png",
-            "team2": "Dhaka Capitals",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/dhakacapitals.png",
+            "team2": "Noakhali Express",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/noakhaliexpress.png",
             "league": "Bangladesh Premier League",
-            "start": "2026-01-17T16:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bpl",
+            "start": "2026-01-18T16:00:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=rangpurriders",
             "duration": 5
         },
         {
             "team1": "Chattogram Royals",
             "team1_logo": "https://aimages.willow.tv/teamLogos/chattogramroyals.png",
-            "team2": "Rajshahi Warriors",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/rajshahiwarriors.png",
+            "team2": "Dhaka Capitals",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/dhakacapitals.png",
             "league": "Bangladesh Premier League",
-            "start": "2026-01-17T21:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bpl",
+            "start": "2026-01-18T21:00:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=chattogramroyals",
             "duration": 5
         },
         {
-            "team1": "Adelaide Strikers",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/adelaidestrikers.png",
-            "team2": "Melbourne Renegades",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/melbournerenegades.png",
+            "team1": "Brisbane Heat",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/brisbaneheat.png",
+            "team2": "Sydney Sixers",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
             "league": "Big Bash League",
-            "start": "2026-01-17T15:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bbl",
-            "duration": 5
-        },
-        {
-            "team1": "Perth Scorchers",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/perthscorchers.png",
-            "team2": "Melbourne Stars",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/melbournestars.png",
-            "league": "Big Bash League",
-            "start": "2026-01-17T18:15:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bbl",
-            "duration": 5
-        },
-        {
-            "team1": "UP Warriorz",
-            "team1_logo": "https://cdn.yosintv.link/cricket.png",
-            "team2": "Mumbai Indians",
-            "team1_logo": "https://cdn.yosintv.link/cricket.png",
-            "league": "Women's Premier League",
-            "start": "2026-01-17T18:30:00+09:00",
-            "details_url": "https://hlsplayers.pages.dev/player3?url=https://live-en.aisports.cc/moviebox/device01/playlist.m3u8",
-            "duration": 5
-        },
-        {
-            "team1": "Delhi Capitals",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/delhicapitals.png",
-            "team2": "Royal Challengers Bengaluru",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/royalchallengersbengaluru.png",
-            "league": "Women's Premier League",
-            "start": "2026-01-17T23:00:00+09:00",
-            "details_url": "https://hlsplayers.pages.dev/player3?url=https://live-en.aisports.cc/moviebox/device01/playlist.m3u8",
+            "start": "2026-01-18T17:15:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=brisbaneheat",
             "duration": 5
         }
     ]
