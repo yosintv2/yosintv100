@@ -241,14 +241,24 @@
                     </div>
                 </div>
             </div>
-            
-                        <center>
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147"
-                            data-ad-slot="4345862479" data-ad-format="horizontal"
-                            data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                        </center>
+
+            <!-- 2. STREAM LINKS -->
+            <div class="section-card">
+                <h3 class="section-title">Live Streams</h3>
+                <!-- Ad Slot -->
+                <div class="mb-4 text-center bg-gray-50 p-2 rounded">
+                    <span class="text-[10px] text-gray-400 block mb-1">ADVERTISEMENT</span>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147"
+                        data-ad-slot="4345862479" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
+
+                <div id="stream-container" class="space-y-2">
+                    <p class="text-center text-gray-500 py-4 italic">Links loading...</p>
+                </div>
+                <p class="text-xs text-gray-500 mt-2 text-center">Use a VPN if streams are blocked in your region.</p>
+            </div>
 
             <!-- 3. H2H & STATS -->
             <div id="h2h-section" class="section-card hidden">
@@ -322,17 +332,19 @@
                 </div>
             </div>
 
-            <!-- 2. STREAM LINKS -->
+            <!-- 2. STREAM LINKS (Moved to Bottom) -->
             <div class="section-card">
                 <h3 class="section-title">Live Streams</h3>
                 <!-- Ad Slot -->
                 <div class="mb-4 text-center bg-gray-50 p-2 rounded">
                     <span class="text-[10px] text-gray-400 block mb-1">ADVERTISEMENT</span>
+                    <div style="min-height: 90px;">
                         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147"
                             data-ad-slot="4345862479" data-ad-format="horizontal"
                             data-full-width-responsive="true"></ins>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    </div>
                 </div>
 
                 <div id="stream-container" class="space-y-2">
@@ -340,7 +352,6 @@
                 </div>
                 <p class="text-xs text-gray-500 mt-2 text-center">Use a VPN if streams are blocked in your region.</p>
             </div>
-            
 
             <!-- More Matches -->
             <div class="mt-8">
@@ -510,25 +521,33 @@
             // Streams
             const sCont = document.getElementById('stream-container');
             sCont.innerHTML = '';
+
+            let globalStreamIndex = 1;
+            const bannedTerms = ['telegram', 'yosintv', 'join']; // Terms to skip if in event name
+
             if (m.events && m.events.length) {
                 m.events.forEach(ev => {
+                    const name = ev.name ? ev.name.toLowerCase() : '';
+                    if (bannedTerms.some(term => name.includes(term))) {
+                        return; // Skip Telegram links etc
+                    }
+
                     const links = ev.links || (ev.link ? [ev.link] : []);
                     if (links.length) {
-                        const title = document.createElement('div');
-                        title.className = "text-xs font-bold text-gray-400 uppercase tracking-widest mt-3 mb-1";
-                        title.innerText = ev.name || "Live";
-                        sCont.appendChild(title);
-                        links.forEach((link, i) => {
+                        // Removed title
+                        links.forEach((link) => {
                             const btn = document.createElement('a');
                             btn.href = link;
                             btn.target = "_blank";
                             btn.className = "stream-btn";
-                            btn.innerHTML = `Watch Server ${i + 1}`;
+                            btn.innerHTML = `${m.team1} vs ${m.team2} - Live ${globalStreamIndex++}`;
                             sCont.appendChild(btn);
                         });
                     }
                 });
-            } else {
+            }
+
+            if (sCont.innerHTML === '') {
                 sCont.innerHTML = '<p class="text-center text-sm text-gray-500">No streams available yet.</p>';
             }
 
