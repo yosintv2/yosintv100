@@ -188,7 +188,7 @@
         <div class="container mx-auto px-4 py-3 flex items-center justify-between max-w-4xl">
             <a href="https://www.yosin-tv.net/" class="flex items-center gap-2">
                 <img src="https://web.cricfoot.net/logo.png" alt="YoSinTV" class="h-8 md:h-10">
-                <span class="font-bold text-gray-800 text-lg">YoSinTV</span>
+                <!-- <span class="font-bold text-gray-800 text-lg">YoSinTV</span> -->
             </a>
             <a href="/" class="text-sm font-medium text-blue-600 hover:text-blue-800">Home</a>
         </div>
@@ -294,16 +294,18 @@
                     <img id="lineup-image" src="" class="w-full rounded border border-gray-200">
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-2 gap-2 sm:gap-6">
                     <!-- Home -->
                     <div>
-                        <div class="font-bold text-blue-800 border-b border-gray-200 pb-2 mb-2" id="lineup-header-home">
+                        <div class="font-bold text-blue-800 border-b border-gray-200 pb-2 mb-2 text-sm sm:text-base"
+                            id="lineup-header-home">
                             Home</div>
                         <ul id="lineup-list-home" class="lineup-list"></ul>
                     </div>
                     <!-- Away -->
                     <div>
-                        <div class="font-bold text-red-800 border-b border-gray-200 pb-2 mb-2" id="lineup-header-away">
+                        <div class="font-bold text-red-800 border-b border-gray-200 pb-2 mb-2 text-sm sm:text-base"
+                            id="lineup-header-away">
                             Away</div>
                         <ul id="lineup-list-away" class="lineup-list"></ul>
                     </div>
@@ -333,10 +335,31 @@
                 </div>
             </div>
 
+            <!-- 2. STREAM LINKS (Moved to Bottom) -->
+            <div class="section-card">
+                <h3 class="section-title">Live Streams</h3>
+                <!-- Ad Slot -->
+                <div class="mb-4 text-center bg-gray-50 p-2 rounded">
+                    <span class="text-[10px] text-gray-400 block mb-1">ADVERTISEMENT</span>
+                    <div style="min-height: 90px;">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147"
+                            data-ad-slot="4345862479" data-ad-format="horizontal"
+                            data-full-width-responsive="true"></ins>
+                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    </div>
+                </div>
+
+                <div id="stream-container" class="space-y-2">
+                    <p class="text-center text-gray-500 py-4 italic">Links loading...</p>
+                </div>
+                <p class="text-xs text-gray-500 mt-2 text-center">Use a VPN if streams are blocked in your region.</p>
+            </div>
+
             <!-- More Matches -->
             <div class="mt-8">
                 <h3 class="font-bold text-lg mb-4 text-gray-700">More Matches</h3>
-                <div id="more-matches-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+                <div id="more-matches-grid" class="flex flex-col gap-4"></div>
             </div>
 
         </div>
@@ -375,6 +398,7 @@
             const searchKey = normalize(slug);
             let match = null;
             let extraData = {};
+            let allMatches = []; // Store for "More Matches"
 
             const mainApis = ['https://yosintv-api.pages.dev/api/cricket.json', 'https://yosintv-api.pages.dev/api/football.json'];
 
@@ -384,6 +408,8 @@
                     const r = await fetch(api);
                     if (r.ok) {
                         const json = await r.json();
+                        if (json.matches) allMatches = [...allMatches, ...json.matches];
+
                         const found = (json.matches || []).find(m => {
                             const n1 = normalize(m.team1);
                             const n2 = normalize(m.team2);
@@ -391,7 +417,10 @@
                             const detUrl = m.details_url ? normalize(m.details_url) : '';
                             return combo.includes(searchKey) || n1.includes(searchKey) || n2.includes(searchKey) || detUrl.includes('yosintv' + searchKey);
                         });
-                        if (found) { match = found; break; }
+                        if (found) { match = found; }
+                        // Don't break immediately if we want to collect matches from BOTH APIs? 
+                        // Actually better to collect all matches for "More Matches" but we found our match.
+                        // Let's finish checking other APIs for more matches content if needed, but usually one is enough.
                     }
                 } catch (e) { }
             }
@@ -444,17 +473,47 @@
             document.getElementById('match-date').innerText = dateObj.toLocaleString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
             document.getElementById('val-time').innerText = dateObj.toLocaleTimeString();
 
-            // Status Badge
-            const now = new Date();
-            const diff = dateObj - now;
+            // Status Badge & Countdown Logic
             const badge = document.getElementById('match-status');
-            if (diff <= 0 && diff > -10800000) {
-                badge.innerText = "LIVE";
-                badge.className = "inline-block px-2 py-0.5 rounded text-xs font-bold text-white bg-red-600 animate-pulse";
-            } else if (diff < -10800000) {
-                badge.innerText = "ENDED";
-                badge.className = "inline-block px-2 py-0.5 rounded text-xs font-bold text-white bg-gray-800";
-            }
+
+            const updateTime = () => {
+                const now = new Date();
+                // If duration is provided use it, else default 100 mins
+                const durationMins = m.duration ? parseInt(m.duration) : 120; // 120 mins safe bet for football
+                const endObj = new Date(dateObj.getTime() + durationMins * 60000);
+
+                const diff = dateObj - now;
+
+                if (now >= endObj) {
+                    badge.innerText = "MATCH ENDED";
+                    badge.className = "inline-block px-2 py-0.5 rounded text-xs font-bold text-white bg-gray-500";
+                    return;
+                }
+
+                if (now >= dateObj && now < endObj) {
+                    badge.innerText = "LIVE";
+                    badge.className = "inline-block px-2 py-0.5 rounded text-xs font-bold text-white bg-red-600 animate-pulse shadow-lg shadow-red-500/50";
+                    return;
+                }
+
+                if (diff > 0) {
+                    // Countdown
+                    const hrs = Math.floor(diff / (1000 * 60 * 60));
+                    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+                    if (hrs > 24) {
+                        badge.innerText = "UPCOMING";
+                        badge.className = "inline-block px-2 py-0.5 rounded text-xs font-bold text-white bg-blue-500";
+                    } else {
+                        badge.innerText = `Starts in ${hrs}h ${mins}m ${secs}s`;
+                        badge.className = "inline-block px-2 py-0.5 rounded text-xs font-bold text-white bg-blue-600 font-mono";
+                    }
+                }
+            };
+
+            setInterval(updateTime, 1000);
+            updateTime(); // Run immediately
 
             document.getElementById('stadium-text').innerText = m.stadium;
             document.getElementById('val-stadium').innerText = m.stadium;
@@ -536,14 +595,53 @@
                 document.getElementById('label-h2h-away').innerText = m.team2;
             }
 
-            // More Matches
+            // More Matches Rendering
             const moreGrid = document.getElementById('more-matches-grid');
             try {
-                // Fetch random for "more"
-                if (extraData && !extraData.matches && match) {
-                    // fallback to fetching main api again if needed, or skip
+                // Filter current match
+                const others = allMatches.filter(x => {
+                    const matchIdValid = m.url !== x.url; // Basic dupe check
+                    return matchIdValid;
+                });
+
+                // Shuffle and Pick 4
+                const shuffled = others.sort(() => 0.5 - Math.random()).slice(0, 4);
+
+                if (shuffled.length > 0) {
+                    moreGrid.innerHTML = '';
+                    shuffled.forEach(sm => {
+                        const sDate = new Date(sm.start);
+                        const sTime = sDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                        // Construct Card HTML
+                        // Using same class logic but slightly simpler wrapper
+                        const card = `
+                        <a href="${sm.details_url || '#'}" class="match-card hover:bg-gray-50 transition-colors block decoration-transparent">
+                            <div class="match-card-content">
+                                <div class="text-center mb-1">
+                                    <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold text-white bg-gray-400">UPCOMING</span>
+                                    <div class="text-[10px] text-gray-500 mt-1">${sTime}</div>
+                                </div>
+                                <div class="match-row-teams">
+                                    <div class="match-team home">
+                                        <span class="match-team-name text-sm">${sm.team1}</span>
+                                        <img src="${sm.team1_logo}" class="w-8 h-8" alt="${sm.team1}">
+                                    </div>
+                                    <div class="text-sm font-black text-gray-300 px-1">VS</div>
+                                    <div class="match-team away">
+                                        <img src="${sm.team2_logo}" class="w-8 h-8" alt="${sm.team2}">
+                                        <span class="match-team-name text-sm">${sm.team2}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        `;
+                        moreGrid.innerHTML += card;
+                    });
+                } else {
+                    moreGrid.innerHTML = '<p class="text-gray-400 italic text-center col-span-2">No other matches found.</p>';
                 }
-            } catch (e) { }
+
+            } catch (e) { console.error(e); }
         });
     </script>
 </body>
