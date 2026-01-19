@@ -8,7 +8,36 @@
             "league": "Serie A",
             "start": "2026-01-20T04:45:00+09:00",
             "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=lazio"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=lazio",
+            "matchId": 4803239,
+            "stadium": "Stadio Olimpico",
+            "referee": "Michael Fabbri",
+            "home_lineup": [
+                "Ivan Provedel",
+                "Adam Marusic",
+                "Mario Gila",
+                "Alessio Romagnoli",
+                "Luca Pellegrini",
+                "Kenneth Taylor",
+                "Danilo Cataldi",
+                "Reda Belahyane",
+                "Mattia Zaccagni",
+                "Tijjani Noslin",
+                "Matteo Cancellieri"
+            ],
+            "away_lineup": [
+                "Jean Butez",
+                "Ignace Van Der Brempt",
+                "Diego Carlos",
+                "Jacobo Ramon",
+                "Alberto Moreno",
+                "Maximo Perrone",
+                "Lucas Da Cunha",
+                "Mergim Vojvoda",
+                "Nico Paz",
+                "Jesus Rodriguez",
+                "Anastasios Douvikas"
+            ]
         },
         {
             "team1": "Brighton",
@@ -18,7 +47,36 @@
             "league": "Premier League",
             "start": "2026-01-20T05:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=brighton"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=brighton",
+            "matchId": 4813586,
+            "stadium": "American Express Stadium",
+            "referee": "Paul Tierney",
+            "home_lineup": [
+                "Bart Verbruggen",
+                "Joel Veltman",
+                "Jan Paul van Hecke",
+                "Lewis Dunk",
+                "Ferdi Kadioglu",
+                "Yasin Ayari",
+                "Pascal Gross",
+                "Brajan Gruda",
+                "Georginio Rutter",
+                "Kaoru Mitoma",
+                "Danny Welbeck"
+            ],
+            "away_lineup": [
+                "Djordje Petrovic",
+                "Alex Jimenez",
+                "James Hill",
+                "Marcos Senesi",
+                "Adrien Truffert",
+                "Alex Scott",
+                "Lewis Cook",
+                "Amine Adli",
+                "Eli Junior Kroupi",
+                "Marcus Tavernier",
+                "Evanilson"
+            ]
         },
         {
             "team1": "Elche",
@@ -28,7 +86,36 @@
             "league": "LaLiga",
             "start": "2026-01-20T05:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=elche"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=elche",
+            "matchId": 4837302,
+            "stadium": "Estadio Manuel Martínez Valero",
+            "referee": "Ricardo De Burgos",
+            "home_lineup": [
+                "Inaki Pena",
+                "Victor Chust",
+                "David Affengruber",
+                "Léo Pétrot",
+                "Germán Valera",
+                "Adrià Pedrosa",
+                "Aleix Febas",
+                "Marc Aguado",
+                "Martim Neto",
+                "Álvaro Rodriguez",
+                "Grady Diangana"
+            ],
+            "away_lineup": [
+                "Odysseas Vlachodimos",
+                "José Ángel Carmona",
+                "Tanguy Nianzou",
+                "Kike Salas",
+                "Juanlu Sánchez",
+                "Lucien Agoume",
+                "Batista Mendy",
+                "Djibril Sow",
+                "Oso",
+                "Isaac Romero",
+                "Gerard Fernandez"
+            ]
         }
     ]
 }
