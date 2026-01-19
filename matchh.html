@@ -325,18 +325,21 @@
                         const r = await fetch(extraDetailsUrl);
                         if (r.ok) extraData = await r.json();
 
-                        // --- Render Extra Data (Stadium, Referee, Lineups, H2H) ---
+                        // Helper to get data from either source (Priority: extraData -> match)
+                        const getVal = (k) => (extraData && extraData[k]) || (match && match[k]);
 
                         // Stadium
-                        if (extraData.stadium && extraData.stadium !== "Unknown") {
-                            document.getElementById('stadium-val').textContent = extraData.stadium;
+                        const stadium = getVal('stadium');
+                        if (stadium && stadium !== "Unknown") {
+                            document.getElementById('stadium-val').textContent = stadium;
                             document.getElementById('stadium-info').classList.remove('hidden');
                             document.getElementById('info-bar').classList.remove('hidden');
                         }
 
                         // Referee
-                        if (extraData.referee && extraData.referee !== "Unknown") {
-                            document.getElementById('referee-val').textContent = extraData.referee;
+                        const referee = getVal('referee');
+                        if (referee && referee !== "Unknown") {
+                            document.getElementById('referee-val').textContent = referee;
                             document.getElementById('referee-info').classList.remove('hidden');
                             document.getElementById('info-bar').classList.remove('hidden');
                         }
@@ -344,27 +347,35 @@
                         const dynamicDiv = document.getElementById('dynamic-details');
 
                         // H2H
-                        if (extraData.h2h && Array.isArray(extraData.h2h) && extraData.h2h.length === 3) {
-                            document.getElementById('h2h-win').textContent = extraData.h2h[0];
-                            document.getElementById('h2h-draw').textContent = extraData.h2h[1];
-                            document.getElementById('h2h-loss').textContent = extraData.h2h[2];
+                        const h2h = getVal('h2h');
+                        // Handle both object {summary:[]} (old) and array [] (new) formats if mixed
+                        const h2hData = (h2h && h2h.summary) ? h2h.summary : h2h;
+
+                        if (h2hData && Array.isArray(h2hData) && h2hData.length >= 3) {
+                            document.getElementById('h2h-win').textContent = h2hData[0];
+                            document.getElementById('h2h-draw').textContent = h2hData[1];
+                            document.getElementById('h2h-loss').textContent = h2hData[2];
                             document.getElementById('h2h-section').classList.remove('hidden');
                             dynamicDiv.classList.remove('hidden');
                         }
 
                         // Lineups
-                        if (extraData.home_lineup && extraData.home_lineup.length > 0) {
+                        const homeLineup = getVal('home_lineup');
+                        if (homeLineup && Array.isArray(homeLineup) && homeLineup.length > 0) {
                             const hList = document.getElementById('home-lineup-list');
-                            extraData.home_lineup.forEach(player => {
+                            hList.innerHTML = '';
+                            homeLineup.forEach(player => {
                                 hList.innerHTML += `<li>${player}</li>`;
                             });
                             document.getElementById('lineups-section').classList.remove('hidden');
                             dynamicDiv.classList.remove('hidden');
                         }
 
-                        if (extraData.away_lineup && extraData.away_lineup.length > 0) {
+                        const awayLineup = getVal('away_lineup');
+                        if (awayLineup && Array.isArray(awayLineup) && awayLineup.length > 0) {
                             const aList = document.getElementById('away-lineup-list');
-                            extraData.away_lineup.forEach(player => {
+                            aList.innerHTML = '';
+                            awayLineup.forEach(player => {
                                 aList.innerHTML += `<li>${player}</li>`;
                             });
                             document.getElementById('lineups-section').classList.remove('hidden');
