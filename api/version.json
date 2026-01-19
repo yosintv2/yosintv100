@@ -1,5 +1,14 @@
-{
-  "version": "1.0.1",
-  "message": "New streaming servers and bug fixes!",
-  "url": "https://yosintv.link"
-}
+[
+  {
+    "version": "1.0.1",
+    "latest": true,
+    "message": "New streaming servers and bug fixes!",
+    "url": "https://yosintv.link"
+  },
+  {
+    "version": "1.0.0",
+    "latest": false,
+    "message": "Initial release with basic streaming features.",
+    "url": "https://yosintv.link"
+  }
+]
