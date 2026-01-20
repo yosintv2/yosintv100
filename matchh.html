@@ -270,7 +270,6 @@
             
             <!-- Ad Slot 1: Responsive/Flexible Size -->
             <div class="ad-container">
-                <div class="ad-label">Advertisement</div>
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-5525538810839147"
@@ -356,7 +355,6 @@
 
             <!-- Ad Slot 2: Medium Rectangle (300x250) or Responsive -->
             <div class="ad-container">
-                <div class="ad-label">Advertisement</div>
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-5525538810839147"
@@ -378,7 +376,6 @@
 
             <!-- Ad Slot 3: Responsive -->
             <div class="ad-container">
-                <div class="ad-label">Advertisement</div>
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-5525538810839147"
@@ -672,6 +669,8 @@
                         `;
                         moreGrid.innerHTML += card;
                     });
+                } else {
+                    moreGrid.innerHTML = '<p class="text-gray-400 italic text-center col-span-2">No other matches found.</p>';
                 } else {
                     moreGrid.innerHTML = '<p class="text-gray-400 italic text-center col-span-2">No other matches found.</p>';
                 }
