@@ -8,6 +8,8 @@
     <meta name="description" content="Watch Live Football & Cricket Matches">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -178,6 +180,25 @@
         .hidden {
             display: none;
         }
+
+        /* Ad Container Styles */
+        .ad-container {
+            text-align: center;
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 16px auto;
+            max-width: 960px;
+        }
+
+        .ad-label {
+            font-size: 10px;
+            color: #9ca3af;
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
     </style>
 </head>
 
@@ -188,7 +209,6 @@
         <div class="container mx-auto px-4 py-3 flex items-center justify-between max-w-4xl">
             <a href="https://www.yosin-tv.net/" class="flex items-center gap-2">
                 <img src="https://web.cricfoot.net/logo.png" alt="YoSinTV" class="h-8 md:h-10">
-                <!-- <span class="font-bold text-gray-800 text-lg">YoSinTV</span> -->
             </a>
             <a href="/" class="text-sm font-medium text-blue-600 hover:text-blue-800">Home</a>
         </div>
@@ -241,23 +261,19 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 2. STREAM LINKS -->
-            <div class="section-card">
-                <h3 class="section-title">Live Streams</h3>
-                <!-- Ad Slot -->
-                <div class="mb-4 text-center bg-gray-50 p-2 rounded">
-                    <span class="text-[10px] text-gray-400 block mb-1">ADVERTISEMENT</span>
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147"
-                        data-ad-slot="4345862479" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                </div>
-
-                <div id="stream-container" class="space-y-2">
-                    <p class="text-center text-gray-500 py-4 italic">Links loading...</p>
-                </div>
-                <p class="text-xs text-gray-500 mt-2 text-center">Use a VPN if streams are blocked in your region.</p>
+            
+            <!-- Ad Slot 1: Leaderboard (728x90) -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5525538810839147"
+                     data-ad-slot="4345862479"
+                     data-ad-format="horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
 
             <!-- 3. H2H & STATS -->
@@ -332,25 +348,40 @@
                 </div>
             </div>
 
-            <!-- 2. STREAM LINKS (Moved to Bottom) -->
+            <!-- Ad Slot 2: Medium Rectangle (300x250) or Responsive -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5525538810839147"
+                     data-ad-slot="5912194004"
+                     data-ad-format="rectangle"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
             <div class="section-card">
                 <h3 class="section-title">Live Streams</h3>
-                <!-- Ad Slot -->
-                <div class="mb-4 text-center bg-gray-50 p-2 rounded">
-                    <span class="text-[10px] text-gray-400 block mb-1">ADVERTISEMENT</span>
-                    <div style="min-height: 90px;">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147"
-                            data-ad-slot="4345862479" data-ad-format="horizontal"
-                            data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                    </div>
-                </div>
-
                 <div id="stream-container" class="space-y-2">
                     <p class="text-center text-gray-500 py-4 italic">Links loading...</p>
                 </div>
                 <p class="text-xs text-gray-500 mt-2 text-center">Use a VPN if streams are blocked in your region.</p>
+            </div>
+
+            <!-- Ad Slot 3: Leaderboard or Responsive -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5525538810839147"
+                     data-ad-slot="4345862479"
+                     data-ad-format="horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
 
             <!-- More Matches -->
@@ -361,16 +392,19 @@
 
         </div>
 
-        <!-- Sticky Bottom Ad -->
+        <!-- Sticky Bottom Ad (300x250) -->
         <div id='fixedban' class='fixed bottom-0 left-1/2 -translate-x-1/2 z-[999]'>
-            <div class='relative w-[300px] h-[250px] bg-white rounded-t-lg shadow-2xl border border-gray-200'>
+            <div class='relative w-[300px] bg-white rounded-t-lg shadow-2xl border border-gray-200'>
                 <button onclick="document.getElementById('fixedban').style.display='none'"
-                    class='absolute left-1/2 -translate-x-1/2 top-[-30px] bg-white px-3 py-1 rounded-t-lg text-xs font-bold text-gray-500 shadow-sm'>Close
-                    Ad</button>
-                <div class='w-[300px] h-[250px] overflow-hidden pt-4 flex justify-center'>
-                    <ins class='adsbygoogle inline-block w-[300px] h-[250px]' data-ad-client='ca-pub-5525538810839147'
-                        data-ad-slot='5912194004'></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    class='absolute left-1/2 -translate-x-1/2 top-[-28px] bg-white px-3 py-1 rounded-t-lg text-xs font-bold text-gray-500 shadow-sm hover:text-gray-700 transition'>✕ Close Ad</button>
+                <div class='w-[300px] flex justify-center pt-2'>
+                    <ins class='adsbygoogle' 
+                         style='display:inline-block;width:300px;height:250px' 
+                         data-ad-client='ca-pub-5525538810839147'
+                         data-ad-slot='5912194004'></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             </div>
         </div>
@@ -395,7 +429,7 @@
             const searchKey = normalize(slug);
             let match = null;
             let extraData = {};
-            let allMatches = []; // Store for "More Matches"
+            let allMatches = [];
 
             const mainApis = ['https://yosintv-api.pages.dev/api/cricket.json', 'https://yosintv-api.pages.dev/api/football.json'];
 
@@ -415,9 +449,6 @@
                             return combo.includes(searchKey) || n1.includes(searchKey) || n2.includes(searchKey) || detUrl.includes('yosintv' + searchKey);
                         });
                         if (found) { match = found; }
-                        // Don't break immediately if we want to collect matches from BOTH APIs? 
-                        // Actually better to collect all matches for "More Matches" but we found our match.
-                        // Let's finish checking other APIs for more matches content if needed, but usually one is enough.
                     }
                 } catch (e) { }
             }
@@ -475,8 +506,7 @@
 
             const updateTime = () => {
                 const now = new Date();
-                // If duration is provided use it, else default 100 mins
-                const durationMins = m.duration ? parseInt(m.duration) : 120; // 120 mins safe bet for football
+                const durationMins = m.duration ? parseInt(m.duration) : 120;
                 const endObj = new Date(dateObj.getTime() + durationMins * 60000);
 
                 const diff = dateObj - now;
@@ -494,7 +524,6 @@
                 }
 
                 if (diff > 0) {
-                    // Countdown
                     const hrs = Math.floor(diff / (1000 * 60 * 60));
                     const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                     const secs = Math.floor((diff % (1000 * 60)) / 1000);
@@ -510,7 +539,7 @@
             };
 
             setInterval(updateTime, 1000);
-            updateTime(); // Run immediately
+            updateTime();
 
             document.getElementById('stadium-text').innerText = m.stadium;
             document.getElementById('val-stadium').innerText = m.stadium;
@@ -523,18 +552,17 @@
             sCont.innerHTML = '';
 
             let globalStreamIndex = 1;
-            const bannedTerms = ['telegram', 'yosintv', 'join']; // Terms to skip if in event name
+            const bannedTerms = ['telegram', 'yosintv', 'join'];
 
             if (m.events && m.events.length) {
                 m.events.forEach(ev => {
                     const name = ev.name ? ev.name.toLowerCase() : '';
                     if (bannedTerms.some(term => name.includes(term))) {
-                        return; // Skip Telegram links etc
+                        return;
                     }
 
                     const links = ev.links || (ev.link ? [ev.link] : []);
                     if (links.length) {
-                        // Removed title
                         links.forEach((link) => {
                             const btn = document.createElement('a');
                             btn.href = link;
@@ -603,13 +631,11 @@
             // More Matches Rendering
             const moreGrid = document.getElementById('more-matches-grid');
             try {
-                // Filter current match
                 const others = allMatches.filter(x => {
-                    const matchIdValid = m.url !== x.url; // Basic dupe check
+                    const matchIdValid = m.url !== x.url;
                     return matchIdValid;
                 });
 
-                // Shuffle and Pick 4
                 const shuffled = others.sort(() => 0.5 - Math.random()).slice(0, 4);
 
                 if (shuffled.length > 0) {
@@ -617,8 +643,6 @@
                     shuffled.forEach(sm => {
                         const sDate = new Date(sm.start);
                         const sTime = sDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-                        // Construct Card HTML
-                        // Using same class logic but slightly simpler wrapper
                         const card = `
                         <a href="${sm.details_url || '#'}" class="match-card hover:bg-gray-50 transition-colors block decoration-transparent">
                             <div class="match-card-content">
