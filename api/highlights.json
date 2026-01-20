@@ -1,26 +1,100 @@
 [
   {
-    "id": "wsjm072717",
+    "id": "hycu439748",
+    "match_id": 13981628,
     "team1": "Milan",
     "team2": "Lecce",
     "category": "Serie A",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Niclas Füllkrug",
+        "time": "76'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=I2unv3Je9iE"
   },
   {
-    "id": "oxmn399132",
+    "id": "scva634261",
+    "match_id": 14083237,
     "team1": "Real Sociedad",
     "team2": "Barcelona",
     "category": "LaLiga",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Gonçalo Guedes",
+        "time": "71'"
+      },
+      {
+        "name": "Mikel Oyarzabal",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Marcus Rashford",
+        "time": "70'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=lpXKkClTI5k"
   },
   {
-    "id": "zbbn904969",
+    "id": "sbac650434",
+    "match_id": 15146335,
+    "team1": "Ypiranga",
+    "team2": "Internacional",
+    "category": "Gaúcho",
+    "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Renan Gorne",
+        "time": "90'"
+      },
+      {
+        "name": "Nicolas Schulz",
+        "time": "83'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Bruno Henrique",
+        "time": "17'"
+      }
+    ],
+    "link": "https://www.youtube.com/watch?v=Na3AV9UBo30"
+  },
+  {
+    "id": "yvfk290785",
+    "match_id": 14195540,
     "team1": "Geylang International",
     "team2": "Lion City Sailors",
     "category": "Premier League",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 3,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Shawal Anuar",
+        "time": "90'"
+      },
+      {
+        "name": "Tsiy William Ndenge",
+        "time": "64'"
+      },
+      {
+        "name": "Nazrul Nazari",
+        "time": "43'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=uZn3A3Xa3Ew"
   },
   {
@@ -160,6 +234,30 @@
     "link": "https://www.youtube.com/watch?v=upZYwAbqNIM"
   },
   {
+    "id": "yssw006067",
+    "team1": "Inter de Santa Maria",
+    "team2": "Juventude",
+    "category": "Gaúcho",
+    "date": "2026-01-17",
+    "link": "https://www.youtube.com/watch?v=cVnBa43G8Es"
+  },
+  {
+    "id": "ckdp810548",
+    "team1": "SC Covilhã",
+    "team2": "Atletico CP",
+    "category": "Liga 3, Group B",
+    "date": "2026-01-17",
+    "link": "https://www.youtube.com/watch?v=IKtJ9Mpj0MY"
+  },
+  {
+    "id": "fzfu612256",
+    "team1": "Aubagne",
+    "team2": "Paris 13 Atletico",
+    "category": "National",
+    "date": "2026-01-16",
+    "link": "https://www.youtube.com/watch?v=EMaMrcOeGN4"
+  },
+  {
     "id": "dctx365791",
     "team1": "Real Racing Club",
     "team2": "Barcelona",
@@ -206,6 +304,22 @@
     "category": "Bundesliga",
     "date": "2026-01-15",
     "link": "https://www.youtube.com/watch?v=dE_V0LOdwgw"
+  },
+  {
+    "id": "bnyk246953",
+    "team1": "Monsoon",
+    "team2": "Internacional",
+    "category": "Gaúcho",
+    "date": "2026-01-15",
+    "link": "https://www.youtube.com/watch?v=iyqUaVTCxRU"
+  },
+  {
+    "id": "yymk288880",
+    "team1": "Inter de Santa Maria",
+    "team2": "São Luiz",
+    "category": "Gaúcho",
+    "date": "2026-01-15",
+    "link": "https://www.youtube.com/watch?v=tVGFxe1ZVKc"
   },
   {
     "id": "qsqm684011",
@@ -1496,1195 +1610,3631 @@
     "link": "https://www.youtube.com/watch?v=8oC50pKc6Vc"
   },
   {
-    "id": "oopm200775",
+    "id": "gpcw614480",
+    "match_id": 15133449,
     "team1": "Brisbane Roar",
     "team2": "Melbourne City",
     "category": "A-League, Women",
     "date": "2026-01-20",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Ashlyn Miller",
+        "time": "87'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Holly McNamara",
+        "time": "42'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=ggENbysIxpE"
   },
   {
-    "id": "gapf850990",
+    "id": "dbuz749576",
+    "match_id": 15314040,
     "team1": "Estudiantes de La Plata",
     "team2": "Ituzaingó",
     "category": "Copa Argentina",
     "date": "2026-01-20",
+    "home_score": 4,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Guido Carrillo",
+        "time": "87'"
+      },
+      {
+        "name": "Facundo Farías",
+        "time": "63'"
+      },
+      {
+        "name": "Alexis Castro",
+        "time": "59'"
+      },
+      {
+        "name": "Ezequiel Gayoso",
+        "time": "53'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=GGGwqJdd_u4"
   },
   {
-    "id": "ldqy039929",
+    "id": "kiau347021",
+    "match_id": 15129445,
     "team1": "Brighton & Hove Albion",
     "team2": "Bournemouth",
     "category": "Premier League",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Charalampos Kostoulas",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Marcus Tavernier",
+        "time": "32'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=9iG13YQRLs4"
   },
   {
-    "id": "dadx062533",
+    "id": "wlxf160582",
+    "match_id": 14083228,
     "team1": "Elche",
     "team2": "Sevilla",
     "category": "LaLiga",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Germán Valera",
+        "time": "55'"
+      },
+      {
+        "name": "Aleix Febas",
+        "time": "14'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Akor Adams",
+        "time": "90'"
+      },
+      {
+        "name": "Akor Adams",
+        "time": "75'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=XS_EM9guYuM"
   },
   {
-    "id": "bdvf936424",
+    "id": "cctt028285",
+    "match_id": 14288937,
     "team1": "CF Estrela Amadora",
     "team2": "Estoril Praia",
     "category": "Liga Portugal Betclic",
     "date": "2026-01-19",
+    "home_score": 0,
+    "away_score": 5,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Yanis Begraoui",
+        "time": "70'"
+      },
+      {
+        "name": "Alejandro Marqués",
+        "time": "64'"
+      },
+      {
+        "name": "Yanis Begraoui",
+        "time": "54'"
+      },
+      {
+        "name": "Yanis Begraoui",
+        "time": "51'"
+      },
+      {
+        "name": "João Carvalho",
+        "time": "3'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=fFD31_9iduA"
   },
   {
-    "id": "leem368700",
+    "id": "jmna424654",
+    "match_id": 14109761,
     "team1": "Konyaspor",
     "team2": "Eyüpspor",
     "category": "Trendyol Süper Lig",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Jackson Muleka",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Metehan Altunbaş",
+        "time": "50'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=dgYoOIIgi6E"
   },
   {
-    "id": "nodt257542",
+    "id": "fbif395878",
+    "match_id": 14109770,
     "team1": "Beşiktaş JK",
     "team2": "Kayserispor",
     "category": "Trendyol Süper Lig",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "El Bilal Touré",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=UBAfBYyR3R8"
   },
   {
-    "id": "aaix592829",
+    "id": "xmpd996289",
+    "match_id": 14109769,
     "team1": "Göztepe",
     "team2": "Çaykur Rizespor",
     "category": "Trendyol Süper Lig",
     "date": "2026-01-19",
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Efkan Bekiroğlu",
+        "time": "82'"
+      },
+      {
+        "name": "Arda Kurtulan",
+        "time": "63'"
+      },
+      {
+        "name": "Novatus Miroshi",
+        "time": "39'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Qazim Laci",
+        "time": "60'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=tfUiE1jRPXQ"
   },
   {
-    "id": "txvx083717",
+    "id": "xijj802806",
+    "match_id": 15238918,
     "team1": "CF Pachuca",
     "team2": "Club América",
     "category": "Liga MX, Clausura",
     "date": "2026-01-19",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=1HVn01rRjZ0"
   },
   {
-    "id": "xxdh184949",
+    "id": "ieog161489",
+    "match_id": 14083660,
     "team1": "Granada",
     "team2": "Eibar",
     "category": "LaLiga 2",
     "date": "2026-01-19",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=cuhH9vbZUUY"
   },
   {
-    "id": "bvun467175",
+    "id": "ozkq233759",
+    "match_id": 15123660,
     "team1": "Nancy",
     "team2": "Guingamp",
     "category": "Ligue 2",
     "date": "2026-01-19",
+    "home_score": 0,
+    "away_score": 3,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Amadou Samoura",
+        "time": "84'"
+      },
+      {
+        "name": "Louis Mafouta",
+        "time": "79'"
+      },
+      {
+        "name": "Sohaib Nair",
+        "time": "64'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=LXZ8gAbPRbQ"
   },
   {
-    "id": "sdfd827987",
+    "id": "opcb541429",
+    "match_id": 14056507,
     "team1": "Jong Ajax",
     "team2": "Roda JC Kerkrade",
     "category": "Eerste Divisie",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Nassef Chourak",
+        "time": "55'"
+      },
+      {
+        "name": "Tijn Peters",
+        "time": "33'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Anthony van den Hurk",
+        "time": "35'"
+      },
+      {
+        "name": "Jack Cooper-Love",
+        "time": "24'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=H1CCHJv4p6E"
   },
   {
-    "id": "ppcr731192",
+    "id": "midn574852",
+    "match_id": 14056510,
     "team1": "Jong  Utrecht",
     "team2": "Jong PSV Eindhoven",
     "category": "Eerste Divisie",
     "date": "2026-01-19",
+    "home_score": 5,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Massien Ghaddari",
+        "time": "90'"
+      },
+      {
+        "name": "Viggo Plantinga",
+        "time": "68'"
+      },
+      {
+        "name": "Bjorn Menzo",
+        "time": "57'"
+      },
+      {
+        "name": "Neal Viereck",
+        "time": "28'"
+      },
+      {
+        "name": "Rafik El Arguioui",
+        "time": "18'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Joel Van Den Berg",
+        "time": "30'"
+      },
+      {
+        "name": "Amir Bouhamdi",
+        "time": "11'"
+      },
+      {
+        "name": "Sami Bouhoudane",
+        "time": "9'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=Qk2POwNVTzE"
   },
   {
-    "id": "yfwa787608",
+    "id": "kacv754015",
+    "match_id": 14138474,
     "team1": "Iğdır FK",
     "team2": "Sakaryaspor",
     "category": "1. Lig",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Leandro Bacuna",
+        "time": "48'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=FA6-UBeaT3g"
   },
   {
-    "id": "fgpn129879",
+    "id": "ryor920407",
+    "match_id": 14143640,
     "team1": "İstanbulspor",
     "team2": "Keçiörengücü",
     "category": "1. Lig",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Emir Kaan Gültekin",
+        "time": "47'"
+      },
+      {
+        "name": "David Sambissa",
+        "time": "29'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Wellington",
+        "time": "45'"
+      },
+      {
+        "name": "Ishak Karaogul",
+        "time": "34'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=Ekr0JNB_krk"
   },
   {
-    "id": "rert408963",
+    "id": "hqrx801397",
+    "match_id": 14138468,
     "team1": "Bodrum FK",
     "team2": "Sivasspor",
     "category": "1. Lig",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Taulant Seferi",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Bekir Turaç Böke",
+        "time": "66'"
+      },
+      {
+        "name": "Uğur Çiftçi",
+        "time": "45'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=AovI-MchdB0"
   },
   {
-    "id": "romq755204",
+    "id": "bjzy109264",
+    "match_id": 15361718,
     "team1": "Independiente Santa Fe",
     "team2": "Rionegro Águilas Doradas",
     "category": "Liga DIMAYOR, Apertura",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Christian Mafla",
+        "time": "50'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Fabián Suárez",
+        "time": "17'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=sbzh_7slJTI"
   },
   {
-    "id": "hwjs499988",
+    "id": "kzox478429",
+    "match_id": 15361719,
     "team1": "Cúcuta Deportivo",
     "team2": "Once Caldas",
     "category": "Liga DIMAYOR, Apertura",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Jaime Peralta",
+        "time": "35'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Dayro Moreno",
+        "time": "87'"
+      },
+      {
+        "name": "Dayro Moreno",
+        "time": "62'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=XBgAOmdV3m4"
   },
   {
-    "id": "meli385798",
+    "id": "lbjz602355",
+    "match_id": 14060327,
     "team1": "Petrolul Ploiești",
     "team2": "Universitatea Craiova",
     "category": "Superliga",
     "date": "2026-01-19",
+    "home_score": 0,
+    "away_score": 4,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Luca Basceanu",
+        "time": "90'"
+      },
+      {
+        "name": "Ștefan Baiaram",
+        "time": "81'"
+      },
+      {
+        "name": "Steven Nsimba",
+        "time": "17'"
+      },
+      {
+        "name": "Steven Nsimba",
+        "time": "16'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=8GmDEE5PRh4"
   },
   {
-    "id": "mxgb032668",
+    "id": "nvsc684581",
+    "match_id": 15010580,
     "team1": "Ajman",
     "team2": "Al Dhafra",
     "category": "Pro League",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Bilal Abdullah",
+        "time": "49'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Marcelinho",
+        "time": "90'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=ED7mpQFI5QM"
   },
   {
-    "id": "numk348045",
+    "id": "ueew748525",
+    "match_id": 15010581,
     "team1": "Shabab Al Ahli Dubai",
     "team2": "Dibba Al Fujairah",
     "category": "Pro League",
     "date": "2026-01-19",
+    "home_score": 7,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Yuri César",
+        "time": "90'"
+      },
+      {
+        "name": "Breno Cascardo",
+        "time": "87'"
+      },
+      {
+        "name": "Thiago",
+        "time": "58'"
+      },
+      {
+        "name": "Saeid Ezatolahi",
+        "time": "51'"
+      },
+      {
+        "name": "Kauan Santos",
+        "time": "44'"
+      },
+      {
+        "name": "Mohammad Juma",
+        "time": "33'"
+      },
+      {
+        "name": "Mateusão",
+        "time": "15'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=C4ub3E2UgR4"
   },
   {
-    "id": "ulkp632222",
+    "id": "nzno259804",
+    "match_id": 15314038,
     "team1": "CA Lanús",
     "team2": "CA Sarmiento de la Banda",
     "category": "Copa Argentina",
     "date": "2026-01-19",
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Guillermo Guzmán",
+        "time": "85'"
+      },
+      {
+        "name": "Marcelino Moreno",
+        "time": "74'"
+      },
+      {
+        "name": "Rodrigo Castillo",
+        "time": "62'"
+      },
+      {
+        "name": "Marcelino Moreno",
+        "time": "44'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Alfredo Roldán",
+        "time": "58'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=ynJ9H3npDks"
   },
   {
-    "id": "zwdy935182",
+    "id": "mmmi448613",
+    "match_id": 15188398,
     "team1": "Guadalupe",
     "team2": "Municipal Liberia",
     "category": "Primera División, Clausura",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "John Jairo Ruiz",
+        "time": "62'"
+      },
+      {
+        "name": "Marvin Angulo",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Fernando Lesme",
+        "time": "19'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=fTJC_7aN6Sk"
   },
   {
-    "id": "uzeq068045",
+    "id": "ceyn413228",
+    "match_id": 15188399,
     "team1": "San Carlos",
     "team2": "Sporting",
     "category": "Primera División, Clausura",
     "date": "2026-01-19",
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Pablo Fonseca",
+        "time": "90'"
+      },
+      {
+        "name": "Ariel Soto",
+        "time": "85'"
+      },
+      {
+        "name": "Roberto Cordoba",
+        "time": "48'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=5sebT7V5wrc"
   },
   {
-    "id": "boij104910",
+    "id": "ynvy677864",
+    "match_id": 14222825,
     "team1": "Omonia Aradippou",
     "team2": "Enosis Neon Paralimniou",
     "category": "1st Division",
     "date": "2026-01-19",
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Minas Antoniou",
+        "time": "87'"
+      },
+      {
+        "name": "Rasmus Thelander",
+        "time": "70'"
+      },
+      {
+        "name": "Giorgos Pontikos",
+        "time": "67'"
+      },
+      {
+        "name": "Jorginho",
+        "time": "49'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "André Jordy Ella",
+        "time": "56'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=fqjPxjzIg4A"
   },
   {
-    "id": "vnyt424713",
+    "id": "kviu092219",
+    "match_id": 14303465,
     "team1": "Cosenza",
     "team2": "Crotone",
     "category": "Serie C, Group C",
     "date": "2026-01-19",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Enrico Piovanello",
+        "time": "54'"
+      },
+      {
+        "name": "Davide Di Pasquale",
+        "time": "32'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=HbxmTI-yW-M"
   },
   {
-    "id": "lbqe346429",
+    "id": "jzev967162",
+    "match_id": 14336299,
     "team1": "Feirense",
     "team2": "Porto B",
     "category": "Liga Portugal 2",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Pedro Henrique Oliveira da Silva",
+        "time": "74'"
+      },
+      {
+        "name": "Leandro Antunes",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Tiago Silva",
+        "time": "85'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=qMmvzCDvDUY"
   },
   {
-    "id": "jnvc283341",
+    "id": "lxii885411",
+    "match_id": 15273935,
     "team1": "Leixões SC U23",
     "team2": "SC Braga U23",
     "category": "U23 Championship, Championship Round",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Miguel Rajani",
+        "time": "18'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Luis Suazo",
+        "time": "87'"
+      },
+      {
+        "name": "Kiton Ekoli",
+        "time": "63'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=WyrPWyCUqMo"
   },
   {
-    "id": "gfsl735633",
+    "id": "liym108182",
+    "match_id": 15273951,
     "team1": "Estoril Praia U23",
     "team2": "Portimonense U23",
     "category": "U23 Championship, Relegation Round",
     "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Bernardo Lourenço",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Francisco Canário",
+        "time": "54'"
+      },
+      {
+        "name": "Francisco Canário",
+        "time": "52'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=dseDT0p4V1M"
   },
   {
-    "id": "jamd566651",
+    "id": "jvlz656800",
+    "match_id": 15332926,
     "team1": "US Monastir",
     "team2": "Espérance Tunis",
     "category": "Ligue 1",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Youssef Abdelli",
+        "time": "47'"
+      },
+      {
+        "name": "Fakhreddine Ben Youssef",
+        "time": "31'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jack Diarra",
+        "time": "10'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=AbzncwAo8C0"
   },
   {
-    "id": "cvfv625049",
+    "id": "tqya131290",
+    "match_id": 15336225,
     "team1": "Colo Colo",
     "team2": "Alianza Lima",
     "category": "Club Friendly Games",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Javier Correa",
+        "time": "81'"
+      },
+      {
+        "name": "Javier Correa",
+        "time": "71'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Alan Cantero",
+        "time": "83'"
+      },
+      {
+        "name": "Luis Ramos",
+        "time": "74'"
+      },
+      {
+        "name": "Paolo Guerrero",
+        "time": "33'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=H0wvSbr_MgI"
   },
   {
-    "id": "uvsh513768",
+    "id": "naaa305771",
+    "match_id": 15379489,
     "team1": "Boca Juniors",
     "team2": "Olimpia",
     "category": "Club Friendly Games",
     "date": "2026-01-19",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Tomás Belmonte",
+        "time": "34'"
+      },
+      {
+        "name": "Mateo Gamarra",
+        "time": "27'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Juan Barinaga",
+        "time": "12'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=RbxUCmwO3uQ"
   },
   {
-    "id": "xwss702709",
+    "id": "ydmq584329",
+    "match_id": 15329639,
+    "team1": "Hammarby IF",
+    "team2": "Slovan Liberec",
+    "category": "Club Friendly Games",
+    "date": "2026-01-19",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Paulos Abraham",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ermin Mahmic",
+        "time": "47'"
+      }
+    ],
+    "link": "https://www.youtube.com/watch?v=6I5HjW6h1ms"
+  },
+  {
+    "id": "fwqa921362",
+    "match_id": 15386903,
     "team1": "Legia Warszawa",
     "team2": "Polissya Zhytomyr",
     "category": "Club Friendly Games",
     "date": "2026-01-19",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=2NqRk_2iGX0"
   },
   {
-    "id": "muqf430435",
+    "id": "njcn387459",
+    "match_id": 14058089,
     "team1": "Senegal",
     "team2": "Morocco",
     "category": "Africa Cup of Nations, Knockout stage",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Pape Gueye",
+        "time": "94'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=chuhAI45g70"
   },
   {
-    "id": "evem546365",
+    "id": "jadg463641",
+    "match_id": 14025092,
     "team1": "Wolverhampton",
     "team2": "Newcastle United",
     "category": "Premier League",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=K9AjWyRCHek"
   },
   {
-    "id": "issp425306",
+    "id": "zzml386038",
+    "match_id": 14025064,
     "team1": "Aston Villa",
     "team2": "Everton",
     "category": "Premier League",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Thierno Barry",
+        "time": "59'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=F9ziKj7KohE"
   },
   {
-    "id": "dztl082565",
+    "id": "dulm933399",
+    "match_id": 13981627,
     "team1": "Parma",
     "team2": "Genoa",
     "category": "Serie A",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=VcqeZOn8lO8"
   },
   {
-    "id": "yfrg784323",
+    "id": "ogdj685173",
+    "match_id": 13981620,
     "team1": "Bologna",
     "team2": "Fiorentina",
     "category": "Serie A",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Giovanni Fabbian",
+        "time": "88'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Roberto Piccoli",
+        "time": "45'"
+      },
+      {
+        "name": "Rolando Mandragora",
+        "time": "19'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=_yE5J2eo9sM"
   },
   {
-    "id": "pikv931703",
+    "id": "kakg947262",
+    "match_id": 14083230,
     "team1": "Getafe",
     "team2": "Valencia",
     "category": "LaLiga",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "José Luis Gayà",
+        "time": "84'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=hdBPmXVsI3w"
   },
   {
-    "id": "lyuj058706",
+    "id": "smkz264690",
+    "match_id": 14083233,
     "team1": "Atlético Madrid",
     "team2": "Deportivo Alavés",
     "category": "LaLiga",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Alexander Sørloth",
+        "time": "48'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=Wo9wNaHxtKk"
   },
   {
-    "id": "xlde140542",
+    "id": "impc127240",
+    "match_id": 14083226,
     "team1": "Celta Vigo",
     "team2": "Rayo Vallecano",
     "category": "LaLiga",
     "date": "2026-01-18",
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Javier Rueda",
+        "time": "79'"
+      },
+      {
+        "name": "Bryan Zaragoza",
+        "time": "54'"
+      },
+      {
+        "name": "Sergio Carreira",
+        "time": "40'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=zzj8M0QKNhc"
   },
   {
-    "id": "ovrn678281",
+    "id": "whgj180780",
+    "match_id": 14062171,
     "team1": "VfB Stuttgart",
     "team2": "1.  Union Berlin",
     "category": "Bundesliga",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Chris Führich",
+        "time": "59'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Woo-Yeong Jeong",
+        "time": "83'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=t0YKsH3l_HI"
   },
   {
-    "id": "vekd000016",
+    "id": "aeew503954",
+    "match_id": 14062172,
     "team1": "Augsburg",
     "team2": "SC Freiburg",
     "category": "Bundesliga",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Elvis Rexhbeçaj",
+        "time": "49'"
+      },
+      {
+        "name": "Alexis Claude-Maurice",
+        "time": "47'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Igor Matanović",
+        "time": "62'"
+      },
+      {
+        "name": "Yuito Suzuki",
+        "time": "59'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=K_52dRF6ELo"
   },
   {
-    "id": "tinw321018",
+    "id": "ylbh291830",
+    "match_id": 14064456,
     "team1": "RC Strasbourg",
     "team2": "Metz",
     "category": "Ligue 1",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Martial Godo",
+        "time": "43'"
+      },
+      {
+        "name": "Diego Moreira",
+        "time": "12'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Gauthier Hein",
+        "time": "24'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=s8mePausrlk"
   },
   {
-    "id": "hdug422966",
+    "id": "enzk738948",
+    "match_id": 14064459,
     "team1": "Nantes",
     "team2": "Paris",
     "category": "Ligue 1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Matthis Abline",
+        "time": "50'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Luca Koleosho",
+        "time": "78'"
+      },
+      {
+        "name": "Ilan Kebbal",
+        "time": "6'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=EGFu99XkcKE"
   },
   {
-    "id": "scgt895322",
+    "id": "bcqn754681",
+    "match_id": 14064460,
     "team1": "Stade Rennais",
     "team2": "Le Havre",
     "category": "Ligue 1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Breel Embolo",
+        "time": "86'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Felix Mambimbi",
+        "time": "69'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=jX9Yk06xO-I"
   },
   {
-    "id": "eocg420223",
+    "id": "vyll585982",
+    "match_id": 14064455,
     "team1": "Olympique Lyonnais",
     "team2": "Stade Brestois",
     "category": "Ligue 1",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Abner Vinícius",
+        "time": "45'"
+      },
+      {
+        "name": "Pavel Šulc",
+        "time": "41'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Junior Dina Ebimbe",
+        "time": "87'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=eN4DMrxwyrA"
   },
   {
-    "id": "tsbj628058",
+    "id": "ovda739430",
+    "match_id": 14288942,
     "team1": "Santa Clara",
     "team2": "Famalicão",
     "category": "Liga Portugal Betclic",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Sorriso",
+        "time": "75'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=_GUL8gP7gKI"
   },
   {
-    "id": "nzjd328448",
+    "id": "sqyx941271",
+    "match_id": 14288932,
     "team1": "Tondela",
     "team2": "Sporting Braga",
     "category": "Liga Portugal Betclic",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Rodrigo Zalazar",
+        "time": "90'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=xkoIvGw7iFQ"
   },
   {
-    "id": "ogce727428",
+    "id": "ofug757904",
+    "match_id": 14288944,
     "team1": "Vitória SC",
     "team2": "Porto",
     "category": "Liga Portugal Betclic",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Alan Varela",
+        "time": "85'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=et9hWj4vSmI"
   },
   {
-    "id": "wpyl452930",
+    "id": "slom706114",
+    "match_id": 14053781,
     "team1": "Heracles Almelo",
     "team2": "Twente",
     "category": "VriendenLoterij Eredivisie",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Ricky van Wolfswinkel",
+        "time": "55'"
+      },
+      {
+        "name": "Thomas Van den Belt",
+        "time": "30'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=kBlLzj20LJg"
   },
   {
-    "id": "byib749366",
+    "id": "kkrk328546",
+    "match_id": 14053787,
     "team1": "Feyenoord",
     "team2": "Sparta Rotterdam",
     "category": "VriendenLoterij Eredivisie",
     "date": "2026-01-18",
+    "home_score": 3,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Shaqueel van Persie",
+        "time": "88'"
+      },
+      {
+        "name": "Shaqueel van Persie",
+        "time": "87'"
+      },
+      {
+        "name": "In-Beom Hwang",
+        "time": "64'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Joshua Kitolano",
+        "time": "90'"
+      },
+      {
+        "name": "Shunsuke Mito",
+        "time": "71'"
+      },
+      {
+        "name": "Mitchell van Bergen",
+        "time": "55'"
+      },
+      {
+        "name": "Joshua Kitolano",
+        "time": "40'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=QP5x-RTLI0k"
   },
   {
-    "id": "onof581036",
+    "id": "icvy521812",
+    "match_id": 14109762,
     "team1": "Kasımpaşa",
     "team2": "Antalyaspor",
     "category": "Trendyol Süper Lig",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=LgcAon2jT74"
   },
   {
-    "id": "iezy006962",
+    "id": "jkvi795839",
+    "match_id": 14109765,
     "team1": "Gençlerbirliği",
     "team2": "Samsunspor",
     "category": "Trendyol Süper Lig",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Sekou Koita",
+        "time": "60'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Marius Mouandilmadji",
+        "time": "38'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=Tn4bfS6-jdQ"
   },
   {
-    "id": "cikd270306",
+    "id": "ppmd479541",
+    "match_id": 14109764,
     "team1": "Kocaelispor",
     "team2": "Trabzonspor",
     "category": "Trendyol Süper Lig",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Bruno Petković",
+        "time": "18'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ernest Muçi",
+        "time": "90'"
+      },
+      {
+        "name": "Felipe Augusto",
+        "time": "44'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=cllA_Xm7SRg"
   },
   {
-    "id": "byee996291",
+    "id": "sebs992592",
+    "match_id": 14109768,
     "team1": "Alanyaspor",
     "team2": "Fenerbahçe",
     "category": "Trendyol Süper Lig",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Gaius Makouta",
+        "time": "27'"
+      },
+      {
+        "name": "Florent Hadergjonaj",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Anderson Talisca",
+        "time": "78'"
+      },
+      {
+        "name": "Anthony Musaba",
+        "time": "52'"
+      },
+      {
+        "name": "Anderson Talisca",
+        "time": "9'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=Me-RmUdAJaM"
   },
   {
-    "id": "vpej524804",
+    "id": "hszm952626",
+    "match_id": 14035986,
     "team1": "KAA Gent",
     "team2": "RSC Anderlecht",
     "category": "Pro League",
     "date": "2026-01-18",
+    "home_score": 4,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Hyllarion Goore",
+        "time": "90'"
+      },
+      {
+        "name": "Max Dean",
+        "time": "84'"
+      },
+      {
+        "name": "Tiago Araújo",
+        "time": "81'"
+      },
+      {
+        "name": "Wilfried Kanga",
+        "time": "37'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Nilson Angulo",
+        "time": "43'"
+      },
+      {
+        "name": "Nilson Angulo",
+        "time": "4'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=JLdwRcjGGfM"
   },
   {
-    "id": "hkcd899176",
+    "id": "jbnw524887",
+    "match_id": 14035984,
     "team1": "V Dender",
     "team2": "Royal Antwerp",
     "category": "Pro League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Roman Kvet",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=lCBacKJ8dlk"
   },
   {
-    "id": "rlcn336346",
+    "id": "elex376575",
+    "match_id": 14035978,
     "team1": "RC Sporting Charleroi",
     "team2": "Standard Liège",
     "category": "Pro League",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Antoine Bernier",
+        "time": "24'"
+      },
+      {
+        "name": "Aurélien Scheidler",
+        "time": "6'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=3x8uJSIZrN0"
   },
   {
-    "id": "ugrl089780",
+    "id": "vquj098727",
+    "match_id": 14035981,
     "team1": "Sint Truidense VV",
     "team2": "Oud Heverlee Leuven",
     "category": "Pro League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Ilias Sebaoui",
+        "time": "9'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=YNc-ixuh-nE"
   },
   {
-    "id": "sjdn607276",
+    "id": "ppig567902",
+    "match_id": 14159118,
     "team1": "AEL Novibet",
     "team2": "Aris Thessaloniki",
     "category": "Stoiximan Super League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Ángelo Sagal",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=super-leagu"
   },
   {
-    "id": "fkmc853703",
+    "id": "tiug627035",
+    "match_id": 15238916,
     "team1": "Pumas UNAM",
     "team2": "Club León",
     "category": "Liga MX, Clausura",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Juninho Vieira",
+        "time": "75'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Diber Cambindo",
+        "time": "9'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=u-vLzaBnrwE"
   },
   {
-    "id": "rorg063427",
+    "id": "oudq495049",
+    "match_id": 15238917,
     "team1": "Santos Laguna",
     "team2": "Juárez",
     "category": "Liga MX, Clausura",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Francisco Villalba",
+        "time": "59'"
+      },
+      {
+        "name": "Ezequiel Bullaude",
+        "time": "26'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "José Luis Rodríguez",
+        "time": "70'"
+      },
+      {
+        "name": "Rodolfo Pizarro",
+        "time": "55'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=uGPCBdZzu0Y"
   },
   {
-    "id": "pfnt808900",
+    "id": "wrie603215",
+    "match_id": 14083672,
     "team1": "Mirandés",
     "team2": "Andorra",
     "category": "LaLiga 2",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Javier Hernandez",
+        "time": "75'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sergio Molina",
+        "time": "48'"
+      },
+      {
+        "name": "Daniel Villahermosa",
+        "time": "10'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=oWj51Uu2zJE"
   },
   {
-    "id": "robb190743",
+    "id": "ksvr256821",
+    "match_id": 14083665,
     "team1": "Real Racing Club",
     "team2": "Las Palmas",
     "category": "LaLiga 2",
     "date": "2026-01-18",
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Iñigo Vicente",
+        "time": "71'"
+      },
+      {
+        "name": "Suleiman Camara",
+        "time": "67'"
+      },
+      {
+        "name": "Gustavo Puerta",
+        "time": "45'"
+      },
+      {
+        "name": "Manex Lozano",
+        "time": "28'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Manuel Fuster",
+        "time": "39'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=wyf3ZEJF5X4"
   },
   {
-    "id": "xwza668193",
+    "id": "nhxt136682",
+    "match_id": 14083626,
     "team1": "Albacete Balompié",
     "team2": "Cádiz",
     "category": "LaLiga 2",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Pepe Sánchez",
+        "time": "60'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=063FlffXWzQ"
   },
   {
-    "id": "xjsn501787",
+    "id": "qvaz791300",
+    "match_id": 14083631,
     "team1": "Burgos Club de Fútbol",
     "team2": "Huesca",
     "category": "LaLiga 2",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Fernando Niño",
+        "time": "73'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=CVeh93gDae0"
   },
   {
-    "id": "iujw847142",
+    "id": "myoj549732",
+    "match_id": 14083646,
     "team1": "Córdoba",
     "team2": "Málaga",
     "category": "LaLiga 2",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "David Larrubia",
+        "time": "29'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=WZ5NeFrYgEU"
   },
   {
-    "id": "unzw613344",
+    "id": "uvvg563865",
+    "match_id": 15176512,
     "team1": "São Bernardo",
     "team2": "EC Noroeste",
     "category": "Paulista Série A1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "João Paulo",
+        "time": "13'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Carlão",
+        "time": "58'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=txf5_wEoxKE"
   },
   {
-    "id": "kkqr851071",
+    "id": "cbuo751783",
+    "match_id": 15176525,
     "team1": "Corinthians",
     "team2": "São Paulo",
     "category": "Paulista Série A1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Breno Bidon",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Gonzalo Tapia",
+        "time": "37'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=JCdC2366PcU"
   },
   {
-    "id": "coeg462413",
+    "id": "eben807876",
+    "match_id": 15176521,
     "team1": "Red Bull Bragantino",
     "team2": "Botafogo SP",
     "category": "Paulista Série A1",
     "date": "2026-01-18",
+    "home_score": 5,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Marcelinho Braz",
+        "time": "90'"
+      },
+      {
+        "name": "Ignacio Sosa",
+        "time": "85'"
+      },
+      {
+        "name": "Matheus Fernandes",
+        "time": "66'"
+      },
+      {
+        "name": "Eduardo Sasha",
+        "time": "62'"
+      },
+      {
+        "name": "Pedro Henrique",
+        "time": "41'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=xS0-T3HlWlM"
   },
   {
-    "id": "swlp808759",
+    "id": "ixqk906274",
+    "match_id": 15176529,
     "team1": "Guarani",
     "team2": "Santos",
     "category": "Paulista Série A1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Kewen",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Álvaro Barreal",
+        "time": "59'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=l1N6X0Jab3M"
   },
   {
-    "id": "gpht318088",
+    "id": "wtks784758",
+    "match_id": 14317719,
     "team1": "Pescara",
     "team2": "Modena",
     "category": "Serie B",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Manuel De Luca",
+        "time": "44'"
+      },
+      {
+        "name": "Francesco Zampano",
+        "time": "27'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=r7jIHIY4mXw"
   },
   {
-    "id": "ngmm212701",
+    "id": "fnnz861443",
+    "match_id": 14317717,
     "team1": "Palermo",
     "team2": "Spezia",
     "category": "Serie B",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Jacopo Segre",
+        "time": "1'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=GWw7fsg2S84"
   },
   {
-    "id": "blwt113134",
+    "id": "kiza361411",
+    "match_id": 14056489,
     "team1": "Den Bosch",
     "team2": "MVV Maastricht",
     "category": "Eerste Divisie",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Genrich Sillé",
+        "time": "25'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sven Braken",
+        "time": "57'"
+      },
+      {
+        "name": "Ilano Silva Timas",
+        "time": "11'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=f7rfHiHq2mA"
   },
   {
-    "id": "itjs351516",
+    "id": "goqp738181",
+    "match_id": 14056485,
     "team1": "Almere City",
     "team2": "De Graafschap",
     "category": "Eerste Divisie",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Emanuel Poku",
+        "time": "90'"
+      },
+      {
+        "name": "Junior Kadile",
+        "time": "61'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=RxzRd6aKDpI"
   },
   {
-    "id": "aicz991629",
+    "id": "xkta756803",
+    "match_id": 14056495,
     "team1": "RKC Waalwijk",
     "team2": "Dordrecht",
     "category": "Eerste Divisie",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Jesper Uneken",
+        "time": "5'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Yannick Eduardo",
+        "time": "38'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=LrSxryx6Tec"
   },
   {
-    "id": "xijq035476",
+    "id": "poeg650062",
+    "match_id": 14056504,
     "team1": "Eindhoven",
     "team2": "Willem II Tilburg",
     "category": "Eerste Divisie",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Thomas Verheydt",
+        "time": "19'"
+      },
+      {
+        "name": "Devin Haen",
+        "time": "16'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=6o8uMS8VCuQ"
   },
   {
-    "id": "edot420198",
+    "id": "xxxr383325",
+    "match_id": 14138470,
     "team1": "Erzurumspor FK",
     "team2": "Amed Sportif Faaliyetler",
     "category": "1. Lig",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Brandon Baiye",
+        "time": "90'"
+      },
+      {
+        "name": "Eren Tozlu",
+        "time": "63'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=SASMJKF0YXU"
   },
   {
-    "id": "bqud867729",
+    "id": "obej145210",
+    "match_id": 14138469,
     "team1": "Boluspor",
     "team2": "Sarıyer",
     "category": "1. Lig",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Loic Kouagba",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Emeka Eze",
+        "time": "64'"
+      },
+      {
+        "name": "Moustapha Camara",
+        "time": "28'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=zx6JAS1boq0"
   },
   {
-    "id": "btzz480251",
+    "id": "fwef564027",
+    "match_id": 14138478,
     "team1": "Ümraniyespor",
     "team2": "Serikspor A.Ş.",
     "category": "1. Lig",
     "date": "2026-01-18",
+    "home_score": 5,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Cebio Soukou",
+        "time": "89'"
+      },
+      {
+        "name": "Engjell Hoti",
+        "time": "68'"
+      },
+      {
+        "name": "Baris Ekincier",
+        "time": "31'"
+      },
+      {
+        "name": "Baris Ekincier",
+        "time": "21'"
+      },
+      {
+        "name": "Baris Ekincier",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=BH_4Vb8CXPk"
   },
   {
-    "id": "jugb620364",
+    "id": "mxuz043921",
+    "match_id": 14091839,
     "team1": "Maccabi Haifa",
     "team2": "Maccabi Tel Aviv",
     "category": "Premier League",
     "date": "2026-01-18",
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Niv Gabay",
+        "time": "88'"
+      },
+      {
+        "name": "Kenji Gorré",
+        "time": "81'"
+      },
+      {
+        "name": "Guy Melamed",
+        "time": "79'"
+      },
+      {
+        "name": "Michael Ohana",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sagiv Jehezkel",
+        "time": "52'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=6aSKRMXqAyo"
   },
   {
-    "id": "jwxg409371",
+    "id": "ldoc653151",
+    "match_id": 15361713,
     "team1": "Deportivo Pasto",
     "team2": "Independiente Medellín",
     "category": "Liga DIMAYOR, Apertura",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Andrey Estupiñán",
+        "time": "52'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=0mp0e5jdK0Q"
   },
   {
-    "id": "toop993995",
+    "id": "gmsh607828",
+    "match_id": 15361715,
     "team1": "Jaguares de Córdoba",
     "team2": "Deportivo Cali",
     "category": "Liga DIMAYOR, Apertura",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Cristian Alvarez",
+        "time": "70'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=DIoljsmyiHs"
   },
   {
-    "id": "henn060132",
+    "id": "vcde859685",
+    "match_id": 15361717,
     "team1": "Junior Barranquilla",
     "team2": "Deportes Tolima",
     "category": "Liga DIMAYOR, Apertura",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Jersson González",
+        "time": "20'"
+      },
+      {
+        "name": "Juan Torres",
+        "time": "8'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=iNMnHFwrUJY"
   },
   {
-    "id": "yuzx439116",
+    "id": "zdic493305",
+    "match_id": 14771941,
     "team1": "Al Hazem",
     "team2": "Al Qadsiah",
     "category": "Saudi Pro League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 5,
+    "home_scorers": [
+      {
+        "name": "Aboubacar Bah",
+        "time": "86'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Mohammed Al-Yami",
+        "time": "90'"
+      },
+      {
+        "name": "Ahmed Al-Nakhli",
+        "time": "81'"
+      },
+      {
+        "name": "Julián Quiñones",
+        "time": "73'"
+      },
+      {
+        "name": "Musab Al Juwayr",
+        "time": "61'"
+      },
+      {
+        "name": "Mateo Retegui",
+        "time": "56'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=DVVmSTSEvUA"
   },
   {
-    "id": "xcom724352",
+    "id": "wfhn878671",
+    "match_id": 14771949,
     "team1": "Al Riyadh",
     "team2": "Al Taawoun",
     "category": "Saudi Pro League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Tozé",
+        "time": "63'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Roger Martínez",
+        "time": "66'"
+      },
+      {
+        "name": "Roger Martínez",
+        "time": "45'"
+      },
+      {
+        "name": "Roger Martínez",
+        "time": "10'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=1C3KuQDErSA"
   },
   {
-    "id": "ovhj935079",
+    "id": "ricd015763",
+    "match_id": 14771950,
     "team1": "Neom SC",
     "team2": "Al Hilal",
     "category": "Saudi Pro League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mohammed Al-Burayk",
+        "time": "42'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Rúben Neves",
+        "time": "66'"
+      },
+      {
+        "name": "Hassan Al Tambakti",
+        "time": "49'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=Yy0yJ_JOv1g"
   },
   {
-    "id": "rvpz987699",
+    "id": "lbjp870755",
+    "match_id": 14065030,
     "team1": "FK Csíkszereda Miercurea Ciuc",
     "team2": "Botoșani",
     "category": "Superliga",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Márton Eppel",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=PLIwOSpGtrE"
   },
   {
-    "id": "ddqz884299",
+    "id": "bjfh692178",
+    "match_id": 14065029,
     "team1": "CFR 1907 Cluj",
     "team2": "SC Oțelul Galați",
     "category": "Superliga",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Adrian Păun",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=Z49Jj2qkz48"
   },
   {
-    "id": "pies487219",
+    "id": "ddmm721947",
+    "match_id": 14065027,
     "team1": "Dinamo București",
     "team2": "Universitatea Cluj",
     "category": "Superliga",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Mamoudou Karamoko",
+        "time": "41'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=dqVWTAOWJX4"
   },
   {
-    "id": "jhkb045189",
+    "id": "mwio553407",
+    "match_id": 14038834,
     "team1": "Servette",
     "team2": "Zürich",
     "category": "Swiss Super League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Marco Burch",
+        "time": "20'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Damienus Reverson",
+        "time": "28'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=match-cente"
   },
   {
-    "id": "psiw442115",
+    "id": "vvor548580",
+    "match_id": 15213920,
     "team1": "Buriram United",
     "team2": "Chiangrai United",
     "category": "Thai League 1",
     "date": "2026-01-18",
+    "home_score": 8,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Goran Čaušić",
+        "time": "89'"
+      },
+      {
+        "name": "Eduardo Mancha",
+        "time": "85'"
+      },
+      {
+        "name": "Thanakrit Chotmuangpak",
+        "time": "81'"
+      },
+      {
+        "name": "Rubén Sánchez",
+        "time": "72'"
+      },
+      {
+        "name": "Thanakrit Chotmuangpak",
+        "time": "45'"
+      },
+      {
+        "name": "Guilherme Bissoli",
+        "time": "33'"
+      },
+      {
+        "name": "Robert Žulj",
+        "time": "31'"
+      },
+      {
+        "name": "Suphanat Mueanta",
+        "time": "28'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jordan Emaviwe",
+        "time": "16'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=YldXeN1XW2s"
   },
   {
-    "id": "wbrz541821",
+    "id": "zrba946343",
+    "match_id": 15213922,
     "team1": "Ratchaburi",
     "team2": "Nakhon Ratchasima Mazda",
     "category": "Thai League 1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Adison Promrak",
+        "time": "39'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=PwfM77sxdkA"
   },
   {
-    "id": "mxhw425422",
+    "id": "fpex670795",
+    "match_id": 15213924,
     "team1": "Rayong",
     "team2": "Port",
     "category": "Thai League 1",
     "date": "2026-01-18",
+    "home_score": 5,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Thanphisit Hempandan",
+        "time": "90'"
+      },
+      {
+        "name": "Stênio Junior",
+        "time": "43'"
+      },
+      {
+        "name": "Stênio Junior",
+        "time": "34'"
+      },
+      {
+        "name": "Seksan Ratree",
+        "time": "32'"
+      },
+      {
+        "name": "João Afonso",
+        "time": "30'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Noboru Shimura",
+        "time": "16'"
+      },
+      {
+        "name": "Suphanan Bureerat",
+        "time": "6'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=ymzbrq7zHv4"
   },
   {
-    "id": "xvci362936",
+    "id": "wtto031130",
+    "match_id": 15213925,
     "team1": "BG Pathum United",
     "team2": "True Bangkok United",
     "category": "Thai League 1",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Ilias Alhaft",
+        "time": "54'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=1EzYbcoC2fc"
   },
   {
-    "id": "mllc727037",
+    "id": "nppj076085",
+    "match_id": 15010578,
     "team1": "Baniyas",
     "team2": "Al Bataeh",
     "category": "Pro League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Youssouf Niakate",
+        "time": "39'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Anatole Bertrand Abang",
+        "time": "90'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=2EXhx6go4xY"
   },
   {
-    "id": "ksyv375840",
+    "id": "cmsa803134",
+    "match_id": 14117763,
     "team1": "Club NXT U23",
     "team2": "KSC Lokeren",
     "category": "Challenger Pro League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Sem Audoor",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Mohamed Soumaré",
+        "time": "80'"
+      },
+      {
+        "name": "Anisse Brrou",
+        "time": "66'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=lTpM7OuEz-0"
   },
   {
-    "id": "vlip428774",
+    "id": "xcvn319107",
+    "match_id": 14117762,
     "team1": "K. Beerschot V.A.",
     "team2": "OC Charleroi",
     "category": "Challenger Pro League",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Arnold Vula",
+        "time": "54'"
+      },
+      {
+        "name": "D'Margio Wright-Phillips",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Niklo Dailly",
+        "time": "86'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=IzLhLtqB6kQ"
   },
   {
-    "id": "kphy387430",
+    "id": "kobk228828",
+    "match_id": 14194033,
     "team1": "Paris",
     "team2": "OL Lyonnes",
     "category": "Première Ligue, Féminine",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=e6exYTZAALs"
   },
   {
-    "id": "ejoq533747",
+    "id": "vikp654784",
+    "match_id": 14287015,
     "team1": "AS Roma",
     "team2": "Sassuolo",
     "category": "Serie A Femminile",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Alice Corelli",
+        "time": "79'"
+      },
+      {
+        "name": "Manuela Giugliano",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Lana Clelland",
+        "time": "35'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=ovheicfNECs"
   },
   {
-    "id": "zvkn996490",
+    "id": "zpsv087899",
+    "match_id": 14287016,
     "team1": "Ternana",
     "team2": "Lazio",
     "category": "Serie A Femminile",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Giada Cimò",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=WZoKHMw_-PQ"
   },
   {
-    "id": "plwv051245",
+    "id": "bnoq565401",
+    "match_id": 14287008,
     "team1": "Inter",
     "team2": "Juventus",
     "category": "Serie A Femminile",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Marija Milinković",
+        "time": "35'"
+      },
+      {
+        "name": "Karólína Lea Vilhjálmsdóttir",
+        "time": "13'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Cecilia Salvai",
+        "time": "4'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=GaIrK3Pu6cs"
   },
   {
-    "id": "fmvr992323",
+    "id": "bysv770062",
+    "match_id": 14414554,
     "team1": "Alhama Club de Fútbol",
     "team2": "Fútbol Club Barcelona",
     "category": "Liga F Moeve",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Caroline Graham Hansen",
+        "time": "72'"
+      },
+      {
+        "name": "Clàudia Pina",
+        "time": "22'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=kxTFXlFMxf0"
   },
   {
-    "id": "orxt595193",
+    "id": "zyfw054677",
+    "match_id": 14414559,
     "team1": "Costa Adeje Tenerife",
     "team2": "Athletic Club",
     "category": "Liga F Moeve",
     "date": "2026-01-18",
+    "home_score": 5,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Iratxe Perez",
+        "time": "90'"
+      },
+      {
+        "name": "Koko Ange N'Guessan",
+        "time": "90'"
+      },
+      {
+        "name": "Aleksandra Zaremba",
+        "time": "85'"
+      },
+      {
+        "name": "Elba Vergés",
+        "time": "68'"
+      },
+      {
+        "name": "Paola Hernández",
+        "time": "18'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=ZxP5SFw4iD4"
   },
   {
-    "id": "xton698277",
+    "id": "zcsa386423",
+    "match_id": 14414556,
     "team1": "Badalona",
     "team2": "Real Club Deportivo de la Coruña",
     "category": "Liga F Moeve",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Irina Uribe",
+        "time": "2'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=drfutd4Kb9Y"
   },
   {
-    "id": "fgjk063599",
+    "id": "dofk296974",
+    "match_id": 14414561,
     "team1": "Sevilla",
     "team2": "Real Sociedad",
     "category": "Liga F Moeve",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Nerea Eizagirre",
+        "time": "72'"
+      },
+      {
+        "name": "Esther Sullastres",
+        "time": "61'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=HNTfo-taoNk"
   },
   {
-    "id": "nnwr474863",
+    "id": "tgfq005030",
+    "match_id": 15314039,
     "team1": "Independiente Rivadavia",
     "team2": "Estudiantes de Buenos Aires",
     "category": "Copa Argentina",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Gonzalo Ríos",
+        "time": "72'"
+      },
+      {
+        "name": "Alex Arce",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=gvjNZmueNZ4"
   },
   {
-    "id": "wydm299415",
+    "id": "chea792077",
+    "match_id": 15138028,
     "team1": "Vasco da Gama",
     "team2": "Nova Iguaçu",
     "category": "Carioca Série A – Taça Guanabara",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=dVuiS31bY9A"
   },
   {
-    "id": "goeq975055",
+    "id": "oonu950877",
+    "match_id": 15138030,
     "team1": "Sampaio Corrêa RJ",
     "team2": "Botafogo",
     "category": "Carioca Série A – Taça Guanabara",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Lucas Marreta",
+        "time": "51'"
+      },
+      {
+        "name": "Rodrigo Andrade",
+        "time": "43'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Kauan Toledo",
+        "time": "5'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=zHKXuCaHNAo"
   },
   {
-    "id": "bpjd624935",
+    "id": "bbro807996",
+    "match_id": 15146339,
     "team1": "Caxias",
     "team2": "Guarany de Bagé",
     "category": "Gaúcho",
     "date": "2026-01-18",
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Dudu Vieira",
+        "time": "71'"
+      },
+      {
+        "name": "Jhonatan Ribeiro",
+        "time": "67'"
+      },
+      {
+        "name": "Jhonatan Ribeiro",
+        "time": "62'"
+      },
+      {
+        "name": "Tomas Bastos",
+        "time": "24'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Welder",
+        "time": "90'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=pxvmnjN-8G4"
   },
   {
-    "id": "isfd275291",
-    "team1": "Ypiranga",
-    "team2": "Internacional",
-    "category": "Gaúcho",
-    "date": "2026-01-18",
-    "link": "https://www.youtube.com/watch?v=Na3AV9UBo30"
-  },
-  {
-    "id": "ovhb556458",
+    "id": "dayk780445",
+    "match_id": 15146337,
     "team1": "Monsoon",
     "team2": "EC Avenida",
     "category": "Gaúcho",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=YTvlBWJlRRQ"
   },
   {
-    "id": "vbxh037980",
+    "id": "xcja577076",
+    "match_id": 15188776,
     "team1": "Atlético Mineiro",
     "team2": "Tombense",
     "category": "Mineiro Módulo I ",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=yu30jVmVDEk"
   },
   {
-    "id": "lahu432492",
+    "id": "dexd424843",
+    "match_id": 15298474,
     "team1": "Botafogo PB",
     "team2": "Esporte de Patos",
     "category": "Paraibano",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Gustavo Santos Costa",
+        "time": "2'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "37'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=TmgMflSlfZA"
   },
   {
-    "id": "qfiz888297",
+    "id": "iylu029362",
+    "match_id": 15298470,
     "team1": "Serra Branca EC",
     "team2": "Treze",
     "category": "Paraibano",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "80'"
+      },
+      {
+        "name": "Ryan",
+        "time": "59'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=3tMttQoaunE"
   },
   {
-    "id": "qzvr021091",
+    "id": "fnfq648963",
+    "match_id": 15204444,
     "team1": "Maguary",
     "team2": "Retrô",
     "category": "Pernambucano, Serie A1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mayco Felix",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Dankler",
+        "time": "25'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=7Qh1btbCmmc"
   },
   {
-    "id": "wpyl995486",
+    "id": "atez501497",
+    "match_id": 15204428,
     "team1": "Clube Náutico Capibaribe",
     "team2": "Sport Recife",
     "category": "Pernambucano, Serie A1",
     "date": "2026-01-18",
+    "home_score": 4,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Paulo Sérgio",
+        "time": "86'"
+      },
+      {
+        "name": "Paulo Sérgio",
+        "time": "73'"
+      },
+      {
+        "name": "Vinícius",
+        "time": "67'"
+      },
+      {
+        "name": "Dodô",
+        "time": "24'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=i-3ul_9d6do"
   },
   {
-    "id": "gozh010522",
+    "id": "btqu664166",
+    "match_id": 15188400,
     "team1": "Municipal Pérez Zeledón",
     "team2": "LD Alajuelense",
     "category": "Primera División, Clausura",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Andrey Soto",
+        "time": "19'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jeison Lucumí",
+        "time": "81'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=YLBPMR3jxX8"
   },
   {
-    "id": "qqxf010320",
+    "id": "mxwo431551",
+    "match_id": 14222822,
     "team1": "Omonia Nicosia",
     "team2": "Anorthosis Famagusta",
     "category": "1st Division",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Muamer Tanković",
+        "time": "80'"
+      },
+      {
+        "name": "Ryan Mmaee",
+        "time": "39'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=PmT3n4D9RyU"
   },
   {
-    "id": "bcpk632996",
+    "id": "rgrw259001",
+    "match_id": 14222821,
     "team1": "AEK Larnaca",
     "team2": "Enosis Neon Ypsona",
     "category": "1st Division",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Enzo Cabrera",
+        "time": "69'"
+      },
+      {
+        "name": "Hrvoje Miličević",
+        "time": "13'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Algassime Bah",
+        "time": "90'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=2wCCTDqMb2g"
   },
   {
-    "id": "njyw886519",
+    "id": "skyk881572",
+    "match_id": 14222829,
     "team1": "Apollon Limassol",
     "team2": "APOEL Nicosia",
     "category": "1st Division",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Garry Rodrigues",
+        "time": "45'"
+      },
+      {
+        "name": "Brandon Thomas",
+        "time": "10'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Konstantinos Laifis",
+        "time": "50'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=5GG6ZRPy2Ek"
   },
   {
-    "id": "obre491779",
+    "id": "nzbq600541",
+    "match_id": 14103087,
     "team1": "VfB Stuttgart II U21",
     "team2": "MSV Duisburg",
     "category": "3. Liga",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 4,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Jesse Edem Tugbenyo",
+        "time": "90'"
+      },
+      {
+        "name": "Joshua Bitter",
+        "time": "90'"
+      },
+      {
+        "name": "Lex-Tyger Lobinger",
+        "time": "72'"
+      },
+      {
+        "name": "Patrick Sussek",
+        "time": "52'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=KNbiycPoB6s"
   },
   {
-    "id": "zhux481527",
+    "id": "mwbc883173",
+    "match_id": 14103094,
     "team1": "1.  Schweinfurt 05",
     "team2": "Viktoria Köln",
     "category": "3. Liga",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Luka Trslic",
+        "time": "53'"
+      },
+      {
+        "name": "Devin Angleberger",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=6EE_o8pRG0Y"
   },
   {
-    "id": "pvjj439806",
+    "id": "atrn999140",
+    "match_id": 14103085,
     "team1": "TSV Havelse",
     "team2": "TSG Hoffenheim II U23",
     "category": "3. Liga",
     "date": "2026-01-18",
+    "home_score": 4,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Christopher Schepp",
+        "time": "88'"
+      },
+      {
+        "name": "Nassim Boujellab",
+        "time": "68'"
+      },
+      {
+        "name": "Julius Düker",
+        "time": "51'"
+      },
+      {
+        "name": "Johann Berger",
+        "time": "5'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=MABJqJtZO8A"
   },
   {
-    "id": "ymxx344313",
+    "id": "gzns916868",
+    "match_id": 14489875,
     "team1": "Nations",
     "team2": "Aduana Stars",
     "category": "Premier League",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Joseph Effah",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=gWuJ1sT-Vek"
   },
   {
-    "id": "reqo162695",
+    "id": "yejs013102",
+    "match_id": 14302698,
     "team1": "Arzignano Valchiampo",
     "team2": "L.R. Vicenza",
     "category": "Serie C, Group A",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Francesco Toniolo",
+        "time": "78'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Lorenzo Caferri",
+        "time": "90'"
+      },
+      {
+        "name": "Alessandro Capello",
+        "time": "73'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=pxVNEobgdDw"
   },
   {
-    "id": "nacc393129",
+    "id": "lrgl987684",
+    "match_id": 14305453,
     "team1": "Pro Vercelli",
     "team2": "Union Brescia",
     "category": "Serie C, Group A",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=MC9X5ehSMLk"
   },
   {
-    "id": "qinp634323",
+    "id": "logj250755",
+    "match_id": 14302701,
     "team1": "Inter U23",
     "team2": "Virtus Verona",
     "category": "Serie C, Group A",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Antonino La Gumina",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=cVeWOJMRM24"
   },
   {
-    "id": "zhkr730625",
+    "id": "iwna948556",
+    "match_id": 14302706,
     "team1": "Renate",
     "team2": "AlbinoLeffe",
     "category": "Serie C, Group A",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Óttar Magnús Karlsson",
+        "time": "44'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Giacomo Sali",
+        "time": "58'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=b-anDO9sFwE"
   },
   {
-    "id": "xrvp244577",
+    "id": "xwtf446000",
+    "match_id": 14303081,
     "team1": "Forlì",
     "team2": "Sambenedettese",
     "category": "Serie C, Group B",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Alessandro Dalmazzi",
+        "time": "45'"
+      },
+      {
+        "name": "Matteo Stoppa",
+        "time": "12'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=2DZJ4Q54_Nw"
   },
   {
-    "id": "mfpl787539",
+    "id": "pdpd317699",
+    "match_id": 14303084,
     "team1": "Perugia",
     "team2": "Gubbio",
     "category": "Serie C, Group B",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Andrea La Mantia",
+        "time": "70'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=rawexoC1huE"
   },
   {
-    "id": "elgr157782",
+    "id": "yrmw307355",
+    "match_id": 14303079,
     "team1": "Bra",
     "team2": "Ravenna",
     "category": "Serie C, Group B",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Riccardo Sganzerla",
+        "time": "52'"
+      },
+      {
+        "name": "Enrico Baldini",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Matteo Solini",
+        "time": "90'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=GXs9o-dsd9g"
   },
   {
-    "id": "juwb701931",
+    "id": "lvbr255452",
+    "match_id": 14303086,
     "team1": "Pontedera",
     "team2": "Pineto",
     "category": "Serie C, Group B",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Cristian Cerretti",
+        "time": "16'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Alessandro Marrancone",
+        "time": "62'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=28yoe6guJa8"
   },
   {
-    "id": "pioj709896",
+    "id": "zmqu590784",
+    "match_id": 14303462,
     "team1": "Atalanta U23",
     "team2": "Salernitana",
     "category": "Serie C, Group C",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Kees de Boer",
+        "time": "56'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=mLGweZAMlIk"
   },
   {
-    "id": "mviq381385",
+    "id": "ovtm727056",
+    "match_id": 14303469,
     "team1": "Potenza Calcio",
     "team2": "Casertana",
     "category": "Serie C, Group C",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Gianluca D'Auria",
+        "time": "90'"
+      },
+      {
+        "name": "Claud Adjapong",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=ZSccNTtoNg0"
   },
   {
-    "id": "icxd591707",
+    "id": "yrvm280111",
+    "match_id": 14303470,
     "team1": "Siracusa Calcio",
     "team2": "Audace Cerignola",
     "category": "Serie C, Group C",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Diego Gambale",
+        "time": "80'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=xfu_3CgoQck"
   },
   {
-    "id": "ipgc034954",
+    "id": "ijwr765524",
+    "match_id": 14303471,
     "team1": "Trapani",
     "team2": "Sorrento",
     "category": "Serie C, Group C",
     "date": "2026-01-18",
+    "home_score": 4,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Bogdan Alexandru Stauciuc",
+        "time": "83'"
+      },
+      {
+        "name": "Luigi Canotto",
+        "time": "59'"
+      },
+      {
+        "name": "Emmanuele Salines",
+        "time": "45'"
+      },
+      {
+        "name": "Niko Kirwan",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=hwMKSQPYCmc"
   },
   {
-    "id": "dfmu337897",
+    "id": "wdtn124623",
+    "match_id": 14303468,
     "team1": "AZ Picerno",
     "team2": "Latina",
     "category": "Serie C, Group C",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=8h_CaalvPeA"
   },
   {
-    "id": "bfsh870049",
+    "id": "kxps743993",
+    "match_id": 14303466,
     "team1": "Foggia",
     "team2": "Giugliano",
     "category": "Serie C, Group C",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Davide Petermann",
+        "time": "63'"
+      },
+      {
+        "name": "Davide Petermann",
+        "time": "27'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Destiny Egharevba",
+        "time": "65'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=Bls8D7OPIZM"
   },
   {
-    "id": "gocs113087",
+    "id": "cspl189125",
+    "match_id": 14303467,
     "team1": "Monopoli",
     "team2": "Catania",
     "category": "Serie C, Group C",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mattia Tirelli",
+        "time": "51'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Salvatore Caturano",
+        "time": "90'"
+      },
+      {
+        "name": "Tiago Casasola",
+        "time": "80'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=EtcH_8BQo9Y"
   },
   {
-    "id": "gtzl383358",
+    "id": "gvga062077",
+    "match_id": 14068603,
     "team1": "Lecce U20",
     "team2": "Bologna U20",
     "category": "Primavera 1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Paco Esteban",
+        "time": "26'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=-ZTst5WNh6A"
   },
   {
-    "id": "dksp958613",
+    "id": "axsv914063",
+    "match_id": 15172556,
     "team1": "Cagliari U20",
     "team2": "Roma U20",
     "category": "Primavera 1",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Paul Mendy",
+        "time": "72'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Edoardo Morucci",
+        "time": "23'"
+      },
+      {
+        "name": "Mattia Della Rocca",
+        "time": "14'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=gpmp-xvb2Dw"
   },
   {
-    "id": "phhk404044",
+    "id": "stow129375",
+    "match_id": 14336303,
     "team1": "Lusitânia Lourosa",
     "team2": "Marítimo",
     "category": "Liga Portugal 2",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 4,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Martín Tejón",
+        "time": "59'"
+      },
+      {
+        "name": "Simo Bouzaidi",
+        "time": "48'"
+      },
+      {
+        "name": "Carlos Daniel",
+        "time": "11'"
+      },
+      {
+        "name": "Adrián Butzke",
+        "time": "3'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=l-M06x8Y4YM"
   },
   {
-    "id": "xbnt417113",
+    "id": "ytfx617472",
+    "match_id": 14262764,
     "team1": "CD Trofense",
     "team2": "AD Marco 09",
     "category": "Liga 3, Group A",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Pedro Soares",
+        "time": "63'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=glHUX1nlfQw"
   },
   {
-    "id": "pstk642895",
+    "id": "odpz905609",
+    "match_id": 14262760,
     "team1": "USC Paredes",
     "team2": "Amarante",
     "category": "Liga 3, Group A",
     "date": "2026-01-18",
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=9_f_YYF58Ww"
   },
   {
-    "id": "nani803318",
+    "id": "eecz360991",
+    "match_id": 14262769,
     "team1": "Vitória SC B",
     "team2": "AD Fafe",
     "category": "Liga 3, Group A",
     "date": "2026-01-18",
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Miguel Nogueira",
+        "time": "75'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=I3D7EVWNjKk"
   },
   {
-    "id": "rork767730",
+    "id": "zrmi731975",
+    "match_id": 14270991,
     "team1": "Académica Coimbra",
     "team2": "Amora",
     "category": "Liga 3, Group B",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Jean Sinisterra",
+        "time": "66'"
+      },
+      {
+        "name": "Marcos Paulo Gomes",
+        "time": "10'"
+      }
+    ],
+    "away_scorers": [],
     "link": "https://www.youtube.com/watch?v=MlLSTCmb5mw"
   },
   {
-    "id": "azcs968938",
+    "id": "jrgk710177",
+    "match_id": 14195525,
     "team1": "Balestier Khalsa",
     "team2": "Hougang United",
     "category": "Premier League",
     "date": "2026-01-18",
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Suwa Yuma",
+        "time": "8'"
+      },
+      {
+        "name": "Bogdan Mandić",
+        "time": "4'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Nabilai Absolom Kibunguchy",
+        "time": "81'"
+      },
+      {
+        "name": "Victor Blasco",
+        "time": "78'"
+      },
+      {
+        "name": "Settawut Wongsai",
+        "time": "11'"
+      }
+    ],
     "link": "https://www.youtube.com/watch?v=uihix-GvPec"
   },
   {
@@ -3776,14 +6326,6 @@
     "link": "https://www.youtube.com/watch?v=sW5AY-KDBv4"
   },
   {
-    "id": "yssw006067",
-    "team1": "Inter de Santa Maria",
-    "team2": "Juventude",
-    "category": "Gaúcho",
-    "date": "2026-01-17",
-    "link": "https://www.youtube.com/watch?v=cVnBa43G8Es"
-  },
-  {
     "id": "dcvx597437",
     "team1": "Grêmio",
     "team2": "São Luiz",
@@ -4206,14 +6748,6 @@
     "category": "Liga 3, Group B",
     "date": "2026-01-17",
     "link": "https://www.youtube.com/watch?v=-SEsqE3niFQ"
-  },
-  {
-    "id": "ckdp810548",
-    "team1": "SC Covilhã",
-    "team2": "Atletico CP",
-    "category": "Liga 3, Group B",
-    "date": "2026-01-17",
-    "link": "https://www.youtube.com/watch?v=IKtJ9Mpj0MY"
   },
   {
     "id": "ngfc502176",
@@ -4832,14 +7366,6 @@
     "link": "https://www.youtube.com/watch?v=lypRP821MqM"
   },
   {
-    "id": "fzfu612256",
-    "team1": "Aubagne",
-    "team2": "Paris 13 Atletico",
-    "category": "National",
-    "date": "2026-01-16",
-    "link": "https://www.youtube.com/watch?v=EMaMrcOeGN4"
-  },
-  {
     "id": "aret557562",
     "team1": "Dijon",
     "team2": "Le Puy Foot 43 Auvergne",
@@ -5264,14 +7790,6 @@
     "link": "https://www.youtube.com/watch?v=tctzA_T-OUc"
   },
   {
-    "id": "bnyk246953",
-    "team1": "Monsoon",
-    "team2": "Internacional",
-    "category": "Gaúcho",
-    "date": "2026-01-15",
-    "link": "https://www.youtube.com/watch?v=iyqUaVTCxRU"
-  },
-  {
     "id": "tyij814294",
     "team1": "Ypiranga",
     "team2": "Guarany de Bagé",
@@ -5342,14 +7860,6 @@
     "category": "Club Friendly Games",
     "date": "2026-01-15",
     "link": "https://www.youtube.com/watch?v=XhdEs5TzL6k"
-  },
-  {
-    "id": "yymk288880",
-    "team1": "Inter de Santa Maria",
-    "team2": "São Luiz",
-    "category": "Gaúcho",
-    "date": "2026-01-15",
-    "link": "https://www.youtube.com/watch?v=tVGFxe1ZVKc"
   },
   {
     "id": "vtls579620",
