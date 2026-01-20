@@ -1,0 +1,51 @@
+{
+  "status": "active",
+  "last_updated": "2026-01-20",
+  "daily_message": "Join our official channels for daily updates, alerts & offers 🚀",
+  "show_frequency": {
+    "app_open": true,
+    "once_per_day": true,
+    "cooldown_hours": 24
+  },
+  "channels": [
+    {
+      "id": "telegram_main",
+      "type": "telegram",
+      "title": "Join our Telegram",
+      "subtitle": "Daily updates & instant alerts",
+      "icon": "telegram",
+      "url": "https://t.me/your_channel",
+      "cta_text": "Join Now",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "whatsapp_updates",
+      "type": "whatsapp",
+      "title": "Join our WhatsApp",
+      "subtitle": "Important notifications only",
+      "icon": "whatsapp",
+      "url": "https://wa.me/1234567890",
+      "cta_text": "Join Now",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "discord_daily",
+      "type": "discord",
+      "title": "Join our Discord",
+      "subtitle": "Community chat & support",
+      "icon": "discord",
+      "url": "https://discord.gg/yourcode",
+      "cta_text": "Join Server",
+      "enabled": false,
+      "priority": 3
+    }
+  ],
+  "ui_config": {
+    "display_type": "popup",
+    "dismissible": true,
+    "auto_close_seconds": 8,
+    "theme": "light"
+  }
+}
