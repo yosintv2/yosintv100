@@ -1,22 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Kairat Almaty",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8037.png",
-            "team2": "Club Brugge",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8342.png",
-            "league": "Champions League",
-            "start": "2026-01-21T00:30:00+09:00",
-            "duration": 2.2,
-            "matchId": 4947193,
-            "stadium": "Astana Arena",
-            "referee": "Donatas Rumsas",
-            "home_lineup": [ "Temirlan Anarbekov", "Aleksandr Mrynskiy", "Aleksandr Martynovich", "Egor Sorokin", "Luis Mata", "Erkin Tapalov", "Dan Leon Glazer", "Jorginho", "Valeri Gromyko", "Ricardinho", "Edmilson Filho" ],
-            "away_lineup": [ "Dani van den Heuvel", "Kyriani Sabbe", "Joel Ordonez", "Brandon Mechele", "Joaquin Seys", "Hans Vanaken", "Aleksandar Stankovic", "Christos Tzolis", "Hugo Vetlesen", "Nicolo Tresoldi", "Mamadou Diakhon" ],
-            "h2h": [  ],
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=kairatalmaty"
-        },
-        {
             "team1": "Bodø/Glimt",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8402.png",
             "team2": "Man City",
@@ -24,29 +8,17 @@
             "league": "Champions League",
             "start": "2026-01-21T02:45:00+09:00",
             "duration": 2.2,
-            "matchId": 4947163,
-            "stadium": "Aspmyra Stadion",
-            "referee": "Sven Jablonski",
-            "home_lineup": [ "Nikita Haikin", "Fredrik Sjøvold", "Odin Lurås Bjørtuft", "Haitam Aleesami", "Fredrik André Bjørkan", "Håkon Evjen", "Patrick Berg", "Sondre Brunstad Fet", "Ole Blomberg", "Kasper Waarts Høgh", "Jens Petter Hauge" ],
-            "away_lineup": [ "Gianluigi Donnarumma", "Rico Lewis", "Abdukodir Khusanov", "Max Alleyne", "Nathan Aké", "Rodri", "Rayan Cherki", "Tijjani Reijnders", "Nico O'Reilly", "Jérémy Doku", "Erling Haaland" ],
-            "h2h": [  ],
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=mancity"
         },
         {
-            "team1": "Olympiacos",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8638.png",
-            "team2": "Leverkusen",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png",
+            "team1": "FC København",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8391.png",
+            "team2": "Napoli",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png",
             "league": "Champions League",
             "start": "2026-01-21T05:00:00+09:00",
             "duration": 2.2,
-            "matchId": 4947170,
-            "stadium": "Stadio Georgios Karaiskáki",
-            "referee": "Maurizio Mariani",
-            "home_lineup": [ "Konstantinos Tzolakis", "Rodinei", "Giulian Biancone", "Panagiotis Retsos", "Francisco Ortega", "Santiago Hezze", "Christos Mouzakitis", "Gelson Martins", "Chiquinho", "Daniel Podence", "Mehdi Taremi" ],
-            "away_lineup": [ "Janis Blaswich", "Jarell Quansah", "Robert Andrich", "Loic Badé", "Arthur", "Equi Fernandez", "Aleix Garcia", "Alejandro Grimaldo", "Malik Tillman", "Ernest Poku", "Patrik Schick" ],
-            "h2h": [  ],
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=leverkusen"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=napoli"
         },
         {
             "team1": "Inter",
@@ -56,13 +28,27 @@
             "league": "Champions League",
             "start": "2026-01-21T05:00:00+09:00",
             "duration": 2.2,
-            "matchId": 4947126,
-            "stadium": "Stadio Giuseppe Meazza",
-            "referee": "Joao Pinheiro",
-            "home_lineup": [ "Yann Sommer", "Manuel Akanji", "Francesco Acerbi", "Alessandro Bastoni", "Luis Henrique", "Nicolo Barella", "Piotr Zielinski", "Henrikh Mkhitaryan", "Federico Dimarco", "Marcus Thuram", "Lautaro Martinez" ],
-            "away_lineup": [ "David Raya", "Ben White", "William Saliba", "Gabriel", "Myles Lewis-Skelly", "Martin Ødegaard", "Martin Zubimendi", "Declan Rice", "Bukayo Saka", "Gabriel Jesus", "Leandro Trossard" ],
-            "h2h": [ 1, 0, 0 ],
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=inter"
+        },
+        {
+            "team1": "Olympiacos",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8638.png",
+            "team2": "Leverkusen",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png",
+            "league": "Champions League",
+            "start": "2026-01-21T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=leverkusen"
+        },
+        {
+            "team1": "Real Madrid",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
+            "team2": "Monaco",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9829.png",
+            "league": "Champions League",
+            "start": "2026-01-21T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=realmadrid"
         },
         {
             "team1": "Sporting CP",
@@ -72,12 +58,6 @@
             "league": "Champions League",
             "start": "2026-01-21T05:00:00+09:00",
             "duration": 2.2,
-            "matchId": 4947157,
-            "stadium": "Estádio José Alvalade",
-            "referee": "Anthony Taylor",
-            "home_lineup": [ "Rui Silva", "Iván Fresneda", "Matheus", "Goncalo Inacio", "Georgios Vagiannidis", "Hidemasa Morita", "Joao Simoes", "Geny Catamo", "Trincao", "Maximiliano Araujo", "Luis Suárez" ],
-            "away_lineup": [ "Lucas Chevalier", "Warren Zaire-Emery", "Marquinhos", "Willian Pacho", "Nuno Mendes", "Senny Mayulu", "Vitinha", "Fabián Ruiz", "Désiré Doué", "Ousmane Dembélé", "Khvicha Kvaratskhelia" ],
-            "h2h": [ 0, 0, 1 ],
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=psg"
         },
         {
@@ -88,45 +68,7 @@
             "league": "Champions League",
             "start": "2026-01-21T05:00:00+09:00",
             "duration": 2.2,
-            "matchId": 4947136,
-            "stadium": "Tottenham Hotspur Stadium",
-            "referee": "Glenn Nyberg",
-            "home_lineup": [ "Guglielmo Vicario", "Pedro Porro", "Cristian Romero", "Kevin Danso", "Djed Spence", "Archie Gray", "Lucas Bergvall", "Randal Kolo Muani", "Xavi Simons", "Wilson Odobert", "Dominic Solanke" ],
-            "away_lineup": [ "Gregor Kobel", "Emre Can", "Waldemar Anton", "Nico Schlotterbeck", "Yan Couto", "Jobe Bellingham", "Felix Nmecha", "Julian Ryerson", "Karim Adeyemi", "Julian Brandt", "Serhou Guirassy" ],
-            "h2h": [ 4, 0, 2 ],
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=dortmund"
-        },
-        {
-            "team1": "Real Madrid",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
-            "team2": "Monaco",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9829.png",
-            "league": "Champions League",
-            "start": "2026-01-21T05:00:00+09:00",
-            "duration": 2.2,
-            "matchId": 4947122,
-            "stadium": "Estadio Bernabéu",
-            "referee": "Espen Eskaas",
-            "home_lineup": [ "Thibaut Courtois", "Federico Valverde", "Raul Asencio", "Dean Huijsen", "Francisco Garcia", "Arda Güler", "Aurélien Tchouaméni", "Jude Bellingham", "Franco Mastantuono", "Kylian Mbappé", "Vinicius Junior" ],
-            "away_lineup": [ "Philipp Köhn", "Vanderson", "Thilo Kehrer", "Eric Dier", "Caio Henrique", "Maghnes Akliouche", "Jordan Teze", "Denis Zakaria", "Aleksandr Golovin", "Mika Biereth", "Folarin Balogun" ],
-            "h2h": [  ],
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=realmadrid"
-        },
-        {
-            "team1": "FC København",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8391.png",
-            "team2": "Napoli",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png",
-            "league": "Champions League",
-            "start": "2026-01-21T05:00:00+09:00",
-            "duration": 2.2,
-            "matchId": 4947240,
-            "stadium": "Parken",
-            "referee": "Irfan Peljto",
-            "home_lineup": [ "Dominik Kotarski", "Yoram Zague", "Gabriel Pereira", "Junnosuke Suzuki", "Marcos Lopez", "Mads Emil Madsen", "Thomas Delaney", "Jordan Larsson", "Mohamed Elyounoussi", "Elias Achouri", "Viktor Dadason" ],
-            "away_lineup": [ "Vanja Milinkovic-Savic", "Sam Beukema", "Juan Jesus", "Alessandro Buongiorno", "Giovanni Di Lorenzo", "Stanislav Lobotka", "Scott McTominay", "Leonardo Spinazzola", "Antonio Vergara", "Noa Lang", "Rasmus Højlund" ],
-            "h2h": [  ],
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=napoli"
         }
     ]
 }
