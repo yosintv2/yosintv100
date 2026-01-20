@@ -1,6 +1,16 @@
 {
     "matches": [
         {
+            "team1": "Kairat Almaty",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8037.png",
+            "team2": "Club Brugge",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8342.png",
+            "league": "Champions League",
+            "start": "2026-01-21T00:30:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=kairatalmaty"
+        },
+        {
             "team1": "Bodø/Glimt",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8402.png",
             "team2": "Man City",
@@ -69,6 +79,86 @@
             "start": "2026-01-21T05:00:00+09:00",
             "duration": 2.2,
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=dortmund"
+        },
+        {
+            "team1": "Damac FC",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/582823.png",
+            "team2": "Al Nassr FC",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
+            "league": "Saudi Pro League",
+            "start": "2026-01-22T02:30:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=alnassrfc"
+        },
+        {
+            "team1": "Galatasaray",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8637.png",
+            "team2": "Atletico Madrid",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
+            "league": "Champions League",
+            "start": "2026-01-22T02:45:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=atleticomadrid"
+        },
+        {
+            "team1": "Bayern München",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9823.png",
+            "team2": "Union St.Gilloise",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7978.png",
+            "league": "Champions League",
+            "start": "2026-01-22T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bayernmunchen"
+        },
+        {
+            "team1": "Chelsea",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
+            "team2": "Pafos FC",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/2137.png",
+            "league": "Champions League",
+            "start": "2026-01-22T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=chelsea"
+        },
+        {
+            "team1": "Juventus",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
+            "team2": "Benfica",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9772.png",
+            "league": "Champions League",
+            "start": "2026-01-22T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=juventus"
+        },
+        {
+            "team1": "Marseille",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8592.png",
+            "team2": "Liverpool",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
+            "league": "Champions League",
+            "start": "2026-01-22T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=marseille"
+        },
+        {
+            "team1": "Newcastle",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
+            "team2": "PSV Eindhoven",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8640.png",
+            "league": "Champions League",
+            "start": "2026-01-22T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=newcastle"
+        },
+        {
+            "team1": "Slavia Prague",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7787.png",
+            "team2": "Barcelona",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
+            "league": "Champions League",
+            "start": "2026-01-22T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=barcelona"
         }
     ]
 }
