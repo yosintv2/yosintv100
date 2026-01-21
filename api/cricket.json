@@ -1,53 +1,53 @@
 {
     "matches": [
         {
-            "team1": "Nepal Women",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "team2": "Thailand Women",
-            "team2_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Cricket_Association_of_Thailand_logo.png/250px-Cricket_Association_of_Thailand_logo.png",
-            "league": "ICC Women's T20 WC Global Qualifier",
-            "start": "2026-01-18T12:15:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=nepalwomen",
-            "duration": 5
-        },
-        {
             "team1": "India",
             "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
             "team2": "New Zealand",
             "team2_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "league": "New Zealand in India, 3 ODI Series",
-            "start": "2026-01-18T17:00:00+09:00",
+            "league": "New Zealand in India, 5 T20I Series",
+            "start": "2026-01-21T22:30:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=india",
-            "duration": 10
+            "duration": 5
         },
         {
-            "team1": "Rangpur Riders",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/rangpurriders.png",
-            "team2": "Noakhali Express",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/noakhaliexpress.png",
-            "league": "Bangladesh Premier League",
-            "start": "2026-01-18T16:00:00+09:00",
+            "team1": "Rajshahi Warriors",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/rajshahiwarriors.png",
+            "team2": "Sylhet Titans",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/sylhettitans.png",
+            "league": "Bangladesh Premier League, Playoffs",
+            "start": "2026-01-21T21:00:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=bpl",
             "duration": 5
         },
         {
-            "team1": "Chattogram Royals",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/chattogramroyals.png",
-            "team2": "Dhaka Capitals",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/dhakacapitals.png",
-            "league": "Bangladesh Premier League",
-            "start": "2026-01-18T21:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bpl",
-            "duration": 5
-        },
-        {
-            "team1": "Brisbane Heat",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/brisbaneheat.png",
-            "team2": "Sydney Sixers",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
-            "league": "Big Bash League",
-            "start": "2026-01-18T17:15:00+09:00",
+            "team1": "Hobart Hurricanes",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/hobarthurricanes.png",
+            "team2": "Melbourne Stars",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/melbournestars.png",
+            "league": "Big Bash League, Playoffs",
+            "start": "2026-01-21T17:30:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=bbl",
+            "duration": 5
+        },
+        {
+            "team1": "Afghanistan",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
+            "team2": "West Indies",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
+            "league": "Afghanistan and West Indies in UAE, 3 T20I Series",
+            "start": "2026-01-21T23:30:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=afghanistan",
+            "duration": 5
+        },
+        {
+            "team1": "Sri Lanka",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
+            "team2": "England",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
+            "league": "England in Sri Lanka, 3 ODI Series",
+            "start": "2026-01-22T18:00:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=srilanka",
             "duration": 5
         }
     ]
