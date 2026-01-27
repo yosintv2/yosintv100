@@ -1,43 +1,33 @@
 {
     "matches": [
         {
-            "team1": "Nepal Women",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "team2": "Zimbabwe Women",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
-            "league": "ICC Women's T20 World Cup Global Qualifier, Group B",
-            "start": "2026-01-24T16:15:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=nepalwomen",
-            "duration": 5
-        },
-        {
             "team1": "Sri Lanka",
             "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
             "team2": "England",
             "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
             "league": "England in Sri Lanka, 3 ODI Series",
-            "start": "2026-01-24T18:00:00+09:00",
+            "start": "2026-01-27T18:00:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=srilanka",
             "duration": 5
         },
         {
-            "team1": "Royal Challengers Bengaluru",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/royalchallengersbengaluru.png",
-            "team2": "Delhi Capitals",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/delhicapitals.png",
-            "league": "Women's Premier League",
-            "start": "2026-01-24T23:00:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=royalchallengersbengaluru",
+            "team1": "Pakistan Under-19",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
+            "team2": "New Zealand Under-19",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "league": "ICC U19 Cricket World Cup, Super 6, Group 2",
+            "start": "2026-01-27T16:30:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=u19",
             "duration": 5
         },
         {
-            "team1": "Perth Scorchers",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/perthscorchers.png",
-            "team2": "Sydney Sixers",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/sydneysixers.png",
-            "league": "Big Bash League, Final",
-            "start": "2026-01-25T17:15:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=bbl",
+            "team1": "Australia Under-19",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
+            "team2": "West Indies Under-19",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
+            "league": "ICC U19 Cricket World Cup, Super 6, Group 1",
+            "start": "2026-01-28T16:30:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=u19",
             "duration": 5
         },
         {
@@ -46,7 +36,7 @@
             "team2": "New Zealand",
             "team2_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
             "league": "New Zealand in India, 5 T20I Series",
-            "start": "2026-01-25T22:30:00+09:00",
+            "start": "2026-01-28T22:30:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=india",
             "duration": 5
         }
