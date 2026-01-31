@@ -1,14 +1,400 @@
-<script>
-    (function() {
-        setTimeout(function() {
-            (function(s, u, z, p) {
-                s.src = u;
-                s.setAttribute("data-zone", z);
-                p.appendChild(s)
-            })(document.createElement("script"), "https://bvtpk.com/tag.min.js", 9870652, document.body || document.documentElement)
-        }, 10000)
-    })();
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>YoSinTV - Cricket | Football | Playing XI | Match Preview</title>
+    <meta name="description" content="Watch live football matches, check upcoming fixtures, team lineups, match previews & playing XI. YoSinTV provides real-time updates for all major football leagues and tournaments.">
+    <meta name="keywords" content="football matches, live football, football schedule, football fixtures, playing XI, match preview, football streaming, live score, football news">
+    <meta name="author" content="YoSinTV">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    
+    <!-- Open Graph Meta Tags (Social Media) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yosintv.link/">
+    <meta property="og:title" content="Live Football Matches, Schedule & Playing XI | YoSinTV">
+    <meta property="og:description" content="Watch live football matches with real-time updates, fixtures, team lineups, and match previews. Stay updated on all major football leagues and tournaments.">
+    <meta property="og:image" content="https://web.cricfoot.net/favico.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="YoSinTV">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Live Football Matches, Schedule & Playing XI | YoSinTV">
+    <meta name="twitter:description" content="Watch live football matches with real-time updates, fixtures, team lineups, and match previews. Stay updated on all major football leagues.">
+    <meta name="twitter:image" content="https://web.cricfoot.net/favico.png">
+    <meta name="twitter:creator" content="@YoSinTV">
+    <meta name="twitter:site" content="@YoSinTV">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#1d4ed8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="YoSinTV">
+    <meta name="msapplication-TileColor" content="#1d4ed8">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.yosintv.link/">
+    
+    <!-- Alternate URLs (for language versions if applicable) -->
+    <link rel="alternate" hreflang="en-US" href="https://www.yosintv.link/">
+    <link rel="alternate" hreflang="en" href="https://www.yosintv.link/">
+    <link rel="alternate" hreflang="x-default" href="https://www.yosintv.link/">
+    
+    <!-- Favicon & Web App Icons -->
+    <link href="https://web.cricfoot.net/favico.png" rel="icon" type="image/x-icon">
+    <link href="https://web.cricfoot.net/favico.png" rel="apple-touch-icon" type="image/png">
+    <link href="https://web.cricfoot.net/favico.png" rel="apple-touch-icon-precomposed" type="image/png">
+    <link href="https://web.cricfoot.net/favico.png" rel="shortcut icon" type="image/png">
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- DNS Prefetch & Preconnect -->
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://www.yosin-tv.net/">
+    <link rel="preconnect" href="https://www.yosin-tv.net/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!-- Tailwind CSS CDN -->
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7981191925382455"
+     crossorigin="anonymous"></script>    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* --- Same beautiful custom CSS as before (light FotMob style) --- */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .dark body {
+            background-color: #111827;
+            color: #f3f4f6;
+        }
+        .match-schedule-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem 3rem;
+            box-sizing: border-box;
+        }
+        .league-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 20px auto 15px;
+            background: #1d4ed8;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            padding: 12px;
+            width: calc(100% - 1rem);
+            max-width: 960px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .match-card {
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border: 1px solid #e5e7eb;
+            padding: 14px;
+            margin: 16px auto;
+            background: #ffffff;
+            width: calc(100% - 1rem);
+            max-width: 960px;
+            transition: all 0.25s;
+        }
+        .dark .match-card {
+            background: #374151;
+            border-color: #4b5563;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .match-card:hover {
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+            border-color: #93c5fd;
+        }
+        .dark .match-card:hover {
+            border-color: #60a5fa;
+        }
+        .match-card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .match-row-teams {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 8px;
+        }
+        .match-team {
+            flex-grow: 1;
+            flex-basis: 0;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 1;
+        }
+        .match-team.home {
+            justify-content: flex-end;
+        }
+        .match-team.away {
+            justify-content: flex-start;
+        }
+        .match-team img {
+            width: 48px;
+            height: 48px;
+            border-radius: 0;
+            border: none;
+            flex-shrink: 0;
+        }
+        .match-team-name {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #1f2937;
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .dark .match-team-name {
+            color: #f3f4f6;
+        }
+        .match-team.home .match-team-name {
+            order: -1;
+            text-align: right;
+        }
+        .match-team.away .match-team-name {
+            order: 1;
+            text-align: left;
+        }
+        .match-center {
+            flex-shrink: 0;
+            min-width: 90px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+        .match-local-time {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4b5563;
+            margin-bottom: 0;
+            letter-spacing: 0.00em;
+        }
+        .dark .match-local-time {
+            color: #9ca3af;
+        }
+        .match-status {
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 9999px;
+            display: inline-block;
+            min-width: 60px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: 0.05em;
+            line-height: 1;
+        }
+        .match-status-countdown { background: #10b981; color: white; }
+        .match-status-live { 
+            background: #ef4444; 
+            color: white; 
+            animation: pulse 1.2s infinite; 
+        }
+        .match-status-over { background: #6b7280; color: #ffffff; }
+        @keyframes pulse { 0%,100% {opacity:1} 50% {opacity:0.7} }
+        .match-league-bar {
+            margin-top: 4px;
+            padding: 6px 16px;
+            background: linear-gradient(135deg, rgba(29,78,216,0.08), rgba(37,99,235,0.12));
+            border-radius: 8px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .match-league-bar p {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            opacity: 0.8;
+            color: #1d4ed8;
+            letter-spacing: 0.6px;
+        }
+        .dark .match-league-bar {
+            background: linear-gradient(135deg, rgba(30,64,175,0.2), rgba(59,130,246,0.25));
+        }
+        .dark .match-league-bar p {
+            color: #60a5fa;
+            opacity: 0.9;
+        }
+        @media (max-width: 640px) {
+            .match-team-name { font-size: 0.875rem; white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.2; }
+            .match-team img { width: 36px; height: 36px; }
+            .match-center { min-width: 80px; }
+            .match-card { padding: 10px; }
+            .match-team { gap: 6px; }
+            .match-row-teams { gap: 6px; }
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        .dark header { background: #1f2937; }
+        .header-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dmca-section, .footer {
+            max-width: 1000px;
+            margin: 2rem auto 0;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            color: inherit;
+        }
+        .dark .dmca-section, .dark .footer {
+            background: #1f2937;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .dark .footer a { color: #93c5fd; }
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 46px;
+            height: 24px;
+        }
+        .toggle input { opacity: 0; width:0; height:0; }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: #ccc;
+            border-radius: 30px;
+            transition: .4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            bottom: 2px;
+            background: white;
+            border-radius: 50%;
+            transition: .4s;
+        }
+        input:checked + .slider { background: #3b82f6; }
+        input:checked + .slider:before { transform: translateX(22px); }
+        .tgx-popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.78);
+            z-index: 2147483647;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(8px);
+        }
+        .tgx-popup-box {
+            background: linear-gradient(135deg, #0088cc, #006ba6);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 24px;
+            text-align: center;
+            max-width: 420px;
+            width: 92%;
+            box-shadow: 0 30px 70px rgba(0,0,0,0.5);
+            animation: tgxZoomIn 0.6s cubic-bezier(0.175,0.885,0.32,1.275);
+            position: relative;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .tgx-icon { margin-bottom: 12px; }
+        .tgx-title { font-size: 29px; margin: 12px 0 16px; font-weight: 800; }
+        .tgx-text { font-size: 17px; margin-bottom: 32px; opacity: 0.95; line-height: 1.6; }
+        .tgx-join-btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #0088cc;
+            font-size: 19px;
+            font-weight: 700;
+            padding: 16px 44px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        .tgx-join-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .tgx-close-btn {
+            position: absolute;
+            top: 14px; right: 18px;
+            background: rgba(255,255,255,0.25);
+            color: white;
+            border: none;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            font-size: 26px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .tgx-close-btn:hover { background: rgba(255,255,255,0.4); }
+        @keyframes tgxZoomIn {
+            from { opacity: 0; transform: scale(0.6); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+        .tgx-popup-overlay.tgx-active { display: flex; }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Header -->
+<header>
+    <div class="header-container">
+        <a href="https://www.yosin-tv.net/">
+            <img src="https://web.cricfoot.net/logo.png" alt="YoSinTV" style="height:65px;">
+        </a>
+        <label class="toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+</header>
+
+<main style="padding-top: 78px;">
+    <center class="my-3">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="4345862479" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </center>
+
+ <div class="match-schedule-container">
 
 <div class="yosintv-sidebar-container">
 
@@ -56,12 +442,12 @@
             container.appendChild(card);
         });
     }
-    fetch('https://web.yosintv.link/events-cricket.json')
+    fetch('https://web.yosintv.link/events-cricket2.json')
         .then(res => res.json())
         .then(data => displayEvents(data.matches, 'cricket-events'))
         .catch(e => console.error('Cricket Load Error'));
 
-    fetch('https://web.yosintv.link/events-football.json')
+    fetch('https://web.yosintv.link/events-football2.json')
         .then(res => res.json())
         .then(data => displayEvents(data.matches, 'football-events'))
         .catch(e => console.error('Football Load Error'));
@@ -178,3 +564,312 @@
         line-height: 1.3;
     }
 </style>
+
+
+<center class="my-5">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="4345862479" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </center>
+    </div>
+
+    <!-- DMCA & Footer -->
+    <section class="dmca-section">
+        <h2 class="text-2xl font-bold mb-3">YoSinTV - DMCA Notice</h2>
+        <p class="text-sm leading-relaxed">YoSinTV Doesn't host any media content on it own Site. Our site visitors might use external or third parties services to show content, (Example: Embedding media from sites like Bet365, Dailymotion , Streamable etc ..) We Notify all copyright owners, to discover that the links and media shared by visitors and contained within this site are hosted somewhere else on the web or embedded from other various sites like above.</p>
+    </section>
+
+    <footer class="footer text-sm">
+        <a href="#about" class="text-blue-600 hover:underline mx-2">About</a> •
+        <a href="#contact" class="text-blue-600 hover:underline mx-2">Contact</a> •
+        <a href="#privacy" class="text-blue-600 hover:underline mx-2">Privacy Policy</a>
+    </footer>
+</main>
+
+<script>
+    let allMatches = [];
+    let updateIntervalId;
+
+    // Dark Mode
+    const toggle = document.getElementById('darkModeToggle');
+    const updateTheme = (isDark) => {
+        if (isDark) {
+            document.body.classList.add('dark', 'bg-gray-900', 'text-gray-100');
+            document.body.classList.remove('bg-gray-100', 'text-gray-900');
+        } else {
+            document.body.classList.remove('dark', 'bg-gray-900', 'text-gray-100');
+            document.body.classList.add('bg-gray-100', 'text-gray-900');
+        }
+    };
+    if (localStorage.getItem('darkMode') === 'true') {
+        updateTheme(true);
+        toggle.checked = true;
+    } else {
+        updateTheme(false);
+    }
+    toggle.addEventListener('change', () => {
+        const isChecked = toggle.checked;
+        updateTheme(isChecked);
+        localStorage.setItem('darkMode', isChecked);
+    });
+
+    function formatMatchTime(isoString) {
+        try {
+            const date = new Date(isoString);
+            if (isNaN(date)) return 'Time TBD';
+            return new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit', hour12: true }).format(date);
+        } catch (e) {
+            return 'Time TBD';
+        }
+    }
+
+    function updateCountdownDisplay() {
+        const now = Date.now();
+        document.querySelectorAll('.match-status').forEach(el => {
+            const start = new Date(el.dataset.time).getTime();
+            const duration = (parseInt(el.dataset.duration) || 2) * 3600000;
+            const end = start + duration;
+
+            if (now >= end) {
+                el.textContent = 'END';
+                el.className = 'match-status match-status-over';
+            } else if (now >= start) {
+                el.textContent = 'LIVE';
+                el.className = 'match-status match-status-live';
+            } else {
+                const diff = start - now;
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                let text = '';
+                if (diff < 60000) text = 'Soon';
+                else if (d > 0) text = `${d}d ${h}h`;
+                else if (h > 0) text = `${h}h ${m}m`;
+                else text = `${m}m`;
+                el.textContent = text;
+                el.className = 'match-status match-status-countdown';
+            }
+        });
+    }
+
+    function createCard(m) {
+        const detailsUrl = m.details_url || '#';
+        const league = m.competition || m.league || '';
+        const team1Name = m.team1 || 'Home Team TBD';
+        const team2Name = m.team2 || 'Away Team TBD';
+        const placeholder = "https://placehold.co/48x48/ccc/333?text=L";
+        const logoError = `this.onerror=null;this.src='${placeholder}';`;
+
+        const leagueBar = league ? `<div class="match-league-bar"><p>${league}</p></div>` : '';
+
+        const a = document.createElement('a');
+        a.href = detailsUrl;
+        a.className = 'match-card';
+        a.target = '_blank';
+        a.dataset.time = m.start || m.match_time;
+        a.dataset.duration = m.duration || 2;
+        a.innerHTML = `
+            <div class="match-card-content">
+                <div class="match-row-teams">
+                    <div class="match-team home">
+                        <p class="match-team-name">${team1Name}</p>
+                        <img src="${m.team1_logo || placeholder}" alt="${team1Name}" onerror="${logoError}">
+                    </div>
+                    <div class="match-center">
+                        <p class="match-local-time">${formatMatchTime(m.start || m.match_time)}</p>
+                        <p class="match-status" data-time="${m.start || m.match_time}" data-duration="${m.duration || 2}">Loading...</p>
+                    </div>
+                    <div class="match-team away">
+                        <img src="${m.team2_logo || placeholder}" alt="${team2Name}" onerror="${logoError}">
+                        <p class="match-team-name">${team2Name}</p>
+                    </div>
+                </div>
+                ${leagueBar}
+            </div>
+        `;
+        return a;
+    }
+
+    function renderMatches() {
+        const list = document.getElementById('cricket-list');
+        list.innerHTML = '';
+        allMatches.forEach((match, i) => {
+            list.appendChild(createCard(match));
+        });
+        updateCountdownDisplay();
+    }
+
+    function sortAndRender(matchesArray) {
+        const now = Date.now();
+
+        allMatches = matchesArray.map(m => {
+            const start = new Date(m.start || m.match_time).getTime();
+            const duration = (parseInt(m.duration) || 2) * 3600000;
+            const end = start + duration;
+
+            let priority = 3; // default finished
+            let sortValue = start;
+
+            if (now >= start && now < end) {
+                priority = 1;           // LIVE - highest priority
+                sortValue = -start;     // most recent start time first (negative = newest on top)
+            } else if (now < start) {
+                priority = 2;           // Upcoming
+                sortValue = start;      // soonest first
+            } else {
+                priority = 3;           // Finished
+                sortValue = end;        // oldest finished first
+            }
+
+            return { ...m, priority, sortValue };
+        });
+
+        // Sort: first by priority (LIVE > Upcoming > Finished), then by sortValue
+        allMatches.sort((a, b) => {
+            if (a.priority !== b.priority) return a.priority - b.priority;
+            return a.sortValue - b.sortValue;
+        });
+
+        renderMatches();
+    }
+
+    async function loadMatches() {
+        if (updateIntervalId) clearInterval(updateIntervalId);
+
+        const apiUrl = 'https://yosintv-api.pages.dev/api/football2.json';
+        const list = document.getElementById('cricket-list');
+
+        try {
+            const res = await fetch(apiUrl);
+            if (!res.ok) throw new Error(`API error: ${res.status}`);
+
+            const data = await res.json();
+            let matchesArray = [];
+            if (Array.isArray(data) && data.length > 0 && Array.isArray(data[0]?.matches)) {
+                matchesArray = data[0].matches;
+            } else if (data?.matches) {
+                matchesArray = data.matches;
+            } else if (Array.isArray(data)) {
+                matchesArray = data;
+            }
+
+            if (matchesArray.length === 0) {
+                list.innerHTML = '<p class="text-center text-xl font-semibold text-gray-500 py-10">No matches scheduled</p>';
+                return;
+            }
+
+            sortAndRender(matchesArray);
+
+            // Live update every second
+            updateIntervalId = setInterval(updateCountdownDisplay, 1000);
+        } catch (e) {
+            console.error(e);
+            list.innerHTML = '<p class="text-center text-xl font-semibold text-red-600 py-10">Error loading matches • Try again later</p>';
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadMatches);
+</script>
+
+<!-- jQuery for fixed ad close -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+<!-- Fixed Bottom Ad -->
+  <div id='fixedban' class='fixed bottom-0 left-1/2 -translate-x-1/2 z-[999]'>
+    <div class='relative w-[300px] h-[250px] bg-white rounded-lg shadow-xl border border-gray-200'>
+      <button id='close-fixedban' class='absolute left-1/2 -translate-x-1/2 top-3 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200 cursor-pointer z-[1000]'>Close</button>
+      <div class='w-[300px] h-[250px] overflow-hidden pt-8'>
+        <ins class='adsbygoogle inline-block w-[300px] h-[250px]' data-ad-client='ca-pub-5525538810839147' data-ad-slot='5912194004'></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+    </div>
+  </div>
+<script>
+    $(document).ready(function() {
+        $('#close-fixedban').click(function() {
+            $('#fixedban').hide(90);
+        });
+    });
+</script>
+
+<!-- Telegram Popup -->
+<div class="tgx-popup-overlay" id="tgxPopup">
+    <div class="tgx-popup-box">
+        <button class="tgx-close-btn" onclick="closeTgxPopup()">×</button>
+        <div class="tgx-icon">
+            <svg viewBox="0 0 240 240" width="80" height="80" fill="white">
+                <circle cx="120" cy="120" r="120"/>
+                <path d="M81.2 174.3c-5.4 0-2.7-2-7.3-6.4l-18.4-60.5 127.3-49.1c8 3.5 12.2 1.9 14-5.8l22.7-106.9c3.1-13.8-4.7-20.1-12.7-16.6L57.9 105.8 36.2 99c-9.7-3-9.9-9.7 1.2-14.6l131.2-50.7c11.2-4.6 21.2 2.8 17.1 14.6l-22.4 106.9c-1.6 7.6-6 9.4-13.8 5.8L97.6 152l-9.9 9.9c-3.3 3.3-6 6.4-6.5 8.4z" fill="#0088cc"/>
+            </svg>
+        </div>
+        <h2 class="tgx-title">Join YoSinTV Telegram</h2>
+        <p class="tgx-text">Match updates, news & highlights !</p>
+        <a href="https://t.me/yosintvlive" target="_blank" class="tgx-join-btn">Click to Join Channel</a>
+    </div>
+</div>
+<script>
+    const tgxPopup = document.getElementById('tgxPopup');
+    const STORAGE_KEY = 'tgxPopupLastShown';
+    const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+
+    function shouldShowPopup() {
+        const last = localStorage.getItem(STORAGE_KEY);
+        if (!last) return true;
+        return Date.now() - parseInt(last) >= ONE_DAY_MS;
+    }
+
+    function markShown() {
+        localStorage.setItem(STORAGE_KEY, Date.now().toString());
+    }
+
+    function closeTgxPopup() {
+        tgxPopup.classList.remove('tgx-active');
+        markShown();
+    }
+
+    window.addEventListener('load', () => {
+        if (shouldShowPopup()) {
+            setTimeout(() => {
+                tgxPopup.classList.add('tgx-active');
+                markShown();
+            }, 1200);
+        }
+    });
+
+    tgxPopup.addEventListener('click', e => {
+        if (e.target === tgxPopup) closeTgxPopup();
+    });
+</script>
+
+<!-- Supercounters (optional) -->
+<div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+    <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+    <script type="text/javascript">sc_online_i(1714446,"ffffff","ffffff");</script>
+    <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+</div>
+
+
+<script>
+    let timeLeft = 5;
+    const countdown = setInterval(() => {
+        timeLeft--;
+        document.getElementById('seconds').innerText = timeLeft;
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            document.getElementById('countdown-timer').style.visibility = 'hidden';
+            const closeBtn = document.getElementById('close-popup-btn');
+            closeBtn.style.opacity = '1';
+            closeBtn.style.pointerEvents = 'auto';
+        }
+    }, 1000);
+
+    function closePopup() {
+        document.getElementById('download-popup-overlay').style.opacity = '0';
+        setTimeout(() => {
+            document.getElementById('download-popup-overlay').style.display = 'none';
+        }, 500);
+    }
+</script>
+
+    
+</body>
+</html>
