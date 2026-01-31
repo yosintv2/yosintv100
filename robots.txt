@@ -1,0 +1,24 @@
+# YoSinTV Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow Google and Bing crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.yosintv.link/sitemap.xml
