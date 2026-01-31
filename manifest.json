@@ -1,0 +1,72 @@
+{
+  "name": "YoSinTV - Live Football Matches",
+  "short_name": "YoSinTV",
+  "description": "Watch live football matches, check schedules, fixtures, playing XI and match previews for all major leagues",
+  "start_url": "https://www.yosin-tv.net/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1d4ed8",
+  "background_color": "#ffffff",
+  "categories": ["sports", "entertainment"],
+  "icons": [
+    {
+      "src": "https://web.cricfoot.net/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://web.cricfoot.net/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://web.cricfoot.net/favico.png",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://web.cricfoot.net/logo.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://web.cricfoot.net/logo.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Football Matches",
+      "short_name": "Football",
+      "description": "View live football matches",
+      "url": "https://www.yosintv.link/",
+      "icons": [
+        {
+          "src": "https://web.cricfoot.net/logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Cricket Matches",
+      "short_name": "Cricket",
+      "description": "View live cricket matches",
+      "url": "https://www.yosintv.link/cricket",
+      "icons": [
+        {
+          "src": "https://web.cricfoot.net/logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
