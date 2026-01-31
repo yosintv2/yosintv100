@@ -1,16 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Sri Lanka",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
-            "team2": "England",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "league": "England in Sri Lanka, 3 T20I Series",
-            "start": "2026-01-30T22:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=srilanka",
-            "duration": 5
-        },
-        {
             "team1": "Pakistan",
             "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
             "team2": "Australia",
@@ -37,7 +27,7 @@
             "team2_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
             "league": "ICC U19 Cricket World Cup, Super 6, Group 2",
             "start": "2026-02-01T16:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=indiaunder-19",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=u19",
             "duration": 5
         }
     ]
