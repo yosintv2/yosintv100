@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YoSinTV - Cricket | Football | Playing XI | Match Preview</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href='/favico.png' rel='icon' type='image/x-icon'/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Primary Meta Tags -->
+<title>YoSinTV - Cricket | Football | Playing XI | Match Preview</title>
+<meta name="description" content="Watch live cricket matches, upcoming fixtures, playing XI, team lineups, match previews & real-time scores. YoSinTV covers T20, ODI, Test & major cricket tournaments worldwide.">
+<meta name="keywords" content="live cricket, cricket matches, cricket schedule, cricket fixtures, playing XI, cricket match preview, live cricket streaming, live score, cricket news, T20, ODI, Test">
+<meta name="author" content="YoSinTV">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="language" content="English">
+<meta name="revisit-after" content="1 days">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.yosintv.link/">
+<meta property="og:title" content="Live Cricket Matches, Schedule & Playing XI | YoSinTV">
+<meta property="og:description" content="Watch live cricket matches with real-time updates, fixtures, team lineups, playing XI and match previews. Follow T20, ODI & Test cricket live on YoSinTV.">
+<meta property="og:image" content="https://web.cricfoot.net/logo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="YoSinTV">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live Cricket Matches, Schedule & Playing XI | YoSinTV">
+<meta name="twitter:description" content="Watch live cricket matches with real-time scores, fixtures, playing XI and match previews. Stay updated with global cricket tournaments.">
+<meta name="twitter:image" content="https://web.cricfoot.net/logo.png">
+<meta name="twitter:creator" content="@YoSinTV">
+<meta name="twitter:site" content="@YoSinTV">
+
+<!-- Additional SEO Meta Tags -->
+<meta name="theme-color" content="#1d4ed8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="YoSinTV">
+<meta name="msapplication-TileColor" content="#1d4ed8">
+<meta name="msapplication-config" content="/browserconfig.xml">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://www.yosintv.link/">
+
+<!-- Alternate URLs -->
+<link rel="alternate" hreflang="en-US" href="https://www.yosintv.link/">
+<link rel="alternate" hreflang="en" href="https://www.yosintv.link/">
+<link rel="alternate" hreflang="x-default" href="https://www.yosintv.link/">
+
+<!-- Favicon & App Icons -->
+<link href="https://web.cricfoot.net/favico.png" rel="icon" type="image/x-icon">
+<link href="https://web.cricfoot.net/logo.png" rel="apple-touch-icon" type="image/png">
+<link href="https://web.cricfoot.net/logo.png" rel="apple-touch-icon-precomposed" type="image/png">
+<link href="https://web.cricfoot.net/logo.png" rel="shortcut icon" type="image/png">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="https://www.yosin-tv.net/">
+<link rel="preconnect" href="https://www.yosin-tv.net/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
 /* --- CUSTOM CSS FOR LIGHT THEME FOTMOB STYLE (CENTERED LAYOUT) --- */
     
@@ -538,7 +597,7 @@
 
     async function loadMatches() {
         if (updateIntervalId) clearInterval(updateIntervalId);
-        const apiUrl = 'https://yosintv-api.pages.dev/api/cricket.json';
+        const apiUrl = 'https://www.yosin-tv.net//api/cricket.json';
         const list = document.getElementById('cricket-list');
         try {
             const res = await fetch(apiUrl);
