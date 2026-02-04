@@ -1,56 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Bologna",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9857.png",
-            "team2": "Milan",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
-            "league": "Serie A",
-            "start": "2026-02-04T04:45:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=milan"
-        },
-        {
-            "team1": "Leverkusen",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png",
-            "team2": "St. Pauli",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8152.png",
-            "league": "DFB Pokal",
-            "start": "2026-02-04T04:45:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=leverkusen"
-        },
-        {
-            "team1": "Arsenal",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
-            "team2": "Chelsea",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
-            "league": "EFL Cup",
-            "start": "2026-02-04T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=arsenal"
-        },
-        {
-            "team1": "Albacete",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8393.png",
-            "team2": "Barcelona",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
-            "league": "Copa del Rey",
-            "start": "2026-02-04T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=barcelona"
-        },
-        {
-            "team1": "Marseille",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8592.png",
-            "team2": "Rennes",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9851.png",
-            "league": "Coupe de France",
-            "start": "2026-02-04T05:10:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=marseille"
-        },
-        {
             "team1": "Man City",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
             "team2": "Newcastle",
