@@ -49,6 +49,46 @@
             "start": "2026-02-04T05:10:00+09:00",
             "duration": 2.2,
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=marseille"
+        },
+        {
+            "team1": "Man City",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
+            "team2": "Newcastle",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
+            "league": "EFL Cup",
+            "start": "2026-02-05T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=mancity"
+        },
+        {
+            "team1": "Inter",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
+            "team2": "Torino",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9804.png",
+            "league": "Coppa Italia",
+            "start": "2026-02-05T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=inter"
+        },
+        {
+            "team1": "Troyes",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10242.png",
+            "team2": "Lens",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8588.png",
+            "league": "Coupe de France",
+            "start": "2026-02-05T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=lens"
+        },
+        {
+            "team1": "Club Xelaju",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/49758.png",
+            "team2": "Monterrey",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7849.png",
+            "league": "CONCACAF Champions Cup",
+            "start": "2026-02-05T10:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=clubxelaju"
         }
     ]
 }
