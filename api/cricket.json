@@ -1,56 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Pakistan",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
-            "team2": "Ireland",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
-            "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-04T20:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=pakistan",
-            "duration": 5
-        },
-        {
-            "team1": "Scotland",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
-            "team2": "Namibia",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/namibia.png",
-            "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-04T16:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=scotland",
-            "duration": 5
-        },
-        {
-            "team1": "Afghanistan",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
-            "team2": "West Indies",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
-            "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-04T18:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=afghanistan",
-            "duration": 5
-        },
-        {
-            "team1": "India",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "team2": "South Africa",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
-            "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-04T22:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=india",
-            "duration": 5
-        },
-        {
-            "team1": "India Under-19",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "team2": "Afghanistan Under-19",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
-            "league": "ICC U19 Cricket World Cup, Semi Final",
-            "start": "2026-02-04T16:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=u19",
-            "duration": 5
-        },
-        {
             "team1": "Australia",
             "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
             "team2": "Netherlands",
@@ -61,13 +11,13 @@
             "duration": 5
         },
         {
-            "team1": "Zimbabwe",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
-            "team2": "Oman",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/oman.png",
+            "team1": "New Zealand",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "team2": "USA",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/usa.png",
             "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-05T14:30:00+09:00",
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=zimbabwe",
+            "start": "2026-02-05T22:30:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=newzealand",
             "duration": 5
         },
         {
@@ -78,6 +28,16 @@
             "league": "ICC Men's T20 World Cup Warm-up Matches",
             "start": "2026-02-05T16:30:00+09:00",
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=nepal",
+            "duration": 5
+        },
+        {
+            "team1": "England Under-19",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/england.png",
+            "team2": "India Under-19",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "league": "ICC U19 Cricket World Cup, Final",
+            "start": "2026-02-06T16:30:00+09:00",
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=englandunder-19",
             "duration": 5
         }
     ]
