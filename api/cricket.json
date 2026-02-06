@@ -11,6 +11,26 @@
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=pakistan"
         },
         {
+            "team1": "West Indies",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
+            "team2": "Scotland",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
+            "league": "ICC Men's T20 World Cup, Group C",
+            "start": "2026-02-07T18:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=westindies"
+        },
+        {
+            "team1": "India",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "USA",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/usa.png",
+            "league": "ICC Men's T20 World Cup, Group A",
+            "start": "2026-02-07T22:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=india"
+        },
+        {
             "team1": "New Zealand",
             "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
             "team2": "Afghanistan",
