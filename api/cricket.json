@@ -1,54 +1,34 @@
 {
     "matches": [
         {
+            "team1": "Pakistan",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
+            "team2": "Netherlands",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/netherlands.png",
+            "league": "ICC Men's T20 World Cup, Group A",
+            "start": "2026-02-07T14:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=pakistan"
+        },
+        {
             "team1": "New Zealand",
             "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "team2": "USA",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/usa.png",
-            "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-05T22:30:00+09:00",
+            "team2": "Afghanistan",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
+            "league": "ICC Men's T20 World Cup, Group D",
+            "start": "2026-02-08T14:30:00+09:00",
             "duration": 6,
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=newzealand"
         },
         {
-            "team1": "Royal Challengers Bengaluru",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/royalchallengersbengaluru.png",
-            "team2": "Delhi Capitals",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/delhicapitals.png",
-            "league": "Women's Premier League, Final",
-            "start": "2026-02-05T23:00:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=wpl"
-        },
-        {
-            "team1": "England Under-19",
+            "team1": "England",
             "team1_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "team2": "India Under-19",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "league": "ICC U19 Cricket World Cup, Final",
-            "start": "2026-02-06T16:30:00+09:00",
+            "team2": "Nepal",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
+            "league": "ICC Men's T20 World Cup, Group C",
+            "start": "2026-02-08T18:30:00+09:00",
             "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=u19"
-        },
-        {
-            "team1": "Italy",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/italy.png",
-            "team2": "United Arab Emirates",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/unitedarabemirates.png",
-            "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-06T18:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=italy"
-        },
-        {
-            "team1": "Namibia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/namibia.png",
-            "team2": "India A",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "league": "ICC Men's T20 World Cup Warm-up Matches",
-            "start": "2026-02-06T20:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=namibia"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=england"
         }
     ]
 }
