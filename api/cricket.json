@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Pakistan",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
-            "team2": "Netherlands",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/netherlands.png",
-            "league": "ICC Men's T20 World Cup, Group A",
-            "start": "2026-02-07T14:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=pakistan"
-        },
-        {
-            "team1": "West Indies",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
-            "team2": "Scotland",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
-            "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-07T18:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=westindies"
-        },
-        {
-            "team1": "India",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "team2": "USA",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/usa.png",
-            "league": "ICC Men's T20 World Cup, Group A",
-            "start": "2026-02-07T22:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=india"
-        },
-        {
             "team1": "New Zealand",
             "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
             "team2": "Afghanistan",
@@ -48,7 +18,37 @@
             "league": "ICC Men's T20 World Cup, Group C",
             "start": "2026-02-08T18:30:00+09:00",
             "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=england"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=nepal"
+        },
+        {
+            "team1": "Sri Lanka",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
+            "team2": "Ireland",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
+            "league": "ICC Men's T20 World Cup, Group B",
+            "start": "2026-02-08T22:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=srilanka"
+        },
+        {
+            "team1": "Scotland",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
+            "team2": "Italy",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/italy.png",
+            "league": "ICC Men's T20 World Cup, Group C",
+            "start": "2026-02-09T14:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=scotland"
+        },
+        {
+            "team1": "Zimbabwe",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
+            "team2": "Oman",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/oman.png",
+            "league": "ICC Men's T20 World Cup, Group B",
+            "start": "2026-02-09T18:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=zimbabwe"
         }
     ]
 }
