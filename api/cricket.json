@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Scotland",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
-            "team2": "Italy",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/italy.png",
-            "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-09T14:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=scotland"
-        },
-        {
-            "team1": "Zimbabwe",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
-            "team2": "Oman",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/oman.png",
-            "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-09T18:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=zimbabwe"
-        },
-        {
-            "team1": "South Africa",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
-            "team2": "Canada",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/canada.png",
-            "league": "ICC Men's T20 World Cup, Group D",
-            "start": "2026-02-09T22:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=southafrica"
-        },
-        {
             "team1": "Netherlands",
             "team1_logo": "https://aimages.willow.tv/teamLogos/netherlands.png",
             "team2": "Namibia",
