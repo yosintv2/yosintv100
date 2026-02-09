@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "team1": "New Zealand",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "team2": "Afghanistan",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
-            "league": "ICC Men's T20 World Cup, Group D",
-            "start": "2026-02-08T14:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=newzealand"
-        },
-        {
-            "team1": "England",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "team2": "Nepal",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-08T18:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=nepal"
-        },
-        {
-            "team1": "Sri Lanka",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
-            "team2": "Ireland",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
-            "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-08T22:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=srilanka"
-        },
-        {
             "team1": "Scotland",
             "team1_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
             "team2": "Italy",
@@ -38,7 +8,7 @@
             "league": "ICC Men's T20 World Cup, Group C",
             "start": "2026-02-09T14:30:00+09:00",
             "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=scotland"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=t20wc"
         },
         {
             "team1": "Zimbabwe",
@@ -48,7 +18,47 @@
             "league": "ICC Men's T20 World Cup, Group B",
             "start": "2026-02-09T18:30:00+09:00",
             "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=zimbabwe"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=t20wc"
+        },
+        {
+            "team1": "South Africa",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
+            "team2": "Canada",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/canada.png",
+            "league": "ICC Men's T20 World Cup, Group D",
+            "start": "2026-02-09T22:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=t20wc"
+        },
+        {
+            "team1": "Netherlands",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/netherlands.png",
+            "team2": "Namibia",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/namibia.png",
+            "league": "ICC Men's T20 World Cup, Group A",
+            "start": "2026-02-10T14:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=t20wc"
+        },
+        {
+            "team1": "New Zealand",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "team2": "United Arab Emirates",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "league": "ICC Men's T20 World Cup, Group D",
+            "start": "2026-02-10T18:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=t20wc"
+        },
+        {
+            "team1": "Pakistan",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
+            "team2": "USA",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/usa.png",
+            "league": "ICC Men's T20 World Cup, Group A",
+            "start": "2026-02-10T22:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=t20wc"
         }
     ]
 }
