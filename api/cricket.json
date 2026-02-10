@@ -11,6 +11,16 @@
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=netherlands"
         },
         {
+            "team1": "New Zealand",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "team2": "UAE",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/unitedarabemirates.png",
+            "league": "ICC Men's T20 World Cup, Group D",
+            "start": "2026-02-10T18:30:00+09:00",
+            "duration": 6,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=newzealand"
+        },
+        {
             "team1": "Pakistan",
             "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
             "team2": "USA",
@@ -19,16 +29,6 @@
             "start": "2026-02-10T22:30:00+09:00",
             "duration": 6,
             "details_url": "https://www.pasuwadoseisei.com/?yosintv=pakistan"
-        },
-        {
-            "team1": "Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
-            "team2": "Ireland",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
-            "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-11T18:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://www.pasuwadoseisei.com/?yosintv=australia"
         }
     ]
 }
