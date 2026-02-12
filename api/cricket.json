@@ -1,34 +1,34 @@
 {
     "matches": [
         {
-            "team1": "South Africa",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
-            "team2": "Afghanistan",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
-            "league": "ICC Men's T20 World Cup, Group D",
-            "start": "2026-02-11T14:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://blog.cricfoot.net/?yosintv=t20wc"
-        },
-        {
-            "team1": "Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
-            "team2": "Ireland",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
+            "team1": "Sri Lanka",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
+            "team2": "Oman",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/oman.png",
             "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-11T18:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://blog.cricfoot.net/?yosintv=australia"
+            "start": "2026-02-12T14:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=srilanka"
         },
         {
-            "team1": "England",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "team2": "West Indies",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
+            "team1": "Nepal",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
+            "team2": "Italy",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/italy.png",
             "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-11T22:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://blog.cricfoot.net/?yosintv=england"
+            "start": "2026-02-12T18:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=nepal"
+        },
+        {
+            "team1": "India",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "Namibia",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/namibia.png",
+            "league": "ICC Men's T20 World Cup, Group A",
+            "start": "2026-02-12T22:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=india"
         }
     ]
 }
