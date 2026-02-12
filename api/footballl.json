@@ -1,74 +1,34 @@
 {
     "matches": [
         {
-            "team1": "Arkadag",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/1689659.png",
-            "team2": "Al Nassr FC",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
-            "league": "AFC Champions League Two Final Stage",
-            "start": "2026-02-11T22:45:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=alnassrfc"
-        },
-        {
-            "team1": "Aston Villa",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
-            "team2": "Brighton",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png",
+            "team1": "Brentford",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9937.png",
+            "team2": "Arsenal",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
             "league": "Premier League",
-            "start": "2026-02-12T04:30:00+09:00",
+            "start": "2026-02-13T05:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=astonvilla"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=arsenal"
         },
         {
-            "team1": "Man City",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
-            "team2": "Fulham",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9879.png",
-            "league": "Premier League",
-            "start": "2026-02-12T04:30:00+09:00",
+            "team1": "Atletico Madrid",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
+            "team2": "Barcelona",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
+            "league": "Copa del Rey",
+            "start": "2026-02-13T05:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=mancity"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=atleticomadrid"
         },
         {
-            "team1": "Nottm Forest",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10203.png",
-            "team2": "Wolves",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
-            "league": "Premier League",
-            "start": "2026-02-12T04:30:00+09:00",
+            "team1": "Cruz Azul",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6578.png",
+            "team2": "Vancouver FC",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/1436202.png",
+            "league": "CONCACAF Champions Cup",
+            "start": "2026-02-13T10:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=nottmforest"
-        },
-        {
-            "team1": "Crystal Palace",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png",
-            "team2": "Burnley",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8191.png",
-            "league": "Premier League",
-            "start": "2026-02-12T04:30:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=crystalpalace"
-        },
-        {
-            "team1": "Bayern München",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9823.png",
-            "team2": "RB Leipzig",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/178475.png",
-            "league": "DFB Pokal",
-            "start": "2026-02-12T04:45:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=bayernmunchen"
-        },
-        {
-            "team1": "Sunderland",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png",
-            "team2": "Liverpool",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
-            "league": "Premier League",
-            "start": "2026-02-12T05:15:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=liverpool"
+            "details_url": "https://www.pasuwadoseisei.com/?yosintv=cruzazul"
         }
     ]
 }
