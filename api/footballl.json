@@ -1,66 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Al Hilal",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/2529.png",
-            "team2": "Al-Ettifaq",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101915.png",
-            "league": "Saudi Pro League",
-            "start": "2026-02-14T00:25:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=alhilal"
-        },
-        {
-            "team1": "Rennes",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9851.png",
-            "team2": "PSG",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9847.png",
-            "league": "Ligue 1",
-            "start": "2026-02-14T03:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=psg"
-        },
-        {
-            "team1": "Dortmund",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9789.png",
-            "team2": "Mainz",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9905.png",
-            "league": "Bundesliga",
-            "start": "2026-02-14T04:30:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=dortmund"
-        },
-        {
-            "team1": "Hull",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
-            "team2": "Chelsea",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
-            "league": "FA Cup",
-            "start": "2026-02-14T04:45:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=chelsea"
-        },
-        {
-            "team1": "Pisa",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6479.png",
-            "team2": "Milan",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
-            "league": "Serie A",
-            "start": "2026-02-14T04:45:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=milan"
-        },
-        {
-            "team1": "Elche",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10268.png",
-            "team2": "Osasuna",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8371.png",
-            "league": "LaLiga",
-            "start": "2026-02-14T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=elche"
-        },
-        {
             "team1": "Espanyol",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8558.png",
             "team2": "Celta Vigo",
@@ -99,6 +39,166 @@
             "start": "2026-02-14T23:30:00+09:00",
             "duration": 2.2,
             "details_url": "https://blog.cricfoot.net/?yosintv=bayernmunchen"
+        },
+        {
+            "team1": "Man City",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
+            "team2": "Salford",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/282326.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T00:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=mancity"
+        },
+        {
+            "team1": "Burnley",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8191.png",
+            "team2": "Mansfield",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9818.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T00:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=burnley"
+        },
+        {
+            "team1": "Southampton",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8466.png",
+            "team2": "Leicester",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8197.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T00:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=southampton"
+        },
+        {
+            "team1": "Getafe",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8305.png",
+            "team2": "Villarreal",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10205.png",
+            "league": "LaLiga",
+            "start": "2026-02-15T00:15:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=getafe"
+        },
+        {
+            "team1": "Marseille",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8592.png",
+            "team2": "Strasbourg",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9848.png",
+            "league": "Ligue 1",
+            "start": "2026-02-15T01:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=marseille"
+        },
+        {
+            "team1": "Al Fateh FC",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/177356.png",
+            "team2": "Al Nassr FC",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
+            "league": "Saudi Pro League",
+            "start": "2026-02-15T02:30:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=alnassrfc"
+        },
+        {
+            "team1": "Sevilla",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8302.png",
+            "team2": "Deportivo Alaves",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9866.png",
+            "league": "LaLiga",
+            "start": "2026-02-15T02:30:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=sevilla"
+        },
+        {
+            "team1": "Aston Villa",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
+            "team2": "Newcastle",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T02:45:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=astonvilla"
+        },
+        {
+            "team1": "Inter",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
+            "team2": "Juventus",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
+            "league": "Serie A",
+            "start": "2026-02-15T04:45:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=inter"
+        },
+        {
+            "team1": "Liverpool",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
+            "team2": "Brighton",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=liverpool"
+        },
+        {
+            "team1": "Real Madrid",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
+            "team2": "Real Sociedad",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png",
+            "league": "LaLiga",
+            "start": "2026-02-15T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=realmadrid"
+        },
+        {
+            "team1": "Paris FC",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6379.png",
+            "team2": "Lens",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8588.png",
+            "league": "Ligue 1",
+            "start": "2026-02-15T05:05:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=lens"
+        },
+        {
+            "team1": "Birmingham",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8658.png",
+            "team2": "Leeds",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8463.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T21:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=birmingham"
+        },
+        {
+            "team1": "Grimsby",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10005.png",
+            "team2": "Wolves",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T22:30:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=wolves"
+        },
+        {
+            "team1": "Stoke",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10194.png",
+            "team2": "Fulham",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9879.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T23:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=fulham"
+        },
+        {
+            "team1": "Oxford Utd",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8653.png",
+            "team2": "Sunderland",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png",
+            "league": "FA Cup",
+            "start": "2026-02-15T23:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=oxfordutd"
         }
     ]
 }
