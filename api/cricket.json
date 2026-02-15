@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Ireland",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
-            "team2": "Oman",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/oman.png",
-            "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-14T14:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=ireland"
-        },
-        {
-            "team1": "England",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/england.png",
-            "team2": "Scotland",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
-            "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-14T18:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=england"
-        },
-        {
-            "team1": "New Zealand",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "team2": "South Africa",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
-            "league": "ICC Men's T20 World Cup, Group D",
-            "start": "2026-02-14T22:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=newzealand"
-        },
-        {
             "team1": "West Indies",
             "team1_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
             "team2": "Nepal",
@@ -61,30 +31,10 @@
             "details_url": "https://blog.cricfoot.net/?yosintv=india"
         },
         {
-            "team1": "Queensland",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/default.png",
-            "team2": "South Australia",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
-            "league": "Sheffield Shield",
-            "start": "2026-02-16T09:00:00+09:00",
-            "duration": 10,
-            "details_url": "https://blog.cricfoot.net/?yosintv=queensland"
-        },
-        {
-            "team1": "Western Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/default.png",
-            "team2": "Victoria",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
-            "league": "Sheffield Shield",
-            "start": "2026-02-16T11:30:00+09:00",
-            "duration": 10,
-            "details_url": "https://blog.cricfoot.net/?yosintv=westernaustralia"
-        },
-        {
             "team1": "Afghanistan",
             "team1_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
             "team2": "United Arab Emirates",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/unitedarabemirates.png",
             "league": "ICC Men's T20 World Cup, Group D",
             "start": "2026-02-16T14:30:00+09:00",
             "duration": 5,
