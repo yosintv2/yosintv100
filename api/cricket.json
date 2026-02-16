@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "team1": "West Indies",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
-            "team2": "Nepal",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-15T14:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=westindies"
-        },
-        {
-            "team1": "USA",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/usa.png",
-            "team2": "Namibia",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/namibia.png",
-            "league": "ICC Men's T20 World Cup, Group A",
-            "start": "2026-02-15T18:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=usa"
-        },
-        {
-            "team1": "India",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "team2": "Pakistan",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
-            "league": "ICC Men's T20 World Cup, Group A",
-            "start": "2026-02-15T22:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=india"
-        },
-        {
             "team1": "Afghanistan",
             "team1_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
             "team2": "United Arab Emirates",
