@@ -1,32 +1,82 @@
 {
     "matches": [
         {
-            "team1": "Afghanistan",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/afghanistan.png",
-            "team2": "United Arab Emirates",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/unitedarabemirates.png",
+            "team1": "New Zealand",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "team2": "Canada",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/canada.png",
             "league": "ICC Men's T20 World Cup, Group D",
-            "start": "2026-02-16T14:30:00+09:00",
+            "start": "2026-02-17T14:30:00+09:00",
             "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=afghanistan"
+            "details_url": "https://blog.cricfoot.net/?yosintv=newzealand"
         },
         {
-            "team1": "England",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/england.png",
+            "team1": "Ireland",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
+            "team2": "Zimbabwe",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
+            "league": "ICC Men's T20 World Cup, Group B",
+            "start": "2026-02-17T18:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=ireland"
+        },
+        {
+            "team1": "Scotland",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
+            "team2": "Nepal",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
+            "league": "ICC Men's T20 World Cup, Group C",
+            "start": "2026-02-17T22:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=scotland"
+        },
+        {
+            "team1": "South Africa",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
+            "team2": "United Arab Emirates",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "league": "ICC Men's T20 World Cup, Group D",
+            "start": "2026-02-18T14:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=southafrica"
+        },
+        {
+            "team1": "Pakistan",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
+            "team2": "Namibia",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/namibia.png",
+            "league": "ICC Men's T20 World Cup, Group A",
+            "start": "2026-02-18T18:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=pakistan"
+        },
+        {
+            "team1": "India",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "Netherlands",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/netherlands.png",
+            "league": "ICC Men's T20 World Cup, Group A",
+            "start": "2026-02-18T22:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=india"
+        },
+        {
+            "team1": "West Indies",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
             "team2": "Italy",
             "team2_logo": "https://aimages.willow.tv/teamLogos/italy.png",
             "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-16T18:30:00+09:00",
+            "start": "2026-02-19T14:30:00+09:00",
             "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=england"
+            "details_url": "https://blog.cricfoot.net/?yosintv=westindies"
         },
         {
             "team1": "Sri Lanka",
             "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
-            "team2": "Australia",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/australia.png",
+            "team2": "Zimbabwe",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
             "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-16T22:30:00+09:00",
+            "start": "2026-02-19T18:30:00+09:00",
             "duration": 5,
             "details_url": "https://blog.cricfoot.net/?yosintv=srilanka"
         }
