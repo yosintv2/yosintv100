@@ -1,50 +1,10 @@
 {
     "matches": [
         {
-            "team1": "India-A W",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
-            "team2": "Nepal W",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "league": "Women's Asia Cup Rising Stars",
-            "start": "2026-02-17T11:30:00+09:00",
-            "duration": 6,
-            "details_url": "https://blog.cricfoot.net/?yosintv=nepal"
-        },
-        {
-            "team1": "New Zealand",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "team2": "Canada",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/canada.png",
-            "league": "ICC Men's T20 World Cup, Group D",
-            "start": "2026-02-17T14:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=newzealand"
-        },
-        {
-            "team1": "Ireland",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/ireland.png",
-            "team2": "Zimbabwe",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
-            "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-17T18:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=ireland"
-        },
-        {
-            "team1": "Scotland",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/scotland.png",
-            "team2": "Nepal",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/nepal.png",
-            "league": "ICC Men's T20 World Cup, Group C",
-            "start": "2026-02-17T22:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=scotland"
-        },
-        {
             "team1": "South Africa",
             "team1_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
             "team2": "United Arab Emirates",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/unitedarabemirates.png",
             "league": "ICC Men's T20 World Cup, Group D",
             "start": "2026-02-18T14:30:00+09:00",
             "duration": 5,
