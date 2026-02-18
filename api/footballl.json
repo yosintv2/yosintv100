@@ -69,6 +69,16 @@
             "start": "2026-02-19T05:00:00+09:00",
             "duration": 2.2,
             "details_url": "https://blog.cricfoot.net/?yosintv=wolves"
+        },
+        {
+            "team1": "Levante",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8581.png",
+            "team2": "Villarreal",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10205.png",
+            "league": "LaLiga",
+            "start": "2026-02-19T04:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=levante"
         }
     ]
 }
