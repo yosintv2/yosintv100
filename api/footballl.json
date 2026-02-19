@@ -1,84 +1,34 @@
 {
     "matches": [
         {
-            "team1": "Qarabag FK",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7981.png",
-            "team2": "Newcastle",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-19T02:45:00+09:00",
+            "team1": "Fenerbahçe",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8695.png",
+            "team2": "Nottm Forest",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10203.png",
+            "league": "Europa League Final Stage",
+            "start": "2026-02-20T02:45:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=newcastle"
+            "details_url": "https://blog.cricfoot.net/?yosintv=nottmforest"
         },
         {
-            "team1": "Al Nassr FC",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
-            "team2": "Arkadag",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/1689659.png",
-            "league": "AFC Champions League Two Final Stage",
-            "start": "2026-02-19T03:15:00+09:00",
+            "team1": "PAOK Thessaloniki",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8619.png",
+            "team2": "Celta Vigo",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9910.png",
+            "league": "Europa League Final Stage",
+            "start": "2026-02-20T02:45:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=alnassrfc"
+            "details_url": "https://blog.cricfoot.net/?yosintv=paokthessaloniki"
         },
         {
-            "team1": "Milan",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
-            "team2": "Como",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10171.png",
-            "league": "Serie A",
-            "start": "2026-02-19T04:45:00+09:00",
+            "team1": "Brann",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8468.png",
+            "team2": "Bologna",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9857.png",
+            "league": "Europa League Final Stage",
+            "start": "2026-02-20T02:45:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=milan"
-        },
-        {
-            "team1": "Bodø/Glimt",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8402.png",
-            "team2": "Inter",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-19T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=inter"
-        },
-        {
-            "team1": "Club Brugge",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8342.png",
-            "team2": "Atletico Madrid",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-19T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=atleticomadrid"
-        },
-        {
-            "team1": "Olympiacos",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8638.png",
-            "team2": "Leverkusen",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-19T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=leverkusen"
-        },
-        {
-            "team1": "Wolves",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
-            "team2": "Arsenal",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
-            "league": "Premier League",
-            "start": "2026-02-19T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=wolves"
-        },
-        {
-            "team1": "Levante",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8581.png",
-            "team2": "Villarreal",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10205.png",
-            "league": "LaLiga",
-            "start": "2026-02-19T04:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=levante"
+            "details_url": "https://blog.cricfoot.net/?yosintv=brann"
         }
     ]
 }
