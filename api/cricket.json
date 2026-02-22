@@ -1,26 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Australia",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/australia.png",
-            "team2": "Oman",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/oman.png",
-            "league": "ICC Men's T20 World Cup, Group B",
-            "start": "2026-02-20T22:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=australia"
-        },
-        {
-            "team1": "New Zealand",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
-            "team2": "Pakistan",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/pakistan.png",
-            "league": "ICC Men's T20 World Cup, Super 8, Group 2",
-            "start": "2026-02-21T22:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=newzealand"
-        },
-        {
             "team1": "Sri Lanka",
             "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
             "team2": "England",
@@ -29,6 +9,18 @@
             "start": "2026-02-22T18:30:00+09:00",
             "duration": 5,
             "details_url": "https://blog.cricfoot.net/?yosintv=srilanka"
+        },
+        {
+            "team1": "India",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/india.png",
+            "team2": "South Africa",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
+            "league": "ICC Men's T20 World Cup, Super 8, Group 1",
+            "start": "2026-02-22T22:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=india"
         }
     ]
 }
+
+
