@@ -1,114 +1,54 @@
 {
     "matches": [
         {
-            "team1": "Getafe",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8305.png",
-            "team2": "Sevilla",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8302.png",
-            "league": "LaLiga",
-            "start": "2026-02-22T22:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=getafe"
-        },
-        {
-            "team1": "Crystal Palace",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png",
-            "team2": "Wolves",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8602.png",
-            "league": "Premier League",
-            "start": "2026-02-22T23:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=wolves"
-        },
-        {
-            "team1": "Nottm Forest",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10203.png",
-            "team2": "Liverpool",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
-            "league": "Premier League",
-            "start": "2026-02-22T23:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=nottmforest"
-        },
-        {
-            "team1": "Sunderland",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png",
-            "team2": "Fulham",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9879.png",
-            "league": "Premier League",
-            "start": "2026-02-22T23:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=fulham"
-        },
-        {
-            "team1": "Atalanta",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8524.png",
-            "team2": "Napoli",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png",
+            "team1": "Fiorentina",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8535.png",
+            "team2": "Pisa",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6479.png",
             "league": "Serie A",
-            "start": "2026-02-22T23:00:00+09:00",
+            "start": "2026-02-24T02:30:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=napoli"
+            "details_url": "https://blog.cricfoot.net/?yosintv=fiorentina"
         },
         {
-            "team1": "Barcelona",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
-            "team2": "Levante",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8581.png",
-            "league": "LaLiga",
-            "start": "2026-02-23T00:15:00+09:00",
+            "team1": "Bologna",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9857.png",
+            "team2": "Udinese",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8600.png",
+            "league": "Serie A",
+            "start": "2026-02-24T04:45:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=barcelona"
+            "details_url": "https://blog.cricfoot.net/?yosintv=bologna"
         },
         {
-            "team1": "Tottenham",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
-            "team2": "Arsenal",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
+            "team1": "Everton",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8668.png",
+            "team2": "Man United",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
             "league": "Premier League",
-            "start": "2026-02-23T01:30:00+09:00",
+            "start": "2026-02-24T05:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=arsenal"
+            "details_url": "https://blog.cricfoot.net/?yosintv=manunited"
         },
         {
-            "team1": "Milan",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
-            "team2": "Parma",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10167.png",
-            "league": "Serie A",
-            "start": "2026-02-23T02:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=milan"
-        },
-        {
-            "team1": "Celta Vigo",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9910.png",
-            "team2": "Mallorca",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8661.png",
+            "team1": "Deportivo Alaves",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9866.png",
+            "team2": "Girona",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7732.png",
             "league": "LaLiga",
-            "start": "2026-02-23T02:30:00+09:00",
+            "start": "2026-02-24T05:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=celtavigo"
+            "details_url": "https://blog.cricfoot.net/?yosintv=deportivoalaves"
         },
         {
-            "team1": "Roma",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8686.png",
-            "team2": "Cremonese",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7801.png",
-            "league": "Serie A",
-            "start": "2026-02-23T04:45:00+09:00",
+            "team1": "Odisha FC",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/578653.png",
+            "team2": "Inter Kashi",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/1562126.png",
+            "league": "Indian Super League",
+            "start": "2026-02-24T23:00:00+09:00",
             "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=roma"
-        },
-        {
-            "team1": "Villarreal",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10205.png",
-            "team2": "Valencia",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10267.png",
-            "league": "LaLiga",
-            "start": "2026-02-23T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=villarreal"
+            "details_url": "https://blog.cricfoot.net/?yosintv=odishafc"
         }
     ]
 }
