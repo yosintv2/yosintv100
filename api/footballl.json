@@ -1,56 +1,6 @@
 {
     "matches": [
         {
-            "team1": "Atletico Madrid",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
-            "team2": "Club Brugge",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8342.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-25T02:45:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=atleticomadrid"
-        },
-        {
-            "team1": "Al-Taawoun",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/205686.png",
-            "team2": "Al Hilal",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/2529.png",
-            "league": "Saudi Pro League",
-            "start": "2026-02-25T04:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=alhilal"
-        },
-        {
-            "team1": "Leverkusen",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png",
-            "team2": "Olympiacos",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8638.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-25T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=leverkusen"
-        },
-        {
-            "team1": "Inter",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
-            "team2": "Bodø/Glimt",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8402.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-25T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=inter"
-        },
-        {
-            "team1": "Newcastle",
-            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
-            "team2": "Qarabag FK",
-            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/7981.png",
-            "league": "Champions League Final Stage",
-            "start": "2026-02-25T05:00:00+09:00",
-            "duration": 2.2,
-            "details_url": "https://blog.cricfoot.net/?yosintv=newcastle"
-        },
-        {
             "team1": "Nashville SC",
             "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/915807.png",
             "team2": "Atlético Ottawa",
@@ -69,6 +19,86 @@
             "start": "2026-02-25T12:00:00+09:00",
             "duration": 2.2,
             "details_url": "https://blog.cricfoot.net/?yosintv=lafc"
+        },
+        {
+            "team1": "Atalanta",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8524.png",
+            "team2": "Dortmund",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9789.png",
+            "league": "Champions League Final Stage",
+            "start": "2026-02-26T02:45:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=dortmund"
+        },
+        {
+            "team1": "Al Najma",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/1523707.png",
+            "team2": "Al Nassr FC",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
+            "league": "Saudi Pro League",
+            "start": "2026-02-26T04:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=alnassrfc"
+        },
+        {
+            "team1": "Juventus",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
+            "team2": "Galatasaray",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8637.png",
+            "league": "Champions League Final Stage",
+            "start": "2026-02-26T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=juventus"
+        },
+        {
+            "team1": "PSG",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9847.png",
+            "team2": "Monaco",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9829.png",
+            "league": "Champions League Final Stage",
+            "start": "2026-02-26T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=psg"
+        },
+        {
+            "team1": "Real Madrid",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
+            "team2": "Benfica",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/9772.png",
+            "league": "Champions League Final Stage",
+            "start": "2026-02-26T05:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=realmadrid"
+        },
+        {
+            "team1": "Cincinnati",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/722265.png",
+            "team2": "O&M FC",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/1237060.png",
+            "league": "CONCACAF Champions Cup",
+            "start": "2026-02-26T09:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=cincinnati"
+        },
+        {
+            "team1": "Vancouver",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/307691.png",
+            "team2": "C.S. Cartaginés",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/49732.png",
+            "league": "CONCACAF Champions Cup",
+            "start": "2026-02-26T11:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=vancouver"
+        },
+        {
+            "team1": "Mexico",
+            "team1_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/6710.png",
+            "team2": "Iceland",
+            "team2_logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8536.png",
+            "league": "Friendlies",
+            "start": "2026-02-26T11:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=mexico"
         }
     ]
 }
