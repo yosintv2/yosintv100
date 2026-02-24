@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "team1": "Zimbabwe",
-            "team1_logo": "https://aimages.willow.tv/teamLogos/zimbabwe.png",
-            "team2": "West Indies",
-            "team2_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
-            "league": "ICC Men's T20 World Cup, Super 8, Group 1",
-            "start": "2026-02-23T22:30:00+09:00",
-            "duration": 5,
-            "details_url": "https://blog.cricfoot.net/?yosintv=zimbabwe"
+            "team1": "Australia Women",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "team2": "India Women",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "league": "India Women in Australia, 3 ODI Series",
+            "start": "2026-02-24T12:50:00+09:00",
+            "duration": 8,
+            "details_url": "https://blog.cricfoot.net/?yosintv=australiawomen"
         },
         {
             "team1": "England",
@@ -19,6 +19,36 @@
             "start": "2026-02-24T22:30:00+09:00",
             "duration": 5,
             "details_url": "https://blog.cricfoot.net/?yosintv=england"
+        },
+        {
+            "team1": "South Africa Women",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "team2": "Pakistan Women",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/default.png",
+            "league": "Pakistan Women in South Africa, 3 ODI Series",
+            "start": "2026-02-25T20:00:00+09:00",
+            "duration": 8,
+            "details_url": "https://blog.cricfoot.net/?yosintv=southafricawomen"
+        },
+        {
+            "team1": "Sri Lanka",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/srilanka.png",
+            "team2": "New Zealand",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/newzealand.png",
+            "league": "ICC Men's T20 World Cup, Super 8, Group 2",
+            "start": "2026-02-25T22:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=srilanka"
+        },
+        {
+            "team1": "West Indies",
+            "team1_logo": "https://aimages.willow.tv/teamLogos/westindies.png",
+            "team2": "South Africa",
+            "team2_logo": "https://aimages.willow.tv/teamLogos/southafrica.png",
+            "league": "ICC Men's T20 World Cup, Super 8, Group 1",
+            "start": "2026-02-26T18:30:00+09:00",
+            "duration": 5,
+            "details_url": "https://blog.cricfoot.net/?yosintv=westindies"
         }
     ]
 }
