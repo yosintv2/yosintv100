@@ -370,6 +370,63 @@
             to   { opacity: 1; transform: scale(1); }
         }
         .tgx-popup-overlay.tgx-active { display: flex; }
+
+        /* ===== LEAGUE FILTER ROW ===== */
+        .league-filter-wrapper {
+            width: calc(100% - 1rem);
+            max-width: 960px;
+            margin: 10px auto 0;
+            position: relative;
+        }
+        .league-filter-row {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+            padding: 8px 4px;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE/Edge */
+            -webkit-overflow-scrolling: touch;
+        }
+        .league-filter-row::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+        .league-filter-btn {
+            flex-shrink: 0;
+            white-space: nowrap;
+            padding: 7px 16px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 2px solid #1d4ed8;
+            background: transparent;
+            color: #1d4ed8;
+            transition: all 0.2s ease;
+            letter-spacing: 0.02em;
+        }
+        .league-filter-btn:hover {
+            background: #1d4ed8;
+            color: white;
+        }
+        .league-filter-btn.active {
+            background: #1d4ed8;
+            color: white;
+            box-shadow: 0 3px 8px rgba(29,78,216,0.35);
+        }
+        .dark .league-filter-btn {
+            border-color: #60a5fa;
+            color: #60a5fa;
+        }
+        .dark .league-filter-btn:hover,
+        .dark .league-filter-btn.active {
+            background: #60a5fa;
+            color: #1f2937;
+            border-color: #60a5fa;
+        }
+        /* ============================= */
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
 </head>
@@ -400,7 +457,14 @@
         </a>
         <style>@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}</style>
 
-        <h2 class="league-title">Upcoming & Live Football Matches</h2>
+        <!-- LEAGUE FILTER ROW (inserted before the title) -->
+        <div class="league-filter-wrapper">
+            <div class="league-filter-row" id="league-filter-row">
+                <!-- Pills injected by JS -->
+            </div>
+        </div>
+
+        <h2 class="league-title" id="league-title-heading">Upcoming & Live Football Matches</h2>
 
         <div id="cricket-list" class="match-schedule-list"></div>
 
@@ -426,6 +490,7 @@
 <script>
     let allMatches = [];
     let updateIntervalId;
+    let activeLeague = 'ALL'; // track selected league
 
     // Dark Mode
     const toggle = document.getElementById('darkModeToggle');
@@ -529,11 +594,82 @@
 
     function renderMatches() {
         const list = document.getElementById('cricket-list');
+        const titleEl = document.getElementById('league-title-heading');
         list.innerHTML = '';
-        allMatches.forEach((match, i) => {
-            list.appendChild(createCard(match));
-        });
+
+        const filtered = activeLeague === 'ALL'
+            ? allMatches
+            : allMatches.filter(m => (m.competition || m.league || '') === activeLeague);
+
+        if (filtered.length === 0) {
+            list.innerHTML = '<p class="text-center text-xl font-semibold text-gray-500 py-10">No matches found for this league</p>';
+        } else {
+            filtered.forEach(match => list.appendChild(createCard(match)));
+        }
+
+        // Update the h2 title
+        titleEl.textContent = activeLeague === 'ALL'
+            ? 'Upcoming & Live Football Matches'
+            : activeLeague;
+
         updateCountdownDisplay();
+    }
+
+    function buildLeagueFilterRow(matchesArray) {
+        const row = document.getElementById('league-filter-row');
+        row.innerHTML = '';
+
+        // Collect unique league names preserving order of appearance
+        const leagueNames = [];
+        const seen = new Set();
+        matchesArray.forEach(m => {
+            const lg = m.competition || m.league || '';
+            if (lg && !seen.has(lg)) {
+                seen.add(lg);
+                leagueNames.push(lg);
+            }
+        });
+
+        // "All" pill first (leftmost)
+        const allBtn = document.createElement('button');
+        allBtn.className = 'league-filter-btn' + (activeLeague === 'ALL' ? ' active' : '');
+        allBtn.textContent = 'All';
+        allBtn.addEventListener('click', () => {
+            activeLeague = 'ALL';
+            updateFilterButtons();
+            renderMatches();
+        });
+        row.appendChild(allBtn);
+
+        // Individual league pills in order of appearance
+        leagueNames.forEach(lg => {
+            const btn = document.createElement('button');
+            btn.className = 'league-filter-btn' + (activeLeague === lg ? ' active' : '');
+            btn.textContent = lg;
+            btn.dataset.league = lg;
+            btn.addEventListener('click', () => {
+                activeLeague = lg;
+                updateFilterButtons();
+                renderMatches();
+            });
+            row.appendChild(btn);
+        });
+
+        // Scroll to the far right so the row reads right-to-left on load
+        requestAnimationFrame(() => { row.scrollLeft = row.scrollWidth; });
+    }
+
+    function updateFilterButtons() {
+        document.querySelectorAll('.league-filter-btn').forEach(btn => {
+            const isAll = !btn.dataset.league;
+            if (activeLeague === 'ALL' && isAll) {
+                btn.classList.add('active');
+            } else if (btn.dataset.league === activeLeague) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
     }
 
     function sortAndRender(matchesArray) {
@@ -544,29 +680,29 @@
             const duration = (parseInt(m.duration) || 2) * 3600000;
             const end = start + duration;
 
-            let priority = 3; // default finished
+            let priority = 3;
             let sortValue = start;
 
             if (now >= start && now < end) {
-                priority = 1;           // LIVE - highest priority
-                sortValue = -start;     // most recent start time first (negative = newest on top)
+                priority = 1;
+                sortValue = -start;
             } else if (now < start) {
-                priority = 2;           // Upcoming
-                sortValue = start;      // soonest first
+                priority = 2;
+                sortValue = start;
             } else {
-                priority = 3;           // Finished
-                sortValue = end;        // oldest finished first
+                priority = 3;
+                sortValue = end;
             }
 
             return { ...m, priority, sortValue };
         });
 
-        // Sort: first by priority (LIVE > Upcoming > Finished), then by sortValue
         allMatches.sort((a, b) => {
             if (a.priority !== b.priority) return a.priority - b.priority;
             return a.sortValue - b.sortValue;
         });
 
+        buildLeagueFilterRow(allMatches);
         renderMatches();
     }
 
