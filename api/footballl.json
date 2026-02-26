@@ -69,6 +69,16 @@
             "start": "2026-02-27T07:00:00+09:00",
             "duration": 2.2,
             "details_url": "https://blog.cricfoot.net/?yosintv=santosfc"
+        },
+        {
+            "team1": "Inter Miami CF",
+            "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/337602/image",
+            "team2": "Independiente del Valle",
+            "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/39723/image",
+            "league": "MLS Pre Season",
+            "start": "2026-02-27T10:00:00+09:00",
+            "duration": 2.2,
+            "details_url": "https://blog.cricfoot.net/?yosintv=intermiamicf"
         }
     ]
 }
