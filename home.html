@@ -1,344 +1,828 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="robots" content="index" />
-  <meta name="description" id="meta-description" content="Watch live sports matches and highlights on YoSinTV." />
-  <meta name="keywords" id="meta-keywords" content="YoSinTV, live stream, football, cricket, sports highlights" />
-  <meta property="og:title" id="og-title" content="YoSinTV - Live Sports Streaming" />
-  <meta property="og:description" id="og-description" content="Watch live sports matches and highlights on YoSinTV." />
-  <meta property="og:url" id="og-url" content="" />
-  <meta name="twitter:title" id="twitter-title" content="YoSinTV - Live Sports Streaming" />
-  <meta name="twitter:description" id="twitter-description" content="Watch live sports matches and highlights on YoSinTV." />
-  <link rel="canonical" id="canonical-url" href="" />
-  <link href="https://web.cricfoot.net/favico.png" rel="icon" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <title>YoSinTV - Cricket | Football | Playing XI | Match Preview</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YoSinTV - Live Cricket &amp; Football | Match Schedule | Playing XI</title>
+  <meta name="description" content="Watch live cricket and football matches, check upcoming fixtures, team lineups, match previews &amp; playing XI. Real-time updates for all major leagues."/>
+  <meta name="keywords" content="live cricket, live football, match schedule, playing XI, match preview, T20 World Cup 2026"/>
+  <meta name="author" content="YoSinTV"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#1d4ed8"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="YoSinTV - Live Cricket &amp; Football | Match Schedule | Playing XI"/>
+  <meta property="og:description" content="Watch live cricket and football matches with real-time updates."/>
+  <meta property="og:image" content="https://web.cricfoot.net/favico.png"/>
+  <meta property="og:site_name" content="YoSinTV"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="YoSinTV - Live Cricket &amp; Football"/>
+  <meta name="twitter:image" content="https://web.cricfoot.net/favico.png"/>
+  <meta name="twitter:site" content="@YoSinTV"/>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://web.cricfoot.net/favico.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="https://web.cricfoot.net/favico.png"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
   <style>
-    /* TRUE FULL-WIDTH LEAGUE BAR - Tight spacing */
-    .match-league-bar {
-        margin-top: 4px; 
-        padding: 6px 16px;
-        background: linear-gradient(135deg, rgba(29,78,216,0.08), rgba(37,99,235,0.12));
-        border-radius: 8px;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
+    /* ── Variables ── */
+    :root {
+      --blue: #1d4ed8; --bluel: #3b82f6; --blued: #1e3a8a;
+      --red: #dc2626; --green: #10b981; --yellow: #facc15;
+      --bg: #f1f5f9; --card: #ffffff; --text: #1e293b;
+      --muted: #64748b; --border: #e2e8f0;
+      --fd: 'Oswald', sans-serif;
+      --fb: 'Source Sans 3', sans-serif;
+      --s1: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --s2: 0 4px 12px rgba(0,0,0,.09);
+      --s3: 0 10px 28px rgba(0,0,0,.13);
+      --r: 12px; --rs: 8px;
     }
-    .match-league-bar p {
-        font-size: 10px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: 0;
-        opacity: 0.8;
-        color: #1d4ed8;
-        letter-spacing: 0.6px;
+    .dk {
+      --bg: #0f172a; --card: #1e293b; --text: #f1f5f9;
+      --muted: #94a3b8; --border: #334155;
+      --s2: 0 4px 12px rgba(0,0,0,.4);
     }
-    .dark .match-league-bar {
-        background: linear-gradient(135deg, rgba(30,64,175,0.2), rgba(59,130,246,0.25));
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--fb); background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.6; transition: background .3s, color .3s; overflow-x: hidden; padding-top: 66px; }
+    img { max-width: 100%; height: auto; }
+    a { color: inherit; }
+
+    /* ── Header ── */
+    #yst-hdr { position: fixed; top: 0; width: 100%; background: var(--card); box-shadow: 0 2px 12px rgba(0,0,0,.1); border-bottom: 3px solid var(--blue); z-index: 1000; transition: background .3s; }
+    .hdr-in { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .logo img { height: 56px; display: block; }
+    .hdr-r { display: flex; align-items: center; gap: .85rem; }
+    .sw { position: relative; display: flex; align-items: center; }
+    .si { border: 2px solid var(--border); background: var(--bg); color: var(--text); border-radius: 50px; padding: 5px 14px 5px 36px; font-size: 13.5px; font-family: var(--fb); width: 170px; outline: none; transition: border-color .2s, width .3s; }
+    .si:focus { border-color: var(--blue); width: 210px; }
+    .sic { position: absolute; left: 11px; color: var(--muted); pointer-events: none; }
+    .tgl { position: relative; display: inline-block; width: 46px; height: 25px; cursor: pointer; }
+    .tgl input { display: none; }
+    .sldr { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #cbd5e1; border-radius: 50px; transition: .35s; }
+    .sldr::before { content: ''; position: absolute; width: 19px; height: 19px; left: 3px; bottom: 3px; background: white; border-radius: 50%; transition: .35s; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
+    .tgl input:checked + .sldr { background: var(--blue); }
+    .tgl input:checked + .sldr::before { transform: translateX(21px); }
+
+    /* ── Nav ── */
+    .yst-nav { background: var(--blued); position: sticky; top: 66px; z-index: 999; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+    .nav-in { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; display: flex; align-items: center; overflow-x: auto; scrollbar-width: none; }
+    .nav-in::-webkit-scrollbar { display: none; }
+    .nl { color: rgba(255,255,255,.78); text-decoration: none; font-family: var(--fd); font-size: .8rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; padding: 11px 15px; white-space: nowrap; border-bottom: 3px solid transparent; transition: color .2s, border-color .2s; display: flex; align-items: center; gap: 4px; }
+    .nl:hover, .nl.active { color: #fff; border-bottom-color: var(--yellow); }
+
+    /* ── Ad bar ── */
+    .adbar { max-width: 1140px; margin: 18px auto 0; padding: 0 1.25rem; text-align: center; }
+    .adbar-placeholder { background: var(--card); border: 2px dashed var(--border); border-radius: var(--rs); padding: 18px; font-size: .78rem; color: var(--muted); font-family: var(--fd); letter-spacing: .05em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; width: 100%; min-height: 60px; line-height: 1.6; }
+
+    /* ── Main Grid ── */
+    .yst-wrap { max-width: 1140px; margin: 20px auto 60px; padding: 0 1.25rem; display: grid; grid-template-columns: 1fr 308px; gap: 26px; align-items: start; }
+    @media (max-width: 920px) {
+      .yst-wrap { grid-template-columns: 1fr; grid-template-areas: "content" "sidebar"; }
+      .yst-content { grid-area: content; }
+      .yst-aside { grid-area: sidebar; }
     }
-    .dark .match-league-bar p {
-        color: #60a5fa;
-        opacity: 0.9;
+
+    /* ── Section heading ── */
+    .sh { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+    .sh-t { font-family: var(--fd); font-size: 1.15rem; font-weight: 700; color: var(--text); letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+    .sh-l { flex: 1; height: 2px; background: linear-gradient(90deg, var(--blue) 0%, transparent 100%); border-radius: 2px; }
+    .sh-b { background: var(--blue); color: white; font-family: var(--fd); font-size: .65rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 9px; border-radius: 50px; }
+
+    /* ── Events ── */
+    .evh { font-family: var(--fd); font-size: .95rem; font-weight: 700; padding: 10px 14px; border-radius: var(--rs); color: white; letter-spacing: .05em; text-transform: uppercase; margin: 20px 0 10px; }
+    .evh.cr { background: linear-gradient(90deg, #0369a1, #0284c7); }
+    .evh.ft { background: linear-gradient(90deg, #dc2626, #b91c1c); }
+    .evg { display: flex; flex-direction: column; gap: 9px; margin-bottom: 22px; }
+    .ev { display: flex; align-items: center; gap: 11px; background: var(--card); border: 1px solid var(--border); border-radius: var(--rs); padding: 9px 12px; text-decoration: none; color: var(--text); box-shadow: var(--s1); transition: transform .2s, box-shadow .2s, border-color .2s; }
+    .ev:hover { transform: translateY(-2px); box-shadow: var(--s2); border-color: var(--bluel); }
+    .ev img { width: 42px; height: 42px; object-fit: contain; flex-shrink: 0; border-radius: 6px; background: var(--bg); }
+    .ev-t { font-size: .85rem; font-weight: 600; line-height: 1.3; color: var(--text); }
+    .ev-loading { color: var(--muted); font-size: .83rem; padding: 8px; }
+
+    /* ── Article card (no image) ── */
+    .pc { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); box-shadow: var(--s1); margin-bottom: 14px; overflow: hidden; transition: transform .25s, box-shadow .25s; animation: fadeUp .4s ease both; }
+    .pc:hover { transform: translateY(-2px); box-shadow: var(--s3); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .pb { padding: 16px 18px; }
+    .pl { display: inline-block; background: var(--blue); color: white; font-family: var(--fd); font-size: .65rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 2px 10px; border-radius: 50px; margin-bottom: 9px; text-decoration: none; margin-right: 4px; transition: background .2s; }
+    .pl:hover { background: var(--blued); }
+    .ptitle { font-family: var(--fd); font-size: 1.2rem; font-weight: 700; color: var(--text); line-height: 1.3; margin-bottom: 8px; text-decoration: none; display: block; transition: color .2s; }
+    .ptitle:hover { color: var(--blue); }
+    .psnip { font-size: .88rem; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
+    .pmeta { display: flex; align-items: center; gap: 14px; font-size: .76rem; color: var(--muted); }
+    .pmi { display: flex; align-items: center; gap: 4px; }
+    .rbtn { display: inline-flex; align-items: center; gap: 5px; margin-top: 12px; padding: 8px 18px; background: var(--blue); color: white; border-radius: 50px; font-family: var(--fd); font-size: .78rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; transition: background .2s, transform .2s; }
+    .rbtn:hover { background: var(--blued); transform: translateY(-1px); }
+
+    /* ── Filter pills ── */
+    .filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+    .fpill { display: inline-flex; align-items: center; gap: 5px; padding: 6px 14px; border-radius: 50px; font-family: var(--fd); font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; border: 2px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; transition: all .2s; }
+    .fpill:hover, .fpill.active { background: var(--blue); border-color: var(--blue); color: white; }
+
+    /* ── Pagination ── */
+    .pg { display: flex; justify-content: center; gap: 8px; margin: 26px 0; flex-wrap: wrap; }
+    .pg-btn { display: inline-flex; align-items: center; justify-content: center; padding: 8px 18px; border-radius: 50px; font-family: var(--fd); font-size: .82rem; font-weight: 700; border: 2px solid var(--border); color: var(--text); cursor: pointer; transition: all .2s; background: var(--card); }
+    .pg-btn:hover { border-color: var(--blue); color: var(--blue); }
+    .pg-btn.active { background: var(--blue); border-color: var(--blue); color: white; }
+    .pg-btn:disabled { opacity: .4; cursor: default; }
+
+    /* ── Sidebar ── */
+    .yst-aside { display: flex; flex-direction: column; gap: 20px; }
+    .wgt { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); box-shadow: var(--s1); overflow: hidden; }
+    .wgt-h { background: var(--blued); color: white; font-family: var(--fd); font-size: .85rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 11px 15px; display: flex; align-items: center; gap: 6px; }
+    .wgt-b { padding: 13px; }
+    .ad-box { background: var(--card); border: 2px dashed var(--border); border-radius: var(--r); text-align: center; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+    .ad-lbl { font-family: var(--fd); font-size: .65rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+
+    /* Latest posts with thumbnail */
+    .lp-item { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text); align-items: flex-start; transition: opacity .2s; }
+    .lp-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .lp-item:hover { opacity: .8; }
+    .lp-thumb { width: 64px; height: 48px; border-radius: 6px; object-fit: cover; flex-shrink: 0; background: var(--border); }
+    .lp-thumb-ph { width: 64px; height: 48px; border-radius: 6px; flex-shrink: 0; background: var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+    .lp-info { flex: 1; min-width: 0; }
+    .lp-t { font-size: .82rem; font-weight: 700; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; transition: color .2s; }
+    .lp-item:hover .lp-t { color: var(--blue); }
+    .lp-d { font-size: .7rem; color: var(--muted); margin-top: 3px; display: block; }
+
+    /* Recent posts text-only */
+    .rp-item { display: flex; flex-direction: column; gap: 2px; padding: 9px 0; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text); }
+    .rp-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .rp-t { font-size: .84rem; font-weight: 700; line-height: 1.3; transition: color .2s; }
+    .rp-item:hover .rp-t { color: var(--blue); }
+    .rp-d { font-size: .72rem; color: var(--muted); }
+
+    /* Tag pills */
+    .tagw { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag { display: inline-flex; align-items: center; gap: 4px; padding: 5px 12px; border-radius: 50px; font-size: .78rem; font-weight: 700; text-decoration: none; transition: opacity .2s; }
+    .tag:hover { opacity: .8; }
+
+    /* ── DMCA ── */
+    .dmca { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); box-shadow: var(--s1); padding: 22px; text-align: center; margin-bottom: 22px; }
+    .dmca-h { font-family: var(--fd); font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 9px; text-transform: uppercase; letter-spacing: .05em; }
+    .dmca p { font-size: .84rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── Footer ── */
+    .yst-ft { background: #0b1628; color: rgba(255,255,255,.72); padding: 38px 1.25rem 18px; }
+    .ft-in { max-width: 1140px; margin: 0 auto; }
+    .ft-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .ft-ht { font-family: var(--fd); font-size: .9rem; font-weight: 700; color: white; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 12px; padding-bottom: 7px; border-bottom: 2px solid var(--blue); }
+    .ft-ul { list-style: none; }
+    .ft-ul li { margin-bottom: 7px; }
+    .ft-ul a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .86rem; transition: color .2s; display: inline-flex; align-items: center; gap: 4px; }
+    .ft-ul a:hover { color: var(--yellow); }
+    .ft-bot { border-top: 1px solid rgba(255,255,255,.09); padding-top: 18px; text-align: center; font-size: .78rem; color: rgba(255,255,255,.4); }
+    .ft-bot a { color: rgba(255,255,255,.55); text-decoration: none; }
+    .ft-bot a:hover { color: var(--yellow); }
+    .socrow { display: flex; justify-content: flex-start; gap: 10px; margin-top: 13px; }
+    .socbtn { display: inline-flex; align-items: center; justify-content: center; width: 37px; height: 37px; border-radius: 50%; background: rgba(255,255,255,.09); color: white; text-decoration: none; font-size: 1rem; transition: background .2s, transform .2s; }
+    .socbtn:hover { background: var(--blue); transform: translateY(-3px); }
+
+    /* ── Popup ── */
+    .pop { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.76); z-index: 99999; justify-content: center; align-items: center; backdrop-filter: blur(7px); }
+    .pop.on { display: flex; }
+    .pop-box { background: linear-gradient(135deg, #0088cc, #006ba6); color: white; padding: 38px 26px; border-radius: 22px; text-align: center; max-width: 400px; width: 92%; box-shadow: 0 28px 64px rgba(0,0,0,.5); animation: popIn .5s cubic-bezier(.175,.885,.32,1.275); position: relative; }
+    @keyframes popIn { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+    .pop-x { position: absolute; top: 13px; right: 14px; background: rgba(255,255,255,.22); border: none; color: white; width: 36px; height: 36px; border-radius: 50%; font-size: 22px; cursor: pointer; line-height: 1; transition: background .2s; }
+    .pop-x:hover { background: rgba(255,255,255,.36); }
+    .pop-t { font-family: var(--fd); font-size: 1.6rem; font-weight: 700; margin: 8px 0 11px; letter-spacing: .03em; }
+    .pop-p { font-size: .95rem; opacity: .9; margin-bottom: 24px; line-height: 1.55; }
+    .pop-j { display: inline-block; background: white; color: #0088cc; font-family: var(--fd); font-size: 1rem; font-weight: 700; padding: 13px 36px; border-radius: 50px; text-decoration: none; box-shadow: 0 9px 26px rgba(0,0,0,.22); transition: transform .2s, box-shadow .2s; }
+    .pop-j:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(0,0,0,.3); }
+
+    /* ── Back to Top ── */
+    #btt { position: fixed; bottom: 22px; right: 22px; width: 42px; height: 42px; background: var(--blue); color: white; border: none; border-radius: 50%; font-size: 1.1rem; cursor: pointer; box-shadow: var(--s2); display: none; align-items: center; justify-content: center; z-index: 500; transition: transform .2s, background .2s; }
+    #btt:hover { transform: translateY(-3px); background: var(--blued); }
+    #btt.on { display: flex; }
+
+    /* ── Skeleton loader ── */
+    .skel { background: linear-gradient(90deg, var(--border) 25%, var(--bg) 50%, var(--border) 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; border-radius: 6px; }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--bluel); }
+
+    @media (max-width: 640px) {
+      .art { padding: 16px; }
+      .si { width: 120px; }
+      .si:focus { width: 155px; }
     }
   </style>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
-  <div id="fb-root"></div>
-  <header class="bg-white shadow-sm">
-    <div class="container mx-auto max-w-4xl px-4 py-4 flex items-center justify-between">
-      <div class="flex items-center">
-        <a href="https://www.yosin-tv.net/" title="YoSinTV">
-          <img alt="YoSinTV" src="https://web.cricfoot.net/logo.png" class="h-16 w-auto" />
-          <h1 class="sr-only">YoSinTV: Cricket | Football Stream Free</h1>
-        </a>
-      </div>
-    </div>
-  </header>
+<body>
 
-  <div class="container mx-auto max-w-4xl px-4 py-4">
-    <div class="adspos">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="4345862479" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<!-- ═══ HEADER ═══ -->
+<header id="yst-hdr">
+  <div class="hdr-in">
+    <a class="logo" href="/">
+      <img alt="YoSinTV" src="https://web.cricfoot.net/logo.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+      <span style="display:none;font-family:var(--fd);font-size:1.4rem;font-weight:700;color:var(--blue);">YoSinTV</span>
+    </a>
+    <div class="hdr-r">
+      <div class="sw">
+        <svg class="sic" fill="none" height="15" stroke="currentColor" viewBox="0 0 24 24" width="15">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input class="si" id="yst-s" placeholder="Search..." type="text"/>
+      </div>
+      <label class="tgl" title="Dark Mode">
+        <input id="yst-dm" type="checkbox"/>
+        <span class="sldr"></span>
+      </label>
     </div>
   </div>
+</header>
 
-  <main class="container mx-auto max-w-4xl px-4 py-8">
-    <section class="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
-      <div class="space-y-4" id="cricket-matches">
-        <div class="flex flex-col items-center py-6">
-          <div class="w-full max-w-3xl">
-            <div class="bg-gray-50 rounded-xl shadow-md border border-gray-300 p-6 flex flex-col items-center">
-              <div class="grid grid-cols-3 items-center gap-4 text-center w-full">
-                <div class="flex flex-col items-center">
-                  <img id="team1-logo" alt="" class="w-12 h-12 md:w-16 md:h-16 object-contain">
-                  <span id="team1-name" class="mt-2 text-base md:text-lg font-bold text-gray-800"></span>
-                </div>
-                <div class="flex flex-col items-center">
-                  <div class="text-3xl md:text-5xl font-black text-red-600">VS</div>
-                </div>
-                <div class="flex flex-col items-center">
-                  <img id="team2-logo" alt="" class="w-12 h-12 md:w-16 md:h-16 object-contain">
-                  <span id="team2-name" class="mt-2 text-base md:text-lg font-bold text-gray-800"></span>
-                </div>
-              </div>
-              <div id="league-bar-container" class="match-league-bar hidden">
-                <p id="league-display"></p>
-              </div>
-            </div>
-          </div>
+<!-- ═══ NAV ═══ -->
+<nav class="yst-nav">
+  <div class="nav-in">
+    <a class="nl active" href="#" data-filter="all">
+      <svg fill="none" height="13" stroke="currentColor" viewBox="0 0 24 24" width="13">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      Home
+    </a>
+    <a class="nl" href="#" data-filter="Cricket">🏏 Cricket</a>
+    <a class="nl" href="#" data-filter="Football">&#9917; Football</a>
+    <a class="nl" href="#" data-filter="Playing XI">&#128203; Playing XI</a>
+    <a class="nl" href="#" data-filter="Match Preview">&#128269; Preview</a>
+    <a class="nl" href="#" data-filter="T20 World Cup">&#127942; T20 WC 2026</a>
+    <a class="nl" href="https://www.cricfoot.net/?ads=yosintv.net" rel="noopener" target="_blank">&#127916; Highlights</a>
+    <a class="nl" href="https://t.me/yosintvlive" rel="noopener" target="_blank">&#9992; Telegram</a>
+  </div>
+</nav>
+
+<!-- ═══ TOP AD ═══ -->
+<div class="adbar">
+  <div class="adbar-placeholder">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
+<!-- Ressponsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5525538810839147"
+     data-ad-slot="4345862479"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+<!-- ═══ MAIN GRID ═══ -->
+<div class="yst-wrap">
+
+  <!-- LEFT: CONTENT -->
+  <div class="yst-content">
+
+    <!-- CRICKET EVENTS -->
+    <div class="sh">
+      <h2 class="sh-t">🏏 All Cricket Events</h2>
+      <div class="sh-l"></div>
+      <span class="sh-b">Live</span>
+    </div>
+    <div class="evg" id="yst-cr-ev">
+      <p class="ev-loading">Loading cricket events...</p>
+    </div>
+
+    <!-- FOOTBALL EVENTS -->
+    <div class="sh" style="margin-top:8px;">
+      <h2 class="sh-t">&#9917; All Football Events</h2>
+      <div class="sh-l"></div>
+      <span class="sh-b">Live</span>
+    </div>
+    <div class="evg" id="yst-ft-ev">
+      <p class="ev-loading">Loading football events...</p>
+    </div>
+
+    <!-- Mid Ad -->
+    <div style="margin:18px 0;text-align:center;">
+      <div class="adbar-placeholder" style="border-radius:var(--rs);padding:12px;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
+<!-- Ressponsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5525538810839147"
+     data-ad-slot="4345862479"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+      </div>
+    </div>
+
+    <!-- LATEST ARTICLES -->
+    <div class="sh" style="margin-top:10px;">
+      <h2 class="sh-t">&#128240; Latest Articles</h2>
+      <div class="sh-l"></div>
+    </div>
+
+    <!-- Search + filter -->
+    <div class="filter-row" id="filter-row">
+      <button class="fpill active" data-cat="all">All</button>
+      <!-- populated dynamically -->
+    </div>
+
+    <!-- Articles container -->
+    <div id="articles-container">
+      <!-- skeleton placeholders -->
+      <div class="pc"><div class="pb"><div class="skel" style="height:14px;width:80px;margin-bottom:10px;"></div><div class="skel" style="height:22px;width:90%;margin-bottom:8px;"></div><div class="skel" style="height:14px;width:100%;margin-bottom:5px;"></div><div class="skel" style="height:14px;width:75%;"></div></div></div>
+      <div class="pc"><div class="pb"><div class="skel" style="height:14px;width:80px;margin-bottom:10px;"></div><div class="skel" style="height:22px;width:85%;margin-bottom:8px;"></div><div class="skel" style="height:14px;width:100%;margin-bottom:5px;"></div><div class="skel" style="height:14px;width:70%;"></div></div></div>
+      <div class="pc"><div class="pb"><div class="skel" style="height:14px;width:80px;margin-bottom:10px;"></div><div class="skel" style="height:22px;width:88%;margin-bottom:8px;"></div><div class="skel" style="height:14px;width:100%;margin-bottom:5px;"></div><div class="skel" style="height:14px;width:80%;"></div></div></div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pg" id="pagination"></div>
+  </div>
+
+  <!-- RIGHT: SIDEBAR -->
+  <aside class="yst-aside">
+
+    <!-- Recent Posts (text only) -->
+    <div class="wgt">
+      <div class="wgt-h">
+        <svg fill="none" height="13" stroke="currentColor" viewBox="0 0 24 24" width="13">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+        </svg>
+        Recent Posts
+      </div>
+      <div class="wgt-b" style="padding:6px 13px 13px;" id="sidebar-recent">
+        <div class="skel" style="height:13px;width:90%;margin:8px 0;"></div>
+        <div class="skel" style="height:13px;width:80%;margin:8px 0;"></div>
+        <div class="skel" style="height:13px;width:85%;margin:8px 0;"></div>
+      </div>
+    </div>
+
+    <!-- Sidebar Ad 2 -->
+    <div class="ad-box" style="padding:20px;">
+      <div class="ad-lbl">Advertisement</div>
+      <div style="margin-top:8px;font-size:.75rem;color:var(--muted);"> 
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
+<!-- Ressponsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5525538810839147"
+     data-ad-slot="4345862479"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+      </div>
+    </div>
+
+    <!-- Sidebar Ad 3 -->
+    <div class="ad-box" style="padding:20px;">
+      <div class="ad-lbl">Advertisement</div>
+      <div style="margin-top:8px;font-size:.75rem;color:var(--muted);"> 
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
+<!-- Ressponsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5525538810839147"
+     data-ad-slot="4345862479"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ═══ DMCA ═══ -->
+<div style="max-width:1140px;margin:0 auto;padding:0 1.25rem;">
+  <div class="dmca">
+    <div class="dmca-h">&#9888; YoSinTV — DMCA Notice</div>
+    <p>YoSinTV does not host any media content on its own servers. Our site visitors may use external or third-party services to view content. We notify all copyright owners that links and media shared by visitors are hosted elsewhere on the web.</p>
+  </div>
+</div>
+
+<!-- ═══ BOTTOM AD ═══ -->
+<div style="max-width:1140px;margin:0 auto;padding:0 1.25rem 22px;text-align:center;">
+  <div class="adbar-placeholder">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147"
+     crossorigin="anonymous"></script>
+<!-- Ressponsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5525538810839147"
+     data-ad-slot="4345862479"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="yst-ft">
+  <div class="ft-in">
+    <div class="ft-grid">
+      <div>
+        <img alt="YoSinTV" src="https://web.cricfoot.net/logo.png" style="height:42px;margin-bottom:11px;filter:brightness(0) invert(1);" onerror="this.style.display='none'"/>
+        <p style="font-size:.84rem;line-height:1.65;max-width:240px;">Your #1 source for live cricket and football — schedules, playing XI, previews, and real-time updates.</p>
+        <div class="socrow">
+          <a class="socbtn" href="https://t.me/yosintvlive" rel="noopener" target="_blank" title="Telegram">&#9992;</a>
+          <a class="socbtn" href="https://www.cricfoot.net/?ads=yosintv.net" rel="noopener" target="_blank" title="Highlights">&#127916;</a>
         </div>
-
-        <p class="text-sm sm:text-base font-semibold text-blue-600 mb-2" id="match-date-time"></p>
-        <p>● Watch the live of this match in HD Quality, Scroll down to check out every link for Smooth Live Stream of this match.</p>
-        <p>● Predicted lineups are available for the match a few days in advance while the actual lineup will be available about an hour ahead of the match.</p>
-        <div id="lineup-image-container" class="my-4"></div>
-
-        <div class="adspos my-6">
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="4345862479" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
-        <div id="live-tracker"></div>
-        <p>● If the first link stops working, freezes, or won’t open, try the second or third link to keep watching without trouble.</p>
-        <div id="live-container" class="space-y-4 my-8"></div>
       </div>
-    </section>
-
-    <section class="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
-      <div id="match-info" class="space-y-4 min-w-full overflow-visible"></div>
-    </section>
-
-    <section class="bg-white rounded-lg shadow-md p-4 sm:p-6">
-      <h3 class="text-2xl font-bold text-gray-900 mb-4">More Matches</h3>
-      <div id="more-matches" class="space-y-2 sm:space-y-4 min-w-full overflow-visible"></div>
-      <div id="no-matches" class="hidden text-center text-gray-600 mt-4">No additional matches available at this time.</div>
-    </section>
-  </main>
-
-  <footer class="bg-white shadow-inner py-6 mt-8">
-    <div class="container mx-auto max-w-4xl px-4 text-center">
-      <ul class="flex flex-wrap justify-center space-x-4">
-        <li><a href="/" class="bg-gray-200 px-4 py-2 rounded-md text-gray-700 hover:bg-blue-100">YoSinTV Home</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <div id='fixedban' class='fixed bottom-0 left-1/2 -translate-x-1/2 z-[999]'>
-    <div class='relative w-[300px] h-[250px] bg-white rounded-lg shadow-xl border border-gray-200'>
-      <button id='close-fixedban' class='absolute left-1/2 -translate-x-1/2 top-3 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200 cursor-pointer z-[1000]'>Close</button>
-      <div class='w-[300px] h-[250px] overflow-hidden pt-8'>
-        <ins class='adsbygoogle inline-block w-[300px] h-[250px]' data-ad-client='ca-pub-5525538810839147' data-ad-slot='5912194004'></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      <div>
+        <div class="ft-ht">Cricket</div>
+        <ul class="ft-ul">
+          <li><a href="#">&#127987; All Cricket</a></li>
+          <li><a href="#">&#127942; T20 World Cup 2026</a></li>
+          <li><a href="#">&#127470;&#127475; IPL</a></li>
+          <li><a href="#">&#128203; Playing XI</a></li>
+          <li><a href="https://yosintv.getemoji.online/cricket.html" rel="noopener" target="_blank">&#128308; Live Cricket</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ht">Football</div>
+        <ul class="ft-ul">
+          <li><a href="#">&#9917; All Football</a></li>
+          <li><a href="#">&#128269; Match Previews</a></li>
+          <li><a href="#">&#127942; Premier League</a></li>
+          <li><a href="#">&#127942; Champions League</a></li>
+          <li><a href="#">&#127482;&#127462; La Liga</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ht">Pages</div>
+        <ul class="ft-ul">
+          <li><a href="#">&#8505; About</a></li>
+          <li><a href="#">&#128236; Contact</a></li>
+          <li><a href="#">&#128274; Privacy Policy</a></li>
+          <li><a href="#">&#128196; Disclaimer</a></li>
+          <li><a href="#">&#9888; DMCA</a></li>
+          <li><a href="#">&#128506; Sitemap</a></li>
+        </ul>
       </div>
     </div>
+    <div class="ft-bot">
+      <p>&#169; <span id="yr">2025</span> <a href="/">YoSinTV</a>. All rights reserved. &nbsp;&#183;&nbsp;
+        <a href="#">Privacy</a> &nbsp;&#183;&nbsp;
+        <a href="#">Disclaimer</a> &nbsp;&#183;&nbsp;
+        <a href="#">DMCA</a>
+      </p>
+    </div>
   </div>
+</footer>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type='text/javascript'>
-    $(document).ready(function() {
-      $('#close-fixedban').click(function() { $('#fixedban').hide(90); });
-    });
-  </script>
+<!-- Back to Top -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">&#9650;</button>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        requestAnimationFrame(async () => {
-          const normalize = s => s.toString().toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/&/g,'and').replace(/[^a-z0-9]/g,'');
-
-          const formatTime = (iso) => {
-            try {
-              const d = new Date(iso);
-              return d.toLocaleString('en-US', { 
-                month: 'long', 
-                day: 'numeric', 
-                year: 'numeric', 
-                hour: '2-digit', 
-                minute: '2-digit', 
-                hour12: true 
-              }).replace(',', ' at');
-            } catch(e) { return 'N/A'; }
-          };
-
-          const mainApis = [
-            'https://www.yosintv.link/api/cricket.json',
-            'https://www.yosintv.link/api/footballl.json'
-          ];
-
-          const urlParams = new URLSearchParams(window.location.search);
-          const slug = urlParams.get('yosintv');
-          if (!slug) return;
-
-          const searchKey = normalize(slug);
-          let match = null;
-
-          for (const api of mainApis) {
-            try {
-              const res = await fetch(api);
-              if (!res.ok) continue;
-              const json = await res.json();
-              match = (json.matches || []).find(m => {
-                const fullMatchName = normalize(m.team1 + 'vs' + m.team2);
-                const isDetails = m.details_url && normalize(m.details_url).includes(`yosintv${searchKey}`);
-                return fullMatchName.includes(searchKey) || normalize(m.team1).includes(searchKey) || normalize(m.team2).includes(searchKey) || isDetails;
-              });
-              if (match) break;
-            } catch(e) {}
-          }
-
-          if (!match) return;
-
-          const { team1, team2, league, start, duration, lineup_image_url } = match;
-          const matchName = `${team1.trim()} vs ${team2.trim()}`;
-          const startTimeFormatted = formatTime(start);
-
-          document.title = `YoSinTV - ${matchName} Live Stream`;
-          document.getElementById('meta-description').content = `Watch ${matchName} live stream on YoSinTV`;
-          document.getElementById('match-date-time').textContent = `Match Time: ${startTimeFormatted}`;
-
-          document.getElementById('team1-name').textContent = team1.trim();
-          document.getElementById('team2-name').textContent = team2.trim();
-          
-          if(league) {
-            document.getElementById('league-display').textContent = league;
-            document.getElementById('league-bar-container').classList.remove('hidden');
-          }
-
-          document.getElementById('team1-logo').src = match.team1_logo || `https://placehold.co/120x120/3b82f6/ffffff?text=${team1.trim().substring(0,3).toUpperCase()}&font=roboto`;
-          document.getElementById('team2-logo').src = match.team2_logo || `https://placehold.co/120x120/dc2626/ffffff?text=${team2.trim().substring(0,3).toUpperCase()}&font=roboto`;
-
-          if (lineup_image_url) {
-            document.getElementById('lineup-image-container').innerHTML = `
-              <div class="bg-gray-50 p-3 rounded-lg shadow-sm border border-gray-200">
-                <p class="text-center text-sm text-gray-700 font-semibold mb-2">Predicted Lineup/Preview Image</p>
-                <img src="${lineup_image_url}" alt="${matchName}" class="w-full h-auto object-cover rounded-md border border-gray-300" onerror="this.src='https://placehold.co/600x400/ccc/000?text=Lineup+Not+Available';" />
-              </div>`;
-          }
-
-          const streamUrl = `https://blog.cricfoot.net/${slug}.json`;
-          const liveContainer = document.getElementById('live-container');
-
-          try {
-            const r = await fetch(streamUrl);
-            if (r.ok) {
-              const streamJson = await r.json();
-              if (streamJson && streamJson.events) {
-                const baseStyle = streamJson.styles?.livee || "display:flex;justify-content:center;align-items:center;margin:12px 0;padding:15px;border-radius:8px;background:#2e7d32;color:#fff;font-weight:bold;font-size:18px;cursor:pointer;text-decoration:none;";
-                const hoverStyle = streamJson.styles?.liveeHover || "box-shadow:0 6px 15px rgba(0,0,0,0.4);";
-                
-                liveContainer.innerHTML = ''; 
-                
-                streamJson.events.forEach((event) => {
-                  const rawLinks = event.links && Array.isArray(event.links) ? event.links : (event.link ? [event.link] : []);
-                  
-                  rawLinks.forEach((linkUrl, index) => {
-                    // REMOVED ADS FILTER: Now showing all links
-                    if (!linkUrl) return; 
-
-                    const a = document.createElement('a');
-                    a.href = linkUrl.trim();
-                    a.target = "_blank";
-                    a.style.cssText = baseStyle;
-                    a.onmouseover = () => a.style.cssText = baseStyle + hoverStyle;
-                    a.onmouseout = () => a.style.cssText = baseStyle;
-
-                    let btnText = event.name.replace(/AUS vs IRE|India vs SA|IND vs SA/g, matchName).trim();
-                    
-                    if (rawLinks.length > 1 && !btnText.includes("Telegram")) {
-                        btnText += ` - Link ${index + 1}`;
-                    }
-
-                    a.innerHTML = btnText;
-                    liveContainer.appendChild(a);
-                  });
-                });
-              }
-            } else {
-              liveContainer.innerHTML = '<p class="text-center text-orange-600 font-bold">Stream links loading soon...</p>';
-            }
-          } catch(e) {}
-
-          const progContainer = document.createElement('div');
-          progContainer.className = 'w-full bg-gray-200 rounded-full h-6 mb-4';
-          const progBar = document.createElement('div');
-          progBar.className = 'h-6 rounded-full bg-red-600 transition-all duration-1000';
-          const progText = document.createElement('div');
-          progText.className = 'text-sm text-gray-600 mb-2 font-bold text-center';
-          progContainer.appendChild(progBar);
-          liveContainer.before(progText);
-          liveContainer.before(progContainer);
-
-          const updateProgress = () => {
-            const now = Date.now();
-            const startMs = new Date(start).getTime();
-            const endMs = startMs + duration * 3600000;
-            const diff = now - startMs;
-            if (diff < 0) {
-              const m = Math.abs(Math.floor(diff / 60000));
-              progText.textContent = `Starts in: ${Math.floor(m/60)}h ${m%60}m`;
-              progBar.style.width = '0%';
-            } else if (now > endMs) {
-              progText.textContent = 'Match Ended';
-              progBar.style.width = '100%';
-            } else {
-              const perc = (diff / (duration * 3600000)) * 100;
-              const h = Math.floor(diff/3600000);
-              const m = String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
-              const s = String(Math.floor((diff%60000)/1000)).padStart(2,'0');
-              progText.textContent = `Match Playing Time: ${h}:${m}:${s} / ${duration}:00:00`;
-              progBar.style.width = perc + '%';
-            }
-          };
-          updateProgress();
-          setInterval(updateProgress, 1000);
-
-          document.getElementById('match-info').innerHTML = `
-            <div class="space-y-4 text-left overflow-visible break-words">
-              <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">${matchName} - Match Details</h3>
-              <h3 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 text-gray-900">Frequently Asked Questions</h3>
-              <div class="space-y-4">
-                <div class="bg-gray-50 p-4 rounded-lg">
-                  <h4 class="text-lg font-semibold text-gray-900">Which teams will face against each other in this match?</h4>
-                  <p class="text-gray-600">${team1.trim()} will face off against ${team2.trim()} in this exciting match.</p>
-                </div>
-                <div class="bg-gray-50 p-4 rounded-lg">
-                  <h4 class="text-lg font-semibold text-gray-900">When is the ${matchName} match happening?</h4>
-                  <p class="text-gray-600">The match starts at ${startTimeFormatted}.</p>
-                </div>
-              </div>
-            </div>`;
-
-          const more = document.getElementById('more-matches');
-          for (const api of mainApis) {
-            try {
-              const r = await fetch(api);
-              const j = await r.json();
-              (j.matches || []).slice(0, 5).forEach(m => {
-                if (normalize(m.team1) === normalize(team1)) return;
-                const card = document.createElement('a');
-                card.href = m.details_url || `?yosintv=${normalize(m.team1+m.team2)}`;
-                card.className = 'bg-gray-50 p-4 rounded-lg flex justify-between items-center hover:bg-gray-100 block';
-                card.innerHTML = `<span>${m.team1} vs ${m.team2}</span><span class="text-sm text-gray-500">${new Date(m.start).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})}</span>`;
-                more.appendChild(card);
-              });
-            } catch(e) {}
-          }
-        });
-      }, 0);
-    });
-  </script>
-
-  <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
-    <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
-    <script type="text/javascript">sc_online_i(1719927,"ffffff","ffffff");</script>
-    <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
-    <script id="_wauf8n">var _wau = _wau || []; _wau.push(["dynamic", "3h7l6orqla", "f8n", "c4302bffffff", "small"]);</script>
-    <script async src="//waust.at/d.js"></script>
+<!-- Telegram Popup -->
+<div class="pop" id="yst-pop">
+  <div class="pop-box">
+    <button class="pop-x" onclick="closeYstPop()">&#215;</button>
+    <div style="font-size:3rem;margin-bottom:5px;">&#9992;</div>
+    <div class="pop-t">Join YoSinTV</div>
+    <p class="pop-p">Get match updates, live alerts &amp; highlights instantly on Telegram!</p>
+    <a class="pop-j" href="https://t.me/yosintvlive" rel="noopener" target="_blank">Join Channel</a>
   </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════════════ -->
+<script>
+'use strict';
+
+// ─── CONFIG ───────────────────────────────────────────────
+// ✅ UPDATE THIS PATH to your JSON file location
+var DATA_JSON_URL = 'data.json';
+
+// Articles per page
+var ARTICLES_PER_PAGE = 5;
+
+// ──────────────────────────────────────────────────────────
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// ── Dark mode ──
+var dm = document.getElementById('yst-dm');
+function applyDk(on) { document.body.classList.toggle('dk', on); }
+var sdm = localStorage.getItem('ystDm');
+if (sdm === 'true') { applyDk(true); dm.checked = true; }
+dm.addEventListener('change', function () { applyDk(this.checked); localStorage.setItem('ystDm', this.checked); });
+
+// ── Back to top ──
+var btt = document.getElementById('btt');
+window.addEventListener('scroll', function () { btt.classList.toggle('on', window.scrollY > 300); });
+
+// ── Popup ──
+function closeYstPop() {
+  document.getElementById('yst-pop').classList.remove('on');
+  localStorage.setItem('ystPop', Date.now());
+}
+(function () {
+  var pop = document.getElementById('yst-pop');
+  var last = localStorage.getItem('ystPop');
+  if (!last || Date.now() - parseInt(last) >= 86400000) {
+    setTimeout(function () { pop.classList.add('on'); localStorage.setItem('ystPop', Date.now()); }, 1800);
+  }
+  pop.addEventListener('click', function (e) { if (e.target === pop) closeYstPop(); });
+})();
+
+// ── Search ──
+var searchInput = document.getElementById('yst-s');
+searchInput.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    currentSearch = this.value.trim().toLowerCase();
+    currentPage = 1;
+    renderArticles();
+  }
+});
+searchInput.addEventListener('input', function () {
+  if (!this.value.trim()) {
+    currentSearch = '';
+    currentPage = 1;
+    renderArticles();
+  }
+});
+
+// ── FETCH WITH CORS PROXY FALLBACK ──
+function fetchJSON(url, cb, errCb) {
+  var proxies = [
+    url,
+    'https://corsproxy.io/?' + encodeURIComponent(url),
+    'https://api.allorigins.win/raw?url=' + encodeURIComponent(url)
+  ];
+  var i = 0;
+  function next() {
+    if (i >= proxies.length) { if (errCb) errCb(); return; }
+    fetch(proxies[i++], { cache: 'no-cache' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(cb)
+      .catch(function () { next(); });
+  }
+  next();
+}
+
+// ── EVENTS LOADER ──
+function loadEv(url, cid) {
+  var cont = document.getElementById(cid);
+  if (!cont) return;
+  fetchJSON(url,
+    function (data) {
+      cont.innerHTML = '';
+      var items = data.matches || [];
+      if (!items.length) {
+        cont.innerHTML = '<p class="ev-loading">No events found.</p>';
+        return;
+      }
+      items.forEach(function (ev) {
+        var a = document.createElement('a');
+        a.href = ev.link || '#';
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.className = 'ev';
+        a.innerHTML =
+          '<img src="' + (ev.image || '').trim() + '" alt="' + (ev.name || '') + '" loading="lazy"/>' +
+          '<span class="ev-t">' + (ev.name || '') + '</span>';
+        cont.appendChild(a);
+      });
+    },
+    function () {
+      cont.innerHTML = '<p class="ev-loading">Could not load events.</p>';
+    }
+  );
+}
+
+loadEv('https://yosintv2.github.io/yosintv.link/events-cricket.js', 'yst-cr-ev');
+loadEv('https://yosintv2.github.io/yosintv.link/events-football.js', 'yst-ft-ev');
+
+// ══════════════════════════════════════════════════════════
+//  ARTICLES — loaded from data.json
+// ══════════════════════════════════════════════════════════
+var allArticles     = [];
+var currentFilter   = 'all';
+var currentSearch   = '';
+var currentPage     = 1;
+var allCategories   = [];
+
+function getFiltered() {
+  return allArticles.filter(function (a) {
+    var matchCat = currentFilter === 'all' || (a.labels && a.labels.indexOf(currentFilter) > -1);
+    var matchSearch = !currentSearch ||
+      a.title.toLowerCase().indexOf(currentSearch) > -1 ||
+      (a.snippet || '').toLowerCase().indexOf(currentSearch) > -1;
+    return matchCat && matchSearch;
+  });
+}
+
+function svgCal() {
+  return '<svg fill="none" height="12" stroke="currentColor" viewBox="0 0 24 24" width="12"><rect height="18" rx="2" ry="2" width="18" x="3" y="4"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>';
+}
+function svgUser() {
+  return '<svg fill="none" height="12" stroke="currentColor" viewBox="0 0 24 24" width="12"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+}
+function svgArrow() {
+  return '<svg fill="none" height="12" stroke="currentColor" viewBox="0 0 24 24" width="12"><path d="m9 18 6-6-6-6"/></svg>';
+}
+
+function renderArticles() {
+  var container = document.getElementById('articles-container');
+  var filtered  = getFiltered();
+  var total     = filtered.length;
+  var totalPages = Math.ceil(total / ARTICLES_PER_PAGE);
+  if (currentPage > totalPages) currentPage = 1;
+  var start  = (currentPage - 1) * ARTICLES_PER_PAGE;
+  var paged  = filtered.slice(start, start + ARTICLES_PER_PAGE);
+
+  if (!paged.length) {
+    container.innerHTML = '<div style="text-align:center;padding:40px;color:var(--muted);font-family:var(--fd);font-size:.95rem;">No articles found.</div>';
+    document.getElementById('pagination').innerHTML = '';
+    return;
+  }
+
+  container.innerHTML = paged.map(function (a, idx) {
+    var labels = (a.labels || []).map(function (l) {
+      return '<a class="pl" href="#" data-filter="' + l + '">' + l + '</a>';
+    }).join('');
+    return (
+      '<article class="pc" style="animation-delay:' + (idx * 0.07) + 's">' +
+        '<div class="pb">' +
+          (labels ? '<div>' + labels + '</div>' : '') +
+          '<a class="ptitle" href="' + (a.url || '#') + '">' + a.title + '</a>' +
+          '<p class="psnip">' + (a.snippet || '') + '</p>' +
+          '<div class="pmeta">' +
+            '<span class="pmi">' + svgCal() + '<span>' + (a.date || '') + '</span></span>' +
+            '<span class="pmi">' + svgUser() + '<span>' + (a.author || 'YoSinTV') + '</span></span>' +
+          '</div>' +
+          '<a class="rbtn" href="' + (a.url || '#') + '">Read More ' + svgArrow() + '</a>' +
+        '</div>' +
+      '</article>'
+    );
+  }).join('');
+
+  // Label filter clicks inside articles
+  container.querySelectorAll('.pl[data-filter]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      setFilter(this.dataset.filter);
+    });
+  });
+
+  renderPagination(totalPages);
+}
+
+function renderPagination(totalPages) {
+  var pg = document.getElementById('pagination');
+  if (totalPages <= 1) { pg.innerHTML = ''; return; }
+
+  var html = '';
+  if (currentPage > 1) {
+    html += '<button class="pg-btn" id="pg-prev">&#8249; Newer</button>';
+  }
+  for (var p = 1; p <= totalPages; p++) {
+    html += '<button class="pg-btn' + (p === currentPage ? ' active' : '') + '" data-page="' + p + '">' + p + '</button>';
+  }
+  if (currentPage < totalPages) {
+    html += '<button class="pg-btn" id="pg-next">Older &#8250;</button>';
+  }
+  pg.innerHTML = html;
+
+  pg.querySelectorAll('[data-page]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      currentPage = parseInt(this.dataset.page);
+      renderArticles();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+  var prev = document.getElementById('pg-prev');
+  if (prev) prev.addEventListener('click', function () { currentPage--; renderArticles(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  var next = document.getElementById('pg-next');
+  if (next) next.addEventListener('click', function () { currentPage++; renderArticles(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+}
+
+function buildFilterPills() {
+  var row = document.getElementById('filter-row');
+  var pills = '<button class="fpill' + (currentFilter === 'all' ? ' active' : '') + '" data-cat="all">All</button>';
+  allCategories.forEach(function (cat) {
+    pills += '<button class="fpill' + (currentFilter === cat ? ' active' : '') + '" data-cat="' + cat + '">' + cat + '</button>';
+  });
+  row.innerHTML = pills;
+  row.querySelectorAll('.fpill').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      setFilter(this.dataset.cat);
+    });
+  });
+}
+
+function setFilter(cat) {
+  currentFilter = cat;
+  currentPage = 1;
+  // Sync nav links
+  document.querySelectorAll('.nl[data-filter]').forEach(function (a) {
+    a.classList.toggle('active', a.dataset.filter === cat);
+  });
+  if (cat === 'all') document.querySelector('.nl[data-filter="all"]').classList.add('active');
+  buildFilterPills();
+  renderArticles();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderSidebarLatest(articles) {
+  var sb = document.getElementById('sidebar-latest');
+  sb.innerHTML = articles.slice(0, 6).map(function (a) {
+    var thumb = a.image
+      ? '<img class="lp-thumb" src="' + a.image + '" alt="' + a.title + '" loading="lazy" onerror="this.parentElement.innerHTML=\'<span class=\\\"lp-thumb-ph\\\">&#128240;</span>\'">'
+      : '<span class="lp-thumb-ph">&#128240;</span>';
+    return (
+      '<a class="lp-item" href="' + (a.url || '#') + '">' +
+        thumb +
+        '<span class="lp-info">' +
+          '<span class="lp-t">' + a.title + '</span>' +
+          '<span class="lp-d">' + (a.date || '') + '</span>' +
+        '</span>' +
+      '</a>'
+    );
+  }).join('');
+}
+
+function renderSidebarRecent(articles) {
+  var sb = document.getElementById('sidebar-recent');
+  sb.innerHTML = articles.slice(0, 5).map(function (a) {
+    return (
+      '<a class="rp-item" href="' + (a.url || '#') + '">' +
+        '<span class="rp-t">' + a.title + '</span>' +
+        '<span class="rp-d">' + (a.date || '') + '</span>' +
+      '</a>'
+    );
+  }).join('');
+}
+
+// ── Nav filter clicks ──
+document.querySelectorAll('.nl[data-filter]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    setFilter(this.dataset.filter);
+  });
+});
+
+// ── Tag sidebar clicks ──
+document.querySelectorAll('.tag[data-filter]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    setFilter(this.dataset.filter);
+  });
+});
+
+// ── LOAD DATA.JSON ──
+fetchJSON(
+  DATA_JSON_URL,
+  function (data) {
+    allArticles = data.articles || [];
+
+    // Collect unique categories
+    var catSet = {};
+    allArticles.forEach(function (a) {
+      (a.labels || []).forEach(function (l) { catSet[l] = true; });
+    });
+    allCategories = Object.keys(catSet);
+
+    buildFilterPills();
+    renderArticles();
+    renderSidebarRecent(allArticles);
+  },
+  function () {
+    // Fallback: show error
+    document.getElementById('articles-container').innerHTML =
+      '<div style="text-align:center;padding:40px;color:var(--muted);font-family:var(--fd);">' +
+      '&#9888; Could not load <strong>data.json</strong>. Make sure the file exists in the same folder as this HTML file.</div>';
+    document.getElementById('sidebar-recent').innerHTML = '';
+  }
+);
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043" integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg==" data-cf-beacon='{"version":"2024.11.0","token":"5243eba8b920487aaf6c8ac211a9ad54","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
