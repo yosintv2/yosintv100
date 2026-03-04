@@ -1,22 +1,22 @@
 {
   "matches": [
     {
-      "team1": "Zimbabwe",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187745/image",
-      "team2": "South Africa",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187747/image",
-      "league": "ICC Men's T20 World Cup, Super 8, Group 1",
-      "start": "2026-03-01T18:30:00+09:00",
+      "team1": "South Africa",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187747/image",
+      "team2": "New Zealand",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187755/image",
+      "league": "ICC Men's T20 World Cup, Semi Final",
+      "start": "2026-03-04T22:30:00+09:00",
       "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=zimbabwe"
+      "details_url": "https://blog.cricfoot.net/?yosintv=southafrica"
     },
     {
       "team1": "India",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187765/image",
-      "team2": "West Indies",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187760/image",
-      "league": "ICC Men's T20 World Cup, Super 8, Group 1",
-      "start": "2026-03-01T22:30:00+09:00",
+      "team2": "England",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187757/image",
+      "league": "ICC Men's T20 World Cup, Semi Final",
+      "start": "2026-03-05T22:30:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=india"
     }
