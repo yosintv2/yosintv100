@@ -1,24 +1,14 @@
 {
   "matches": [
     {
-      "team1": "India",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187765/image",
-      "team2": "England",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187757/image",
-      "league": "ICC Men's T20 World Cup, Semi Final",
-      "start": "2026-03-05T22:30:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=india"
-    },
-    {
-      "team1": "India",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187765/image",
-      "team2": "New Zealand",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187755/image",
-      "league": "ICC Men's T20 World Cup, Final",
-      "start": "2026-03-08T22:30:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=india"
+      "team1": "Bangladesh",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187744/image",
+      "team2": "Pakistan",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187754/image",
+      "league": "Pakistan in Bangladesh, 3 ODI Series",
+      "start": "2026-03-11T17:15:00+09:00",
+      "duration": 8,
+      "details_url": "https://blog.cricfoot.net/?yosintv=bangladesh"
     }
   ]
 }
