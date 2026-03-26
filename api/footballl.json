@@ -1,154 +1,54 @@
 {
   "matches": [
     {
-      "team1": "Newcastle United",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/39/image",
-      "team2": "Sunderland",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/41/image",
-      "league": "Premier League",
-      "start": "2026-03-22T21:00:00+09:00",
+      "team1": "Afghanistan",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4689/image",
+      "team2": "Myanmar",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/23484/image",
+      "league": "AFC Asian Cup, Qualification Group E",
+      "start": "2026-03-26T19:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=newcastleunited"
+      "details_url": "https://blog.cricfoot.net/?yosintv=afghanistan"
     },
     {
-      "team1": "Barcelona",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2817/image",
-      "team2": "Rayo Vallecano",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2818/image",
-      "league": "LaLiga",
-      "start": "2026-03-22T22:00:00+09:00",
+      "team1": "Moldova",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4782/image",
+      "team2": "Lithuania",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4776/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-27T00:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=barcelona"
+      "details_url": "https://blog.cricfoot.net/?yosintv=moldova"
     },
     {
-      "team1": "Aston Villa",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/40/image",
-      "team2": "West Ham United",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/37/image",
-      "league": "Premier League",
-      "start": "2026-03-22T23:15:00+09:00",
+      "team1": "Cyprus",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4482/image",
+      "team2": "Belarus",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4743/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-27T02:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=astonvilla"
+      "details_url": "https://blog.cricfoot.net/?yosintv=cyprus"
     },
     {
-      "team1": "Tottenham Hotspur",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/33/image",
-      "team2": "Nottingham Forest",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/14/image",
-      "league": "Premier League",
-      "start": "2026-03-22T23:15:00+09:00",
+      "team1": "Georgia",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4763/image",
+      "team2": "Israel",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4480/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-27T02:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=nottinghamforest"
+      "details_url": "https://blog.cricfoot.net/?yosintv=georgia"
     },
     {
-      "team1": "Celta Vigo",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2821/image",
-      "team2": "Deportivo Alavés",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2885/image",
-      "league": "LaLiga",
-      "start": "2026-03-23T00:15:00+09:00",
+      "team1": "Brazil",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4748/image",
+      "team2": "France",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4481/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-27T05:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=celtavigo"
-    },
-    {
-      "team1": "Olympique de Marseille",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1641/image",
-      "team2": "Lille",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1643/image",
-      "league": "Ligue 1",
-      "start": "2026-03-23T01:15:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=olympiquedemarseille"
-    },
-    {
-      "team1": "Arsenal",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/42/image",
-      "team2": "Manchester City",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/17/image",
-      "league": "EFL Cup",
-      "start": "2026-03-23T01:30:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=arsenal"
-    },
-    {
-      "team1": "Roma",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2702/image",
-      "team2": "Lecce",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2689/image",
-      "league": "Serie A",
-      "start": "2026-03-23T02:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=roma"
-    },
-    {
-      "team1": "New York City FC",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187643/image",
-      "team2": "Inter Miami CF",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/337602/image",
-      "league": "MLS",
-      "start": "2026-03-23T02:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=intermiamicf"
-    },
-    {
-      "team1": "Athletic Club",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2825/image",
-      "team2": "Real Betis",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2816/image",
-      "league": "LaLiga",
-      "start": "2026-03-23T02:30:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=realbetis"
-    },
-    {
-      "team1": "FC Alverca",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/190328/image",
-      "team2": "Sporting CP",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3001/image",
-      "league": "Liga Portugal Betclic",
-      "start": "2026-03-23T03:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=sportingcp"
-    },
-    {
-      "team1": "Cruzeiro",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1954/image",
-      "team2": "Santos",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1968/image",
-      "league": "Brasileirão Betano",
-      "start": "2026-03-23T04:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=santos"
-    },
-    {
-      "team1": "Fiorentina",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2693/image",
-      "team2": "Inter",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2697/image",
-      "league": "Serie A",
-      "start": "2026-03-23T04:45:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=inter"
-    },
-    {
-      "team1": "Real Madrid",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2829/image",
-      "team2": "Atlético Madrid",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2836/image",
-      "league": "LaLiga",
-      "start": "2026-03-23T05:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=realmadrid"
-    },
-    {
-      "team1": "Sporting Braga",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2999/image",
-      "team2": "FC Porto",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3002/image",
-      "league": "Liga Portugal Betclic",
-      "start": "2026-03-23T05:30:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=fcporto"
+      "details_url": "https://blog.cricfoot.net/?yosintv=brazil"
     }
   ]
 }
