@@ -1,54 +1,44 @@
 {
   "matches": [
     {
-      "team1": "Denmark",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4476/image",
-      "team2": "North Macedonia",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4777/image",
-      "league": "World Cup Qual. UEFA Playoffs",
-      "start": "2026-03-27T04:45:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=denmark"
-    },
-    {
-      "team1": "Italy",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4707/image",
-      "team2": "Northern Ireland",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4786/image",
-      "league": "World Cup Qual. UEFA Playoffs",
-      "start": "2026-03-27T04:45:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=italy"
-    },
-    {
-      "team1": "Poland",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4703/image",
-      "team2": "Albania",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4690/image",
-      "league": "World Cup Qual. UEFA Playoffs",
-      "start": "2026-03-27T04:45:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=poland"
-    },
-    {
-      "team1": "Ukraine",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4701/image",
-      "team2": "Sweden",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4688/image",
-      "league": "World Cup Qual. UEFA Playoffs",
-      "start": "2026-03-27T04:45:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=ukraine"
-    },
-    {
-      "team1": "Brazil",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4748/image",
-      "team2": "France",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4481/image",
+      "team1": "England",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4713/image",
+      "team2": "Uruguay",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4725/image",
       "league": "Int. Friendly Games",
-      "start": "2026-03-27T05:00:00+09:00",
+      "start": "2026-03-28T04:45:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=brazil"
+      "details_url": "https://blog.cricfoot.net/?yosintv=england"
+    },
+    {
+      "team1": "Netherlands",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4705/image",
+      "team2": "Norway",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4475/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-28T04:45:00+09:00",
+      "duration": 2.2,
+      "details_url": "https://blog.cricfoot.net/?yosintv=netherlands"
+    },
+    {
+      "team1": "Spain",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4698/image",
+      "team2": "Serbia",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/6355/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-28T05:00:00+09:00",
+      "duration": 2.2,
+      "details_url": "https://blog.cricfoot.net/?yosintv=spain"
+    },
+    {
+      "team1": "Argentina",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4819/image",
+      "team2": "Mauritania",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4779/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-28T08:15:00+09:00",
+      "duration": 2.2,
+      "details_url": "https://blog.cricfoot.net/?yosintv=argentina"
     }
   ]
 }
