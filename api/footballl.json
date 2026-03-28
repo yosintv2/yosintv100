@@ -1,44 +1,54 @@
 {
   "matches": [
     {
-      "team1": "England",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4713/image",
-      "team2": "Uruguay",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4725/image",
+      "team1": "South Korea",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4735/image",
+      "team2": "Côte d'Ivoire",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4768/image",
       "league": "Int. Friendly Games",
-      "start": "2026-03-28T04:45:00+09:00",
+      "start": "2026-03-28T23:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=england"
+      "details_url": "https://blog.cricfoot.net/?yosintv=southkorea"
     },
     {
-      "team1": "Netherlands",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4705/image",
-      "team2": "Norway",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4475/image",
+      "team1": "Senegal",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4739/image",
+      "team2": "Peru",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4790/image",
       "league": "Int. Friendly Games",
-      "start": "2026-03-28T04:45:00+09:00",
+      "start": "2026-03-29T01:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=netherlands"
+      "details_url": "https://blog.cricfoot.net/?yosintv=senegal"
     },
     {
-      "team1": "Spain",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4698/image",
-      "team2": "Serbia",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/6355/image",
+      "team1": "Scotland",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4695/image",
+      "team2": "Japan",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4770/image",
       "league": "Int. Friendly Games",
-      "start": "2026-03-28T05:00:00+09:00",
+      "start": "2026-03-29T02:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=spain"
+      "details_url": "https://blog.cricfoot.net/?yosintv=scotland"
     },
     {
-      "team1": "Argentina",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4819/image",
-      "team2": "Mauritania",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4779/image",
+      "team1": "USA",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4724/image",
+      "team2": "Belgium",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4717/image",
       "league": "Int. Friendly Games",
-      "start": "2026-03-28T08:15:00+09:00",
+      "start": "2026-03-29T04:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=argentina"
+      "details_url": "https://blog.cricfoot.net/?yosintv=usa"
+    },
+    {
+      "team1": "Mexico",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4781/image",
+      "team2": "Portugal",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4704/image",
+      "league": "Int. Friendly Games",
+      "start": "2026-03-29T10:00:00+09:00",
+      "duration": 2.2,
+      "details_url": "https://blog.cricfoot.net/?yosintv=mexico"
     }
   ]
 }
