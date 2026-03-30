@@ -1,32 +1,32 @@
 {
   "matches": [
     {
-      "team1": "Quetta Gladiators",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212417/image",
-      "team2": "Hyderabad Kingsmen",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1178235/image",
-      "league": "Pakistan Super League",
-      "start": "2026-03-29T18:30:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=psl"
-    },
-    {
-      "team1": "Mumbai Indians",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187780/image",
-      "team2": "Kolkata Knight Riders",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187775/image",
+      "team1": "Rajasthan Royals",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187842/image",
+      "team2": "Chennai Super Kings",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187777/image",
       "league": "Indian Premier League",
-      "start": "2026-03-29T23:00:00+09:00",
+      "start": "2026-03-30T23:00:00+09:00",
       "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=iplt20"
+      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     },
     {
-      "team1": "Lahore Qalandars",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212419/image",
-      "team2": "Karachi Kings",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212418/image",
+      "team1": "Punjab Kings",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187776/image",
+      "team2": "Gujarat Titans",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/216006/image",
+      "league": "Indian Premier League",
+      "start": "2026-03-31T23:00:00+09:00",
+      "duration": 5,
+      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
+    },
+    {
+      "team1": "Islamabad United",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212416/image",
+      "team2": "Peshawar Zalmi",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212420/image",
       "league": "Pakistan Super League",
-      "start": "2026-03-29T23:00:00+09:00",
+      "start": "2026-03-31T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=psl"
     }
