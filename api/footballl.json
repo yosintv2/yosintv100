@@ -11,16 +11,6 @@
       "details_url": "https://blog.cricfoot.net/?yosintv=manchestercity"
     },
     {
-      "team1": "Real Sociedad",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2824/image",
-      "team2": "Levante UD",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2849/image",
-      "league": "LaLiga",
-      "start": "2026-04-04T21:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=realsociedad"
-    },
-    {
       "team1": "Bayer 04 Leverkusen",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2681/image",
       "team2": "VfL Wolfsburg",
@@ -101,16 +91,6 @@
       "details_url": "https://blog.cricfoot.net/?yosintv=arsenal"
     },
     {
-      "team1": "Lille",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1643/image",
-      "team2": "RC Lens",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1648/image",
-      "league": "Ligue 1",
-      "start": "2026-04-05T04:05:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=lille"
-    },
-    {
       "team1": "FC Porto",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3002/image",
       "team2": "Famalicão",
@@ -129,16 +109,6 @@
       "start": "2026-04-05T08:30:00+09:00",
       "duration": 2.2,
       "details_url": "https://blog.cricfoot.net/?yosintv=intermiamicf"
-    },
-    {
-      "team1": "Angers",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1684/image",
-      "team2": "Olympique Lyonnais",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1649/image",
-      "league": "Ligue 1",
-      "start": "2026-04-05T22:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=olympiquelyonnais"
     }
   ]
 }
