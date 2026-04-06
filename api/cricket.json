@@ -1,32 +1,22 @@
 {
   "matches": [
     {
-      "team1": "Sunrisers Hyderabad",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187844/image",
-      "team2": "Lucknow Super Giants",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/410010/image",
+      "team1": "Kolkata Knight Riders",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187775/image",
+      "team2": "Punjab Kings",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187776/image",
       "league": "Indian Premier League",
-      "start": "2026-04-05T19:00:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
-    },
-    {
-      "team1": "Royal Challengers Bengaluru",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187843/image",
-      "team2": "Chennai Super Kings",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187777/image",
-      "league": "Indian Premier League",
-      "start": "2026-04-05T23:00:00+09:00",
+      "start": "2026-04-06T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     },
     {
       "team1": "Multan Sultans",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/273650/image",
-      "team2": "Quetta Gladiators",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212417/image",
+      "team2": "Rawalpindiz",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1178236/image",
       "league": "Pakistan Super League",
-      "start": "2026-04-05T23:00:00+09:00",
+      "start": "2026-04-06T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=psl"
     }
