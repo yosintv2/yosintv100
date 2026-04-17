@@ -1,32 +1,32 @@
 {
   "matches": [
     {
-      "team1": "Bangladesh",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187744/image",
-      "team2": "New Zealand",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187755/image",
-      "league": "New Zealand in Bangladesh, 3 ODI Series",
-      "start": "2026-04-17T14:00:00+09:00",
-      "duration": 8,
-      "details_url": "https://blog.cricfoot.net/?yosintv=bangladesh"
+      "team1": "Royal Challengers Bengaluru",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187843/image",
+      "team2": "Delhi Capitals",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187841/image",
+      "league": "Indian Premier League",
+      "start": "2026-04-18T19:00:00+09:00",
+      "duration": 5,
+      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     },
     {
-      "team1": "Gujarat Titans",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/216006/image",
-      "team2": "Kolkata Knight Riders",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187775/image",
+      "team1": "Sunrisers Hyderabad",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187844/image",
+      "team2": "Chennai Super Kings",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187777/image",
       "league": "Indian Premier League",
-      "start": "2026-04-17T23:00:00+09:00",
+      "start": "2026-04-18T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     },
     {
       "team1": "Lahore Qalandars",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212419/image",
-      "team2": "Quetta Gladiators",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212417/image",
+      "team2": "Rawalpindiz",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1178236/image",
       "league": "Pakistan Super League",
-      "start": "2026-04-17T23:00:00+09:00",
+      "start": "2026-04-18T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=psl"
     }
