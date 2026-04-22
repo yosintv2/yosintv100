@@ -1,44 +1,24 @@
 {
   "matches": [
     {
-      "team1": "Lahore Qalandars",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212419/image",
-      "team2": "Quetta Gladiators",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212417/image",
-      "league": "Pakistan Super League",
-      "start": "2026-04-21T18:30:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=psl"
-    },
-    {
-      "team1": "Nepal",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187772/image",
-      "team2": "United Arab Emirates",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187771/image",
-      "league": "United Arab Emirates in Nepal, 2 T20I Series",
-      "start": "2026-04-21T20:15:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=nepal"
-    },
-    {
-      "team1": "Sunrisers Hyderabad",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187844/image",
-      "team2": "Delhi Capitals",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187841/image",
+      "team1": "Lucknow Super Giants",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/410010/image",
+      "team2": "Rajasthan Royals",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187842/image",
       "league": "Indian Premier League",
-      "start": "2026-04-21T23:00:00+09:00",
+      "start": "2026-04-22T23:00:00+09:00",
       "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
+      "details_url": "https://blog.cricfoot.net/?yosintv=lucknowsupergiants"
     },
     {
-      "team1": "Rawalpindiz",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1178236/image",
+      "team1": "Hyderabad Kingsmen",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1178235/image",
       "team2": "Multan Sultans",
       "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/273650/image",
       "league": "Pakistan Super League",
-      "start": "2026-04-21T23:00:00+09:00",
+      "start": "2026-04-22T23:00:00+09:00",
       "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=psl"
+      "details_url": "https://blog.cricfoot.net/?yosintv=hyderabadkingsmen"
     }
   ]
 }
