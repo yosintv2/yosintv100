@@ -29,6 +29,16 @@
       "start": "2026-04-30T04:15:00+09:00",
       "duration": 2.2,
       "details_url": "https://blog.cricfoot.net/?yosintv=sportingcp"
+    },
+    {
+      "team1": "Nottingham Forest",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/14/image",
+      "team2": "Aston Villa",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/40/image",
+      "league": "Europa League",
+      "start": "2026-05-01T04:00:00+09:00",
+      "duration": 2.2,
+      "details_url": "https://blog.cricfoot.net/?yosintv=nottinghamforest"
     }
   ]
 }
