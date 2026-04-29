@@ -1,26 +1,6 @@
 {
   "matches": [
     {
-      "team1": "Nepal",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187772/image",
-      "team2": "Oman",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/199279/image",
-      "league": "ICC CWC League 2",
-      "start": "2026-04-29T12:45:00+09:00",
-      "duration": 8,
-      "details_url": "https://blog.cricfoot.net/?yosintv=nepal"
-    },
-    {
-      "team1": "Bangladesh",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187744/image",
-      "team2": "New Zealand",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187755/image",
-      "league": "New Zealand in Bangladesh, 3 T20I Series",
-      "start": "2026-04-29T17:00:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=bangladesh"
-    },
-    {
       "team1": "Mumbai Indians",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187780/image",
       "team2": "Sunrisers Hyderabad",
@@ -28,7 +8,7 @@
       "league": "Indian Premier League",
       "start": "2026-04-29T23:00:00+09:00",
       "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=mumbaiindians"
+      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     },
     {
       "team1": "Multan Sultans",
@@ -39,6 +19,16 @@
       "start": "2026-04-29T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=multansultans"
+    },
+    {
+      "team1": "Gujarat Titans",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/216006/image",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187843/image",
+      "league": "Indian Premier League",
+      "start": "2026-04-30T23:00:00+09:00",
+      "duration": 5,
+      "details_url": "https://blog.cricfoot.net/?yosintv=gujarattitans"
     }
   ]
 }
