@@ -1,34 +1,24 @@
 {
   "matches": [
     {
-      "team1": "Nepal",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187772/image",
-      "team2": "United Arab Emirates",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187771/image",
-      "league": "ICC CWC League 2",
-      "start": "2026-05-01T12:45:00+09:00",
-      "duration": 8,
-      "details_url": "https://blog.cricfoot.net/?yosintv=nepal"
+      "team1": "Bangladesh",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187744/image",
+      "team2": "New Zealand",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187755/image",
+      "league": "New Zealand in Bangladesh, 3 T20I Series",
+      "start": "2026-05-02T17:00:00+09:00",
+      "duration": 5,
+      "details_url": "https://blog.cricfoot.net/?yosintv=bangladesh"
     },
     {
-      "team1": "Rajasthan Royals",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187842/image",
-      "team2": "Delhi Capitals",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187841/image",
+      "team1": "Chennai Super Kings",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187777/image",
+      "team2": "Mumbai Indians",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187780/image",
       "league": "Indian Premier League",
-      "start": "2026-05-01T23:00:00+09:00",
+      "start": "2026-05-02T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
-    },
-    {
-      "team1": "Islamabad United",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/212416/image",
-      "team2": "Hyderabad Kingsmen",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1178235/image",
-      "league": "Pakistan Super League, Playoffs",
-      "start": "2026-05-01T23:00:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=psl"
     }
   ]
 }
