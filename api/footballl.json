@@ -81,16 +81,6 @@
       "details_url": "https://blog.cricfoot.net/?yosintv=bayer04leverkusen"
     },
     {
-      "team1": "Famalicão",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/49531/image",
-      "team2": "Benfica",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3006/image",
-      "league": "Liga Portugal Betclic",
-      "start": "2026-05-03T02:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=benfica"
-    },
-    {
       "team1": "Osasuna",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/2820/image",
       "team2": "FC Barcelona",
@@ -99,26 +89,6 @@
       "start": "2026-05-03T04:00:00+09:00",
       "duration": 2.2,
       "details_url": "https://blog.cricfoot.net/?yosintv=fcbarcelona"
-    },
-    {
-      "team1": "Nice",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1661/image",
-      "team2": "RC Lens",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/1648/image",
-      "league": "Ligue 1",
-      "start": "2026-05-03T04:05:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=rclens"
-    },
-    {
-      "team1": "FC Porto",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3002/image",
-      "team2": "FC Alverca",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/190328/image",
-      "league": "Liga Portugal Betclic",
-      "start": "2026-05-03T04:30:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://blog.cricfoot.net/?yosintv=fcporto"
     },
     {
       "team1": "Palmeiras",
