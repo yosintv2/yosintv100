@@ -1,16 +1,6 @@
 {
   "matches": [
     {
-      "team1": "Nepal",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187772/image",
-      "team2": "Oman",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/199279/image",
-      "league": "ICC CWC League 2",
-      "start": "2026-05-05T12:45:00+09:00",
-      "duration": 8,
-      "details_url": "https://blog.cricfoot.net/?yosintv=nepal"
-    },
-    {
       "team1": "Delhi Capitals",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187841/image",
       "team2": "Chennai Super Kings",
@@ -18,7 +8,17 @@
       "league": "Indian Premier League",
       "start": "2026-05-05T23:00:00+09:00",
       "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=delhicapitals"
+      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
+    },
+    {
+      "team1": "Sunrisers Hyderabad",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187844/image",
+      "team2": "Punjab Kings",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187776/image",
+      "league": "Indian Premier League",
+      "start": "2026-05-06T23:00:00+09:00",
+      "duration": 5,
+      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     }
   ]
 }
