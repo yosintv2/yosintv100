@@ -1,22 +1,22 @@
 {
   "matches": [
     {
-      "team1": "Delhi Capitals",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187841/image",
-      "team2": "Chennai Super Kings",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187777/image",
-      "league": "Indian Premier League",
-      "start": "2026-05-05T23:00:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
-    },
-    {
       "team1": "Sunrisers Hyderabad",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187844/image",
       "team2": "Punjab Kings",
       "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187776/image",
       "league": "Indian Premier League",
       "start": "2026-05-06T23:00:00+09:00",
+      "duration": 5,
+      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
+    },
+    {
+      "team1": "Lucknow Super Giants",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/410010/image",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187843/image",
+      "league": "Indian Premier League",
+      "start": "2026-05-07T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     }
