@@ -2,9 +2,9 @@
   "matches": [
     {
       "team1": "Rajasthan Royals",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187842/image",
+      "team1_logo": "https://api.sofascore.app/api/v1/team/187842/image",
       "team2": "Gujarat Titans",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/216006/image",
+      "team2_logo": "https://api.sofascore.app/api/v1/team/216006/image",
       "league": "Indian Premier League",
       "start": "2026-05-09T23:00:00+09:00",
       "duration": 5,
@@ -12,9 +12,9 @@
     },
     {
       "team1": "Chennai Super Kings",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187777/image",
+      "team1_logo": "https://api.sofascore.app/api/v1/team/187777/image",
       "team2": "Lucknow Super Giants",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/410010/image",
+      "team2_logo": "https://api.sofascore.app/api/v1/team/410010/image",
       "league": "Indian Premier League",
       "start": "2026-05-10T19:00:00+09:00",
       "duration": 5,
@@ -22,12 +22,13 @@
     },
     {
       "team1": "Royal Challengers Bengaluru",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187843/image",
+      "team1_logo": "https://api.sofascore.app/api/v1/team/187843/image",
       "team2": "Mumbai Indians",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187780/image",
+      "team2_logo": "https://api.sofascore.app/api/v1/team/187780/image",
       "league": "Indian Premier League",
       "start": "2026-05-10T23:00:00+09:00",
       "duration": 5,
       "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
     }
   ]
+}
