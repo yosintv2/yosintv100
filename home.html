@@ -6,8 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YoSinTV - Live Cricket &amp; Football | Match Schedule | Playing XI</title>
   <meta name="description" content="Watch live cricket and football matches, check upcoming fixtures, team lineups, match previews &amp; playing XI. Real-time updates for all major leagues."/>
+  <meta name="keywords" content="live cricket, live football, match schedule, playing XI, match preview, T20 World Cup 2026"/>
+  <meta name="author" content="YoSinTV"/>
+  <meta name="robots" content="index, follow"/>
   <meta name="theme-color" content="#1d4ed8"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="YoSinTV - Live Cricket &amp; Football | Match Schedule | Playing XI"/>
+  <meta property="og:description" content="Watch live cricket and football matches with real-time updates."/>
+  <meta property="og:image" content="https://web.cricfoot.net/favico.png"/>
+  <meta property="og:site_name" content="YoSinTV"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="YoSinTV - Live Cricket &amp; Football"/>
+  <meta name="twitter:image" content="https://web.cricfoot.net/favico.png"/>
+  <meta name="twitter:site" content="@YoSinTV"/>
+
   <link rel="icon" href="https://web.cricfoot.net/favico.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="https://web.cricfoot.net/favico.png"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -73,6 +91,9 @@
     .wgt { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); box-shadow: var(--s1); overflow: hidden; }
     .wgt-h { background: var(--blued); color: #fff; font-family: var(--fd); font-size: .85rem; letter-spacing: .07em; text-transform: uppercase; padding: 11px 15px; }
     .wgt-b { padding: 10px 13px; }
+    .wgt-b .sb-links a { color: #111827 !important; font-weight: 700; }
+    .wgt-b .sb-links a:hover { color: #1d4ed8 !important; }
+    .wgt-b .sb-links a::before { content: "\2022  "; }
     .rp-item { display: flex; flex-direction: column; gap: 2px; padding: 9px 0; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text); }
     .rp-item:last-child { border-bottom: none; }
     .rp-t { font-size: .84rem; font-weight: 700; line-height: 1.3; }
@@ -106,7 +127,7 @@
   <div class="hdr-in">
     <a class="logo" href="/"><img alt="YoSinTV" src="https://web.cricfoot.net/logo.png"></a>
     <div class="hdr-r">
-      <input class="si" id="yst-s" placeholder=" " type="text"/>
+      <input class="si" id="yst-s" placeholder="Search Now.." type="text"/>
       <label class="tgl" title="Dark Mode"><input id="yst-dm" type="checkbox"/><span class="sldr"></span></label>
     </div>
   </div>
@@ -131,18 +152,18 @@
   </div>
 </nav>
 
+<div style="max-width:1140px;margin:16px auto 0;padding:0 1.25rem;text-align:center;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5525538810839147"
+       data-ad-slot="4345862479"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
 <div class="yst-wrap">
   <main>
-    <div style="margin:0 0 16px;text-align:center;">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-5525538810839147"
-           data-ad-slot="4345862479"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
-
     <div class="sh">
       <h2 class="sh-t">All Cricket Events</h2>
       <div class="sh-l"></div>
@@ -172,15 +193,46 @@
       <p>YoSinTV does not host media content on its own servers. Any linked streams or media are hosted externally by third-party providers.</p>
     </div>
   </main>
-
   <aside>
+    <div class="wgt" style="margin-bottom:16px;">
+      <div class="wgt-h">Cricket</div>
+      <div class="wgt-b">
+        <ul class="ft-ul sb-links">
+          <li><a href="#">All Cricket</a></li>
+          <li><a href="#">T20 World Cup 2026</a></li>
+          <li><a href="#">IPL</a></li>
+          <li><a href="#">Playing XI</a></li>
+          <li><a href="https://yosintv.getemoji.online/cricket.html" rel="noopener" target="_blank">Live Cricket</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wgt" style="margin-bottom:16px;">
+      <div class="wgt-h">Football</div>
+      <div class="wgt-b">
+        <ul class="ft-ul sb-links">
+          <li><a href="#">All Football</a></li>
+          <li><a href="#">Match Previews</a></li>
+          <li><a href="#">Premier League</a></li>
+          <li><a href="#">Champions League</a></li>
+          <li><a href="#">La Liga</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="wgt">
-      <div class="wgt-h">Recent Posts</div>
-      <div class="wgt-b" id="sidebar-recent">
-        <p class="ev-loading">Loading recent posts...</p>
+      <div class="wgt-h">Pages</div>
+      <div class="wgt-b">
+        <ul class="ft-ul sb-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">DMCA</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
       </div>
     </div>
   </aside>
+
 </div>
 
 <div style="max-width:1140px;margin:0 auto 16px;padding:0 1.25rem;text-align:center;">
@@ -300,32 +352,8 @@ function loadEv(url, cid) {
   });
 }
 
-function renderSidebarRecent(articles) {
-  var sb = document.getElementById('sidebar-recent');
-  sb.innerHTML = articles.slice(0, 8).map(function (a) {
-    return '<a class="rp-item" href="' + (a.url || '#') + '"><span class="rp-t">' + a.title + '</span><span class="rp-d">' + (a.date || '') + '</span></a>';
-  }).join('');
-}
-
 loadEv('https://yosintv2.github.io/yosintv.link/events-cricket.js', 'yst-cr-ev');
 loadEv('https://yosintv2.github.io/yosintv.link/events-football.js', 'yst-ft-ev');
-
-fetchJSON(DATA_JSON_URL, function (data) {
-  renderSidebarRecent(data.articles || []);
-}, function () {
-  document.getElementById('sidebar-recent').innerHTML = '<p class="ev-loading">Could not load recent posts.</p>';
-});
-
-var searchInput = document.getElementById('yst-s');
-searchInput.addEventListener('input', function () {
-  var q = this.value.trim().toLowerCase();
-  fetchJSON(DATA_JSON_URL, function (data) {
-    var rows = (data.articles || []).filter(function (a) {
-      return !q || (a.title || '').toLowerCase().indexOf(q) > -1 || (a.snippet || '').toLowerCase().indexOf(q) > -1;
-    });
-    renderSidebarRecent(rows);
-  });
-});
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
 </body>
