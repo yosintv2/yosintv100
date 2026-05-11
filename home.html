@@ -82,8 +82,20 @@
     .dmca-h { font-family: var(--fd); font-size: 1rem; font-weight: 700; margin-bottom: 9px; text-transform: uppercase; }
     .dmca p { font-size: .84rem; color: var(--muted); }
 
-    .yst-ft { background: #0b1628; color: rgba(255,255,255,.72); padding: 28px 1.25rem 14px; margin-top: 32px; }
-    .ft-in { max-width: 1140px; margin: 0 auto; text-align: center; font-size: .8rem; }
+    .yst-ft { background: #0b1628; color: rgba(255,255,255,.72); padding: 38px 1.25rem 18px; margin-top: 32px; }
+    .ft-in { max-width: 1140px; margin: 0 auto; }
+    .ft-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .ft-ht { font-family: var(--fd); font-size: .9rem; font-weight: 700; color: white; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 12px; padding-bottom: 7px; border-bottom: 2px solid var(--blue); }
+    .ft-ul { list-style: none; }
+    .ft-ul li { margin-bottom: 7px; }
+    .ft-ul a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .86rem; transition: color .2s; display: inline-flex; align-items: center; gap: 4px; }
+    .ft-ul a:hover { color: #facc15; }
+    .ft-bot { border-top: 1px solid rgba(255,255,255,.09); padding-top: 18px; text-align: center; font-size: .78rem; color: rgba(255,255,255,.4); }
+    .ft-bot a { color: rgba(255,255,255,.55); text-decoration: none; }
+    .ft-bot a:hover { color: #facc15; }
+    .socrow { display: flex; justify-content: flex-start; gap: 10px; margin-top: 13px; }
+    .socbtn { display: inline-flex; align-items: center; justify-content: center; width: 37px; height: 37px; border-radius: 50%; background: rgba(255,255,255,.09); color: white; text-decoration: none; font-size: 1rem; transition: background .2s, transform .2s; }
+    .socbtn:hover { background: var(--blue); transform: translateY(-3px); }
 
     #btt { position: fixed; bottom: 22px; right: 22px; width: 42px; height: 42px; background: var(--blue); color: #fff; border: none; border-radius: 50%; font-size: 1.1rem; cursor: pointer; box-shadow: var(--s2); display: none; align-items: center; justify-content: center; z-index: 500; }
     #btt.on { display: flex; }
@@ -102,18 +114,22 @@
 
 <nav class="yst-nav">
   <div class="nav-in">
-    <a class="nl active" href="#">Home</a>
-    <a class="nl" href="https://t.me/yosintvlive" rel="noopener" target="_blank">Telegram</a>
-    <a class="nl" href="https://www.cricfoot.net/?ads=yosintv.net" rel="noopener" target="_blank">Highlights</a>
+    <a class="nl active" href="#" data-filter="all">
+      <svg fill="none" height="13" stroke="currentColor" viewBox="0 0 24 24" width="13">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      Home
+    </a>
+    <a class="nl" href="#" data-filter="Cricket">🏏 Cricket</a>
+    <a class="nl" href="#" data-filter="Football">&#9917; Football</a>
+    <a class="nl" href="#" data-filter="Playing XI">&#128203; Playing XI</a>
+    <a class="nl" href="#" data-filter="Match Preview">&#128269; Preview</a>
+    <a class="nl" href="#" data-filter="T20 World Cup">&#127942; T20 WC 2026</a>
+    <a class="nl" href="https://www.cricfoot.net/?ads=yosintv.net" rel="noopener" target="_blank">&#127916; Highlights</a>
+    <a class="nl" href="https://t.me/yosintvlive" rel="noopener" target="_blank">&#9992; Telegram</a>
   </div>
 </nav>
-
-<section class="hero">
-  <div class="hero-box">
-    <h1>Live Match Center</h1>
-    <p>Track cricket and football fixtures, team info, and quick updates in one lightweight page.</p>
-  </div>
-</section>
 
 <div class="yst-wrap">
   <main>
@@ -179,7 +195,54 @@
 
 <footer class="yst-ft">
   <div class="ft-in">
-    <p>&copy; <span id="yr"></span> YoSinTV. Live schedules, previews and playing XI updates.</p>
+    <div class="ft-grid">
+      <div>
+        <img alt="YoSinTV" src="https://web.cricfoot.net/logo.png" style="height:42px;margin-bottom:11px;filter:brightness(0) invert(1);" onerror="this.style.display='none'"/>
+        <p style="font-size:.84rem;line-height:1.65;max-width:240px;">Your #1 source for live cricket and football - schedules, playing XI, previews, and real-time updates.</p>
+        <div class="socrow">
+          <a class="socbtn" href="https://t.me/yosintvlive" rel="noopener" target="_blank" title="Telegram">&#9992;</a>
+          <a class="socbtn" href="https://www.cricfoot.net/?ads=yosintv.net" rel="noopener" target="_blank" title="Highlights">&#127916;</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-ht">Cricket</div>
+        <ul class="ft-ul">
+          <li><a href="#">&#127987; All Cricket</a></li>
+          <li><a href="#">&#127942; T20 World Cup 2026</a></li>
+          <li><a href="#">&#127470;&#127475; IPL</a></li>
+          <li><a href="#">&#128203; Playing XI</a></li>
+          <li><a href="https://yosintv.getemoji.online/cricket.html" rel="noopener" target="_blank">&#128308; Live Cricket</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ht">Football</div>
+        <ul class="ft-ul">
+          <li><a href="#">&#9917; All Football</a></li>
+          <li><a href="#">&#128269; Match Previews</a></li>
+          <li><a href="#">&#127942; Premier League</a></li>
+          <li><a href="#">&#127942; Champions League</a></li>
+          <li><a href="#">&#127482;&#127462; La Liga</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ht">Pages</div>
+        <ul class="ft-ul">
+          <li><a href="#">&#8505; About</a></li>
+          <li><a href="#">&#128236; Contact</a></li>
+          <li><a href="#">&#128274; Privacy Policy</a></li>
+          <li><a href="#">&#128196; Disclaimer</a></li>
+          <li><a href="#">&#9888; DMCA</a></li>
+          <li><a href="#">&#128506; Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <p>&#169; <span id="yr">2025</span> <a href="/">YoSinTV</a>. All rights reserved. &nbsp;&#183;&nbsp;
+        <a href="#">Privacy</a> &nbsp;&#183;&nbsp;
+        <a href="#">Disclaimer</a> &nbsp;&#183;&nbsp;
+        <a href="#">DMCA</a>
+      </p>
+    </div>
   </div>
 </footer>
 
