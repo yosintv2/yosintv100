@@ -1,16 +1,6 @@
 {
   "matches": [
     {
-      "team1": "Punjab Kings",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187776/image",
-      "team2": "Delhi Capitals",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187841/image",
-      "league": "Indian Premier League",
-      "start": "2026-05-11T23:00:00+09:00",
-      "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=ipl"
-    },
-    {
       "team1": "Nepal",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187772/image",
       "team2": "Scotland",
@@ -18,7 +8,7 @@
       "league": "ICC CWC League 2",
       "start": "2026-05-12T12:45:00+09:00",
       "duration": 8,
-      "details_url": "https://blog.cricfoot.net/?yosintv=nepal"
+      "details_url": "https://www.yosintv.net/match?yosintv=nepal"
     },
     {
       "team1": "Gujarat Titans",
@@ -28,7 +18,17 @@
       "league": "Indian Premier League",
       "start": "2026-05-12T23:00:00+09:00",
       "duration": 5,
-      "details_url": "https://blog.cricfoot.net/?yosintv=gujarattitans"
+      "details_url": "https://www.yosintv.net/match?yosintv=gujarattitans"
+    },
+    {
+      "team1": "Royal Challengers Bengaluru",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187843/image",
+      "team2": "Kolkata Knight Riders",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/187775/image",
+      "league": "Indian Premier League",
+      "start": "2026-05-13T23:00:00+09:00",
+      "duration": 5,
+      "details_url": "https://www.yosintv.net/match?yosintv=royalchallengersbengaluru"
     }
   ]
 }
