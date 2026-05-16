@@ -8,7 +8,109 @@
       "league": "Bundesliga",
       "start": "2026-05-16T22:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=bayer04leverkusen"
+      "details_url": "https://www.yosintv.net/match?yosintv=bayer04leverkusen",
+      "football_data": {
+        "event": {
+          "league": "Bundesliga",
+          "round": 34,
+          "kick_off_time_utc": "Sat, 16 May 2026 13:30:00 GMT",
+          "venue": "BayArena",
+          "stadium_capacity": 30210,
+          "referee": "Tobias Stieler",
+          "home_team": "Bayer 04 Leverkusen",
+          "away_team": "Hamburger SV",
+          "home_manager": "Kasper Hjulmand",
+          "away_manager": "Merlin Polzin"
+        },
+        "h2h": {
+          "homeWins": 6,
+          "awayWins": 3,
+          "draws": 1
+        },
+        "lineups": {
+          "home_formation": "3-4-2-1",
+          "away_formation": "3-4-2-1",
+          "home_players": [
+            "Mark Flekken",
+            "Jarell Quansah",
+            "Robert Andrich",
+            "Edmond Tapsoba",
+            "Montrell Culbreath",
+            "Aleix García",
+            "Exequiel Palacios",
+            "Alejandro Grimaldo",
+            "Ibrahim Maza",
+            "Malik Tillman",
+            "Patrik Schick",
+            "Janis Blaswich",
+            "Loïc Badé",
+            "Tim Oermann",
+            "Arthur",
+            "Lucas Vázquez",
+            "Ezequiel Fernández",
+            "Ernest Poku",
+            "Jonas Hofmann",
+            "Eliesse Ben Seghir"
+          ],
+          "away_players": [
+            "Sander Tangvik",
+            "Warmed Omari",
+            "Luka Vušković",
+            "Jordan Torunarigha",
+            "Nicolás Capaldo",
+            "Nicolai Remberg",
+            "Albert Sambi Lokonga",
+            "Albert Grønbæk",
+            "Fábio Vieira",
+            "Rayan Philippe",
+            "Otto Stange",
+            "Daniel Fernandes",
+            "Giorgi Gocholeishvili",
+            "Daniel Elfadli",
+            "Shafiq Nandja",
+            "Bakery Jatta",
+            "Miro Muheim",
+            "William Mikelbrencis",
+            "Fabio Baldé",
+            "Yussuf Poulsen"
+          ],
+          "home_missing_players": [
+            "Martin Terrier",
+            "Nathan Tella"
+          ],
+          "away_missing_players": [
+            "Alexander Røssing-Lelesiit",
+            "Robert Glatzel"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.95",
+            "position": 6,
+            "value": "58",
+            "form": [
+              "W",
+              "L",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.79",
+            "position": 11,
+            "value": "37",
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W",
+              "W"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "FC Bayern München",
@@ -18,7 +120,113 @@
       "league": "Bundesliga",
       "start": "2026-05-16T22:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=fcbayernmunchen"
+      "details_url": "https://www.yosintv.net/match?yosintv=fcbayernmunchen",
+      "football_data": {
+        "event": {
+          "league": "Bundesliga",
+          "round": 34,
+          "kick_off_time_utc": "Sat, 16 May 2026 13:30:00 GMT",
+          "venue": "Allianz Arena",
+          "stadium_capacity": 75024,
+          "referee": "Deniz Aytekin",
+          "home_team": "FC Bayern München",
+          "away_team": "1. FC Köln",
+          "home_manager": "Vincent Kompany",
+          "away_manager": "René Wagner"
+        },
+        "h2h": {
+          "homeWins": 8,
+          "awayWins": 1,
+          "draws": 1
+        },
+        "lineups": {
+          "home_formation": "4-2-3-1",
+          "away_formation": "5-3-2",
+          "home_players": [
+            "Manuel Neuer",
+            "Konrad Laimer",
+            "Dayot Upamecano",
+            "Jonathan Tah",
+            "Tom Bischof",
+            "Joshua Kimmich",
+            "Leon Goretzka",
+            "Lennart Karl",
+            "Jamal Musiala",
+            "Luis Díaz",
+            "Harry Kane",
+            "Josip Stanišić",
+            "Jonas Urbig",
+            "Sven Ulreich",
+            "Raphaël Guerreiro",
+            "Hiroki Itō",
+            "Michael Olise",
+            "Bara Sapoko Ndiaye",
+            "Aleksandar Pavlović",
+            "Nicolas Jackson"
+          ],
+          "away_players": [
+            "Marvin Schwäbe",
+            "Sebastian Sebulonsen",
+            "Joel Schmied",
+            "Jahmai Simpson-Pusey",
+            "Cenk Özkaçar",
+            "Kristoffer Lund",
+            "Jakub Kamiński",
+            "Eric Martel",
+            "Alessio Castro-Montes",
+            "Marius Bülter",
+            "Said El Mala",
+            "Linton Maina",
+            "Ron-Robert Zieler",
+            "Rav van den Berg",
+            "Ísak Bergmann Jóhannesson",
+            "Jan Uwe Thielmann",
+            "Felipe Chávez",
+            "Florian Kainz",
+            "Luca Waldschmidt",
+            "Youssoupha Niang"
+          ],
+          "home_missing_players": [
+            "Alphonso Davies",
+            "Cassiano Kiala",
+            "David Daiber",
+            "Leon Klanac",
+            "Serge Gnabry",
+            "Wisdom Mike"
+          ],
+          "away_missing_players": [
+            "Ragnar Ache",
+            "Tom Krauß"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "7.12",
+            "position": 1,
+            "value": "86",
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "W"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.80",
+            "position": 15,
+            "value": "32",
+            "form": [
+              "W",
+              "D",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "SV Werder Bremen",
@@ -28,7 +236,110 @@
       "league": "Bundesliga",
       "start": "2026-05-16T22:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=borussiadortmund"
+      "details_url": "https://www.yosintv.net/match?yosintv=borussiadortmund",
+      "football_data": {
+        "event": {
+          "league": "Bundesliga",
+          "round": 34,
+          "kick_off_time_utc": "Sat, 16 May 2026 13:30:00 GMT",
+          "venue": "Weserstadion",
+          "stadium_capacity": 42100,
+          "referee": "Bastian Dankert",
+          "home_team": "SV Werder Bremen",
+          "away_team": "Borussia Dortmund",
+          "home_manager": "Daniel Thioune",
+          "away_manager": "Niko Kovač"
+        },
+        "h2h": {
+          "homeWins": 1,
+          "awayWins": 7,
+          "draws": 2
+        },
+        "lineups": {
+          "home_formation": "4-1-4-1",
+          "away_formation": "3-4-2-1",
+          "home_players": [
+            "Mio Backhaus",
+            "Isaac Schmidt",
+            "Amos Pieper",
+            "Karim Coulibaly",
+            "Olivier Deman",
+            "Senne Lynen",
+            "Justin Njinmah",
+            "Jens Stage",
+            "Cameron Puertas",
+            "Romano Schmid",
+            "Salim Musah",
+            "Marco Friedl",
+            "Markus Kolke",
+            "Niklas Stark",
+            "Felix Agu",
+            "Samuel Mbangula",
+            "Patrice Čović",
+            "Leonardo Bittencourt",
+            "Jovan Milošević",
+            "Marco Grüll"
+          ],
+          "away_players": [
+            "Gregor Kobel",
+            "Luca Reggiani",
+            "Waldemar Anton",
+            "Nico Schlotterbeck",
+            "Julian Ryerson",
+            "Felix Nmecha",
+            "Jobe Bellingham",
+            "Daniel Svensson",
+            "Maximilian Beier",
+            "Samuele Inacio",
+            "Serhou Guirassy",
+            "Alexander Meyer",
+            "Niklas Süle",
+            "Carney Chukwuemeka",
+            "Salih Özcan",
+            "Yan Couto",
+            "Marcel Sabitzer",
+            "Fábio Silva",
+            "Karim Adeyemi",
+            "Julian Brandt"
+          ],
+          "home_missing_players": [
+            "Yukinari Sugawara",
+            "Keke Topp",
+            "Maximilian Wöber",
+            "Mitchell Weiser"
+          ],
+          "away_missing_players": [
+            "Ramy Bensebaini"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.75",
+            "position": 15,
+            "value": "32",
+            "form": [
+              "L",
+              "W",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.95",
+            "position": 2,
+            "value": "70",
+            "form": [
+              "L",
+              "L",
+              "W",
+              "L",
+              "W"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Chelsea",
@@ -38,7 +349,88 @@
       "league": "FA Cup",
       "start": "2026-05-16T23:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=chelsea"
+      "details_url": "https://www.yosintv.net/match?yosintv=chelsea",
+      "football_data": {
+        "event": {
+          "league": "FA Cup",
+          "round": 29,
+          "kick_off_time_utc": "Sat, 16 May 2026 14:00:00 GMT",
+          "venue": "Wembley Stadium",
+          "stadium_capacity": 90000,
+          "referee": "Darren England",
+          "home_team": "Chelsea",
+          "away_team": "Manchester City",
+          "home_manager": "Calum McFarlane",
+          "away_manager": "Pep Guardiola"
+        },
+        "h2h": {
+          "homeWins": 0,
+          "awayWins": 7,
+          "draws": 3
+        },
+        "lineups": {
+          "home_formation": "3-4-2-1",
+          "away_formation": "4-2-2-2",
+          "home_players": [
+            "Robert Sánchez",
+            "Wesley Fofana",
+            "Levi Colwill",
+            "Jorrel Hato",
+            "Malo Gusto",
+            "Reece James",
+            "Moisés Caicedo",
+            "Marc Cucurella",
+            "Cole Palmer",
+            "Enzo Fernández",
+            "João Pedro",
+            "Filip Jørgensen",
+            "Josh Acheampong",
+            "Tosin Adarabioyo",
+            "Trevoh Chalobah",
+            "Dário Essugo",
+            "Andrey Santos",
+            "Pedro Neto",
+            "Alejandro Garnacho",
+            "Liam Delap"
+          ],
+          "away_players": [
+            "James Trafford",
+            "Matheus Nunes",
+            "Abdukodir Khusanov",
+            "Marc Guéhi",
+            "Nico O'Reilly",
+            "Rodri",
+            "Bernardo Silva",
+            "Antoine Semenyo",
+            "Jérémy Doku",
+            "Omar Marmoush",
+            "Erling Haaland",
+            "Gianluigi Donnarumma",
+            "Rúben Dias",
+            "John Stones",
+            "Nathan Aké",
+            "Rayan Cherki",
+            "Phil Foden",
+            "Savinho",
+            "Mateo Kovačić",
+            "Tijjani Reijnders"
+          ],
+          "home_missing_players": [
+            "Mykhailo Mudryk",
+            "Estêvão",
+            "Jamie Gittens",
+            "Jesse Derry",
+            "Robert Sánchez"
+          ],
+          "away_missing_players": []
+        },
+        "pregame_form": {
+          "error": {
+            "code": 404,
+            "message": "Not Found"
+          }
+        }
+      }
     },
     {
       "team1": "FC Porto",
@@ -48,7 +440,106 @@
       "league": "Liga Portugal Betclic",
       "start": "2026-05-16T23:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=fcporto"
+      "details_url": "https://www.yosintv.net/match?yosintv=fcporto",
+      "football_data": {
+        "event": {
+          "league": "Liga Portugal Betclic",
+          "round": 34,
+          "kick_off_time_utc": "Sat, 16 May 2026 14:30:00 GMT",
+          "venue": "Estádio do Dragão",
+          "stadium_capacity": 50033,
+          "referee": "Joao Antonio Ferreira Goncalves",
+          "home_team": "FC Porto",
+          "away_team": "Santa Clara",
+          "home_manager": "Francesco Farioli",
+          "away_manager": "Petit"
+        },
+        "h2h": {
+          "homeWins": 7,
+          "awayWins": 1,
+          "draws": 2
+        },
+        "lineups": {
+          "home_formation": "4-3-3",
+          "away_formation": "4-2-3-1",
+          "home_players": [
+            "Diogo Costa",
+            "Alberto Costa",
+            "Jan Bednarek",
+            "Jakub Kiwior",
+            "Francisco Moura",
+            "Victor Froholdt",
+            "Alan Varela",
+            "Rodrigo Mora",
+            "William Gomes",
+            "Deniz Gül",
+            "Borja Sainz",
+            "João Costa",
+            "Nehuén Pérez",
+            "Pablo Rosario",
+            "Oskar Pietuszewski",
+            "Gabri Veiga",
+            "Bernardo Lima",
+            "Seko Fofana",
+            "Terem Moffi",
+            "Pepê"
+          ],
+          "away_players": [
+            "João Afonso",
+            "Diogo Calila",
+            "Pedro Pacheco",
+            "Sidney Lima",
+            "Paulo Victor",
+            "José Tavares",
+            "Serginho",
+            "Welinton Torrao",
+            "Gustavo Klismahn",
+            "Gabriel Silva",
+            "Luis Fernando",
+            "Gabriel Batista",
+            "Henrique Silva",
+            "Frederico Venâncio",
+            "Andrey",
+            "Lucas Soares",
+            "Darlan",
+            "Isaac",
+            "Vinícius Lopes",
+            "Elias Manoel"
+          ],
+          "home_missing_players": [
+            "Luuk de Jong",
+            "Samu Aghehowa"
+          ],
+          "away_missing_players": []
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.93",
+            "position": 1,
+            "value": "85",
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.74",
+            "position": 12,
+            "value": "36",
+            "form": [
+              "L",
+              "D",
+              "W",
+              "D",
+              "W"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Al-Nassr",
@@ -58,17 +549,71 @@
       "league": "AFC Champions League Two, Knockout stage",
       "start": "2026-05-17T02:45:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=alnassr"
+      "details_url": "https://www.yosintv.net/match?yosintv=alnassr",
+      "football_data": {
+        "event": {
+          "league": "AFC Champions League Two, Knockout stage",
+          "round": 29,
+          "kick_off_time_utc": "Sat, 16 May 2026 17:45:00 GMT",
+          "venue": "Al-Awwal Park",
+          "stadium_capacity": 25000,
+          "referee": null,
+          "home_team": "Al-Nassr",
+          "away_team": "Gamba Osaka",
+          "home_manager": "Jorge Jesus",
+          "away_manager": "Jens Wissing"
+        },
+        "h2h": {
+          "teamDuel": null,
+          "managerDuel": null
+        },
+        "lineups": {
+          "home_formation": null,
+          "away_formation": null,
+          "home_players": [],
+          "away_players": [],
+          "home_missing_players": [],
+          "away_missing_players": []
+        },
+        "pregame_form": null
+      }
     },
     {
-      "team1": "Estoril Praia",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4500/image",
-      "team2": "Benfica",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3006/image",
-      "league": "Liga Portugal Betclic",
-      "start": "2026-05-17T04:30:00+09:00",
+      "team1": "Al-Nassr",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/23400/image",
+      "team2": "Gamba Osaka",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3138/image",
+      "league": "AFC Champions League Two, Knockout stage",
+      "start": "2026-05-17T02:45:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=benfica"
+      "details_url": "https://www.yosintv.net/match?yosintv=alnassr",
+      "football_data": {
+        "event": {
+          "league": "AFC Champions League Two, Knockout stage",
+          "round": 29,
+          "kick_off_time_utc": "Sat, 16 May 2026 17:45:00 GMT",
+          "venue": "Al-Awwal Park",
+          "stadium_capacity": 25000,
+          "referee": null,
+          "home_team": "Al-Nassr",
+          "away_team": "Gamba Osaka",
+          "home_manager": "Jorge Jesus",
+          "away_manager": "Jens Wissing"
+        },
+        "h2h": {
+          "teamDuel": null,
+          "managerDuel": null
+        },
+        "lineups": {
+          "home_formation": null,
+          "away_formation": null,
+          "home_players": [],
+          "away_players": [],
+          "home_missing_players": [],
+          "away_missing_players": []
+        },
+        "pregame_form": null
+      }
     },
     {
       "team1": "Sporting CP",
@@ -78,7 +623,173 @@
       "league": "Liga Portugal Betclic",
       "start": "2026-05-17T04:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=sportingcp"
+      "details_url": "https://www.yosintv.net/match?yosintv=sportingcp",
+      "football_data": {
+        "event": {
+          "league": "Liga Portugal Betclic",
+          "round": 34,
+          "kick_off_time_utc": "Sat, 16 May 2026 19:30:00 GMT",
+          "venue": "Estádio José Alvalade",
+          "stadium_capacity": 52095,
+          "referee": "Luís Godinho",
+          "home_team": "Sporting CP",
+          "away_team": "Gil Vicente",
+          "home_manager": "Rui Borges",
+          "away_manager": "Cesar Peixoto"
+        },
+        "h2h": {
+          "homeWins": 7,
+          "awayWins": 0,
+          "draws": 3
+        },
+        "lineups": {
+          "home_formation": "4-2-3-1",
+          "away_formation": "4-2-3-1",
+          "home_players": [
+            "Rui Silva",
+            "Salvador Blopa",
+            "Gonçalo Inácio",
+            "Quaresma",
+            "Maximiliano Araújo",
+            "Hidemasa Morita",
+            "Daniel Bragança",
+            "Geny Catamo",
+            "Francisco Trincão",
+            "Pedro Gonçalves",
+            "Luis Javier Suárez"
+          ],
+          "away_players": [
+            "Dani Figueira",
+            "Zé Carlos",
+            "Marvin Elimbi Gilbert",
+            "Jonathan Buatu",
+            "Ghislain Konan",
+            "Zé Carlos",
+            "Luís Esteves",
+            "Murilo",
+            "Santi García",
+            "Agustín Moreira",
+            "Gustavo Varela"
+          ],
+          "home_missing_players": [],
+          "away_missing_players": []
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "7.02",
+            "position": 2,
+            "value": "79",
+            "form": [
+              "L",
+              "D",
+              "D",
+              "W",
+              "W"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.78",
+            "position": 6,
+            "value": "50",
+            "form": [
+              "D",
+              "L",
+              "W",
+              "D",
+              "L"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
+    },
+    {
+      "team1": "Estoril Praia",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/4500/image",
+      "team2": "Benfica",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3006/image",
+      "league": "Liga Portugal Betclic",
+      "start": "2026-05-17T04:30:00+09:00",
+      "duration": 2.2,
+      "details_url": "https://www.yosintv.net/match?yosintv=benfica",
+      "football_data": {
+        "event": {
+          "league": "Liga Portugal Betclic",
+          "round": 34,
+          "kick_off_time_utc": "Sat, 16 May 2026 19:30:00 GMT",
+          "venue": "Estadio Antonio Coimbra da Mota",
+          "stadium_capacity": 8000,
+          "referee": "Miguel Nogueira",
+          "home_team": "Estoril Praia",
+          "away_team": "Benfica",
+          "home_manager": "Ian Cathro",
+          "away_manager": "José Mourinho"
+        },
+        "h2h": {
+          "homeWins": 1,
+          "awayWins": 9,
+          "draws": 0
+        },
+        "lineups": {
+          "home_formation": "3-4-3",
+          "away_formation": "4-2-3-1",
+          "home_players": [
+            "Joel Robles",
+            "Ferro",
+            "Kévin Boma",
+            "Felix Bacher",
+            "Ricard Sánchez",
+            "Pizzi",
+            "Jordan Holsgrove",
+            "Pedro Amaral",
+            "Rafik Guitane",
+            "Yanis Begraoui",
+            "João Carvalho"
+          ],
+          "away_players": [
+            "Anatoliy Trubin",
+            "Amar Dedić",
+            "Nicolás Otamendi",
+            "Tomás Araújo",
+            "Samuel Dahl",
+            "Fredrik Aursnes",
+            "Richard Ríos",
+            "Gianluca Prestianni",
+            "Rafa Silva",
+            "Andreas Schjelderup",
+            "Vangelis Pavlidis"
+          ],
+          "home_missing_players": [],
+          "away_missing_players": []
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.75",
+            "position": 9,
+            "value": "39",
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "D"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "7.00",
+            "position": 3,
+            "value": "77",
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "D"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "AS Roma",
@@ -88,7 +799,91 @@
       "league": "Serie A",
       "start": "2026-05-17T19:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=asroma"
+      "details_url": "https://www.yosintv.net/match?yosintv=asroma",
+      "football_data": {
+        "event": {
+          "league": "Serie A",
+          "round": 37,
+          "kick_off_time_utc": "Sun, 17 May 2026 10:00:00 GMT",
+          "venue": "Stadio Olimpico",
+          "stadium_capacity": 72698,
+          "referee": "Fabio Maresca",
+          "home_team": "AS Roma",
+          "away_team": "Lazio",
+          "home_manager": "Gian Piero Gasperini",
+          "away_manager": "Maurizio Sarri"
+        },
+        "h2h": {
+          "homeWins": 4,
+          "awayWins": 4,
+          "draws": 2
+        },
+        "lineups": {
+          "home_formation": "3-4-2-1",
+          "away_formation": "4-3-3",
+          "home_players": [
+            "Mile Svilar",
+            "Gianluca Mancini",
+            "Evan Ndicka",
+            "Mario Hermoso",
+            "Zeki Çelik",
+            "Bryan Cristante",
+            "Manu Koné",
+            "Wesley",
+            "Matías Soulé",
+            "Paulo Dybala",
+            "Donyell Malen"
+          ],
+          "away_players": [
+            "Edoardo Motta",
+            "Adam Marušić",
+            "Mario Gila",
+            "Oliver Provstgaard",
+            "Nuno Tavares",
+            "Toma Bašić",
+            "Nicolò Rovella",
+            "Kenneth Taylor",
+            "Gustav Isaksen",
+            "Tijjani Noslin",
+            "Pedro"
+          ],
+          "home_missing_players": [
+            "Bryan Zaragoza"
+          ],
+          "away_missing_players": [
+            "Alessio Romagnoli",
+            "Ivan Provedel",
+            "Patric"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.87",
+            "position": 5,
+            "value": "67",
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.83",
+            "position": 9,
+            "value": "51",
+            "form": [
+              "L",
+              "W",
+              "D",
+              "W",
+              "L"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Genoa",
@@ -98,7 +893,94 @@
       "league": "Serie A",
       "start": "2026-05-17T19:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=milan"
+      "details_url": "https://www.yosintv.net/match?yosintv=milan",
+      "football_data": {
+        "event": {
+          "league": "Serie A",
+          "round": 37,
+          "kick_off_time_utc": "Sun, 17 May 2026 10:00:00 GMT",
+          "venue": "Luigi Ferraris",
+          "stadium_capacity": 33205,
+          "referee": "Simone Sozza",
+          "home_team": "Genoa",
+          "away_team": "Milan",
+          "home_manager": "Daniele De Rossi",
+          "away_manager": "Massimiliano Allegri"
+        },
+        "h2h": {
+          "homeWins": 0,
+          "awayWins": 6,
+          "draws": 4
+        },
+        "lineups": {
+          "home_formation": "3-4-2-1",
+          "away_formation": "3-5-2",
+          "home_players": [
+            "Justin Bijlow",
+            "Alessandro Marcandalli",
+            "Leo Østigård",
+            "Johan Vásquez",
+            "Mikael Ellertsson",
+            "Ruslan Malinovskyi",
+            "Morten Frendrup",
+            "Aarón Martín",
+            "Jeff Ekhator",
+            "Vitinha",
+            "Lorenzo Colombo"
+          ],
+          "away_players": [
+            "Mike Maignan",
+            "Fikayo Tomori",
+            "Matteo Gabbia",
+            "Strahinja Pavlović",
+            "Zachary Athekame",
+            "Youssouf Fofana",
+            "Samuele Ricci",
+            "Adrien Rabiot",
+            "Davide Bartesaghi",
+            "Christopher Nkunku",
+            "Santiago Giménez"
+          ],
+          "home_missing_players": [
+            "Brooke Norton-Cuffy",
+            "Junior Messias",
+            "Tommaso Baldanzi"
+          ],
+          "away_missing_players": [
+            "Alexis Saelemaekers",
+            "Pervis Estupiñán",
+            "Rafael Leão",
+            "Luka Modrić"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.76",
+            "position": 14,
+            "value": "41",
+            "form": [
+              "W",
+              "W",
+              "L",
+              "D",
+              "D"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.93",
+            "position": 4,
+            "value": "67",
+            "form": [
+              "L",
+              "W",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Juventus",
@@ -108,7 +990,90 @@
       "league": "Serie A",
       "start": "2026-05-17T19:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=juventus"
+      "details_url": "https://www.yosintv.net/match?yosintv=juventus",
+      "football_data": {
+        "event": {
+          "league": "Serie A",
+          "round": 37,
+          "kick_off_time_utc": "Sun, 17 May 2026 10:00:00 GMT",
+          "venue": "Allianz Stadium",
+          "stadium_capacity": 41507,
+          "referee": "Davide Massa",
+          "home_team": "Juventus",
+          "away_team": "Fiorentina",
+          "home_manager": "Luciano Spalletti",
+          "away_manager": "Paolo Vanoli"
+        },
+        "h2h": {
+          "homeWins": 5,
+          "awayWins": 2,
+          "draws": 3
+        },
+        "lineups": {
+          "home_formation": "4-2-3-1",
+          "away_formation": "4-3-3",
+          "home_players": [
+            "Michele Di Gregorio",
+            "Pierre Kalulu",
+            "Bremer",
+            "Lloyd Kelly",
+            "Andrea Cambiaso",
+            "Manuel Locatelli",
+            "Khéphren Thuram",
+            "Francisco Conceição",
+            "Weston McKennie",
+            "Kenan Yıldız",
+            "Dušan Vlahović"
+          ],
+          "away_players": [
+            "David De Gea",
+            "Dodô",
+            "Marin Pongračić",
+            "Luca Ranieri",
+            "Robin Gosens",
+            "Rolando Mandragora",
+            "Nicolò Fagioli",
+            "Cher Ndour",
+            "Fabiano Parisi",
+            "Roberto Piccoli",
+            "Manor Solomon"
+          ],
+          "home_missing_players": [
+            "Arkadiusz Milik",
+            "Juan Cabal"
+          ],
+          "away_missing_players": [
+            "Moise Kean"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.92",
+            "position": 3,
+            "value": "68",
+            "form": [
+              "W",
+              "W",
+              "D",
+              "D",
+              "W"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.78",
+            "position": 15,
+            "value": "38",
+            "form": [
+              "W",
+              "D",
+              "D",
+              "L",
+              "D"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Pisa",
@@ -118,7 +1083,91 @@
       "league": "Serie A",
       "start": "2026-05-17T19:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=sscnapoli"
+      "details_url": "https://www.yosintv.net/match?yosintv=sscnapoli",
+      "football_data": {
+        "event": {
+          "league": "Serie A",
+          "round": 37,
+          "kick_off_time_utc": "Sun, 17 May 2026 10:00:00 GMT",
+          "venue": "Arena Garibaldi-Romeo Anconetani",
+          "stadium_capacity": 10442,
+          "referee": "Francesco Fourneau",
+          "home_team": "Pisa",
+          "away_team": "SSC Napoli",
+          "home_manager": "Oscar Hiljemark",
+          "away_manager": "Antonio Conte"
+        },
+        "h2h": {
+          "homeWins": 1,
+          "awayWins": 5,
+          "draws": 4
+        },
+        "lineups": {
+          "home_formation": "3-5-2",
+          "away_formation": "3-4-2-1",
+          "home_players": [
+            "Adrian Šemper",
+            "Simone Canestrelli",
+            "Antonio Caracciolo",
+            "Arturo Calabresi",
+            "Mehdi Léris",
+            "Marius Marin",
+            "Michel Aebischer",
+            "Ebenezer Akinsanmiro",
+            "Samuele Angori",
+            "Filip Stojilković",
+            "Stefano Moreo"
+          ],
+          "away_players": [
+            "Alex Meret",
+            "Giovanni Di Lorenzo",
+            "Amir Rrahmani",
+            "Alessandro Buongiorno",
+            "Miguel Gutiérrez",
+            "Stanislav Lobotka",
+            "Scott McTominay",
+            "Leonardo Spinazzola",
+            "Kevin De Bruyne",
+            "Alisson Santos",
+            "Rasmus Højlund"
+          ],
+          "home_missing_players": [
+            "Felipe Loyola",
+            "Rosen Bozhinov",
+            "Francesco Coppola"
+          ],
+          "away_missing_players": [
+            "Matteo Politano"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.68",
+            "position": 20,
+            "value": "18",
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.84",
+            "position": 2,
+            "value": "70",
+            "form": [
+              "D",
+              "L",
+              "W",
+              "D",
+              "L"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Manchester United",
@@ -128,7 +1177,96 @@
       "league": "Premier League",
       "start": "2026-05-17T20:30:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=manchesterunited"
+      "details_url": "https://www.yosintv.net/match?yosintv=manchesterunited",
+      "football_data": {
+        "event": {
+          "league": "Premier League",
+          "round": 37,
+          "kick_off_time_utc": "Sun, 17 May 2026 11:30:00 GMT",
+          "venue": "Old Trafford",
+          "stadium_capacity": 74879,
+          "referee": "Michael Salisbury",
+          "home_team": "Manchester United",
+          "away_team": "Nottingham Forest",
+          "home_manager": "Michael Carrick",
+          "away_manager": "Vitor Pereira"
+        },
+        "h2h": {
+          "homeWins": 6,
+          "awayWins": 3,
+          "draws": 1
+        },
+        "lineups": {
+          "home_formation": "4-2-3-1",
+          "away_formation": "4-4-2",
+          "home_players": [
+            "Senne Lammens",
+            "Noussair Mazraoui",
+            "Harry Maguire",
+            "Lisandro Martínez",
+            "Luke Shaw",
+            "Casemiro",
+            "Kobbie Mainoo",
+            "Amad Diallo",
+            "Bruno Fernandes",
+            "Matheus Cunha",
+            "Bryan Mbeumo"
+          ],
+          "away_players": [
+            "Matz Sels",
+            "Neco Williams",
+            "Nikola Milenković",
+            "Jair",
+            "Luca Netz",
+            "Omari Hutchinson",
+            "Ryan Yates",
+            "Elliot Anderson",
+            "Nicolás Domínguez",
+            "Igor Jesus",
+            "Chris Wood"
+          ],
+          "home_missing_players": [
+            "Matthijs de Ligt",
+            "Benjamin Šeško"
+          ],
+          "away_missing_players": [
+            "Callum Hudson Odoi",
+            "Murillo",
+            "Ola Aina",
+            "Dan Ndoye",
+            "Ibrahim Sangaré",
+            "Morgan Gibbs-White",
+            "Zach Abbott"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.90",
+            "position": 3,
+            "value": "65",
+            "form": [
+              "L",
+              "W",
+              "W",
+              "W",
+              "D"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.81",
+            "position": 16,
+            "value": "43",
+            "form": [
+              "D",
+              "W",
+              "W",
+              "W",
+              "D"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Inter",
@@ -138,17 +1276,90 @@
       "league": "Serie A",
       "start": "2026-05-17T22:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=inter"
-    },
-    {
-      "team1": "Wolverhampton",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3/image",
-      "team2": "Fulham",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/43/image",
-      "league": "Premier League",
-      "start": "2026-05-17T23:00:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=wolverhampton"
+      "details_url": "https://www.yosintv.net/match?yosintv=inter",
+      "football_data": {
+        "event": {
+          "league": "Serie A",
+          "round": 37,
+          "kick_off_time_utc": "Sun, 17 May 2026 13:00:00 GMT",
+          "venue": "San Siro/Giuseppe Meazza",
+          "stadium_capacity": 75817,
+          "referee": "Andrea Calzavara",
+          "home_team": "Inter",
+          "away_team": "Hellas Verona",
+          "home_manager": "Cristian Chivu",
+          "away_manager": "Paolo Sammarco"
+        },
+        "h2h": {
+          "homeWins": 9,
+          "awayWins": 0,
+          "draws": 1
+        },
+        "lineups": {
+          "home_formation": "3-5-2",
+          "away_formation": "3-5-1-1",
+          "home_players": [
+            "Yann Sommer",
+            "Manuel Akanji",
+            "Francesco Acerbi",
+            "Carlos Augusto",
+            "Denzel Dumfries",
+            "Nicolò Barella",
+            "Piotr Zieliński",
+            "Henrikh Mkhitaryan",
+            "Federico Dimarco",
+            "Marcus Thuram",
+            "Lautaro Martínez"
+          ],
+          "away_players": [
+            "Lorenzo Montipò",
+            "Victor Nelsson",
+            "Andrias Edmundsson",
+            "Nicolás Valentini",
+            "Rafik Belghali",
+            "Jean Daniel Akpa-Akpro",
+            "Roberto Gagliardini",
+            "Antoine Bernede",
+            "Martin Frese",
+            "Tomáš Suslov",
+            "Kieron Bowie"
+          ],
+          "home_missing_players": [],
+          "away_missing_players": [
+            "Armel Bella-Kotchap",
+            "Daniel Mosquera",
+            "Daniel Oyegoke",
+            "Cheikh Niasse"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "7.00",
+            "position": 1,
+            "value": "85",
+            "form": [
+              "W",
+              "W",
+              "D",
+              "W",
+              "W"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.64",
+            "position": 19,
+            "value": "20",
+            "form": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "L"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     },
     {
       "team1": "Santos",
@@ -158,7 +1369,193 @@
       "league": "Brasileirão Betano",
       "start": "2026-05-17T23:00:00+09:00",
       "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=santos"
+      "details_url": "https://www.yosintv.net/match?yosintv=santos",
+      "football_data": {
+        "event": {
+          "league": "Brasileirão Betano",
+          "round": 16,
+          "kick_off_time_utc": "Sun, 17 May 2026 14:00:00 GMT",
+          "venue": "Neo Química Arena",
+          "stadium_capacity": 49205,
+          "referee": "Paulo Cesar Zanovelli da Silva",
+          "home_team": "Santos",
+          "away_team": "Coritiba",
+          "home_manager": "Cuca",
+          "away_manager": "Fernando Seabra"
+        },
+        "h2h": {
+          "homeWins": 7,
+          "awayWins": 1,
+          "draws": 2
+        },
+        "lineups": {
+          "home_formation": "4-2-3-1",
+          "away_formation": "4-2-3-1",
+          "home_players": [
+            "Gabriel Brazão",
+            "Igor Vinícius",
+            "Lucas Veríssimo",
+            "Adonis Frías",
+            "Gonzalo Escobar",
+            "Willian Arão",
+            "Christian Oliva",
+            "Gabriel Bontempo",
+            "Benjamín Rollheiser",
+            "Neymar",
+            "Álvaro Barreal"
+          ],
+          "away_players": [
+            "Pedro Rangel",
+            "Tiago Cóser",
+            "Jacy Maranhão",
+            "Bruno Melo",
+            "Felipe Jonatan",
+            "Vini Paulista",
+            "Sebastian Gomez",
+            "Breno Lopes",
+            "Josué",
+            "Joaquín Lavega",
+            "Pedro Rocha"
+          ],
+          "home_missing_players": [
+            "Gabriel Menino",
+            "Gustavo Henrique Pereira",
+            "João Schmidt",
+            "Lautaro Díaz",
+            "Mayke",
+            "Thaciano"
+          ],
+          "away_missing_players": [
+            "Lucas Ronier",
+            "Fabinho",
+            "Keno",
+            "Maicon",
+            "Pedro Morisco",
+            "Rodrigo Rodrigues"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.77",
+            "position": 15,
+            "value": "18",
+            "form": [
+              "W",
+              "L",
+              "D",
+              "D",
+              "W"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.76",
+            "position": 9,
+            "value": "20",
+            "form": [
+              "D",
+              "W",
+              "L",
+              "L",
+              "D"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
+    },
+    {
+      "team1": "Wolverhampton",
+      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3/image",
+      "team2": "Fulham",
+      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/43/image",
+      "league": "Premier League",
+      "start": "2026-05-17T23:00:00+09:00",
+      "duration": 2.2,
+      "details_url": "https://www.yosintv.net/match?yosintv=wolverhampton",
+      "football_data": {
+        "event": {
+          "league": "Premier League",
+          "round": 37,
+          "kick_off_time_utc": "Sun, 17 May 2026 14:00:00 GMT",
+          "venue": "Molineux Stadium",
+          "stadium_capacity": 32050,
+          "referee": "Thomas Kirk",
+          "home_team": "Wolverhampton",
+          "away_team": "Fulham",
+          "home_manager": "Rob Edwards",
+          "away_manager": "Marco Silva"
+        },
+        "h2h": {
+          "homeWins": 5,
+          "awayWins": 3,
+          "draws": 2
+        },
+        "lineups": {
+          "home_formation": "3-4-2-1",
+          "away_formation": "4-2-3-1",
+          "home_players": [
+            "José Sá",
+            "Yerson Mosquera",
+            "Santiago Bueno",
+            "Toti Gomes",
+            "Pedro Lima",
+            "André",
+            "João Gomes",
+            "Hugo Bueno",
+            "Adam Armstrong",
+            "Mateus Mané",
+            "Hwang Hee-chan"
+          ],
+          "away_players": [
+            "Bernd Leno",
+            "Timothy Castagne",
+            "Issa Diop",
+            "Calvin Bassey",
+            "Antonee Robinson",
+            "Saša Lukić",
+            "Alex Iwobi",
+            "Harry Wilson",
+            "Emile Smith Rowe",
+            "Samuel Chukwueze",
+            "Rodrigo Muniz"
+          ],
+          "home_missing_players": [
+            "Sam Johnstone"
+          ],
+          "away_missing_players": [
+            "Joachim Andersen",
+            "Ryan Sessegnon",
+            "Alex Iwobi"
+          ]
+        },
+        "pregame_form": {
+          "homeTeam": {
+            "avgRating": "6.67",
+            "position": 20,
+            "value": "18",
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          "awayTeam": {
+            "avgRating": "6.79",
+            "position": 11,
+            "value": "48",
+            "form": [
+              "L",
+              "D",
+              "W",
+              "L",
+              "L"
+            ]
+          },
+          "label": "Pts"
+        }
+      }
     }
   ]
 }
