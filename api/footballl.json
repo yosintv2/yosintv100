@@ -579,43 +579,6 @@
       }
     },
     {
-      "team1": "Al-Nassr",
-      "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/23400/image",
-      "team2": "Gamba Osaka",
-      "team2_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3138/image",
-      "league": "AFC Champions League Two, Knockout stage",
-      "start": "2026-05-17T02:45:00+09:00",
-      "duration": 2.2,
-      "details_url": "https://www.yosintv.net/match?yosintv=alnassr",
-      "football_data": {
-        "event": {
-          "league": "AFC Champions League Two, Knockout stage",
-          "round": 29,
-          "kick_off_time_utc": "Sat, 16 May 2026 17:45:00 GMT",
-          "venue": "Al-Awwal Park",
-          "stadium_capacity": 25000,
-          "referee": null,
-          "home_team": "Al-Nassr",
-          "away_team": "Gamba Osaka",
-          "home_manager": "Jorge Jesus",
-          "away_manager": "Jens Wissing"
-        },
-        "h2h": {
-          "teamDuel": null,
-          "managerDuel": null
-        },
-        "lineups": {
-          "home_formation": null,
-          "away_formation": null,
-          "home_players": [],
-          "away_players": [],
-          "home_missing_players": [],
-          "away_missing_players": []
-        },
-        "pregame_form": null
-      }
-    },
-    {
       "team1": "Sporting CP",
       "team1_logo": "https://i1.wp.com/api.sofascore1.com/api/v1/team/3001/image",
       "team2": "Gil Vicente",
