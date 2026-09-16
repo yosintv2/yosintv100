@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColaTV</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --border: #334155;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --accent-hover: #06b6d4;
+      --error: #f87171;
+      --success: #4ade80;
+      --input-bg: #0f172a;
+      --focus: #22d3ee;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --muted: #64748b;
+        --accent: #06b6d4;
+        --accent-hover: #0891b2;
+        --error: #ef4444;
+        --success: #22c55e;
+        --input-bg: #f8fafc;
+        --focus: #06b6d4;
+      }
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.6;
+    }
+
+    .container { width: 100%; max-width: 900px; }
+
+    /* === NAV === */
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 0 0;
+    }
+    .top-nav a {
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      font-size: .7rem;
+      font-weight: 600;
+      font-family: inherit;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+      transition: all .15s;
+    }
+    .top-nav a:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+    .top-nav a.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+    /* === HEADER === */
+    .page-header { margin: 24px 0; }
+    .page-header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+    .page-header .subtitle { color: var(--muted); font-size: 0.85rem; }
+
+    /* === CARD === */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      color: var(--text);
+      font-family: inherit;
+      transition: border-color 0.15s;
+    }
+    input[type="text"]:focus { outline: none; border-color: var(--focus); }
+    input[type="text"]::placeholder { color: var(--muted); opacity: 0.6; }
+
+    /* === MATCH CARD === */
+    .match-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+
+    .match-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .match-title { font-weight: 700; font-size: 14px; color: var(--text); white-space: nowrap; }
+    .comp-name { font-size: 11px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
+    .match-time { font-size: 12px; color: var(--muted); white-space: nowrap; margin-left: auto; }
+
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 12px;
+      line-height: 1.6;
+      overflow-x: auto;
+      margin: 0;
+      white-space: pre-wrap;
+      border: 1px solid var(--border);
+    }
+
+    .btn-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+
+    .copy-btn {
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all .15s;
+      margin-left: auto;
+    }
+    .copy-btn:hover { background: var(--accent-hover); }
+
+    .match-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 6px;
+    }
+
+    .blv-id-chip {
+      background: rgba(34,211,238,0.08);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all .15s;
+    }
+    .blv-id-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+    .success-text { color: var(--success); font-size: 12px; font-weight: bold; }
+
+    @media (max-width: 480px) {
+      .match-header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="top-nav">
+      <a href="nami.html">Nami</a>
+      <a href="colatv.html" class="active">ColaTV</a>
+      <a href="ppv.html">PPV</a>
+      <a href="md5.html">MD5</a>
+    </nav>
+
+    <div class="page-header">
+      <h1>Broadcaster Extractor</h1>
+      <div class="subtitle" id="updateTime">Fetching live data...</div>
+    </div>
+
+    <div class="card">
+      <input type="text" id="searchBar" placeholder="Search matches, teams or leagues..." oninput="filterResults()">
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+<script>
+  const API_URL = "https://api20.colatv88xd.cc/api/matches";
+  const AD_BASE = "https://redirects.pages.dev/foot.html?src=";
+  const PLAYER_BASE = "https://hlsplayers.pages.dev/player3?url=";
+  const HLS_BASE = "https://live3.ftlcbx.com/live/";
+  const REDIRECT_BASE = "https://redirects.pages.dev/foot.html?src=";
+
+  function stripAuth(url) {
+    const q = url.indexOf('?');
+    return q !== -1 ? url.substring(0, q) : url;
+  }
+
+  function generateMd5Url(matchId) {
+    const md5 = CryptoJS.MD5(matchId).toString();
+    const hlsUrl = `${HLS_BASE}${matchId}_${md5}_1080p.m3u8`;
+    return `${REDIRECT_BASE}${PLAYER_BASE}${hlsUrl}`;
+  }
+
+  function isValidStreamUrl(url) {
+    if (!url) return false;
+    const trimmed = url.trim();
+    if (!trimmed) return false;
+    if (trimmed.endsWith('=') || trimmed.endsWith('?url=') || trimmed.endsWith('?src=')) return false;
+    if (trimmed.endsWith('.html')) return false;
+    const lastSegment = trimmed.split('?')[1] || '';
+    if (lastSegment && lastSegment.split('=').pop().trim() === '') return false;
+    const lastParamValue = lastSegment.split('=').pop().trim();
+    if (lastParamValue === 'https' || lastParamValue === 'http') return false;
+    return true;
+  }
+
+  async function fetchAndDisplay() {
+    const container = document.getElementById('results');
+    const updateTimeDiv = document.getElementById('updateTime');
+
+    try {
+      const response = await fetch(API_URL);
+      const json = await response.json();
+      
+      // Convert the data object values to an array
+      const matches = Object.values(json.data || {});
+
+      container.innerHTML = '';
+      updateTimeDiv.textContent = `Last updated: ${new Date().toLocaleTimeString()}`;
+
+      matches.forEach((match, index) => {
+        const clean = s => s.replace(/\bF\.?C\.?\b\s*/gi, '').trim();
+        const matchTitle = `${clean(match.homeTeamName)} vs ${clean(match.awayTeamName)}`;
+        const competition = match.competitionName || "Unknown Competition";
+        
+        // Time formatting
+        const matchDate = new Date(match.matchTime * 1000);
+        const fullTimeBadge = matchDate.toLocaleString([], { 
+          hour: '2-digit', minute: '2-digit', 
+          day: '2-digit', month: '2-digit', year: 'numeric' 
+        });
+
+        // Collect Streams
+        const mainM3u8 = isValidStreamUrl(match.videoUrl) ? stripAuth(match.videoUrl) : "";
+        const anchors = (match.anchorAppointmentVoList || []).filter(a => isValidStreamUrl(a.playStreamAddress2));
+        
+        const jsonContent = generateJsonData(matchTitle, mainM3u8, anchors);
+
+        const md5Url = generateMd5Url(match.matchId);
+
+        const section = document.createElement('div');
+        section.className = 'match-card';
+        section.innerHTML = `
+          <div class="match-top">
+            <span class="match-title">${matchTitle} - <span style="color:var(--muted)">${match.matchId.toLowerCase()}</span></span>
+            <span class="match-time">${fullTimeBadge}</span>
+          </div>
+          <div class="btn-group">
+            <a href="${PLAYER_BASE}${HLS_BASE}${match.matchId}_${CryptoJS.MD5(match.matchId).toString()}_1080p.m3u8" target="_blank" class="blv-id-chip" style="color:#facc15;">
+              <strong>MD5 Stream</strong>
+            </a>
+            ${mainM3u8 ? `
+              <a href="${PLAYER_BASE}${mainM3u8}" target="_blank" class="blv-id-chip">
+                <strong>Main Stream</strong>
+              </a>
+            ` : ''}
+            ${anchors.map(a => `
+              <a href="${PLAYER_BASE}${stripAuth(a.playStreamAddress2)}" target="_blank" class="blv-id-chip">
+                <small></small> <strong>${a.nickName}</strong>
+              </a>
+            `).join('')}
+          </div>
+          <div style="display:flex;justify-content:flex-end;margin-top:6px;">
+            <button class="copy-btn" onclick="copyText('md5-${index}', this)" style="width:120px;">Possible JSON</button>
+          </div>
+          <textarea readonly id="md5-${index}" style="width:100%;min-height:60px;background:#1a1a2e;color:#facc15;padding:12px;border-radius:8px;font-size:12px;font-family:monospace;border:1px solid var(--border);resize:vertical;white-space:pre-wrap;word-break:break-all;">    "${md5Url}",</textarea>
+          <div class="match-actions">
+            <button class="copy-btn" onclick="copyText('pre-${index}', this)" style="width:120px;">Copy JSON</button>
+          </div>
+          <pre id="pre-${index}">${jsonContent}</pre>
+        `;
+        container.appendChild(section);
+      });
+    } catch (error) {
+      updateTimeDiv.textContent = "Error loading data.";
+      container.innerHTML = '<p style="text-align:center; color:var(--error);">Failed to fetch matches.</p>';
+    }
+  }
+
+  function generateJsonData(matchName, mainM3u8, anchors) {
+    const links = [
+      mainM3u8 ? `${AD_BASE}${PLAYER_BASE}${mainM3u8}` : null,
+      ...anchors.filter(a => isValidStreamUrl(a.playStreamAddress2)).map(a => `${AD_BASE}${PLAYER_BASE}${stripAuth(a.playStreamAddress2)}`)
+    ].filter(Boolean);
+    return links.map(l => `    "${l}",`).join('\n') + '\n    "_______________________________________",\n\n';
+  }
+
+  async function copyText(elementId, btn) {
+    const el = document.getElementById(elementId);
+    const text = el.value || el.innerText;
+    await navigator.clipboard.writeText(text);
+    handleFeedback(btn, 'Copied!');
+  }
+
+  function handleFeedback(btn, message) {
+    const original = btn.innerHTML;
+    btn.innerHTML = `<span class="success-text">${message}</span>`;
+    setTimeout(() => { btn.innerHTML = original; }, 1500);
+  }
+
+  function filterResults() {
+    const query = document.getElementById('searchBar').value.toLowerCase();
+    document.querySelectorAll('.match-card').forEach(card => {
+      card.style.display = card.innerText.toLowerCase().includes(query) ? 'block' : 'none';
+    });
+  }
+
+  window.onload = fetchAndDisplay;
+</script>
+</body>
+</html>
