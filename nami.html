@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YoSinTV NAMI API</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --border: #334155;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --accent-hover: #06b6d4;
+      --error: #f87171;
+      --success: #4ade80;
+      --input-bg: #0f172a;
+      --focus: #22d3ee;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --muted: #64748b;
+        --accent: #06b6d4;
+        --accent-hover: #0891b2;
+        --error: #ef4444;
+        --success: #22c55e;
+        --input-bg: #f8fafc;
+        --focus: #06b6d4;
+      }
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.6;
+    }
+
+    .container { width: 100%; max-width: 900px; }
+
+    /* === NAV === */
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 0 0;
+    }
+    .top-nav a {
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      font-size: .7rem;
+      font-weight: 600;
+      font-family: inherit;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+      transition: all .15s;
+    }
+    .top-nav a:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+    .top-nav a.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+    /* === HEADER === */
+    .page-header { margin: 24px 0; }
+    .page-header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+    .page-header .subtitle { color: var(--muted); font-size: 0.85rem; }
+
+    /* === SEARCH === */
+    input[type="text"] {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      color: var(--text);
+      font-family: inherit;
+      transition: border-color 0.15s;
+    }
+    input[type="text"]:focus { outline: none; border-color: var(--focus); }
+    input[type="text"]::placeholder { color: var(--muted); opacity: 0.6; }
+
+    /* === LEAGUE FILTER === */
+    .league-filter-bar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 12px 0;
+      margin-top: 12px;
+      scrollbar-width: none;
+    }
+    .league-filter-bar::-webkit-scrollbar { display: none; }
+
+    .league-filter-pill {
+      flex-shrink: 0;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      white-space: nowrap;
+      transition: all .15s;
+    }
+    .league-filter-pill:hover { background: var(--surface); color: var(--text); }
+    .league-filter-pill.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+    /* === LEAGUE GROUP === */
+    .league-group { margin-top: 24px; }
+
+    .league-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* === MATCH CARD === */
+    .match-card {
+      margin-top: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 14px 16px;
+      border-radius: 12px;
+    }
+
+    .match-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .match-title {
+      font-weight: bold;
+      color: var(--success);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .match-time {
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .match-nami-id {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      margin-left: auto;
+    }
+
+    .signal-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .signal-link {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(34,211,238,0.08);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 12px;
+      transition: all .15s;
+    }
+    .signal-link:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      overflow-x: auto;
+      margin-top: 8px;
+      font-size: 12px;
+      white-space: pre-wrap;
+    }
+
+    .copy-btn {
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all .15s;
+      margin-left: auto;
+    }
+    .copy-btn:hover { background: var(--accent-hover); }
+
+    .match-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 6px;
+    }
+
+    .copy-id-btn {
+      margin-left: 8px;
+      padding: 2px 8px;
+      background: var(--border);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      color: var(--muted);
+      transition: all .15s;
+    }
+    .copy-id-btn:hover { background: var(--accent); color: var(--bg); }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+    }
+
+    .error {
+      text-align: center;
+      padding: 40px;
+      color: var(--error);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="top-nav">
+      <a href="nami.html" class="active">Nami</a>
+      <a href="colatv.html">ColaTV</a>
+      <a href="ppv.html">PPV</a>
+      <a href="md5.html">MD5</a>
+    </nav>
+
+    <div class="page-header">
+      <h1>YoSinTV NAMI API</h1>
+      <div class="subtitle">Nami streaming platform match extractor</div>
+    </div>
+
+    <input type="text" id="search" placeholder="Search match..." oninput="filterMatches()">
+
+    <div id="output">
+      <div class="loading">Loading data...</div>
+    </div>
+  </div>
+
+<script>
+const API_URL = 'https://oneball.live/list.json';
+
+let allMatches = [];
+
+function safeId(str) {
+    return str.replace(/[^a-zA-Z0-9]/g, "_");
+}
+
+function formatMatchName(home, away) {
+    const clean = s => s.replace(/\bF\.?C\.?\b\s*/gi, '').trim();
+    return clean(home) + ' vs ' + clean(away);
+}
+
+function stripAuth(url) {
+    const q = url.indexOf('?');
+    return q !== -1 ? url.substring(0, q) : url;
+}
+
+function formatTime(timeStr) {
+    if (!timeStr) return '';
+    const d = new Date(timeStr.replace(' ', 'T'));
+    d.setHours(d.getHours() + 1);
+    if (isNaN(d.getTime())) return timeStr;
+    return d.toLocaleString('en-GB', {
+        timeZone: 'Asia/Tokyo',
+        day: '2-digit', month: 'short',
+        hour: '2-digit', minute: '2-digit',
+        hour12: true
+    }).toUpperCase().replace(',', '') + ' JST';
+}
+
+async function loadData() {
+    const container = document.getElementById('output');
+    try {
+        const res = await fetch(API_URL);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        allMatches = await res.json();
+        render(allMatches);
+        if (location.hash) {
+            const q = decodeURIComponent(location.hash.slice(1));
+            document.getElementById('search').value = q;
+            filterMatches();
+        }
+    } catch (e) {
+        container.innerHTML = '<div class="error">Failed to load data: ' + e.message + '</div>';
+    }
+}
+
+function render(matches) {
+    const container = document.getElementById('output');
+    container.innerHTML = '';
+
+    const groups = {};
+    matches.forEach(m => {
+        const league = m.league_name || 'Unknown';
+        if (!groups[league]) groups[league] = [];
+        groups[league].push(m);
+    });
+
+    for (const league in groups) {
+        const section = document.createElement('div');
+        section.className = 'league-group';
+
+        const title = document.createElement('div');
+        title.className = 'league-title';
+        title.textContent = league;
+        section.appendChild(title);
+
+        groups[league].forEach(m => {
+            const name = formatMatchName(m.home_team, m.away_team);
+            const signals = m.signals || [];
+
+            const filtered = signals.filter(s => s.label === 'HD-B' || s.label === 'HD-J');
+            const links = [];
+            if (filtered[0]) links.push('https://redirects.pages.dev/foot.html?src=https://cr7player.pages.dev/b64?url=' + btoa(filtered[0].url).replace(/=/g, ''));
+            links.push('https://yosintv-api.pages.dev/api/ads');
+            if (filtered[1]) links.push('https://redirects.pages.dev/foot.html?src=https://hlsplayers.pages.dev/player3?url=' + stripAuth(filtered[1].url));
+            links.push('_______________________________________');
+
+            const jsonObj = { name, links };
+
+            const id = safeId(m.nami_id + '_' + m.home_team + m.away_team);
+
+            const card = document.createElement('div');
+            card.className = 'match-card';
+            card.dataset.searchText = (name + ' ' + league + ' ' + m.home_team + ' ' + m.away_team).toLowerCase();
+
+            let signalsHtml = '';
+            if (filtered[0]) signalsHtml += `<a class="signal-link" href="https://redirects.pages.dev/foot.html?src=https://cr7player.pages.dev/b64?url=${btoa(filtered[0].url).replace(/=/g, '')}" target="_blank">${filtered[0].label}</a>`;
+            signalsHtml += `<a class="signal-link" href="https://yosintv-api.pages.dev/api/ads" target="_blank">Ads</a>`;
+            if (filtered[1]) signalsHtml += `<a class="signal-link" href="https://redirects.pages.dev/foot.html?src=https://hlsplayers.pages.dev/player3?url=${stripAuth(filtered[1].url)}" target="_blank">${filtered[1].label}</a>`;
+
+            card.innerHTML = `
+                <div class="match-top">
+                    <span class="match-title">${name}</span>
+                    <span class="match-time">${formatTime(m.match_time)}</span>
+                    <span class="match-nami-id">ID: ${m.nami_id} <button class="copy-id-btn" onclick="copyText('${m.nami_id}', this)">Copy</button></span>
+                </div>
+                <div class="signal-row">${signalsHtml}</div>
+                <div class="match-actions">
+                  <button class="copy-btn" onclick="copyJSON('json-${id}', this)">Copy JSON</button>
+                </div>
+                <pre id="json-${id}">${JSON.stringify(jsonObj, null, 2)}\n</pre>
+            `;
+
+            section.appendChild(card);
+        });
+
+        container.appendChild(section);
+    }
+
+}
+
+function copyJSON(id, btn) {
+    const text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text);
+    btn.innerText = 'Copied!';
+    setTimeout(() => btn.innerText = 'Copy JSON', 1000);
+}
+
+function copyText(text, btn) {
+    navigator.clipboard.writeText(text);
+    btn.innerText = 'Copied!';
+    setTimeout(() => btn.innerText = 'Copy', 1000);
+}
+
+function filterMatches() {
+    const query = document.getElementById('search').value.toLowerCase();
+    document.querySelectorAll('.match-card').forEach(card => {
+        card.style.display = card.dataset.searchText.includes(query) ? 'block' : 'none';
+    });
+    document.querySelectorAll('.league-group').forEach(group => {
+        const visible = group.querySelectorAll('.match-card[style*="block"]').length > 0 ||
+            group.querySelectorAll('.match-card:not([style*="none"])').length > 0;
+        group.style.display = visible ? 'block' : 'none';
+    });
+}
+
+window.onload = loadData;
+</script>
+</body>
+</html>
