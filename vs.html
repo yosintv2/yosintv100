@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live View Source</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --border: #334155;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --accent-hover: #06b6d4;
+      --error: #f87171;
+      --success: #4ade80;
+      --input-bg: #0f172a;
+      --focus: #22d3ee;
+      --code-bg: #0b1220;
+      --code-head: #0e1830;
+      --code-text: #cbd5e1;
+      --code-gutter: #475569;
+      --code-line: #1e293b;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --muted: #64748b;
+        --accent: #06b6d4;
+        --accent-hover: #0891b2;
+        --error: #ef4444;
+        --success: #22c55e;
+        --input-bg: #f8fafc;
+        --focus: #06b6d4;
+      }
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.6;
+    }
+
+    .container { width: 100%; max-width: 1180px; }
+
+    /* === NAV === */
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 10px 0 0;
+    }
+    .top-nav a {
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      font-size: .7rem;
+      font-weight: 600;
+      font-family: inherit;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+      transition: all .15s;
+    }
+    .top-nav a:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+    .top-nav a.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+    /* === HEADER === */
+    .page-header { margin: 24px 0; }
+    .page-header h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+    .page-header .subtitle { color: var(--muted); font-size: 0.85rem; }
+    .page-header .subtitle code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: .8em;
+      color: var(--accent);
+      background: var(--input-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 5px;
+    }
+
+    /* === CARD === */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    /* === TARGET BAR === */
+    .target-bar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      margin-bottom: 14px;
+      padding: 9px 12px;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      background: var(--input-bg);
+      font-size: 0.78rem;
+    }
+    .target-label {
+      color: var(--muted);
+      font-size: 0.66rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+    .target-url {
+      color: var(--accent);
+      text-decoration: none;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+      font-size: 0.75rem;
+      word-break: break-all;
+    }
+    .target-url:hover { text-decoration: underline; }
+
+    /* === URL FORM === */
+    .url-form { display: flex; gap: 8px; margin-bottom: 12px; }
+
+    input {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      color: var(--text);
+      font-family: inherit;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    input::placeholder { color: var(--muted); opacity: 0.6; }
+    input:focus {
+      outline: none;
+      border-color: var(--focus);
+      box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
+    }
+    .url-form input { flex: 1; min-width: 0; }
+
+    /* === BUTTONS === */
+    button, .link-btn {
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 9px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.82rem;
+      font-weight: 500;
+      line-height: 1.2;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .btn:hover { border-color: var(--muted); }
+    .btn:active { transform: scale(0.98); }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #06202a;
+      font-weight: 600;
+    }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+    .btn-live .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--muted);
+      flex: 0 0 auto;
+    }
+    .btn-live.on {
+      border-color: var(--error);
+      background: rgba(248, 113, 113, 0.12);
+      color: var(--error);
+    }
+    .btn-live.on .dot {
+      background: var(--error);
+      animation: pulse 1.6s infinite;
+    }
+    .btn-toggle.on {
+      border-color: var(--accent);
+      background: rgba(34, 211, 238, 0.12);
+      color: var(--accent);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.5); }
+      70% { box-shadow: 0 0 0 7px rgba(248, 113, 113, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0); }
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* === STATUS === */
+    .status {
+      min-height: 22px;
+      margin: 2px 2px 14px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .status.error { color: var(--error); }
+
+    /* === TABS === */
+    .tabs {
+      display: flex;
+      gap: 2px;
+      border-bottom: 1px solid var(--border);
+    }
+    .tab {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--muted);
+      padding: 8px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab .count {
+      display: inline-block;
+      min-width: 18px;
+      margin-left: 6px;
+      padding: 0 5px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--input-bg);
+      color: var(--muted);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    .tab.active .count { color: var(--accent); border-color: var(--accent); }
+    .tab .count:empty { display: none; }
+
+    .panel { display: none; padding-top: 14px; }
+    .panel.active { display: block; }
+
+    /* === CODE === */
+    .code-wrap {
+      border: 1px solid var(--code-line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--code-bg);
+    }
+    .code-scroll {
+      max-height: 68vh;
+      overflow: auto;
+    }
+    .code-lines {
+      --gutter-w: 44px;
+      counter-reset: ln;
+      width: max-content;
+      min-width: 100%;
+      padding: 12px 0;
+      color: var(--code-text);
+      tab-size: 2;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .line {
+      position: relative;
+      display: block;
+      min-height: 20px;
+      padding-left: calc(var(--gutter-w) + 12px);
+      padding-right: 18px;
+      white-space: pre;
+    }
+    .line::before {
+      counter-increment: ln;
+      content: counter(ln);
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      display: inline-block;
+      width: var(--gutter-w);
+      margin-left: calc(-1 * (var(--gutter-w) + 12px));
+      margin-right: 12px;
+      padding-right: 10px;
+      box-sizing: border-box;
+      text-align: right;
+      vertical-align: top;
+      color: var(--code-gutter);
+      background: var(--code-bg);
+      border-right: 1px solid var(--code-line);
+      user-select: none;
+      font-variant-numeric: tabular-nums;
+    }
+    .code-lines.wrap { width: 100%; min-width: 0; }
+    .code-lines.wrap .line { white-space: pre-wrap; overflow-wrap: anywhere; word-break: break-word; }
+
+    .empty {
+      border: 1px dashed var(--border);
+      border-radius: 10px;
+      padding: 34px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* === JS BLOCKS === */
+    .js-tools {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .js-block { margin-bottom: 18px; }
+    .js-block:last-child { margin-bottom: 0; }
+
+    .js-head {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      padding: 8px 12px;
+      background: var(--code-head);
+      border: 1px solid var(--code-line);
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+      font-size: 0.74rem;
+      line-height: 1.5;
+    }
+    .js-title { color: var(--accent); }
+    .js-status {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .js-status.loaded { color: var(--success); }
+    .js-block .code-wrap { border-radius: 0 0 10px 10px; }
+    .js-block .code-scroll { max-height: 52vh; }
+
+    .footnote {
+      margin-top: 12px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 14px; }
+      .card { padding: 16px; }
+      .url-form { flex-direction: column; }
+      .url-form .btn { width: 100%; }
+      .toolbar .btn { flex: 1 1 auto; }
+      .code-lines { font-size: 11px; line-height: 18px; }
+      .line { min-height: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="top-nav">
+      <a href="nami.html">Nami</a>
+      <a href="colatv.html">ColaTV</a>
+      <a href="ppv.html">PPV</a>
+      <a href="md5.html">MD5</a>
+      <a href="viewsource.html" class="active">Source</a>
+    </nav>
+
+    <div class="page-header">
+      <h1>Live View Source</h1>
+      <div class="subtitle">Fetches a page's HTML and its inline JavaScript sources. External JS files are ignored. Load directly with <code>?url=https://example.com</code></div>
+    </div>
+
+    <div class="card">
+      <div class="target-bar" id="targetBar" hidden>
+        <span class="target-label">Source URL</span>
+        <a class="target-url" id="targetUrl" href="#" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+
+      <form class="url-form" id="urlForm" autocomplete="off">
+        <input
+          type="text"
+          id="urlInput"
+          placeholder="https://example.com"
+          spellcheck="false"
+          autocapitalize="off"
+          aria-label="Page URL"
+        >
+        <button type="submit" class="btn btn-primary" id="loadBtn">Load Source</button>
+      </form>
+
+      <div class="toolbar">
+        <button type="button" class="btn btn-live" id="liveBtn" aria-pressed="false">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="liveLabel">Live: Off</span>
+        </button>
+        <button type="button" class="btn btn-toggle on" id="wrapBtn" aria-pressed="true">
+          <span id="wrapLabel">Wrap: On</span>
+        </button>
+        <button type="button" class="btn" id="copyBtn">Copy</button>
+        <button type="button" class="btn" id="downloadBtn">Download</button>
+        <a class="btn link-btn" id="openLink" href="#" target="_blank" rel="noopener noreferrer">Open ↗</a>
+      </div>
+
+      <div class="status" id="status" role="status" aria-live="polite">Enter a URL to fetch its live source.</div>
+
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab active" data-tab="js" role="tab" aria-selected="true">
+          JavaScript <span class="count" id="jsCount"></span>
+        </button>
+        <button type="button" class="tab" data-tab="html" role="tab" aria-selected="false">
+          HTML <span class="count" id="htmlCount"></span>
+        </button>
+      </div>
+
+      <div class="panel active" id="jsPanel" role="tabpanel">
+        <div class="js-tools">
+          <span id="jsInfo"></span>
+        </div>
+        <div id="jsBlocks"></div>
+      </div>
+
+      <div class="panel" id="htmlPanel" role="tabpanel">
+        <div class="empty" id="htmlEmpty">No source loaded yet. Paste a URL above or add <code>?url=</code> to this page's address.</div>
+        <div class="code-wrap" id="htmlCode" hidden>
+          <div class="code-scroll" id="htmlScroll">
+            <div class="code-lines wrap" id="htmlLines"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footnote">Cross-origin pages are fetched through public CORS proxies. Some sites may block or limit fetching.</div>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var urlForm = document.getElementById('urlForm');
+      var urlInput = document.getElementById('urlInput');
+      var loadBtn = document.getElementById('loadBtn');
+      var liveBtn = document.getElementById('liveBtn');
+      var liveLabel = document.getElementById('liveLabel');
+      var wrapBtn = document.getElementById('wrapBtn');
+      var wrapLabel = document.getElementById('wrapLabel');
+      var copyBtn = document.getElementById('copyBtn');
+      var downloadBtn = document.getElementById('downloadBtn');
+      var openLink = document.getElementById('openLink');
+      var targetBar = document.getElementById('targetBar');
+      var targetUrl = document.getElementById('targetUrl');
+      var statusEl = document.getElementById('status');
+      var tabButtons = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+      var htmlPanel = document.getElementById('htmlPanel');
+      var jsPanel = document.getElementById('jsPanel');
+      var htmlEmpty = document.getElementById('htmlEmpty');
+      var htmlCode = document.getElementById('htmlCode');
+      var htmlScroll = document.getElementById('htmlScroll');
+      var htmlLines = document.getElementById('htmlLines');
+      var htmlCount = document.getElementById('htmlCount');
+      var jsCount = document.getElementById('jsCount');
+      var jsInfo = document.getElementById('jsInfo');
+      var jsBlocks = document.getElementById('jsBlocks');
+
+      var MAX_CHARS = 5 * 1024 * 1024;
+      var LIVE_MS = 10000;
+
+      var state = {
+        target: '',
+        html: '',
+        scripts: [],
+        activeTab: 'js',
+        wrap: true,
+        live: false,
+        loading: false,
+        timer: null,
+        requestId: 0
+      };
+
+      function normalizeUrl(raw) {
+        var value = (raw || '').trim().replace(/^view-source:/i, '');
+        if (!value) return '';
+        if (!/^https?:\/\//i.test(value)) value = 'https://' + value;
+        try {
+          var parsed = new URL(value);
+          if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return '';
+          return parsed.href;
+        } catch (err) {
+          return '';
+        }
+      }
+
+      function setStatus(message, isError) {
+        statusEl.textContent = message;
+        statusEl.classList.toggle('error', !!isError);
+      }
+
+      function fmtBytes(bytes) {
+        if (bytes < 1024) return bytes + ' B';
+        if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+        return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+      }
+
+      function fmtCount(n) {
+        return Number(n).toLocaleString();
+      }
+
+      function lineCount(text) {
+        return text ? text.split('\n').length : 0;
+      }
+
+      function timeoutFetch(url, ms) {
+        var controller = new AbortController();
+        var timer = setTimeout(function () { controller.abort(); }, ms);
+        return fetch(url, {
+          signal: controller.signal,
+          cache: 'no-store',
+          redirect: 'follow'
+        }).then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.text();
+        }).then(function (text) {
+          return text;
+        }, function (err) {
+          if (err && err.name === 'AbortError') throw new Error('timeout');
+          throw err;
+        }).finally(function () {
+          clearTimeout(timer);
+        });
+      }
+
+      function buildAttempts(target) {
+        var encoded = encodeURIComponent(target);
+        return [
+          { label: 'direct', url: target, ms: 6000 },
+          { label: 'corsfix', url: 'https://proxy.corsfix.com/?' + target, ms: 12000 },
+          { label: 'allorigins', url: 'https://api.allorigins.win/raw?url=' + encoded, ms: 20000 }
+        ];
+      }
+
+      function fetchTarget(target) {
+        var attempts = buildAttempts(target);
+        var errors = [];
+        var index = 0;
+
+        function next() {
+          if (index >= attempts.length) {
+            return Promise.reject(new Error('Could not fetch source. ' + errors.join(' · ')));
+          }
+          var attempt = attempts[index++];
+          return timeoutFetch(attempt.url, attempt.ms).then(function (text) {
+            if (!text) throw new Error('empty response');
+            return { text: text, via: attempt.label };
+          }).catch(function (err) {
+            errors.push(attempt.label + ': ' + (err && err.message ? err.message : 'failed'));
+            return next();
+          });
+        }
+
+        return next();
+      }
+
+      function cleanSource(text) {
+        return text.replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n');
+      }
+
+      function buildCodeLines(text) {
+        var linesEl = document.createElement('div');
+        linesEl.className = 'code-lines' + (state.wrap ? ' wrap' : '');
+
+        var lines = text.split('\n');
+        var fragment = document.createDocumentFragment();
+
+        lines.forEach(function (line) {
+          var row = document.createElement('div');
+          row.className = 'line';
+          row.textContent = line;
+          fragment.appendChild(row);
+        });
+
+        linesEl.appendChild(fragment);
+        var digits = String(lines.length).length;
+        linesEl.style.setProperty('--gutter-w', Math.ceil(digits * 7.5) + 18 + 'px');
+        return linesEl;
+      }
+
+      function codeBlock(text) {
+        var wrap = document.createElement('div');
+        wrap.className = 'code-wrap';
+
+        var scroll = document.createElement('div');
+        scroll.className = 'code-scroll';
+        scroll.appendChild(buildCodeLines(text));
+
+        wrap.appendChild(scroll);
+        return wrap;
+      }
+
+      function renderHtml() {
+        var hasSource = !!state.html;
+        htmlEmpty.hidden = hasSource;
+        htmlCode.hidden = !hasSource;
+
+        if (!hasSource) {
+          htmlLines.textContent = '';
+          htmlCount.textContent = '';
+          return;
+        }
+
+        var top = htmlScroll.scrollTop;
+        var left = htmlScroll.scrollLeft;
+        htmlLines.textContent = '';
+        htmlLines.appendChild(buildCodeLines(state.html));
+        htmlCount.textContent = fmtCount(lineCount(state.html));
+        htmlScroll.scrollTop = top;
+        htmlScroll.scrollLeft = state.wrap ? 0 : left;
+      }
+
+      function setWrap(on) {
+        state.wrap = !!on;
+        wrapBtn.classList.toggle('on', state.wrap);
+        wrapBtn.setAttribute('aria-pressed', state.wrap ? 'true' : 'false');
+        wrapLabel.textContent = state.wrap ? 'Wrap: On' : 'Wrap: Off';
+
+        Array.prototype.forEach.call(document.querySelectorAll('.code-lines'), function (el) {
+          el.classList.toggle('wrap', state.wrap);
+        });
+
+        if (state.wrap) htmlScroll.scrollLeft = 0;
+      }
+
+      function isJavaScriptType(type) {
+        if (!type) return true;
+        var lower = type.toLowerCase();
+        return lower === 'module' || lower.indexOf('javascript') !== -1 || lower.indexOf('ecmascript') !== -1;
+      }
+
+      function parseScripts(html) {
+        var doc;
+        try {
+          doc = new DOMParser().parseFromString(html, 'text/html');
+        } catch (err) {
+          return [];
+        }
+
+        var result = [];
+        var tags = doc.querySelectorAll('script');
+
+        for (var i = 0; i < tags.length; i++) {
+          var el = tags[i];
+          var type = (el.getAttribute('type') || '').trim();
+          if (!isJavaScriptType(type)) continue;
+          if (el.getAttribute('src')) continue;
+
+          var code = el.textContent || '';
+          if (!code.trim()) continue;
+
+          result.push({
+            id: result.length + 1,
+            code: code
+          });
+        }
+
+        return result;
+      }
+
+      function buildJsBlock(script) {
+        var block = document.createElement('div');
+        block.className = 'js-block';
+
+        var head = document.createElement('div');
+        head.className = 'js-head';
+
+        var title = document.createElement('span');
+        title.className = 'js-title';
+        title.textContent = '// ===== SCRIPT #' + script.id + ' · INLINE =====';
+        head.appendChild(title);
+
+        var meta = document.createElement('span');
+        meta.className = 'js-status loaded';
+        meta.textContent = lineCount(script.code) + ' lines';
+        head.appendChild(meta);
+
+        block.appendChild(head);
+        block.appendChild(codeBlock(script.code));
+        return block;
+      }
+
+      function renderJs() {
+        jsBlocks.textContent = '';
+
+        if (!state.scripts.length) {
+          var empty = document.createElement('div');
+          empty.className = 'empty';
+          empty.textContent = state.html
+            ? 'No inline JavaScript found in this page.'
+            : 'Fetch a page to see its separated inline JavaScript.';
+          jsBlocks.appendChild(empty);
+          jsInfo.textContent = '';
+          jsCount.textContent = '';
+          return;
+        }
+
+        jsInfo.textContent = state.scripts.length + ' inline script' + (state.scripts.length === 1 ? '' : 's') + ' · external scripts ignored';
+        jsCount.textContent = String(state.scripts.length);
+
+        state.scripts.forEach(function (script) {
+          jsBlocks.appendChild(buildJsBlock(script));
+        });
+      }
+
+      function setTab(name) {
+        state.activeTab = name;
+        tabButtons.forEach(function (tab) {
+          var active = tab.getAttribute('data-tab') === name;
+          tab.classList.toggle('active', active);
+          tab.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        htmlPanel.classList.toggle('active', name === 'html');
+        jsPanel.classList.toggle('active', name === 'js');
+      }
+
+      function jsText() {
+        return state.scripts.map(function (script) {
+          var header = '// ===== SCRIPT #' + script.id + ' · INLINE =====\n';
+          return header + (script.code || '') + '\n';
+        }).join('\n');
+      }
+
+      function activeText() {
+        if (state.activeTab === 'js') return jsText();
+        return state.html || '';
+      }
+
+      function safeHost() {
+        try {
+          return new URL(state.target).hostname.replace(/[^a-z0-9.-]/gi, '_') || 'source';
+        } catch (err) {
+          return 'source';
+        }
+      }
+
+      function fallbackCopy(text) {
+        var area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', '');
+        area.style.position = 'fixed';
+        area.style.top = '-1000px';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try {
+          ok = document.execCommand('copy');
+        } catch (err) {
+          ok = false;
+        }
+        area.remove();
+        return ok;
+      }
+
+      function copyActive() {
+        var text = activeText();
+        if (!text) {
+          setStatus('Nothing to copy yet.', true);
+          return;
+        }
+
+        var label = state.activeTab === 'html' ? 'HTML' : 'JavaScript';
+        var done = function () {
+          setStatus('Copied ' + label + ' source (' + fmtBytes(text.length) + ').', false);
+        };
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () {
+            if (fallbackCopy(text)) done();
+            else setStatus('Copy failed. Select the code manually.', true);
+          });
+        } else if (fallbackCopy(text)) {
+          done();
+        } else {
+          setStatus('Copy failed. Select the code manually.', true);
+        }
+      }
+
+      function downloadActive() {
+        var text = activeText();
+        if (!text) {
+          setStatus('Nothing to download yet.', true);
+          return;
+        }
+
+        var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement('a');
+        link.href = url;
+        link.download = safeHost() + (state.activeTab === 'html' ? '.html' : '.js');
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+        setStatus('Downloaded ' + link.download + '.', false);
+      }
+
+      function saveParam(target) {
+        try {
+          var url = new URL(window.location.href);
+          url.searchParams.set('url', target);
+          history.replaceState(null, '', url);
+        } catch (err) {
+          /* ignore */
+        }
+      }
+
+      function setLive(on) {
+        state.live = !!on;
+        liveBtn.classList.toggle('on', state.live);
+        liveBtn.setAttribute('aria-pressed', state.live ? 'true' : 'false');
+        liveLabel.textContent = state.live ? 'Live: On' : 'Live: Off';
+
+        if (state.timer) {
+          clearInterval(state.timer);
+          state.timer = null;
+        }
+
+        if (!state.live) return;
+
+        state.timer = setInterval(function () {
+          if (document.hidden || state.loading || !state.target) return;
+          loadSource(state.target, { silent: true });
+        }, LIVE_MS);
+      }
+
+      function loadSource(rawUrl, options) {
+        options = options || {};
+        var target = normalizeUrl(rawUrl);
+
+        if (!target) {
+          setStatus('Enter a valid http(s) URL.', true);
+          urlInput.focus();
+          return;
+        }
+
+        if (state.live && !options.silent) setLive(false);
+
+        var requestId = ++state.requestId;
+        var started = performance.now();
+
+        state.target = target;
+        state.loading = true;
+        urlInput.value = target;
+        openLink.href = target;
+        targetBar.hidden = false;
+        targetUrl.textContent = target;
+        targetUrl.href = target;
+        loadBtn.disabled = true;
+        setStatus(options.silent ? 'Refreshing live source…' : 'Fetching source…', false);
+
+        fetchTarget(target).then(function (result) {
+          if (requestId !== state.requestId) return;
+
+          var html = cleanSource(result.text);
+          var note = '';
+          if (html.length > MAX_CHARS) {
+            html = html.slice(0, MAX_CHARS);
+            note = ' · truncated at 5 MB';
+          }
+
+          var changed = html !== state.html;
+          state.html = html;
+          state.scripts = parseScripts(html);
+
+          if (changed) {
+            renderHtml();
+            renderJs();
+          }
+
+          var elapsed = performance.now() - started;
+          setStatus(
+            'Loaded ' + fmtBytes(html.length) + ' in ' + Math.round(elapsed) + ' ms via ' + result.via +
+            ' · ' + fmtCount(lineCount(html)) + ' lines · ' +
+            fmtCount(state.scripts.length) + ' inline script' + (state.scripts.length === 1 ? '' : 's') + note,
+            false
+          );
+
+          saveParam(target);
+        }).catch(function (err) {
+          if (requestId !== state.requestId) return;
+          var message = err && err.message ? err.message : 'Fetch failed.';
+          setStatus(message, true);
+          if (state.live) {
+            setLive(false);
+            setStatus('Live paused · ' + message, true);
+          }
+        }).finally(function () {
+          if (requestId !== state.requestId) return;
+          state.loading = false;
+          loadBtn.disabled = false;
+        });
+      }
+
+      urlForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        loadSource(urlInput.value);
+      });
+
+      liveBtn.addEventListener('click', function () {
+        if (!state.live) {
+          if (!state.target) {
+            setStatus('Load a URL before enabling live refresh.', true);
+            urlInput.focus();
+            return;
+          }
+          setLive(true);
+          setStatus('Live refresh every 10 seconds.', false);
+          if (!state.html) loadSource(state.target);
+        } else {
+          setLive(false);
+          setStatus('Live refresh stopped.', false);
+        }
+      });
+
+      copyBtn.addEventListener('click', copyActive);
+      downloadBtn.addEventListener('click', downloadActive);
+      wrapBtn.addEventListener('click', function () { setWrap(!state.wrap); });
+
+      tabButtons.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          setTab(tab.getAttribute('data-tab'));
+        });
+      });
+
+      setWrap(true);
+
+      var initial = new URLSearchParams(window.location.search).get('url');
+      if (initial) {
+        urlInput.value = initial;
+        loadSource(initial);
+      } else {
+        renderJs();
+      }
+    })();
+  </script>
+</body>
+</html>
